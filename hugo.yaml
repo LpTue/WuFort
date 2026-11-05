@@ -1,63 +1,64 @@
-theme: ["PaperMod"]
-
 baseURL: https://lptue.github.io/WuFort/
 locale: en-us
 title: WuFort
+theme: ["PaperMod"]
 
-# Khai báo để tính năng Search hoạt động được
+# Cần cho tính năng Search
 outputs:
   home:
     - HTML
     - RSS
-    - JSON # necessary for search
-
-ShowToc: true
-TocOpen: true
-ShowReadingTime: true
-
-mainSections:
-    - posts          # hoặc writeups
-    # - articles     # nếu có folder khác
-ShowAllPagesInArchive: true   # quan trọng: hiện hết mọi section
+    - JSON
 
 params:
+  ShowToc: true
+  TocOpen: true
+  ShowReadingTime: true
+  ShowAllPagesInArchive: true
+
+  # Các section hiển thị ở trang chủ / archive (tên thư mục trong content/)
+  mainSections:
+    - knowledge
+    - tools
+    - picoctf_easy
+    - picoctf_medium
+    - minictf
+    - bksec
+
   profileMode:
-      enabled: true
-      title: "WuFort" # optional default will be site title
-      subtitle: "Dự án lưu lại kiến thức về forensics"
-      imageUrl: "https://avatars.githubusercontent.com/u/89103573?v=4&size=64" # optional
-      imageWidth: 120 # custom size
-      imageHeight: 120 # custom size
-      buttons:
-        - name: Knowledge
-          url: "/knowledge/"
-        - name: Tools
-          url: "/tools/"
-        - name: PicoCTF_Easy
-          url: "/picoctf_easy/"
-        - name: "PicoCTF_Medium"
-          url: "/picoctf_medium/"
-        - name: "MiniCTF"
-          url: "/minictf/"
-        - name: "BKSec"
-          url: "/bksec/"
-        # thêm nút khác nếu muốn
+    enabled: true
+    title: "WuFort"
+    subtitle: "Dự án lưu lại kiến thức về forensics"
+    imageUrl: "https://avatars.githubusercontent.com/u/89103573?v=4&size=64"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Knowledge
+        url: "knowledge/"
+      - name: Tools
+        url: "tools/"
+      - name: PicoCTF_Easy
+        url: "picoctf_easy/"
+      - name: PicoCTF_Medium
+        url: "picoctf_medium/"
+      - name: MiniCTF
+        url: "minictf/"
+      - name: BKSec
+        url: "bksec/"
 
-# Thêm phần socialIcons ngang hàng với profileMode
   socialIcons:
-    - name: "facebook"
+    - name: facebook
       url: "https://www.facebook.com/profile.php?id=61593526254843"
-    - name: "github"
+    - name: github
       url: "https://github.com/LpTue"
-
 
 menu:
   main:
     - identifier: tags
       name: Tags
-      url: /tags/
+      url: tags/
       weight: 10
     - identifier: search
       name: Search
-      url: /search/
+      url: search/
       weight: 20
