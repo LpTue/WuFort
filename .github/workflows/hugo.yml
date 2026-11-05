@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.139.0   # ĐỔI cho khớp với bản local của bạn
+      HUGO_VERSION: 0.165.0   # ĐỔI cho khớp với bản local của bạn
     steps:
       - name: Install Hugo CLI
         run: |
