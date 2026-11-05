@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Sử Dụng Hashcat Cơ Bản</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f0f2f5; 
+        }
+        .container { 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1, h2, h3 { color: #2c3e50; }
+        h1 { 
+            text-align: center; 
+            padding-bottom: 15px; 
+            border-bottom: 3px solid #3498db; 
+            margin-bottom: 30px;
+        }
+        h2 { 
+            margin-top: 30px; 
+            border-bottom: 2px solid #ecf0f1; 
+            padding-bottom: 10px; 
+            color: #2980b9;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-bottom: 20px; 
+            background: white; 
+        }
+        th, td { 
+            padding: 12px 15px; 
+            border: 1px solid #ddd; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #3498db; 
+            color: white; 
+            font-weight: bold;
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; }
+        code { 
+            background-color: #ffeaa7; 
+            padding: 2px 6px; 
+            border-radius: 4px; 
+            color: #d63031; 
+            font-family: 'Consolas', 'Courier New', monospace; 
+            font-size: 0.95em;
+        }
+        pre { 
+            background-color: #2d3436; 
+            color: #f1f2f6; 
+            padding: 15px; 
+            border-radius: 6px; 
+            overflow-x: auto; 
+            font-family: 'Consolas', 'Courier New', monospace; 
+            line-height: 1.5; 
+        }
+        pre code { 
+            background-color: transparent; 
+            color: inherit; 
+            padding: 0; 
+        }
+        .note { 
+            background-color: #e8f4f8; 
+            border-left: 5px solid #3498db; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 4px; 
+        }
+        .example-box {
+            background-color: #fdfbfb;
+            border: 1px solid #e1e1e1;
+            border-left: 5px solid #2ecc71;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .example-title {
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cẩm Nang Sử Dụng Hashcat</h1>
+    
+    <div class="note">
+        <strong>Lưu ý:</strong> Hashcat là công cụ bẻ khóa mật khẩu (password recovery/cracking) cực kỳ mạnh mẽ. Bài viết này trình bày các cú pháp, tùy chọn thông dụng và ví dụ dễ hiểu nhất để bạn bắt đầu.
+    </div>
+
+    <h2>1. Cú Pháp Cơ Bản</h2>
+    <pre><code>hashcat [các tùy chọn]... [file chứa hash] [từ điển | mask (mặt nạ)]...</code></pre>
+
+    <h2>2. Các Tùy Chọn Chính (Options)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tùy chọn</th>
+                <th>Viết tắt</th>
+                <th>Ý nghĩa / Mô tả</th>
+                <th>Ví dụ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>--hash-type</code></td>
+                <td><code>-m</code></td>
+                <td>Chỉ định mã loại Hash (MD5=0, SHA1=100, NTLM=1000...)</td>
+                <td><code>-m 0</code></td>
+            </tr>
+            <tr>
+                <td><code>--attack-mode</code></td>
+                <td><code>-a</code></td>
+                <td>Chế độ tấn công (Từ điển, Mask, Kết hợp...)</td>
+                <td><code>-a 0</code></td>
+            </tr>
+            <tr>
+                <td><code>--outfile</code></td>
+                <td><code>-o</code></td>
+                <td>Lưu kết quả mật khẩu đã bẻ khóa ra một file text</td>
+                <td><code>-o ketqua.txt</code></td>
+            </tr>
+            <tr>
+                <td><code>--show</code></td>
+                <td>(không có)</td>
+                <td>Hiển thị ngay các hash đã crack thành công</td>
+                <td><code>--show</code></td>
+            </tr>
+            <tr>
+                <td><code>--help</code></td>
+                <td><code>-h</code></td>
+                <td>Xem hướng dẫn nhanh (Dùng <code>-hh</code> để xem toàn bộ danh sách Hash)</td>
+                <td><code>-hh</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Các Chế Độ Tấn Công (Attack Modes - <code>-a</code>)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã</th>
+                <th>Tên chế độ</th>
+                <th>Giải thích</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>0</code></td>
+                <td>Straight (Từ điển)</td>
+                <td>Sử dụng một danh sách các mật khẩu có sẵn (wordlist) để thử lần lượt.</td>
+            </tr>
+            <tr>
+                <td><code>1</code></td>
+                <td>Combination</td>
+                <td>Ghép các từ trong 2 từ điển lại với nhau (VD: admin + 123 = admin123).</td>
+            </tr>
+            <tr>
+                <td><code>3</code></td>
+                <td>Brute-force (Vét cạn)</td>
+                <td>Thử tất cả các kết hợp ký tự dựa trên một khuôn mẫu (Mask) cho trước.</td>
+            </tr>
+            <tr>
+                <td><code>6</code></td>
+                <td>Hybrid Wordlist + Mask</td>
+                <td>Lấy từ trong từ điển và ghép thêm các ký tự vét cạn ở <strong>cuối</strong>.</td>
+            </tr>
+            <tr>
+                <td><code>7</code></td>
+                <td>Hybrid Mask + Wordlist</td>
+                <td>Ghép các ký tự vét cạn ở <strong>đầu</strong>, sau đó đến từ trong từ điển.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Các Tập Hợp Ký Tự (Charsets - Dùng cho Mask)</h2>
+    <p>Khi dùng chế độ tấn công vét cạn (<code>-a 3</code>), bạn cần dùng các ký tự đại diện sau để tạo khuôn mẫu (Mask):</p>
+    <ul>
+        <li><code>?l</code> : Chữ cái viết thường (a-z)</li>
+        <li><code>?u</code> : Chữ cái viết hoa (A-Z)</li>
+        <li><code>?d</code> : Chữ số (0-9)</li>
+        <li><code>?s</code> : Ký tự đặc biệt (!@#$%^&...)</li>
+        <li><code>?a</code> : Tất cả các loại trên cộng lại</li>
+    </ul>
+
+    <h2>5. Các Ví Dụ Thực Tế</h2>
+
+    <div class="example-box">
+        <div class="example-title">Ví dụ 1: Tấn công bằng từ điển (Dictionary Attack)</div>
+        <p>Giả sử bạn có file <code>hash_md5.txt</code> chứa các mã băm MD5 (mã loại hash là 0) và một file từ điển <code>rockyou.txt</code>.</p>
+        <pre><code>hashcat -a 0 -m 0 hash_md5.txt rockyou.txt</code></pre>
+    </div>
+
+    <div class="example-box">
+        <div class="example-title">Ví dụ 2: Tấn công vét cạn bằng Mask (Brute-force)</div>
+        <p>Bạn biết mật khẩu là một dãy <strong>6 chữ số</strong> (từ 000000 đến 999999). Bạn sẽ dùng 6 lần <code>?d</code>.</p>
+        <pre><code>hashcat -a 3 -m 0 hash_md5.txt ?d?d?d?d?d?d</code></pre>
+    </div>
+
+    <div class="example-box">
+        <div class="example-title">Ví dụ 3: Tấn công vét cạn kết hợp hoa, thường và số</div>
+        <p>Bạn biết mật khẩu dài 8 ký tự: 1 chữ hoa đầu tiên, 4 chữ thường, và 3 số cuối.</p>
+        <pre><code>hashcat -a 3 -m 0 hash_md5.txt ?u?l?l?l?l?d?d?d</code></pre>
+    </div>
+
+    <div class="example-box">
+        <div class="example-title">Ví dụ 4: Tấn công kết hợp (Hybrid Attack)</div>
+        <p>Người dùng thường hay lấy một từ có nghĩa (trong từ điển) rồi thêm số vào cuối. Ví dụ: <code>admin123</code>. Chúng ta nối thêm 3 chữ số (<code>?d?d?d</code>) vào đuôi từ điển.</p>
+        <pre><code>hashcat -a 6 -m 0 hash_md5.txt rockyou.txt ?d?d?d</code></pre>
+    </div>
+
+    <div class="example-box">
+        <div class="example-title">Ví dụ 5: Xem lại kết quả đã giải mã</div>
+        <p>Hashcat tự động lưu kết quả vào file <code>hashcat.potfile</code>. Để hiển thị ngay trên màn hình các hash đã được bẻ khóa trong file của bạn:</p>
+        <pre><code>hashcat -m 0 hash_md5.txt --show</code></pre>
+    </div>
+
+    <h2>Mẹo Nhỏ Trong Quá Trình Chạy:</h2>
+    <ul>
+        <li>Nhấn phím <code>s</code> để xem trạng thái (Status) tiến độ phần trăm và thời gian ước tính.</li>
+        <li>Nhấn phím <code>q</code> để thoát an toàn (Quit) và lưu lại tiến trình, lần sau chạy lại lệnh cũ nó sẽ tiếp tục.</li>
+        <li>Nhấn phím <code>p</code> để tạm dừng (Pause), và <code>r</code> để tiếp tục (Resume).</li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Sử Dụng John the Ripper</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 1000px; margin: 0 auto; padding: 20px; color: #333; background-color: #f0f4f8; }
+        .container { background-color: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { color: #d32f2f; text-align: center; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 30px;}
+        h2 { color: #1976d2; margin-top: 35px; border-left: 5px solid #1976d2; padding-left: 12px; }
+        h3 { color: #0277bd; margin-bottom: 10px; }
+        code { background-color: #f1f3f5; padding: 3px 6px; border-radius: 4px; font-family: 'Courier New', Courier, monospace; color: #c62828; font-weight: bold; font-size: 0.9em; }
+        pre { background-color: #263238; color: #eceff1; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.95em; box-shadow: inset 0 2px 4px rgba(0,0,0,0.5); }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        th, td { padding: 15px; border: 1px solid #e0e0e0; text-align: left; }
+        th { background-color: #1976d2; color: white; font-weight: 600; text-transform: uppercase; font-size: 0.9em; letter-spacing: 0.5px; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        tr:hover { background-color: #f1f8ff; }
+        .example-box { background-color: #e3f2fd; border-left: 4px solid #1976d2; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .example-box p { margin-top: 0; color: #424242; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bản Dịch & Hướng Dẫn Cú Pháp: John the Ripper</h1>
+        <p><strong>Cú pháp cơ bản:</strong> <code>john [CÁC-TÙY-CHỌN] [TỆP-CHỨA-MẬT-KHẨU/HASH]</code></p>
+        
+        <h2>1. Các chế độ tấn công chính (Attack Modes)</h2>
+        <table>
+            <tr>
+                <th width="30%">Tùy chọn (Cú pháp)</th>
+                <th>Ý nghĩa / Dịch nghĩa</th>
+            </tr>
+            <tr>
+                <td><code>--single</code></td>
+                <td>Chế độ <strong>"Single crack"</strong>. Sử dụng thông tin người dùng có sẵn trong tệp (tên, mô tả...) kết hợp với các quy tắc biến đổi mặc định để thử giải mã nhanh.</td>
+            </tr>
+            <tr>
+                <td><code>--wordlist=FILE</code></td>
+                <td>Chế độ <strong>Từ điển (Wordlist)</strong>. Đọc các mật khẩu khả thi từ một tệp văn bản <code>FILE</code> (như rockyou.txt) hoặc qua đường ống (stdin).</td>
+            </tr>
+            <tr>
+                <td><code>--incremental[=MODE]</code></td>
+                <td>Chế độ <strong>Vét cạn (Brute-force)</strong>. Thử tất cả các tổ hợp ký tự có thể xảy ra. Phương pháp này bao quát hết nhưng mất nhiều thời gian nhất.</td>
+            </tr>
+            <tr>
+                <td><code>--rules</code></td>
+                <td>Bật <strong>Quy tắc biến đổi từ</strong> (Mangling rules) khi dùng kèm wordlist. Nó sẽ lấy từ điển và tự động tùy biến (VD: đổi chữ hoa/thường, thêm số "123" vào sau, đảo ngược từ).</td>
+            </tr>
+            <tr>
+                <td><code>--mask=MASK</code></td>
+                <td>Chế độ <strong>Mặt nạ (Mask)</strong>. Dùng để xác định trước cấu trúc mật khẩu nếu bạn đã biết (VD: 4 chữ cái theo sau là 4 con số).</td>
+            </tr>
+        </table>
+
+        <h2>2. Quản lý hiển thị và luồng công việc (Session & Display)</h2>
+        <table>
+            <tr>
+                <th width="30%">Tùy chọn (Cú pháp)</th>
+                <th>Ý nghĩa / Dịch nghĩa</th>
+            </tr>
+            <tr>
+                <td><code>--show</code></td>
+                <td><strong>Hiển thị</strong> các mật khẩu đã được bẻ khóa thành công.</td>
+            </tr>
+            <tr>
+                <td><code>--restore[=NAME]</code></td>
+                <td><strong>Khôi phục (Chạy tiếp)</strong> một phiên làm việc đã bị ngắt quãng trước đó do người dùng bấm Ctrl+C hoặc tắt máy.</td>
+            </tr>
+            <tr>
+                <td><code>--status</code></td>
+                <td>In ra trạng thái tiến độ giải mã hiện tại của hệ thống.</td>
+            </tr>
+            <tr>
+                <td><code>--format=NAME</code></td>
+                <td><strong>Chỉ định cấu trúc băm (Hash Format)</strong>. Ép công cụ dùng đúng loại băm thay vì phải tự động đoán. (VD: Raw-MD5, nt, bcrypt). Xem danh sách hỗ trợ qua lệnh <code>--list=formats</code>.</td>
+            </tr>
+        </table>
+
+        <h2>3. Tối ưu hiệu năng (Performance Tuning)</h2>
+        <table>
+            <tr>
+                <th width="30%">Tùy chọn (Cú pháp)</th>
+                <th>Ý nghĩa / Dịch nghĩa</th>
+            </tr>
+            <tr>
+                <td><code>--fork=N</code></td>
+                <td>Chia nhỏ công việc cho <strong>N tiến trình song song</strong>. Giúp công cụ khai thác triệt để sức mạnh của các vi xử lý nhiều nhân CPU.</td>
+            </tr>
+            <tr>
+                <td><code>--test[=TIME]</code></td>
+                <td>Chạy kiểm tra và <strong>đánh giá hiệu năng bẻ khóa (benchmark)</strong> trên máy tính của bạn trong một khoảng thời gian nhất định.</td>
+            </tr>
+        </table>
+
+        <h2>4. Các ví dụ sử dụng thực tế (Thực hành)</h2>
+        
+        <div class="example-box">
+            <h3>Ví dụ 1: Tấn công bằng từ điển (Chế độ hay dùng nhất trong CTF)</h3>
+            <p>Quét tệp <code>hash.txt</code> chứa mã băm kiểu MD5 bằng danh sách từ vựng thông dụng <code>rockyou.txt</code>.</p>
+            <pre>$ john --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5 hash.txt</pre>
+        </div>
+
+        <div class="example-box">
+            <h3>Ví dụ 2: Kiểm tra mật khẩu đã giải mã được</h3>
+            <p>Sau khi hệ thống báo "DONE", bạn chạy lệnh này kèm theo đúng định dạng ban đầu để xem mật khẩu ở dạng văn bản thuần túy.</p>
+            <pre>$ john --show --format=Raw-MD5 hash.txt</pre>
+        </div>
+
+        <div class="example-box">
+            <h3>Ví dụ 3: Tăng tốc giải mã bằng cách chia luồng (Đa nhân)</h3>
+            <p>Sử dụng 4 luồng CPU để quét (phù hợp với máy tính 4 nhân trở lên), giúp đẩy nhanh quá trình tính toán.</p>
+            <pre>$ john --wordlist=wordlist.txt --format=nt --fork=4 hash.txt</pre>
+        </div>
+
+        <div class="example-box">
+            <h3>Ví dụ 4: Khôi phục phiên làm việc đang dang dở</h3>
+            <p>Khi bạn đang chạy quá trình bẻ khóa mất hàng tiếng đồng hồ và tạm dừng, hãy dùng lệnh sau để hệ thống chạy tiếp tục vị trí cũ thay vì giải mã lại từ đầu.</p>
+            <pre>$ john --restore</pre>
+        </div>
+
+    </div>
+</body>
+</html>
