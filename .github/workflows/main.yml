@@ -1,0 +1,24 @@
+name: Deploy Hugo
+
+# Sự kiện kích hoạt workflow (chạy khi có code mới đẩy lên nhánh main)
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Bước 1: Tải source code của bạn về máy chủ GitHub
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # Rất quan trọng: Tải cả code của theme PaperMod
+
+      # Bước 2: Build Hugo (Đây chính là đoạn code của bạn)
+      - name: Hugo Build
+        uses: jakejarvis/hugo-build-action@v0.111.3
+        # Có thể thêm các tham số build nếu cần:
+        # with:
+        #   args: --minify --baseURL="https://lptue.github.io/WuFort/"
