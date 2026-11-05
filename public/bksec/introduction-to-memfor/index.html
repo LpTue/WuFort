@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Introduction to MemFor | WuFort</title>
+<meta name="keywords" content="BKSec">
+<meta name="description" content="Tải bài tập tại đây
+Sử dụng vol 3 thay vì vol 2 để tăng tốc
+cd ~
+python3 -m venv mt
+source mt/bin/activate
+pip install --upgrade pip
+pip install volatility3
+Di chuyển tới nơi lưu trữ file
+Lấy thông tin của image
+vol -f memdump.mem windows.info.Info
+
+Ta có được thông tin phiên bản là 10 và múi giờ khi chuyển về VN là 2025-02-20 22:05:26
+Để kiểm tra phần mền đáng ngờ">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/bksec/introduction-to-memfor/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/bksec/introduction-to-memfor/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Introduction to MemFor
+    </h1>
+    <div class="post-meta">
+
+
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>Tải bài tập tại <a href="https://">đây</a></p>
+<p>Sử dụng vol 3 thay vì vol 2 để tăng tốc</p>
+<pre tabindex="0"><code class="language-vol=" data-lang="vol=">cd ~
+python3 -m venv mt
+source mt/bin/activate
+pip install --upgrade pip
+pip install volatility3
+</code></pre><p>Di chuyển tới nơi lưu trữ file
+Lấy thông tin của image</p>
+<pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.info.Info
+</code></pre><p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/ryg3GAk2Mx.png"></p>
+<p>Ta có được thông tin phiên bản là <strong><code>10</code></strong> và múi giờ khi chuyển về VN là <strong><code>2025-02-20 22:05:26</code></strong></p>
+<p>Để kiểm tra phần mền đáng ngờ</p>
+<pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.pslist.PsList
+</code></pre><p>Ta chú ý tới pid 8144</p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1QBmA12Gg.png"></p>
+<p>Giải thích</p>
+<blockquote>
+<p>Bình thường sẽ là <code>svchost</code> thay vì là <code>svcost</code></p>
+</blockquote>
+<p>Để tìm pid cha thì ta chú ý tới ppid là 8268</p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BkdRQRkhze.png"></p>
+<p>Ta kiểm tra các lệnh được chạy</p>
+<pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.cmdline.CmdLine
+</code></pre><p>Ta chú ý tới dòng gần cuối thấy</p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkZ04R13Mx.png"></p>
+<p>Để scan network ta chạy</p>
+<pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.netscan.NetScan
+</code></pre><p>Ta chú ý tới tiến trình chạy bởi <code>svcost.exe</code></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/ByrIrAknfl.png"></p>
+<p>Flag ẩn gồm 2 phần
+Ta kiểm tra các file có thể</p>
+<pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.filescan | grep -iE &#34;flag|part|secret|\.txt|\.png|\.jpg|\.flag&#34;
+</code></pre><p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Hyai8CynMx.png"></p>
+<p>Ta thấy có 2 file đáng nghi là flag1 và flag2
+Ta tạo 1 folder tạm thời lưu các file mới</p>
+<pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem -o &lt;TemFolder&gt; windows.dumpfiles --virtaddr &lt;Mã&gt;
+</code></pre><p>Ví dụ</p>
+<pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem -o tem windows.dumpfiles --virtaddr 0xd20dfd1244c0
+
+vol -f memdump.mem -o tem windows.dumpfiles --virtaddr 0xd20dfd97a640
+
+vol -f memdump.mem -o tem windows.dumpfiles --virtaddr 0xd20dfdc24e00
+</code></pre><p>Sau khi vào ta chỉnh lại về đúng định dạng</p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HyNiwCJnGe.png"></p>
+<p>Vì file flag1 ko extract được nên ta dùng cách kiểm tra mã hex</p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BkUavRy2Gx.png"></p>
+<p>Đoạn đầu là : <code>BKSEC{l00k_ljk3_w3_h4v3_a_n3w_</code></p>
+<p>Với file exe ta mở bằng cutter</p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJjZOCJ3Me.png"></p>
+<p>Đoạn sau là : <code>vol4tilitY_m4st3r_c0mjn9_in2_t0wn}</code>
+Ta kiểm tra với file còn lại thì cũng thế
+Vậy mã cuối là : <code>BKSEC{l00k_ljk3_w3_h4v3_a_n3w_vol4tilitY_m4st3r_c0mjn9_in2_t0wn}</code></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJXOuCJnfg.png"></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r17TdCy3Ge.png"></p>
+<p>Flag cuối cùng là : <code>BKSEC{1e70e595ccc9f7ac9ccae129561c5f862d0f7e43d38210ba46dc6076363f9daf}</code></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/bksec/">BKSec</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

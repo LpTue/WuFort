@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Linux | WuFort</title>
+<meta name="keywords" content="Knowledge">
+<meta name="description" content="I : Các lệnh cơ bản
+
+whoami : Quyền hiện tại của người dùng trong session terminal đang dùng
+echo : In nội dung ra
+ls : Liệt kê các thư mục và tệp tin
+cd : Trỏ tới thư mục
+pwd : Cho biết vị trí hiện tại
+find : Cho biết trong thư mục có những gì
+grep : Tìm kiếm nội dung trong file
+
+Ví du : cat test1 | grep hello">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/knowledge/linux/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/knowledge/linux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Linux
+    </h1>
+    <div class="post-meta">
+
+
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="i--các-lệnh-cơ-bản">I : Các lệnh cơ bản<a hidden class="anchor" aria-hidden="true" href="#i--các-lệnh-cơ-bản">#</a></h1>
+<ul>
+<li><code>whoami</code> : Quyền hiện tại của người dùng trong session terminal đang dùng</li>
+<li><code>echo</code> : In nội dung ra</li>
+<li><code>ls</code> : Liệt kê các thư mục và tệp tin</li>
+<li><code>cd</code> : Trỏ tới thư mục</li>
+<li><code>pwd</code> : Cho biết vị trí hiện tại</li>
+<li><code>find</code> : Cho biết trong thư mục có những gì</li>
+<li><code>grep</code> : Tìm kiếm nội dung trong file
+<blockquote>
+<p>Ví du : <code>cat test1 | grep hello</code></p>
+</blockquote>
+</li>
+<li><code>&amp;</code> : Thực hiện lệnh song song
+<blockquote>
+<p>Ví dụ : <code>echo luongphutue &amp; echo forensic</code></p>
+</blockquote>
+</li>
+<li><code>&amp;&amp;</code> : Thực hiện lệnh lần lượt
+<blockquote>
+<p>Ví dụ : <code>echo luongphutue &amp;&amp; echo forensic</code></p>
+</blockquote>
+</li>
+<li><code>&gt;</code> : Ghi đè
+<blockquote>
+<p>Ví dụ : <code>echo hello &gt; test1</code></p>
+</blockquote>
+</li>
+<li><code>&gt;&gt;</code> : Thêm vào cuối
+<blockquote>
+<p>echo <code>hi &gt;&gt; test1</code>
+Khi : <code>cat test1</code>
+Kết quả:</p>
+</blockquote>
+<pre tabindex="0"><code>hello 
+hi
+</code></pre></li>
+<li><code>ssh</code> : Kết nối máy chủ từ xa
+<blockquote>
+<p>Ví dụ : <code>ssh -p 2220 bandit0@bandit.labs.overthewire.org</code></p>
+</blockquote>
+</li>
+<li><code>apt</code> : Cho phép truy cập kho phần mền cộng đồng
+<blockquote>
+<p>Ví dụ : <code>sudo apt install firefox</code> : Cho phép tải firefox từ kho phần mền</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="ii--các-lệnh-quản-lý-folder-và-file">II . Các lệnh quản lý folder và file<a hidden class="anchor" aria-hidden="true" href="#ii--các-lệnh-quản-lý-folder-và-file">#</a></h1>
+<ul>
+<li><code>ls -a</code> : Hiển thị những thư mục và tệp tin ẩn</li>
+<li><code>ls -l</code> : Hiển thị quyền hạn với thư mục và tệp tin
+<blockquote>
+<p>drwx&mdash;&mdash;
+d : Thư mục
+rwx : Người sở hữu được quyền <strong>đọc, viết và thực thi</strong>
+Nhóm người sở hữu không được quyền làm gì
+Những người khác không được quyền làm gì
+rwxrwxrwx
+r : Tệp tin
+Người sở hữu được toàn quyền
+Người sở hữu được toàn quyền
+Những người khác được toàn quyền</p>
+</blockquote>
+</li>
+<li><code>ls -help</code> : Hiển thị các đuôi mở rộng</li>
+<li><code>man</code> : Giống help những hiển thị lần lượt
+<blockquote>
+<p>Ví dụ : man ls</p>
+</blockquote>
+</li>
+<li><code>touch</code> : Tạo một tệp tin trống</li>
+<li><code>mkdir</code> : Tạo một thư mục trống</li>
+<li><code>rm</code> : Xóa tệp tin</li>
+<li><code>rm -r</code> : Xóa thư mục</li>
+<li><code>cp</code> : Coppy tệp tin</li>
+<li><code>cp -r</code> : Coppy thư mục</li>
+<li><code>mv</code> : Di chuyển tệp tin</li>
+<li><code>mv -r</code> : Di chuyển thư mục</li>
+<li><code>file</code> : Cho biết kiểu tệp tin</li>
+<li><code>nano</code> : Chỉnh sửa văn bản của tệp tin</li>
+<li><code>wget</code> : Tải tệp xuống từ web thông qua http</li>
+</ul>
+<h1 id="iii--mở-rộng">III : Mở rộng<a hidden class="anchor" aria-hidden="true" href="#iii--mở-rộng">#</a></h1>
+<ul>
+<li><code>sudo adduser</code> + &lt;tên người dùng muốn tạo &gt; : Tạo thêm người dùng mới</li>
+<li><code>su</code> + &lt;tên người dùng &gt; : Chuyển sang người dùng
+<blockquote>
+<p>Ví dụ : sudo adduser acc1
+Khi đó có thể : su acc1
+Kết quả hiển thị : acc1@LpTue:/home/lptue</p>
+</blockquote>
+</li>
+<li><code>scp</code> + &lt;tên tệp tin &gt; + &lt; host + name@ip:đường dẫn &gt; : Coppy tệp tin sang máy chủ ssh
+<blockquote>
+<p>Ví dụ : <code>scp imp.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt</code></p>
+</blockquote>
+</li>
+<li><code>scp</code> + &lt; host + name@ip:đường dẫn &gt; + &lt;tên tệp tin &gt; : Coppy tệp tin từ máy chủ ssh về máy mình
+<blockquote>
+<p>Ví dụ : <code>scp ubuntu@192.168.1.30:/home/ubuntu/document.txt notes.txt</code></p>
+</blockquote>
+</li>
+<li><code>python3 -m http.server</code> : Mở host dưới dạng web</li>
+<li><code>ps</code> : Cung cấp danh sách các chương trình ( Processess ) đang chạy</li>
+<li><code>ps aux</code> : Cung cấp danh sách các chương trình do người dùng thực thi ( au : author , x : excte )</li>
+<li><code>top</code> : Cung cấp danh sách các chương trình nhưng cập nhật mỗi 10s</li>
+<li><code>kill</code> + <!-- raw HTML omitted --> : Đóng chương trình có PID tương ứng ( PID được lấy thông qua ps, ps aux , top )</li>
+<li><code>systemctl</code> + <!-- raw HTML omitted --> + <!-- raw HTML omitted --> : Chỉnh các dịch vụ ( opt : start, stop, enable, disable )</li>
+<li><code>cron</code> : Lên lịch tự động (Chi tiết tại Google )</li>
+</ul>
+<h1 id="iv--mẹo-cần-biết">IV : Mẹo cần biết<a hidden class="anchor" aria-hidden="true" href="#iv--mẹo-cần-biết">#</a></h1>
+<ul>
+<li>Ctrl + C : Cho phép ta dừng lệnh đang chạy
+<blockquote>
+<p>Ví dụ
+Đang chạy : <code>top</code>
+Khi ta : Ctrl + C
+Kết quả : Lệnh sẽ dừng lại</p>
+</blockquote>
+</li>
+<li>Ctrl + Z : Cho phép ta ẩn lệnh đang chạy khỏi màn hình (Cho phép chạy ngầm )
+<blockquote>
+<p>Ví dụ
+Đang chạy : <code>top</code>
+Khi ta : Ctrl + Z
+Kết quả : Lệnh sẽ biến mất khỏi màn hình
+Khi ta muốn hiện lệnh trở lại : <code>fg</code></p>
+</blockquote>
+</li>
+<li>/etc : Lưu trữ tệp tin hệ thống</li>
+<li>/var : Lưu trữ tệp dữ liệu được truy cập hoặc ghi lại bởi các dịch vụ, ứng dụng chạy trên hệ thống</li>
+<li>/root : Thư mục chính của người dùng root</li>
+<li>/tmp : Thư mục tạm thời, lưu trữ dữ liệu chỉ truy cập 1 hoặc 2 lần, sẽ bị xóa khi khởi động lại máy</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/knowledge/">Knowledge</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

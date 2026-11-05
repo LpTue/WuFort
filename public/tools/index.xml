@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tools on WuFort</title>
+    <link>http://localhost:1313/tools/</link>
+    <description>Recent content in Tools on WuFort</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binwalk</title>
+      <link>http://localhost:1313/tools/binwalk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/binwalk/</guid>
+      <description>&lt;h1 id=&#34;i-bản-chất-của-binwalk&#34;&gt;I. Bản chất của Binwalk&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Binwalk được viết bằng ruby &amp;ndash;&amp;gt; làm tăng đáng kể tốc độ so với Python&lt;/li&gt;
+&lt;li&gt;Cả thuật toán nén và mã hóa đều tìm cách loại bỏ dữ liệu lặp, vì vậy dữ liệu bị nén rất ngẫu nhiên&lt;/li&gt;
+&lt;li&gt;Phân tích entropy giúp xác định các phần của tệp có thể bị nén hoặc mã hóa!&lt;/li&gt;
+&lt;li&gt;Binwalk chỉtốt khi tệp nén nằm trong danh sách &amp;ldquo;Các chữ ký đã biết &amp;quot;
+Chi tiết tại &lt;a href=&#34;https://github.com/ReFirmLabs/binwalk/wiki/Supported-Signatureshttps://&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Có thể tạm hiểu Binwalk dựa vào phân tích entropy để tách riêng các tệp tin ra&lt;/li&gt;
+&lt;li&gt;Dựa bảng entropy
+&lt;blockquote&gt;
+&lt;p&gt;Trục X : Độ lệch của tệp
+Trục Y : Đo từ sự không ngẫu nhiên tới ngẫu nhiên (khá khó hiểu )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cracking Passwords</title>
+      <link>http://localhost:1313/tools/cracking-passwords/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/cracking-passwords/</guid>
+      <description>&lt;h1 id=&#34;i-mật-khẩu-và-mã-băm&#34;&gt;I. Mật khẩu và Mã băm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Mật khẩu thường được lưu dưới dạng mã băm&lt;/li&gt;
+&lt;li&gt;Khi nhập pass ngta sẽ so sánh mã băm để xác nhận đúng hay sai&lt;/li&gt;
+&lt;li&gt;Nhiều hàm băm gồm &lt;code&gt;MD5&lt;/code&gt;, &lt;code&gt;SHA-1&lt;/code&gt;, &lt;code&gt;SHA-2&lt;/code&gt;, &lt;code&gt;SHA-3&lt;/code&gt;, &lt;code&gt;Bcrypt&lt;/code&gt;, &lt;code&gt;Scrypt&lt;/code&gt;, &lt;code&gt;Argon2&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-bẻ-khóa&#34;&gt;II. Bẻ khóa&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Có nhiều kiểu tấn công gồm brute-force, danh sách và kiểu rainbow table attack&lt;/li&gt;
+&lt;li&gt;Trước hết cần xác định kiểu mã băm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cài-công-cụ-xác-định-mã-băm&#34;&gt;Cài công cụ xác định mã băm&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;sudo apt install hash-identifier
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ByxY9yCnfx.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disk Image Forensics</title>
+      <link>http://localhost:1313/tools/disk-image-forensics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/disk-image-forensics/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu-về-các-thuật-ngữ-cơ-bản&#34;&gt;I. Giới thiệu về các thuật ngữ cơ bản&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Disk Image : bản sao từng bit toàn bộ ổ đĩa, phân vùng, giữ chính xác cấu trúc và nội dung&lt;/li&gt;
+&lt;li&gt;Disk Imaging : quá trình tạo bản sao của ổ đĩa, các hàm băm được sử dụng để đối chiếu tính nguyên vẹn&lt;/li&gt;
+&lt;li&gt;Disk Image Forensics : là quá trình phân tích&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-giới-thiệu-các-công-cụ&#34;&gt;II. Giới thiệu các công cụ&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.autopsy.com/&#34;&gt;Autopsy&lt;/a&gt; : Công cụ phân tích nhiều tính năng&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.exterro.com/ftk-downloads/ftk-imager-8-3&#34;&gt;FTK Image&lt;/a&gt; : Công cụ phân tích có phần nhẹ hơn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;iii-các-bước-sử-dụng&#34;&gt;III. Các bước sử dụng&lt;/h1&gt;
+&lt;h2 id=&#34;với-ftk-image&#34;&gt;Với FTK Image&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nhập ảnh đĩa vào&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkqjpM0tze.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Document analysis</title>
+      <link>http://localhost:1313/tools/document-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/document-analysis/</guid>
+      <description>&lt;h1 id=&#34;i-tài-liệu-microsoft&#34;&gt;I. Tài liệu Microsoft&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Những tài liệu có thể chứa các thông điệp ẩn hoặc mã độc hại có thể được thực thi khi ta mở các tài liệu này&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tài-liệu&#34;&gt;Tài liệu&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Có hai định dạng tệp được sử dụng chính gồm :
+&lt;blockquote&gt;
+&lt;p&gt;OLE ( Object Linking and Embedding : Liên kết và nhúng đối tượng )
+OOOXML ( Office Open XML )&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ole&#34;&gt;OLE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Là định dạng cũ từ 1997 - 2003&lt;/li&gt;
+&lt;li&gt;Định nghĩa cấu trúc &amp;quot; tệp trong tệp &amp;ldquo;, cho phép nhúng một tệp khác vào một tệp
+&lt;blockquote&gt;
+&lt;p&gt;Ví dụ : bảng tính Excel có thể nhúng vào tài liệu&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exiftool</title>
+      <link>http://localhost:1313/tools/exiftool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/exiftool/</guid>
+      <description>&lt;h1 id=&#34;i-bản-chất&#34;&gt;I. Bản chất&lt;/h1&gt;
+&lt;p&gt;-Trong mỗi bức ảnh, ngoài ảnh mình nhìn thấy đằng sau đó còn tồn tại các dữ liệu không thể đọc bằng mắt thường
+-Để đọc được những dữ liệu ấy, chúng ta cần dùng đến công cụ exiftool  
+-Exiftool cho phép ta đọc, ghi và chỉnh sửa Metadata &amp;lt;các thông tin liên quan như ngày tạo, ngày sửa, tên tác giả, tốc độ màn chập &amp;gt;  
+-Exiftool được hỗ trợ trên nhiều dạng file, nhưng thường đầy đủ nhất vẫn là file ảnh&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Foremost</title>
+      <link>http://localhost:1313/tools/foremost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/foremost/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu-về-foremost&#34;&gt;I. Giới thiệu về foremost&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Foremost là chương trình phục hồi dữ liệu dựa trên tiêu đề, chân trang và cấu trúc dữ liệu&lt;/li&gt;
+&lt;li&gt;Foremost làm trên các tệp hình ảnh, chẳng hạn như tệp tạo bởi dd, Safeback, Encase, v.v hoặc trực tiếp trên ổ đĩa&lt;/li&gt;
+&lt;li&gt;Các tiêu đề, chân trang có thể được chỉnh vởi tệp cấu hình hoặc sử dụng dòng lệnh&lt;/li&gt;
+&lt;li&gt;Nhìn vào cấu trúc dữ liệu của một định dạng tệp nhất định cho phép phục hồi đáng tin cậy và nhanh hơn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-cài-đặt&#34;&gt;II. Cài đặt&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo apt install foremost&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;iii-các-lệnh-cơ-bản&#34;&gt;III. Các lệnh cơ bản&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;foremost -help&lt;/code&gt;
+&lt;blockquote&gt;
+&lt;p&gt;V: Hiển thị thông tin bản quyền và thoát.
+-t: Chỉ định loại file cần khôi phục (Ví dụ: -t jpeg,pdf&amp;hellip;).
+-d: Bật tính năng phát hiện khối gián tiếp (dành cho hệ thống tập tin UNIX).
+-i: Chỉ định file đầu vào (mặc định là nhận từ stdin).
+-a: Ghi lại tất cả các header tìm thấy, bỏ qua kiểm tra lỗi (dùng cho các file bị hỏng).
+-w: Chỉ ghi file nhật ký (audit file), không trích xuất các file tìm thấy ra đĩa cứng.
+-o: Thiết lập thư mục xuất kết quả (mặc định là thư mục output).
+-c: Chỉ định file cấu hình sẽ sử dụng (mặc định là foremost.conf).
+-q: Bật chế độ quét nhanh (Quick mode). Chỉ tìm kiếm tại các mốc ranh giới khối 512 byte.
+-Q: Bật chế độ yên lặng (Quiet mode). Ẩn bớt các thông báo hiển thị ra màn hình.
+-v: Chế độ chi tiết (Verbose mode). Hiển thị toàn bộ thông báo nhật ký lên màn hình.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hex editor</title>
+      <link>http://localhost:1313/tools/hex-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/hex-editor/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu-về-hex-editor&#34;&gt;I. Giới thiệu về Hex Editor&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Mỗi tệp tin đều được cấu thành từ các đoạn mã Hex mà mắt người không thể thấy&lt;/li&gt;
+&lt;li&gt;Bạn có thể sử dụng : &lt;code&gt;xxd&lt;/code&gt; + &amp;lt;tên file &amp;gt; để coi mã hex trong terminal&lt;/li&gt;
+&lt;li&gt;Cho phép bạn đọc, và chỉnh sửa tệp tin dưới dạng mã Hex một cách dễ dàng&lt;/li&gt;
+&lt;li&gt;Có rất nhiều tính năng hữu ích trên HxD mà bạn cần tìm hiểu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-hướng-dẫn-sử-dụng-hxd&#34;&gt;II. Hướng dẫn sử dụng HxD&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Chọn tệp tin cần đọc hoặc chỉnh sửa&lt;/li&gt;
+&lt;li&gt;Tùy bài sẽ có những cách áp dụng khác nhau&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1x_ERZdMx.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mem Win</title>
+      <link>http://localhost:1313/tools/mem-win/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/mem-win/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Bài nào yêu cầu phân tích memory &amp;ndash;&amp;gt; sử dụng vol&lt;/li&gt;
+&lt;li&gt;Đầu tiên ta cần tạo môi trường ảo để tải&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;cd ~
+python3 -m venv mt
+source ~/mt/bin/activate
+pip install --upgrade pip
+pip install volatility3
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;File hướng dẫn &lt;code&gt;vol&lt;/code&gt; : tại &lt;a href=&#34;https://github.com/LpTue/Forensics/blob/main/L%C6%B0u%20tr%E1%BB%AF/vol.html&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cấu trúc cú pháp đơn giản&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;vol -f &amp;lt;file mem&amp;gt; &amp;lt;option&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;ii-plugin-mở-rộng&#34;&gt;II. Plugin mở rộng&lt;/h1&gt;
+&lt;h3 id=&#34;plugin-bitlocker&#34;&gt;Plugin bitlocker&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;# 1. Clone plugin
+cd ~
+git clone https://github.com/lorelyai/volatility3-bitlocker.git
+
+# 2. Copy file plugin vào đúng thư mục
+cp ~/volatility3-bitlocker/bitlocker.py &amp;lt;path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryT68W16Ge.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Oletools</title>
+      <link>http://localhost:1313/tools/oletools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/oletools/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu-về-oletools&#34;&gt;I. Giới thiệu về Oletools&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Là gói công cụ phân tích các tệp Microsoft&lt;/li&gt;
+&lt;li&gt;Nó cung cấp công cụ để phân tích các tệp RTF và các tệp dựa trên định dạng OpenXML&lt;/li&gt;
+&lt;li&gt;Cụ thể về Oletools cũng như các công cụ bao gồm tại &lt;a href=&#34;https://www.decalage.info/hugo/python/oletools/&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-kiểm-tra-file&#34;&gt;II. Kiểm tra file&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Tải file học tại &lt;a href=&#34;https://github.com/vonderchild/digital-forensics-lab/blob/main/Lab%2003/files/YearlyBonus.docm&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Là công cục hính để phát hiện tài liệu chứa bất kỳ macro này được nhúng bên trong hay không&lt;/li&gt;
+&lt;li&gt;Sử dụng lệnh  &lt;code&gt;oleid &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJ-rdk5Oze.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sonic</title>
+      <link>http://localhost:1313/tools/sonic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/sonic/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu-về-sonic-visualiser&#34;&gt;I. Giới thiệu về Sonic Visualiser&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Là ứng dụng miễn phí giúp ta phân tích nội dung tệp âm thanh&lt;/li&gt;
+&lt;li&gt;Sonic biểu diễn các đặc điểm âm thanh dưới dạng sóng hoặc phổ gram&lt;/li&gt;
+&lt;li&gt;Phổ đồ là bản đồ nhiệt
+&lt;blockquote&gt;
+&lt;p&gt;Trục ngang - biểu thị thời gian
+Trục dọc - biểu thị tần số
+Màu sắc - thể hiện sự hiện diện của tần số&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Bằng cách phân tích từng lớp layer riêng mà ta có thể ra flag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-hướng-dẫn-cài-đặt&#34;&gt;II. Hướng dẫn cài đặt&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Tải tại &lt;a href=&#34;https://sonicvisualiser.org/download.html&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;iii-hướng-dẫn-sử-dụng&#34;&gt;III. Hướng dẫn sử dụng&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Sonic cho phép ta tách các layer ra để quan sát và phân tích
+&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkGDHCbuMx.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Ngoài ra, sonic còn cho phép ta cài thêm plugin&lt;/li&gt;
+&lt;li&gt;Tùy bài sẽ có những cách khai thác Sonic theo những hướng khác nhau&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;iv-ví-dụ&#34;&gt;IV. Ví dụ&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Khi tách lớp layer spectrogram channel 2 của tệp đính kèm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image (5)&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJvTSAZ_zx.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wireshark</title>
+      <link>http://localhost:1313/tools/wireshark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/wireshark/</guid>
+      <description>&lt;h1 id=&#34;i-wireshark-the-basics&#34;&gt;I. Wireshark: The Basics&lt;/h1&gt;
+&lt;h2 id=&#34;misson-1--tổng-quan-về-công-cụ&#34;&gt;Misson 1 : Tổng quan về công cụ&lt;/h2&gt;
+&lt;h3 id=&#34;giới-thiệu&#34;&gt;Giới thiệu&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Wireshark là công cụ phân tích lưu lượng truy cập mạng&lt;/li&gt;
+&lt;li&gt;Mục đích
+&lt;blockquote&gt;
+&lt;p&gt;Phát hiện và khắc phục sự cố mạng
+Phát hiện bất thường về bảo mật
+Điều tra và tìm hiểu về các giao thức&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;giao-diện-và-dữ-liệu&#34;&gt;Giao diện và dữ liệu&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1R-WJGdMl.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Toolbar : Chứa nhiều menu và phím tắt&lt;/li&gt;
+&lt;li&gt;Display filter : Phần truy vấn và lọc&lt;/li&gt;
+&lt;li&gt;Recent files : Các tệp tin gần đây&lt;/li&gt;
+&lt;li&gt;Capture filter and available sniffing interfaces : Giao diện mạng là điểm kết nối giữa máy tính và mạng, kết nối phần mền&lt;/li&gt;
+&lt;li&gt;Status bar : Trạng thái công cụ, hồ sơ và thông tin gói số&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tải-file-pcap-files&#34;&gt;Tải file PCAP Files&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJHz7JzOMl.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zsteg</title>
+      <link>http://localhost:1313/tools/zsteg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/zsteg/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu-qua-về-zsteg&#34;&gt;I. Giới thiệu qua về Zsteg&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Zsteg là công cụ phát hiện dữ liệu ẩn của stegano trong PNG &amp;amp; BMP&lt;/li&gt;
+&lt;li&gt;Ngoài ra còn có thể phát hiện :
+&lt;blockquote&gt;
+&lt;p&gt;OpenStego
+Camouflage 1.2.1
+LSB with The Eratosthenes set
+LSB steganography trong PNG &amp;amp; BMP
+zlib-compressed data&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Tạm hiểu là người giấu và người giải mã tuân theo một quy luật nào đó để chỉnh sửa các bit trong bảng màu
+( Chưa hiểu rõ lắm, nếu được cần a giải thích chi tiết tại sao ạ )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-các-cài-đặt-zsteg&#34;&gt;II. Các cài đặt Zsteg&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Bước 1 : Cài đặt thư viện RubyGems  : &lt;code&gt;sudo apt install rubygems&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Bước 2 : Cài đặt zsteg : &lt;code&gt;gem install zsteg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;iii-các-câu-lệnh-cơ-bản&#34;&gt;III. Các câu lệnh cơ bản&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zsteg -a&lt;/code&gt; + &amp;lt;tên file &amp;gt; : Thử tất cả các phương pháp đã biết&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zsteg -E&lt;/code&gt; + &amp;lt;tên kênh &amp;gt; + &amp;lt;tên file &amp;gt; : Trích xuất kênh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image (6)&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SyqiLR-dfg.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

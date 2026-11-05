@@ -1,0 +1,11 @@
+---
+title: Packets Primer
+tags: ["PicoCTF_Medium"]
+---
+
+Tải bài tập tại [đây](https://learn.cylabacademy.org/library/286?page=3&category=4&difficulty=2&workspace=true)
+Mở file bằng pcap và đọc từng pack
+
+![image](https://hackmd.io/_uploads/S1-S0Q8qzl.png)
+
+Flag là : academy{p4ck37_5h4rk_1c872e64}

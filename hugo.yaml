@@ -1,0 +1,63 @@
+theme: ["PaperMod"]
+
+baseURL: https://wufort.com/
+locale: en-us
+title: WuFort
+
+# Khai báo để tính năng Search hoạt động được
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+ShowToc: true
+TocOpen: true
+ShowReadingTime: true
+
+mainSections:
+    - posts          # hoặc writeups
+    # - articles     # nếu có folder khác
+ShowAllPagesInArchive: true   # quan trọng: hiện hết mọi section
+
+params:
+  profileMode:
+      enabled: true
+      title: "WuFort" # optional default will be site title
+      subtitle: "Dự án lưu lại kiến thức về forensics"
+      imageUrl: "https://avatars.githubusercontent.com/u/89103573?v=4&size=64" # optional
+      imageWidth: 120 # custom size
+      imageHeight: 120 # custom size
+      buttons:
+        - name: Knowledge
+          url: "/knowledge/"
+        - name: Tools
+          url: "/tools/"
+        - name: PicoCTF_Easy
+          url: "/picoctf_easy/"
+        - name: "PicoCTF_Medium"
+          url: "/picoctf_medium/"
+        - name: "MiniCTF"
+          url: "/minictf/"
+        - name: "BKSec"
+          url: "/bksec/"
+        # thêm nút khác nếu muốn
+
+# Thêm phần socialIcons ngang hàng với profileMode
+  socialIcons:
+    - name: "facebook"
+      url: "https://www.facebook.com/profile.php?id=61593526254843"
+    - name: "github"
+      url: "https://github.com/LpTue"
+
+
+menu:
+  main:
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20

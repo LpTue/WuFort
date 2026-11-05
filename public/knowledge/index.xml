@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Knowledge on WuFort</title>
+    <link>http://localhost:1313/knowledge/</link>
+    <description>Recent content in Knowledge on WuFort</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Common WinDows Artifacts</title>
+      <link>http://localhost:1313/knowledge/common-windows-artifacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/knowledge/common-windows-artifacts/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Gồm tệp tin, thư mục, nhật ký, registry, lịch sử trình duyệt, tài khoản người dùng và các dữ liệu quan trọng khác&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-windows-registry&#34;&gt;II. Windows Registry&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Là cơ sở dữ liệu phân cấp lưu trữ cấu hình người dùng, ứng dụng và thiết bị phần cứng
+&lt;blockquote&gt;
+&lt;p&gt;Chứa thông tin mà Win liên tục tham chiếu trong quá trình hoạt động&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Win Reg gồm năm nhanh chính, nằm dưới gốc Computer gồm
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;HKEY_CURRENT_USER (HKCU)&lt;/code&gt; : Thông tin về người dùng đăng nhập, bao gồm màu sắc màn hình và control panel&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HKEY_USERS (HKU)&lt;/code&gt; : Hồ sơ người dùng đang hoạt động trên hệ thống, bao gồm hồ sơ và cài đặt&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HKEY_LOCAL_MACHINE (HKLM)&lt;/code&gt; : Thông tin về cấu hình hệ thống ( cho bất kỳ người dùng nào )&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HKEY_CLASSSES_ROOT (HKCR)&lt;/code&gt; : Thông tin về các loại tệp và các chương trình liên kết với chúng&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HKEY_CURRENT_CONFIG (HKCC)&lt;/code&gt; : Thông tin về cấu hình phần cứng hệ thống&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Sk56vsn_Mg.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/knowledge/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/knowledge/linux/</guid>
+      <description>&lt;h1 id=&#34;i--các-lệnh-cơ-bản&#34;&gt;I : Các lệnh cơ bản&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;whoami&lt;/code&gt; : Quyền hiện tại của người dùng trong session terminal đang dùng&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;echo&lt;/code&gt; : In nội dung ra&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls&lt;/code&gt; : Liệt kê các thư mục và tệp tin&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; : Trỏ tới thư mục&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pwd&lt;/code&gt; : Cho biết vị trí hiện tại&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find&lt;/code&gt; : Cho biết trong thư mục có những gì&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grep&lt;/code&gt; : Tìm kiếm nội dung trong file
+&lt;blockquote&gt;
+&lt;p&gt;Ví du : &lt;code&gt;cat test1 | grep hello&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>http://localhost:1313/knowledge/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/knowledge/network/</guid>
+      <description>&lt;h1 id=&#34;-giao-thức-tcp&#34;&gt;. Giao thức TCP&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại&lt;/li&gt;
+&lt;li&gt;Các tệp tin sẽ được đánh số thứ tự, lần lượt
+&lt;blockquote&gt;
+&lt;p&gt;Vì 2 lí do trên nên tuy tốc độ chậm nhưng có độ chính xác, tin cậy cao&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Phù hợp để gửi những tệp tin đòi hỏi sự chính xác như : Gmail, Ngân hàng v.v&lt;/li&gt;
+&lt;li&gt;TCP có cơ chế bắt tay (3-way handshake )
+&lt;blockquote&gt;
+&lt;p&gt;Bước 1 : &lt;strong&gt;Client gửi yêu cầu&lt;/strong&gt; tới Server : SYN ( SYN : The Synchronous Idle Character - Ký tự đồng bộ hóa )
+Bước 2 : &lt;strong&gt;Server gửi phản hồi&lt;/strong&gt; chấp nhận tới Client : SYN + ACK ( ACK : Acknowledgement - Chấp nhận )
+Bước 3 : &lt;strong&gt;Client gửi xác nhận&lt;/strong&gt; tới Server : ACK
+Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Step</title>
+      <link>http://localhost:1313/knowledge/step/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/knowledge/step/</guid>
+      <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Đây là writeup tổng hợp lại các phương pháp phân tích từng dạng bài&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ii-phân-tích-ảnh&#34;&gt;II. Phân tích ảnh&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;file&lt;/code&gt; : kiểm tra xem file đúng định dạng không&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;strings&lt;/code&gt; : kiểm tra đoạn cần tìm trong văn bản&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exiftool&lt;/code&gt; : kiểm tra metadata của ảnh&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;binwalk&lt;/code&gt; : kiểm tra xem có file ẩn được giấu không&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;foremost&lt;/code&gt; : trích xuất file bị giấu&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zsteg&lt;/code&gt; : kiểm tra các kênh màu của ảnh&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hex&lt;/code&gt; : sử dụng các công cụ như &lt;code&gt;Ghex&lt;/code&gt; để kiểm tra và chỉnh sửa mã hex&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;steghide&lt;/code&gt; : trích xuất file ẩn bằng &lt;code&gt;steghide&lt;/code&gt; nhưng phải có pass&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://picoctfsolutions.com/tools/stegall&#34;&gt;Stegall&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;speic&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;iii-phân-tích-âm-thanh-&#34;&gt;III. Phân tích âm thanh :&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sonic visualiser&lt;/code&gt; : sử dụng để tách từng lớp layer kiểm tra&lt;/li&gt;
+&lt;li&gt;Nếu âm thanh là mã morse thì công cụ tại &lt;a href=&#34;https://morsecode.world/international/decoder/audio-decoder-adaptive.html&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Từ âm thanh quét qua ảnh &lt;code&gt;SSTV&lt;/code&gt; : tải tại &lt;a href=&#34;https://bucknova.github.io/Open-SSTV/#install&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;iv-phân-tích-văn-bản-microsoft&#34;&gt;IV. Phân tích văn bản Microsoft&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;oletools&lt;/code&gt; : Đọc source code&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dcodedmp&lt;/code&gt; : Đọc P-Code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;v-phân-tích-lưu-lượng-mạng&#34;&gt;V. Phân tích lưu lượng mạng&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;wireshark&lt;/code&gt; : lọc và kiểm tra lưu lượng&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;vi-phân-tích-disk&#34;&gt;VI. Phân tích disk&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Sử dụng &lt;code&gt;autopsy&lt;/code&gt; và &lt;code&gt;ftk-image&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;vii-phân-tích-memory&#34;&gt;VII. Phân tích memory&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Sử dụng &lt;code&gt;Volality&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;viii-crack-pass&#34;&gt;VIII. Crack Pass&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hash-identifier&lt;/code&gt; : xác định kiểu mã băm&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hash-cat&lt;/code&gt; và &lt;code&gt;john&lt;/code&gt; : tấn công&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;các-web-hỗ-trợ-giải-mã&#34;&gt;Các web hỗ trợ giải mã&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CyberChef : truy cập tại &lt;a href=&#34;https://gchq.github.io/CyberChef/&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dcode : liên quan tới ROT, truy cập tại &lt;a href=&#34;https://www.dcode.fr/caesar-cipher&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tải-các-công-cụ&#34;&gt;Tải các công cụ&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/18QKoXCKoDywiHlsbiaCJzGIVpRiH8rkl/view?usp=sharing&#34;&gt;Eric-Zic_tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tool-thêm&#34;&gt;Tool thêm&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;stegsnow&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Structure image</title>
+      <link>http://localhost:1313/knowledge/structure-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/knowledge/structure-image/</guid>
+      <description>&lt;h1 id=&#34;i-tìm-hiểu-về-thành-phần-tạo-nên-một-ảnh&#34;&gt;I. Tìm hiểu về thành phần tạo nên một ảnh&lt;/h1&gt;
+&lt;h2 id=&#34;tìm-hiểu-về-kích-thước-của-một-ảnh&#34;&gt;Tìm hiểu về kích thước của một ảnh&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mỗi bức ảnh đều được tạo nên từ rất nhiều Pixel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r19zoYtuMl.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nếu số lượng Pixel càng lớn thì size ảnh càng to&lt;/li&gt;
+&lt;li&gt;Size ảnh to làm tăng độ phân giải, tăng độ chi tiết của ảnh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tìm-hiểu-về-bit-depth--true-color-&#34;&gt;Tìm hiểu về Bit Depth ( True color )&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Có thể hiểu đơn giải để tạo nên một pixel, thì cần bit depth&lt;/li&gt;
+&lt;li&gt;Bit depth quyết định số lượng màu sắc của một ảnh
+&lt;blockquote&gt;
+&lt;p&gt;1 bit = 2 màu
+2 bit = $2^2$ = 4 màu
+3 bit = $2^3$ = 8 màu
+4 bit = $2^4$ = 16 màu
+6 bit = $2^6$ = 64 màu
+8 bit = $2^8$ = 256 màu
+16 bit = $2^{16}$ = 65536 màu
+32 bit = $2^{32}$ = 4294967296 màu&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Win</title>
+      <link>http://localhost:1313/knowledge/win/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/knowledge/win/</guid>
+      <description>&lt;h1 id=&#34;i--win_1&#34;&gt;I . Win_1&lt;/h1&gt;
+&lt;h2 id=&#34;misson-1&#34;&gt;Misson 1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pro khác Home ở &lt;strong&gt;mã hóa bitlock&lt;/strong&gt; &lt;br&gt;
+Tham khảo tại &lt;a href=&#34;https://www.microsoft.com/en-us/windows/compare-windows-11-home-vs-pro-versions#tabs1-2https://&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;misson-21--để-tắt-hộp-tìm-kiếm&#34;&gt;Misson 2.1 : Để tắt hộp tìm kiếm&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click chuột phải vào thanh taskbar, chọn search, chọn hidden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;misson-22--để-ẩn-tắt-thanh-tác-vụ&#34;&gt;Misson 2.2 : Để ẩn/ tắt thanh tác vụ&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click chuột phải vào thanh taskbar, chọn Show Task View button&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;misson-23--ngoài-đồng-hồ-và-mạng-nào-còn-action-center&#34;&gt;Misson 2.3 : Ngoài đồng hồ và mạng nào, còn Action Center&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nó là cái nút như nút tin nhắn cuối cùng&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;misson-3--khái-niệm-ntfs-new-technology-file-system-&#34;&gt;Misson 3 : Khái niệm NTFS (New Technology File System )&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;NTFS được biết đến như một &lt;strong&gt;hệ thống tập tin nhật ký&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Khi xảy ra sự cố, NTFS có thể &lt;strong&gt;tự khắc phục&lt;/strong&gt; bằng thông tin lưu trong tệp nhật ký&lt;/li&gt;
+&lt;li&gt;Giải quyết được hạn chế&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hỗ trợ tệp lớn hơn 4GB
+Thiết lập quyền cụ thể cho thư mục và tệp
+Nén thư mục và tệp
+Mã hóa (Hệ thống tệp mã hóa hoặc EFS )&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Structure image | WuFort</title>
+<meta name="keywords" content="Knowledge">
+<meta name="description" content="I. Tìm hiểu về thành phần tạo nên một ảnh
+Tìm hiểu về kích thước của một ảnh
+
+Mỗi bức ảnh đều được tạo nên từ rất nhiều Pixel
+
+
+
+Nếu số lượng Pixel càng lớn thì size ảnh càng to
+Size ảnh to làm tăng độ phân giải, tăng độ chi tiết của ảnh
+
+Tìm hiểu về Bit Depth ( True color )
+
+Có thể hiểu đơn giải để tạo nên một pixel, thì cần bit depth
+Bit depth quyết định số lượng màu sắc của một ảnh
+
+1 bit = 2 màu
+2 bit = $2^2$ = 4 màu
+3 bit = $2^3$ = 8 màu
+4 bit = $2^4$ = 16 màu
+6 bit = $2^6$ = 64 màu
+8 bit = $2^8$ = 256 màu
+16 bit = $2^{16}$ = 65536 màu
+32 bit = $2^{32}$ = 4294967296 màu">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/knowledge/structure-image/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/knowledge/structure-image/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Structure image
+    </h1>
+    <div class="post-meta">
+
+
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="i-tìm-hiểu-về-thành-phần-tạo-nên-một-ảnh">I. Tìm hiểu về thành phần tạo nên một ảnh<a hidden class="anchor" aria-hidden="true" href="#i-tìm-hiểu-về-thành-phần-tạo-nên-một-ảnh">#</a></h1>
+<h2 id="tìm-hiểu-về-kích-thước-của-một-ảnh">Tìm hiểu về kích thước của một ảnh<a hidden class="anchor" aria-hidden="true" href="#tìm-hiểu-về-kích-thước-của-một-ảnh">#</a></h2>
+<ul>
+<li>Mỗi bức ảnh đều được tạo nên từ rất nhiều Pixel</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r19zoYtuMl.png"></p>
+<ul>
+<li>Nếu số lượng Pixel càng lớn thì size ảnh càng to</li>
+<li>Size ảnh to làm tăng độ phân giải, tăng độ chi tiết của ảnh</li>
+</ul>
+<h2 id="tìm-hiểu-về-bit-depth--true-color-">Tìm hiểu về Bit Depth ( True color )<a hidden class="anchor" aria-hidden="true" href="#tìm-hiểu-về-bit-depth--true-color-">#</a></h2>
+<ul>
+<li>Có thể hiểu đơn giải để tạo nên một pixel, thì cần bit depth</li>
+<li>Bit depth quyết định số lượng màu sắc của một ảnh
+<blockquote>
+<p>1 bit = 2 màu
+2 bit = $2^2$ = 4 màu
+3 bit = $2^3$ = 8 màu
+4 bit = $2^4$ = 16 màu
+6 bit = $2^6$ = 64 màu
+8 bit = $2^8$ = 256 màu
+16 bit = $2^{16}$ = 65536 màu
+32 bit = $2^{32}$ = 4294967296 màu</p>
+</blockquote>
+</li>
+<li>Bit depth càng cao thì ảnh cho ra có chất lượng màu càng nét</li>
+<li>True color là màu RGB cơ bản ( Red, Green, Blue )</li>
+<li>True color + Alpha ( thêm độ trong suốt ), Alpha có kênh từ ( 0 - 256 ) tương ứng với 256 kênh</li>
+<li>Với 24 bit True color + Alpha = $(25 \times \frac{24}{8}^3)$ màu</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BkiBRtYOGe.png"></p>
+<h1 id="ii-tìm-hiểu-về-cách-định-dạng-ảnh">II. Tìm hiểu về cách định dạng ảnh<a hidden class="anchor" aria-hidden="true" href="#ii-tìm-hiểu-về-cách-định-dạng-ảnh">#</a></h1>
+<h2 id="lý-do-có-các-định-dạng-ảnh">Lý do có các định dạng ảnh<a hidden class="anchor" aria-hidden="true" href="#lý-do-có-các-định-dạng-ảnh">#</a></h2>
+<ul>
+<li>Lấy ví dụ với ảnh 640x480 pixel và 24 bit màu
+<blockquote>
+<p>Có 640x480x24 = 7372800 bits = 921600 bytes = 900KB</p>
+</blockquote>
+</li>
+<li>Có thể thấy khi độ phân giải càng cao và số lượng bit màu càng lớn thì dung lượng ảnh càng lớn</li>
+<li>Vì vậy có các thuật toán nén ảnh khác nhau ( các định dạng ảnh )</li>
+</ul>
+<h2 id="thuật-toán-nén-không-mất-dữ-liệu">Thuật toán nén không mất dữ liệu<a hidden class="anchor" aria-hidden="true" href="#thuật-toán-nén-không-mất-dữ-liệu">#</a></h2>
+<ul>
+<li>Là thuật toán làm giảm dung lượng nhưng không làm giảm chất lượng</li>
+<li>Đại diện cho thuật toán này gồm có ảnh PNG
+<blockquote>
+<p>Tạm hiểu khi có một dải màu giống nhau thì PNG tìm cách ghi ngắn hơn thay vì ghi tám màu cùng một lượt
+Điều đó khiến dữ liệu không bị mấ
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1IwbcKOfg.png"></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="thuật-toán-nén-ảnh-mất-dữ-liệu">Thuật toán nén ảnh mất dữ liệu<a hidden class="anchor" aria-hidden="true" href="#thuật-toán-nén-ảnh-mất-dữ-liệu">#</a></h2>
+<ul>
+<li>Là thuật toán lưu ảnh trông có vẻ hoàn hảo nhưng không vì đã bị cắt xén dữ liệu</li>
+<li>Đại diện cho thuật toán này gồm các ảnh JPG ( hay JPEG )
+<blockquote>
+<p>Mắt người thường nhạy các độ sáng + đường nét, và ít hơn với chi tiết màu
+Vì vậy chúng chia ảnh thành các khối nhỏ, những biến đổi khó thấy bị làm tròn hoặc bỏ đi
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1nxXqtdfl.png"></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="iii-đi-sâu-vào-cấu-trúc-file-png">III. Đi sâu vào cấu trúc file png<a hidden class="anchor" aria-hidden="true" href="#iii-đi-sâu-vào-cấu-trúc-file-png">#</a></h1>
+<ul>
+<li>Chi tiết tại <a href="https://en.wikipedia.org/wiki/PNG#">đây</a></li>
+<li>Ngắn gọn thì file png gồm có 4 phần quan trọng gồm <code>IHDR</code>,<code>PLTE</code>,<code>IDAT</code>,<code>IEND</code></li>
+</ul>
+<blockquote>
+<p><code>IHDR</code> có thể phát hiện bằng pngcheck
+<code>PLTE</code> bắt buộc có khi
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1Rz9H23fl.png">
+<code>IDAT</code> chứa hình ảnh, có thể chia thành nhiều phần IDAT
+<code>IEND</code> đánh dấu kết thúc ảnh</p>
+</blockquote>
+<ul>
+<li>Và các phần phụ trợ</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/knowledge/">Knowledge</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

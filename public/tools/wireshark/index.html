@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Wireshark | WuFort</title>
+<meta name="keywords" content="Tools">
+<meta name="description" content="I. Wireshark: The Basics
+Misson 1 : Tổng quan về công cụ
+Giới thiệu
+
+Wireshark là công cụ phân tích lưu lượng truy cập mạng
+Mục đích
+
+Phát hiện và khắc phục sự cố mạng
+Phát hiện bất thường về bảo mật
+Điều tra và tìm hiểu về các giao thức
+
+
+
+Giao diện và dữ liệu
+
+
+Toolbar : Chứa nhiều menu và phím tắt
+Display filter : Phần truy vấn và lọc
+Recent files : Các tệp tin gần đây
+Capture filter and available sniffing interfaces : Giao diện mạng là điểm kết nối giữa máy tính và mạng, kết nối phần mền
+Status bar : Trạng thái công cụ, hồ sơ và thông tin gói số
+
+Tải file PCAP Files
+">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tools/wireshark/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tools/wireshark/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Wireshark
+    </h1>
+    <div class="post-meta">
+
+
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="i-wireshark-the-basics">I. Wireshark: The Basics<a hidden class="anchor" aria-hidden="true" href="#i-wireshark-the-basics">#</a></h1>
+<h2 id="misson-1--tổng-quan-về-công-cụ">Misson 1 : Tổng quan về công cụ<a hidden class="anchor" aria-hidden="true" href="#misson-1--tổng-quan-về-công-cụ">#</a></h2>
+<h3 id="giới-thiệu">Giới thiệu<a hidden class="anchor" aria-hidden="true" href="#giới-thiệu">#</a></h3>
+<ul>
+<li>Wireshark là công cụ phân tích lưu lượng truy cập mạng</li>
+<li>Mục đích
+<blockquote>
+<p>Phát hiện và khắc phục sự cố mạng
+Phát hiện bất thường về bảo mật
+Điều tra và tìm hiểu về các giao thức</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="giao-diện-và-dữ-liệu">Giao diện và dữ liệu<a hidden class="anchor" aria-hidden="true" href="#giao-diện-và-dữ-liệu">#</a></h3>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/S1R-WJGdMl.png"></p>
+<ul>
+<li>Toolbar : Chứa nhiều menu và phím tắt</li>
+<li>Display filter : Phần truy vấn và lọc</li>
+<li>Recent files : Các tệp tin gần đây</li>
+<li>Capture filter and available sniffing interfaces : Giao diện mạng là điểm kết nối giữa máy tính và mạng, kết nối phần mền</li>
+<li>Status bar : Trạng thái công cụ, hồ sơ và thông tin gói số</li>
+</ul>
+<h3 id="tải-file-pcap-files">Tải file PCAP Files<a hidden class="anchor" aria-hidden="true" href="#tải-file-pcap-files">#</a></h3>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJHz7JzOMl.png"></p>
+<ul>
+<li>Chi tiết gói được hiển thị trong 3 ngăn khác nhau
+<blockquote>
+<p>Packet List Pane : Tóm tắt từng gói địa chỉ
+Packet Details Panel : Phân tích chi tiết gói đã chọn
+Packet Bytes Pane : Hex và ASCII của gói được chọn</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="gói-màu--colouring-packets-">Gói màu ( Colouring Packets )<a hidden class="anchor" aria-hidden="true" href="#gói-màu--colouring-packets-">#</a></h3>
+<ul>
+<li>Đánh màu các giao thức đồng thời giúp phát hiện các điểm bất thường</li>
+<li>Có 2 phương pháp tô màu gói tin
+<blockquote>
+<p>Quy tắc tạm thời : Trong phiên do mình đặt
+Quy tắc vĩnh viễn : Lưu dưới tệp hồ sơ</p>
+</blockquote>
+</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BJ5DdkfuGl.png"></p>
+<h3 id="traffic-sniffing">Traffic Sniffing<a hidden class="anchor" aria-hidden="true" href="#traffic-sniffing">#</a></h3>
+<ul>
+<li>Dùng nút &ldquo;shark&rdquo; xanh dương để bắt đầu quét</li>
+<li>Nút đỏ để dừng quét</li>
+<li>Nút xanh lá để khởi động lại quá trình quét</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BJQ1YkG_Ge.png"></p>
+<h3 id="hợp-nhất-các-tệp-pcap">Hợp nhất các tệp PCAP<a hidden class="anchor" aria-hidden="true" href="#hợp-nhất-các-tệp-pcap">#</a></h3>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BJnptkfuGe.png"></p>
+<h3 id="xem-chi-tiết-tệp">Xem chi tiết tệp<a hidden class="anchor" aria-hidden="true" href="#xem-chi-tiết-tệp">#</a></h3>
+<ul>
+<li>Góc dưới bên trái
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJMcckG_fe.png"></li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkKT51Muze.png"></p>
+<h2 id="misson-2--phân-tích-gói-tin">Misson 2 : Phân tích gói tin<a hidden class="anchor" aria-hidden="true" href="#misson-2--phân-tích-gói-tin">#</a></h2>
+<h3 id="chi-tiết-gói-dữ-liệu">Chi tiết gói dữ liệu<a hidden class="anchor" aria-hidden="true" href="#chi-tiết-gói-dữ-liệu">#</a></h3>
+<p><img alt="img" loading="lazy" src="https://hackmd.io/_uploads/HJ5GhJzOzl.svg"></p>
+<ul>
+<li>Mỗi lần trỏ vào 1 chi tiết, nó sẽ làm nổi bật phần tương ứng trong khung byte</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1RYhkz_fg.png"></p>
+<ul>
+<li>Hãy cùng xem chi tiết</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Bympn1G_Gl.png"></p>
+<ul>
+<li>Tương ứng trong lớp OSI
+<blockquote>
+<p>Frame/packet : Layer 1
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJGbWxfdGl.png">
+Source [MAC] : Layer 2
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/S1o-ZeG_Gg.png">
+Source [IP] : Layer 3
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/S1-7-lfdfg.png">
+Giao thức : Layer 4
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BJiV-gf_zg.png">
+Lỗi giao thức
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/S1_HbeGdfx.png">
+Giao thức ứng dụng : Layer 5
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HkKLblfdze.png">
+Dữ liệu
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkxOWezdMe.png"></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="misson-3--điều-hướng-gói-tin">Misson 3 : Điều hướng gói tin<a hidden class="anchor" aria-hidden="true" href="#misson-3--điều-hướng-gói-tin">#</a></h2>
+<h3 id="số-gói-tin">Số gói tin<a hidden class="anchor" aria-hidden="true" href="#số-gói-tin">#</a></h3>
+<ul>
+<li>Wireshark tính toán số lượng gói tin, giúp quá trình phân tích cho các bản ghi lớn và dễ dàng quay lại điểm cụ thể của sự kiện</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HkX8fxGdfx.png"></p>
+<h3 id="đi-đến-gói-tin">Đi đến gói tin<a hidden class="anchor" aria-hidden="true" href="#đi-đến-gói-tin">#</a></h3>
+<ul>
+<li>Giúp dễ dàng tìm kiếm/điều tra các gói cụ thể</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HkUcMgz_Ml.png"></p>
+<h3 id="tìm-gói-dữ-liệu">Tìm gói dữ liệu<a hidden class="anchor" aria-hidden="true" href="#tìm-gói-dữ-liệu">#</a></h3>
+<ul>
+<li>Tìm kiếm bên trong các gói tin cho một sự kiện cụ thể</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJCfmxGuze.png"></p>
+<h3 id="gói-đánh-dấu">Gói đánh dấu<a hidden class="anchor" aria-hidden="true" href="#gói-đánh-dấu">#</a></h3>
+<ul>
+<li>Giúp các nhà phân tích chỉ ra một sự kiện quan tâm hoặc xuất các gói cụ thể từ quá trình thu thập</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HyVZ4xMdfg.png"></p>
+<h3 id="bình-luận-gói-tin">Bình luận gói tin<a hidden class="anchor" aria-hidden="true" href="#bình-luận-gói-tin">#</a></h3>
+<ul>
+<li>Thêm chú thích cho các gói cụ thể để hỗ trợ điều tra thêm hoặc nhắc nhở và chỉ ra các điểm quan trọng/đáng ngờ</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJpFVlf_Mx.png"></p>
+<h3 id="xuất-gói-dữ-liệu">Xuất gói dữ liệu<a hidden class="anchor" aria-hidden="true" href="#xuất-gói-dữ-liệu">#</a></h3>
+<ul>
+<li>Chức năng này giúp các nhà phân tích chia sẻ những gói đáng ngờ duy nhất (phạm vi đã được xác định)</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1Q-BgzuMe.png"></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SkAfBlGOfx.png"></p>
+<h3 id="xuất-đối-tượng--tệp-">Xuất đối tượng ( Tệp )<a hidden class="anchor" aria-hidden="true" href="#xuất-đối-tượng--tệp-">#</a></h3>
+<ul>
+<li>Wireshark có thể trích xuất các tệp được truyền qua đường dây</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1qy8eGdze.png"></p>
+<h3 id="định-dạng-hiển-thị-thời-gian">Định dạng hiển thị thời gian<a hidden class="anchor" aria-hidden="true" href="#định-dạng-hiển-thị-thời-gian">#</a></h3>
+<ul>
+<li>Wireshark liệt kê các gói tin khi chúng được ghi nhận, nên việc điều tra luồng mặc định không phải lúc nào cũng là lựa chọn tốt nhất</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HyNrUlfdMl.png"></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJIUIgzOfe.png"></p>
+<h3 id="expert-info--thông-tin-chuyên-gia-">Expert Info ( Thông tin chuyên gia )<a hidden class="anchor" aria-hidden="true" href="#expert-info--thông-tin-chuyên-gia-">#</a></h3>
+<ul>
+<li>Cung cấp một nhóm với 3 loại mức độ nghiêm trọng khác nhau</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Mức độ nghiêm trọng</th>
+					<th>Màu sắc</th>
+					<th>Thông tin</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Chat</td>
+					<td>Xanh dương</td>
+					<td>Quy trình làm việc thông thường</td>
+			</tr>
+			<tr>
+					<td>Note</td>
+					<td>Xanh lục</td>
+					<td>Những sự kiện đáng chú ý</td>
+			</tr>
+			<tr>
+					<td>Warn</td>
+					<td>Vàng</td>
+					<td>Những cảnh báo</td>
+			</tr>
+			<tr>
+					<td>Error</td>
+					<td>Đỏ</td>
+					<td>Các vấn đề như gói dữ liệu bị lỗi</td>
+			</tr>
+	</tbody>
+</table>
+<ul>
+<li>Các thông tin thường gặp được liệt kê</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Nhóm</th>
+					<th>Thông tin</th>
+					<th>Nhóm</th>
+					<th>Thông tin</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Checksum</td>
+					<td>Lỗi kiểm tra tổng</td>
+					<td>Deprecated</td>
+					<td>Việc sử dụng giao thức bị loại bỏ</td>
+			</tr>
+			<tr>
+					<td>Comment</td>
+					<td>Phát hiện bình luận gói tin</td>
+					<td>Malformed</td>
+					<td>Phát hiện gói dữ liệu bị lỗi</td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/ryUv5lfuzl.png"></p>
+<h2 id="misson-3--lọc-gói-tin">Misson 3 : Lọc gói tin<a hidden class="anchor" aria-hidden="true" href="#misson-3--lọc-gói-tin">#</a></h2>
+<h3 id="giới-thiệu-bộ-lọc">Giới thiệu bộ lọc<a hidden class="anchor" aria-hidden="true" href="#giới-thiệu-bộ-lọc">#</a></h3>
+<ul>
+<li>Giúp các nhà phân tích thu hẹp lưu lượng truy cập và tập trung vào sự kiện quan tâm</li>
+<li>Hai loại phương pháp lọc: bộ lọc thu thập và bộ lọc hiển thị</li>
+</ul>
+<h3 id="apply-as-filter--áp-dụng-bộ-lọc-">Apply as Filter ( Áp dụng bộ lọc )<a hidden class="anchor" aria-hidden="true" href="#apply-as-filter--áp-dụng-bộ-lọc-">#</a></h3>
+<ul>
+<li>Đây là cách cơ bản nhất để lọc lưu lượng</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SkKnngGdGx.png"></p>
+<h3 id="conversation-filter--bộ-lọc-hội-thoại-">Conversation Filter ( Bộ lọc hội thoại )<a hidden class="anchor" aria-hidden="true" href="#conversation-filter--bộ-lọc-hội-thoại-">#</a></h3>
+<ul>
+<li>Điều tra một số gói cụ thể và tất cả các gói liên kết bằng cách tập trung vào địa chỉ IP và số cổng</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJtcTgzOzg.png"></p>
+<h3 id="colourise-conversation--tô-màu-cuộc-hội-thoại-">Colourise Conversation ( Tô màu cuộc hội thoại )<a hidden class="anchor" aria-hidden="true" href="#colourise-conversation--tô-màu-cuộc-hội-thoại-">#</a></h3>
+<ul>
+<li>Tương tự <strong>Conversation Filter</strong> nhưng nổi bật các gói tin liên kết mà không áp dụng bộ lọc hiển thị và giảm số lượng gói đã xem</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJ_XCgf_fg.png"></p>
+<ul>
+<li>Khi muốn phục hồi lại màu gốc</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/S1qrRefdMl.png"></p>
+<h3 id="prepare-as-filter--chuẩn-bị-làm-bộ-lọc-">Prepare as Filter ( Chuẩn bị làm bộ lọc )<a hidden class="anchor" aria-hidden="true" href="#prepare-as-filter--chuẩn-bị-làm-bộ-lọc-">#</a></h3>
+<ul>
+<li>Tương tự như <strong>Apply as Filter</strong> nhưng ko làm thay đổi thứ tự như <strong>Apply as Filter</strong> mà chỉ trỏ tới</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Bks31ZM_fe.png"></p>
+<h3 id="apply-as-column--áp-dụng-dưới-dạng-cột-">Apply as Column ( Áp dụng dưới dạng cột )<a hidden class="anchor" aria-hidden="true" href="#apply-as-column--áp-dụng-dưới-dạng-cột-">#</a></h3>
+<ul>
+<li>Giúp các nhà phân tích kiểm tra sự xuất hiện của một giá trị/trường cụ thể trên các gói dữ liệu</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1nSeWGOfl.png"></p>
+<ul>
+<li>Cột mới đã được thêm</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1R_l-fuzx.png"></p>
+<h3 id="follow-stream--theo-dõi-luồng-">Follow Stream ( Theo dõi luồng )<a hidden class="anchor" aria-hidden="true" href="#follow-stream--theo-dõi-luồng-">#</a></h3>
+<ul>
+<li>Giúp các nhà phân tích tái tạo dữ liệu cấp ứng dụng và hiểu sự kiện quan tâm</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJI_--MOfx.png"></p>
+<ul>
+<li>Khi này bộ lọc tương ứng sẽ được áp dụng vậy nên cần gỡ chúng bằng nút &ldquo;X&rdquo; trên thanh lọc</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HktBfbM_zx.png"></p>
+<h3 id="simple-display-filter-queries--truy-vấn-bộ-lọc-hiển-thị-đơn-giản-">Simple Display Filter Queries ( Truy vấn bộ lọc hiển thị đơn giản )<a hidden class="anchor" aria-hidden="true" href="#simple-display-filter-queries--truy-vấn-bộ-lọc-hiển-thị-đơn-giản-">#</a></h3>
+<ul>
+<li>Cách dễ nhất để lọc nhanh số lượng gói dữ liệu khổng lồ là áp dụng bộ lọc hiển thị qua thanh lọc</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SytjQWfuGl.png"></p>
+<ul>
+<li>Lọc theo tên giao thức hoặc cổng ( Protocol hoặc port )</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJI-E-Mufl.png"></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1omEZG_Ge.png"></p>
+<ul>
+<li>Lọc theo địa chỉ IP</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BkDUNWzuGl.png"></p>
+<h1 id="ii-wireshark-packet-operations">II. Wireshark: Packet Operations<a hidden class="anchor" aria-hidden="true" href="#ii-wireshark-packet-operations">#</a></h1>
+<h2 id="misson-1--thống-kê--tóm-tắt--summary-">Misson 1 : Thống kê | Tóm tắt ( Summary )<a hidden class="anchor" aria-hidden="true" href="#misson-1--thống-kê--tóm-tắt--summary-">#</a></h2>
+<h3 id="giới-thiệu-1">Giới thiệu<a hidden class="anchor" aria-hidden="true" href="#giới-thiệu-1">#</a></h3>
+<ul>
+<li>Giúp người dùng nhìn tổng thể về thống kê chi tiết đặc thù của giao thức</li>
+</ul>
+<h3 id="resolved-addresses">Resolved Addresses<a hidden class="anchor" aria-hidden="true" href="#resolved-addresses">#</a></h3>
+<ul>
+<li>
+<p>Giúp các nhà phân tích xác định địa chỉ IP và tên DNS có trong tệp ghi</p>
+</li>
+<li>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SyTrLlmOfe.png"></p>
+</li>
+</ul>
+<h3 id="protocol-hierarchy">Protocol Hierarchy<a hidden class="anchor" aria-hidden="true" href="#protocol-hierarchy">#</a></h3>
+<ul>
+<li>Giúp các nhà phân tích xem giao thức dưới dạng cây dựa trên bộ đếm gói và tỷ lệ phần trăm</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1vAIx7uMx.png"></p>
+<h3 id="conversations">Conversations<a hidden class="anchor" aria-hidden="true" href="#conversations">#</a></h3>
+<ul>
+<li>Cung cấp danh sách các cuộc trò chuyện dưới năm định dạng cơ sở</li>
+<li><strong>Conservation</strong> nó là hiển thị flow giao tiếp 2 chiều A &lt;-&gt; B</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BJ0RqgmOzg.png"></p>
+<h3 id="endpoints">Endpoints<a hidden class="anchor" aria-hidden="true" href="#endpoints">#</a></h3>
+<ul>
+<li>Tương tự <strong>Conversations</strong> nhưng tùy chọn này cung cấp thông tin duy nhất cho một trường thông tin duy nhất</li>
+<li><strong>Endpoints</strong> chỉ là 1 chiều thôi A-&gt;B hoặc B-&gt;A</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1_kslXdfx.png"></p>
+<ul>
+<li>Wireshark cũng cung cấp các tùy chọn phân giải IP và tên cổng</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Bkhwig7_Ge.png"></p>
+<ul>
+<li>Chế độ xem <strong>Endpoimts</strong> với phân giải tên miền</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJIxhgXuzl.png"></p>
+<ul>
+<li>Wireshark còn cung cấp bản đồ định vị địa lý IP giúp các nhà phân tích xác định địa chỉ nguồn và đích của bản đồ</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SkLeJbXufl.png"></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1qolWQufe.png"></p>
+<ul>
+<li>Endpoint và góc nhìn GeoIP</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJPTgWQuGg.png"></p>
+<h2 id="mission-2--thống-kê--chi-tiết-giao-thức--protocol-details-">Mission 2 : Thống kê | Chi tiết giao thức ( Protocol Details )<a hidden class="anchor" aria-hidden="true" href="#mission-2--thống-kê--chi-tiết-giao-thức--protocol-details-">#</a></h2>
+<h3 id="ipv4-và-ipv6">IPv4 và IPv6<a hidden class="anchor" aria-hidden="true" href="#ipv4-và-ipv6">#</a></h3>
+<ul>
+<li>Tùy chọn đều cung cấp thông tin chứa cả hai phiên bản địa chỉ IP</li>
+<li>Menu thống kê có hai tùy chọn để thu hẹp thống kê về các gói tin chứa phiên bản IP cụ thể</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJyvz-m_Gg.png"></p>
+<h3 id="dns">DNS<a hidden class="anchor" aria-hidden="true" href="#dns">#</a></h3>
+<ul>
+<li>Phân tích tất cả các gói DNS từ tệp thu thập và giúp các nhà phân tích xem kết quả dưới dạng cây dựa trên bộ đếm gói và tỷ lệ phần trăm của giao thức DNS</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1BJUZQOGg.png"></p>
+<h3 id="http">HTTP<a hidden class="anchor" aria-hidden="true" href="#http">#</a></h3>
+<ul>
+<li>Phân tích tất cả các gói HTTP từ tệp thu thập và giúp các nhà phân tích xem kết quả dưới dạng cây dựa trên bộ đếm gói và tỷ lệ phần trăm của giao thức HTTP</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/ByycLWmOMx.png"></p>
+<h2 id="misson-3--lọc-gói-tin--nguyên-tắc">Misson 3 : Lọc gói tin | Nguyên tắc<a hidden class="anchor" aria-hidden="true" href="#misson-3--lọc-gói-tin--nguyên-tắc">#</a></h2>
+<h3 id="giới-thiệu-2">Giới thiệu<a hidden class="anchor" aria-hidden="true" href="#giới-thiệu-2">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th>Capture Filters</th>
+					<th>Display Filters</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Tạm hiểu lọc bằng lệnh</td>
+					<td>Tạm hiểu lọc bằng các tùy chọn</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="cú-pháp-lọc-capture">Cú pháp lọc Capture<a hidden class="anchor" aria-hidden="true" href="#cú-pháp-lọc-capture">#</a></h3>
+<ul>
+<li>Bộ lọc này sử dụng các giá trị hex offset byte và mặt nạ với toán tử boolean
+<blockquote>
+<p>Phạm vi : host, net, port and portrange
+Hướng : src, dst, src hoặc dst, src và dst
+Giao thức : ether, wlan, ip, ip6, ARP. rarp, tcp và udp
+Bộ lọc mẫu để thu thập lưu lượng cổng 80 : <code>tcp port 80</code></p>
+</blockquote>
+</li>
+<li>Tài liệu tham khảo nhanh có sẵn</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Hk2A3bXOze.png"></p>
+<h3 id="cú-pháp-lọc-display">Cú pháp lọc Display<a hidden class="anchor" aria-hidden="true" href="#cú-pháp-lọc-display">#</a></h3>
+<ul>
+<li><strong>Display Filter Expression</strong> lưu trữ tất cả các cấu trúc giao thức được hỗ trợ để giúp các nhà phân tích tạo bộ lọc hiển thị</li>
+<li>Tài liệu tham khảo nhanh có sẵn</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1MgTWQufl.png"></p>
+<h3 id="các-bài-toán-so-sánh">Các bài toán so sánh<a hidden class="anchor" aria-hidden="true" href="#các-bài-toán-so-sánh">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th>Eng</th>
+					<th>Cú phát</th>
+					<th>Nghĩa</th>
+					<th>Ví dụ</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>eq</td>
+					<td>==</td>
+					<td>Bằng</td>
+					<td><code>ip.src == 10.10.10.100</code></td>
+			</tr>
+			<tr>
+					<td>ne</td>
+					<td>!=</td>
+					<td>Khác</td>
+					<td><code>ip.src != 10.10.10.100</code></td>
+			</tr>
+			<tr>
+					<td>gt</td>
+					<td>&gt;</td>
+					<td>Lớn hơn</td>
+					<td><code>ip.ttl &gt; 250</code></td>
+			</tr>
+			<tr>
+					<td>lt</td>
+					<td>&lt;</td>
+					<td>Bé hơn</td>
+					<td><code>ip.ttl &lt; 10</code></td>
+			</tr>
+			<tr>
+					<td>ge</td>
+					<td>&gt;=</td>
+					<td>Lớn hơn hoặc bằng</td>
+					<td><code>ip.ttl &gt;= 0xFA</code></td>
+			</tr>
+			<tr>
+					<td>le</td>
+					<td>&lt;=</td>
+					<td>Bé hơn hoặc bằng</td>
+					<td><code>ip.ttl &lt;= 0xA</code></td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="các-biểu-thức-logic">Các biểu thức logic<a hidden class="anchor" aria-hidden="true" href="#các-biểu-thức-logic">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th>Eng</th>
+					<th>Cú pháp</th>
+					<th>Nghĩa</th>
+					<th></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>and</td>
+					<td>&amp;&amp;</td>
+					<td>và</td>
+					<td><code>(ip.src == 10.10.10.100) and (ip.src == 10.10.10.111)</code></td>
+			</tr>
+			<tr>
+					<td>or</td>
+					<td>||</td>
+					<td>hoặc</td>
+					<td><code>(ip.src == 10.10.10.100) or (ip.src == 10.10.10.111)</code></td>
+			</tr>
+			<tr>
+					<td>not</td>
+					<td>!</td>
+					<td>không</td>
+					<td><code>!(ip.src == 10.10.10.222)</code></td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="thanh-công-cụ-lọc-gói">Thanh công cụ lọc gói<a hidden class="anchor" aria-hidden="true" href="#thanh-công-cụ-lọc-gói">#</a></h3>
+<ul>
+<li>Đây là một thanh công cụ thông minh giúp bạn dễ dàng tạo bộ lọc hiển thị hợp lệ
+<blockquote>
+<p>Bộ lọc được định nghĩa bằng chữ thường
+Bộ lọc có tính năng tự động hoàn thành
+Bộ lọc được biểu diễn bằng 3 màu</p>
+</blockquote>
+</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r11PsMQdfg.png"></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SkXOozXOMe.png"></p>
+<ul>
+<li>Các tính năng của thanh lọc</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SyJ9jGmufx.png"></p>
+<h2 id="misson-4--lọc-gói-tin--lọc-giao-thức">Misson 4 : Lọc gói tin | Lọc giao thức<a hidden class="anchor" aria-hidden="true" href="#misson-4--lọc-gói-tin--lọc-giao-thức">#</a></h2>
+<h3 id="lọc-giao-thức">Lọc giao thức<a hidden class="anchor" aria-hidden="true" href="#lọc-giao-thức">#</a></h3>
+<ul>
+<li>Tác vụ này hiển thị việc tạo và sử dụng bộ lọc dựa trên các trường giao thức khác nhau</li>
+</ul>
+<h3 id="lọc-ip">Lọc IP<a hidden class="anchor" aria-hidden="true" href="#lọc-ip">#</a></h3>
+<ul>
+<li>Giúp các nhà phân tích lọc lưu lượng theo thông tin IP từ các gói tin ( lớp mạng của mô hình OSI )</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Bộ lọc</th>
+					<th>Mô tả</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>ip</code></td>
+					<td>Hiển thị tất cả gói IP</td>
+			</tr>
+			<tr>
+					<td><code>ip.addr == 10.10.10.111</code></td>
+					<td>Hiển thị tất cả các gói chứa địa chỉ IP 10.10.10.111</td>
+			</tr>
+			<tr>
+					<td><code>ip.addr == 10.10.10.0/24</code></td>
+					<td>Hiển thị tất cả các gói chứa địa chỉ IP từ mạng con 10.10.10.0/24</td>
+			</tr>
+			<tr>
+					<td><code>ip.src == 10.10.10.111</code></td>
+					<td>Hiển thị tất cả các gói tin xuất phát từ 10.10.10.111</td>
+			</tr>
+			<tr>
+					<td><code>ip.dst == 10.10.10.111</code></td>
+					<td>Hiển thị tất cả các gói tin đã gửi đến 10.10.10.111</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="lọc-tcp-và-udp">Lọc TCP và UDP<a hidden class="anchor" aria-hidden="true" href="#lọc-tcp-và-udp">#</a></h3>
+<ul>
+<li>Giúp các nhà phân tích lọc lưu lượng theo thông tin giao thức từ các gói tin ( lớp Transport của mô hình OSI )</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Bộ lọc</th>
+					<th>Mô tả</th>
+					<th>Bộ lọc</th>
+					<th>Mô tả</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>tcp.port == 80</code></td>
+					<td>Hiển thị tất cả TCP các gói tin có cổng 80</td>
+					<td><code>udp.port == 53</code></td>
+					<td>Hiển thị tất cả UDP gói tin có cổng 53</td>
+			</tr>
+			<tr>
+					<td><code>tcp.srcport == 1234</code></td>
+					<td>Hiển thị tất cả các gói TCP có nguồn gốc từ cổng 1234</td>
+					<td><code>udp.srcport == 1234</code></td>
+					<td>Hiển thị tất cả các gói UDP xuất phát từ cổng 1234</td>
+			</tr>
+			<tr>
+					<td><code>tcp.dstport == 80</code></td>
+					<td>Hiển thị tất cả các gói TCP gửi đến cổng 80</td>
+					<td><code>udp.dstport == 5353</code></td>
+					<td>Hiển thị tất cả các gói UDP gửi đến cổng 5353</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="lọc-http-và-dns">Lọc HTTP và DNS<a hidden class="anchor" aria-hidden="true" href="#lọc-http-và-dns">#</a></h3>
+<ul>
+<li>Giúp các nhà phân tích lọc lưu lượng theo thông tin cấp giao thức ứng dụng từ các gói tin ( lớp ứng dụng của mô hình OSI )</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Bộ lọc</th>
+					<th>Miêu tả</th>
+					<th>Bộ lọc</th>
+					<th>Miêu tả</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>http</code></td>
+					<td>Hiển thị tất cả HTTP các gói</td>
+					<td><code>dns</code></td>
+					<td>Hiển thị tất cả DNS các gói</td>
+			</tr>
+			<tr>
+					<td><code>http.response.code == 200</code></td>
+					<td>Hiển thị tất cả các gói tin có mã phản hồi HTTP &ldquo;200&rdquo;</td>
+					<td><code>dns.flags.response == 0</code></td>
+					<td>Hiển thị tất cả yêu cầu DNS</td>
+			</tr>
+			<tr>
+					<td><code>http.request.method == &quot;GET&quot;</code></td>
+					<td>Hiển thị tất cả các yêu cầu HTTP GET</td>
+					<td><code>dns.flags.response == 1</code></td>
+					<td>Hiển thị tất cả phản hồi DNS</td>
+			</tr>
+			<tr>
+					<td><code>http.request.method == &quot;POST&quot;</code></td>
+					<td>Hiển thị tất cả các yêu cầu HTTP POST</td>
+					<td><code>dns.qry.type == 1</code></td>
+					<td>Hiển thị tất cả bản ghi DNS &ldquo;A&rdquo;</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="lọc-hiển-thị--display-filter-expressions-">Lọc hiển thị ( Display Filter Expressions )<a hidden class="anchor" aria-hidden="true" href="#lọc-hiển-thị--display-filter-expressions-">#</a></h3>
+<ul>
+<li>Menu <strong>Display Filter Expressions</strong> cung cấp hướng dẫn xây dựng bộ lọc hiển thị dễ sử dụng</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Byp8UmQOzx.png"></p>
+<h2 id="misson-5--lọc-nâng-cao">Misson 5 : Lọc nâng cao<a hidden class="anchor" aria-hidden="true" href="#misson-5--lọc-nâng-cao">#</a></h2>
+<h3 id="giới-thiệu-3">Giới thiệu<a hidden class="anchor" aria-hidden="true" href="#giới-thiệu-3">#</a></h3>
+<ul>
+<li>Giúp nhà phân tích tiến hành phân tích sâu về một sự kiện quan tâm</li>
+</ul>
+<h3 id="lọc--contains">Lọc : &ldquo;contains&rdquo;<a hidden class="anchor" aria-hidden="true" href="#lọc--contains">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left"></th>
+					<th style="text-align: left"></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>Bộ lọc</strong></td>
+					<td style="text-align: left">contains</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Loại</strong></td>
+					<td style="text-align: left">So sánh</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Mô tả</strong></td>
+					<td style="text-align: left">Tìm kiếm một giá trị bên trong các gói</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Ví dụ</strong></td>
+					<td style="text-align: left">Tìm tất cả &ldquo;Apache&rdquo; máy chủ</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Quy trình</strong></td>
+					<td style="text-align: left">Liệt kê tất cả HTTP các gói tin mà trường &ldquo;server&rdquo; của gói tin chứa từ khóa &ldquo;Apache&rdquo;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Lệnh</strong></td>
+					<td style="text-align: left"><code>http.server contains &quot;Apache&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1UVu7Qufe.png"></p>
+<h3 id="lọc--matches">Lọc : &ldquo;matches&rdquo;<a hidden class="anchor" aria-hidden="true" href="#lọc--matches">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left"></th>
+					<th style="text-align: left"></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>Bộ lọc</strong></td>
+					<td style="text-align: left">matches</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Loại</strong></td>
+					<td style="text-align: left">So sánh</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Mô tả</strong></td>
+					<td style="text-align: left">Tìm theo mẫu, không phiên biệt chữ hoa và thường</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Ví dụ</strong></td>
+					<td style="text-align: left">Tìm trang .php và .html</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Quy trình</strong></td>
+					<td style="text-align: left">Liệt kê tất cả các gói HTTP mà trường &ldquo;host&rdquo; của gói trùng với từ khóa &ldquo;.php&rdquo; hoặc &ldquo;.html&rdquo;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Lệnh</strong></td>
+					<td style="text-align: left"><code>http.host matches &quot;\.(php|html)&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/ByoFcm7_Gx.png"></p>
+<h3 id="lọc--in">Lọc : &ldquo;in&rdquo;<a hidden class="anchor" aria-hidden="true" href="#lọc--in">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left"></th>
+					<th style="text-align: left"></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>Bộ lọc</strong></td>
+					<td style="text-align: left">in</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Loại</strong></td>
+					<td style="text-align: left">Kiểm tra trong list</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Mô tả</strong></td>
+					<td style="text-align: left">Tìm kiếm một giá trị hoặc trường trong phạm vi cụ thể</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Ví dụ</strong></td>
+					<td style="text-align: left">Tìm tất cả các gói tin sử dụng cổng 80, 443 hoặc 8080</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Quy trình</strong></td>
+					<td style="text-align: left">Liệt kê tất cả các gói TCP mà các trường &ldquo;port&rdquo; của gói tin có giá trị 80, 443 hoặc 8080</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Lệnh</strong></td>
+					<td style="text-align: left"><code>tcp.port in {80 443 8080}</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1ROoXXufx.png"></p>
+<h3 id="lọc--upper">Lọc : &ldquo;upper&rdquo;<a hidden class="anchor" aria-hidden="true" href="#lọc--upper">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left"></th>
+					<th style="text-align: left"></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>Bộ lọc</strong></td>
+					<td style="text-align: left">upper</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Loại</strong></td>
+					<td style="text-align: left">Chức năng</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Mô tả</strong></td>
+					<td style="text-align: left">Chuyển đổi chuỗi sang chữ hoa</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Ví dụ</strong></td>
+					<td style="text-align: left">Tìm tất cả các máy chủ &ldquo;APACHE&rdquo;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Quy trình</strong></td>
+					<td style="text-align: left">Chuyển đổi tất cả các trường &ldquo;server&rdquo; của gói HTTP sang chữ hoa và liệt kê các gói chứa từ khóa &ldquo;APACHE&rdquo;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Lệnh</strong></td>
+					<td style="text-align: left"><code>upper(http.server) contains &quot;APACHE&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJYG3mQ_Ml.png"></p>
+<h3 id="lọc--lower">Lọc : &ldquo;lower&rdquo;<a hidden class="anchor" aria-hidden="true" href="#lọc--lower">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left"></th>
+					<th style="text-align: left"></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>Bộ lọc</strong></td>
+					<td style="text-align: left">lower</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Loại</strong></td>
+					<td style="text-align: left">Chức năng</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Mô tả</strong></td>
+					<td style="text-align: left">Chuyển đổi giá trị chuỗi sang chữ thường</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Ví dụ</strong></td>
+					<td style="text-align: left">Tìm tất cả các máy chủ &ldquo;apache&rdquo;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Quy trình</strong></td>
+					<td style="text-align: left">Chuyển đổi thông tin trường &ldquo;máy chủ&rdquo; của tất cả các gói HTTP sang chữ thường và liệt kê các gói chứa từ khóa &ldquo;apache&rdquo;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Lệnh</strong></td>
+					<td style="text-align: left"><code>lower(http.server) contains &quot;apache&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r12YRQ7dMg.png"></p>
+<h3 id="lọc--string">Lọc : &ldquo;string&rdquo;<a hidden class="anchor" aria-hidden="true" href="#lọc--string">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left"></th>
+					<th style="text-align: left"></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>Bộ lọc</strong></td>
+					<td style="text-align: left">string</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Loại</strong></td>
+					<td style="text-align: left">Chức năng</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Mô tả</strong></td>
+					<td style="text-align: left">Chuyển đổi giá trị không phải chuỗi thành chuỗi</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Ví dụ</strong></td>
+					<td style="text-align: left">Tìm tất cả frame có số lẻ</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Quy trình</strong></td>
+					<td style="text-align: left">Chuyển tất cả các trường &ldquo;frame&rdquo; thành giá trị chuỗi, và các khung danh sách kết thúc bằng giá trị lẻ</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>Lệnh</strong></td>
+					<td style="text-align: left"><code>string(frame.number) matches &quot;[13579]$&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkjE1EX_Mx.png"></p>
+<h3 id="dấu-trang-và-nút-lọc">Dấu trang và nút lọc<a hidden class="anchor" aria-hidden="true" href="#dấu-trang-và-nút-lọc">#</a></h3>
+<ul>
+<li>Dấu trang giúp các nhà phân tích tái sử dụng các bộ lọc yêu thích/phức tạp chỉ với vài cú nhấp chuột</li>
+<li>Tương tự như dấu trang, bạn có thể tạo các nút lọc sẵn sàng áp dụng chỉ với một cú nhấp chuột</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJ8-lNQuzx.png"></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJmmgNmuGl.png"></p>
+<h3 id="hồ-sơ--profiles-">Hồ sơ ( Profiles )<a hidden class="anchor" aria-hidden="true" href="#hồ-sơ--profiles-">#</a></h3>
+<ul>
+<li>Giúp tạo nhiều hồ sơ cho các vụ án điều tra khác nhau và sử dụng chúng cho phù hợp</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/S1jOe4Xuzg.png"></p>
+<h1 id="iii-wireshark-traffic-analysis">III. Wireshark: Traffic Analysis<a hidden class="anchor" aria-hidden="true" href="#iii-wireshark-traffic-analysis">#</a></h1>
+<h2 id="mission-1--nmap-scans">Mission 1 : Nmap Scans<a hidden class="anchor" aria-hidden="true" href="#mission-1--nmap-scans">#</a></h2>
+<h3 id="giới-thiệu-4">Giới thiệu<a hidden class="anchor" aria-hidden="true" href="#giới-thiệu-4">#</a></h3>
+<ul>
+<li>Công cụ tiêu chuẩn ngành để lập bản đồ mạng, xác định các máy chủ trực tiếp và khám phá các dịch vụ</li>
+<li>Các loại quét Nmap phổ biến nhất
+<blockquote>
+<p>TCP connect scans
+SYN scans
+UDP scans</p>
+</blockquote>
+</li>
+<li>Các bộ lọc Nmap đơn giản</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">Tìm kiếm</td>
+					<td style="text-align: left">- <code>tcp</code><!-- raw HTML omitted -->- <code>udp</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">- Chỉ có cờ SYN<!-- raw HTML omitted -->- Cờ SYN đã được thiết lập. Những phần còn lại không quan trọng</td>
+					<td style="text-align: left">- <code>tcp.flags == 2</code><!-- raw HTML omitted -->- <code>tcp.flags.syn == 1</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">- Chỉ có cờ ACK<!-- raw HTML omitted -->- Cờ ACK đã được đặt. Những phần còn lại không quan trọng</td>
+					<td style="text-align: left">- <code>tcp.flags == 16</code><!-- raw HTML omitted -->- <code>tcp.flags.ack == 1</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">- Chỉ có cờ SYN, ACK<!-- raw HTML omitted -->- SYN và ACK đã sẵn sàng.Những phần còn lại không quan trọng.</td>
+					<td style="text-align: left">- <code>tcp.flags == 18</code><!-- raw HTML omitted -->- <code>(tcp.flags.syn == 1) and (tcp.flags.ack == 1)</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">- Chỉ có cờ RST<!-- raw HTML omitted -->- Cờ RST đã được đặt. Những phần còn lại không quan trọng</td>
+					<td style="text-align: left">- <code>tcp.flags == 4</code><!-- raw HTML omitted -->- <code>tcp.flags.reset == 1</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">- Chỉ có cờ RST, ACK<!-- raw HTML omitted -->- RST và ACK đã được thiết lập. Những phần còn lại không quan trọng</td>
+					<td style="text-align: left">- <code>tcp.flags == 20</code><!-- raw HTML omitted -->- <code>(tcp.flags.reset == 1) and (tcp.flags.ack == 1)</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">- Chỉ có cờ FIN<!-- raw HTML omitted -->- Cờ FIN đã được đặt. Những phần còn lại không quan trọng</td>
+					<td style="text-align: left">- <code>tcp.flags == 1</code><!-- raw HTML omitted -->- <code>tcp.flags.fin == 1</code></td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="quét-tcp-connect">Quét TCP Connect<a hidden class="anchor" aria-hidden="true" href="#quét-tcp-connect">#</a></h3>
+<ul>
+<li>Tóm tắt về TCP Connect Scan
+<blockquote>
+<p>Dựa vào bắt tay 3 bước
+Được sử dụng bởi người dùng ( ko root )
+Thường có kích thước WIn lớn hơn 1024 byte</p>
+</blockquote>
+</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Mở cổng TCP</th>
+					<th>Mở cổng TCP</th>
+					<th>Cổng TCP đã đóng</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>SYN &ndash;&gt; <!-- raw HTML omitted --> &lt;&ndash; SYN, ACK <!-- raw HTML omitted --> ACK &ndash;&gt;</td>
+					<td>SYN &ndash;&gt; <!-- raw HTML omitted --> &lt;&ndash; SYN, ACK <!-- raw HTML omitted --> ACK &ndash;&gt; <!-- raw HTML omitted --> RST, ACK &ndash;&gt;</td>
+					<td>SYN &ndash;&gt; <!-- raw HTML omitted --> &lt;&ndash; RST, ACK</td>
+			</tr>
+	</tbody>
+</table>
+<ul>
+<li>Mở cổng TCP ( kết nối )</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H18v1b8dMx.png"></p>
+<ul>
+<li>Cổng TCP đóng ( kết nối )</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJEFJZIOfg.png"></p>
+<ul>
+<li>Bộ lọc được cung cấp hiển thị các mẫu quét TCP Connect trong tệp ghi hình
+<code>tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size &gt; 1024</code></li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJTugW8dze.png"></p>
+<h3 id="quét-udp">Quét UDP<a hidden class="anchor" aria-hidden="true" href="#quét-udp">#</a></h3>
+<ul>
+<li>Tóm tắt
+<blockquote>
+<p>Không cần bắt tay
+Không cần báo mở cổng
+Thông báo lỗi ICMP khi đóng cổng</p>
+</blockquote>
+</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Mở cổng UDP</th>
+					<th>Cổng UDP đã đóng</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Gói UDP &ndash;&gt;</td>
+					<td>Gói UDP &ndash;&gt; <!-- raw HTML omitted --> ICMP Type 3, Code 3 message ( Destination unreachable, port unreachable )</td>
+			</tr>
+	</tbody>
+</table>
+<ul>
+<li>Đóng ( cổng số 69 ) và mở ( cổng số 68 ) UDP ports</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Hks0W-Ldfg.png"></p>
+<ul>
+<li>Khi bạn mở rộng phần ICMP trong khung chi tiết gói tin, bạn sẽ thấy dữ liệu đóng gói và yêu cầu gốc</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJFDMWUdGg.png"></p>
+<ul>
+<li>Bộ lọc cung cấp hiển thị UDP trong tệp
+<code>icmp.type==3 and icmp.code==3</code></li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJ3izZ8dfe.png"></p>
+<h2 id="misson-2--arp-poisoning-spoofing--cuộc-tấn-công-người-ở-giữa-">Misson 2 : ARP Poisoning/ Spoofing ( Cuộc tấn công người ở giữa )<a hidden class="anchor" aria-hidden="true" href="#misson-2--arp-poisoning-spoofing--cuộc-tấn-công-người-ở-giữa-">#</a></h2>
+<h3 id="giới-thiệu-5">Giới thiệu<a hidden class="anchor" aria-hidden="true" href="#giới-thiệu-5">#</a></h3>
+<ul>
+<li>Một loại tấn công liên quan đến việc gây nhiễu/thao túng mạng bằng cách gửi các gói ARP độc hại đến cổng mặc định</li>
+<li>Phân tích ARP tóm tắt
+<blockquote>
+<p>Hoạt động trên mạng nội bộ
+Cho phép giao tiếp giữa các địa chỉ MAC
+Không phải gia thức an toàn
+Không phải giao thức có thể định tuyến
+Nó không có chức năng xác thực
+Các mẫu phổ biến là yêu cầu và phẩn hồi, thông báo và các gói dữ liệu không cần thiết</p>
+</blockquote>
+</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Ghi chú</th>
+					<th>Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Tìm kiếm</td>
+					<td><code>arp</code></td>
+			</tr>
+			<tr>
+					<td><strong>Các lựa chọn &ldquo;ARP&rdquo; để nắm bắt những lợi ích dễ dàng:</strong> <!-- raw HTML omitted --> Mã số 1 : Yêu cầu ARP <!-- raw HTML omitted --> Mã số 2 : Phản hồi ARP <!-- raw HTML omitted --> Hunt : Quét ARP <!-- raw HTML omitted --> Hunt : Khả năng phát hiện ARP Poisoning <!-- raw HTML omitted --> Hunt : Khả năng phát hiện ARP flooding</td>
+					<td><code>arp.opcode == 1</code> <!-- raw HTML omitted --> <code>arp.opcode == 2</code> <!-- raw HTML omitted -->  <code>arp.dst.hw_mac==00:00:00:00:00:00</code> <!-- raw HTML omitted --> <code>arp.duplicate-address-detected or arp.duplicate-address-frame</code> <!-- raw HTML omitted --> <code>((arp) &amp;&amp; (arp.opcode == 1)) &amp;&amp; (arp.src.hw_mac == target-mac-address)</code></td>
+			</tr>
+	</tbody>
+</table>
+<ul>
+<li>Yêu cầu ARP</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJHZUZLOfx.png"></p>
+<ul>
+<li>Phản hồi ARP</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJEfU-8dfg.png"></p>
+<ul>
+<li>Một tình huống đáng ngờ có nghĩa là có hai phản hồi ARP khác nhau (xung đột) cho một địa chỉ IP cụ thể</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkQU8bLuzx.png"></p>
+<h2 id="mission-3--xác-định-máy-chủ--dhcp-netbios-và-kerberos">Mission 3 : Xác định máy chủ : DHCP, NetBIOS và Kerberos<a hidden class="anchor" aria-hidden="true" href="#mission-3--xác-định-máy-chủ--dhcp-netbios-và-kerberos">#</a></h2>
+<h3 id="nhận-diện-máy-chủ">Nhận diện máy chủ<a hidden class="anchor" aria-hidden="true" href="#nhận-diện-máy-chủ">#</a></h3>
+<ul>
+<li>Một trong những phương pháp tốt nhất là xác định các máy chủ và người dùng trên mạng để quyết định điểm bắt đầu điều tra và liệt kê các máy chủ cùng người dùng liên quan đến lưu lượng/hoạt động độc hại</li>
+<li>Các giao thức có thể sử dụng trong nhận dạng máy chủ và người dùng
+<blockquote>
+<p>Giao thức cấu hình Protocol ( DHCP ) traffic
+NetBIOS ( NBNS ) traffic
+Kerberos traffic</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="phân-tích-dhcp">Phân tích DHCP<a hidden class="anchor" aria-hidden="true" href="#phân-tích-dhcp">#</a></h3>
+<ul>
+<li>Công nghệ chịu trách nhiệm quản lý địa chỉ IP tự động và các thông số giao tiếp cần thiết</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">Tìm kiếm toàn cầu.</td>
+					<td style="text-align: left">- <code>dhcp</code> hoặc <code>bootp</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Lọc các tùy chọn gói DHCP phù hợp là rất quan trọng để tìm ra sự kiện quan trọng.<!-- raw HTML omitted --><!-- raw HTML omitted -->- Các gói &ldquo;DHCP Request&rdquo; chứa thông tin tên máy chủ<!-- raw HTML omitted -->- Các gói &ldquo;DHCP ACK&rdquo; đại diện cho các yêu cầu được chấp nhận<!-- raw HTML omitted -->- Các gói &ldquo;DHCP NAK&rdquo; đại diện cho các yêu cầu bị từ chối<!-- raw HTML omitted --><!-- raw HTML omitted -->Do tính chất của giao thức, chỉ có &ldquo;Tùy chọn 53&rdquo; (loại yêu cầu) có giá trị tĩnh được định nghĩa trước. Bạn nên lọc loại gói trước, sau đó có thể lọc các tùy chọn còn lại bằng cách &ldquo;áp dụng dưới dạng cột&rdquo; hoặc dùng các bộ lọc nâng cao như &ldquo;chứa&rdquo; và &ldquo;khớp&rdquo;.</td>
+					<td style="text-align: left">- Yêu cầu: <code>dhcp.option.dhcp == 3</code><!-- raw HTML omitted -->- ACK: <code>dhcp.option.dhcp == 5</code><!-- raw HTML omitted -->- NAK: <code>dhcp.option.dhcp == 6</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn &ldquo;Yêu cầu DHCP&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>Lựa chọn 12:</strong> Tên máy chủ.<!-- raw HTML omitted -->- <strong>Lựa chọn 50:</strong> Địa chỉ IP được yêu cầu.<!-- raw HTML omitted -->- <strong>Lựa chọn 51:</strong> Thời gian thuê IP đã yêu cầu.<!-- raw HTML omitted -->- <strong>Lựa chọn 61:</strong> Địa chỉ MAC của khách hàng.</td>
+					<td style="text-align: left">- <code>dhcp.option.hostname contains &quot;keyword&quot;</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn &ldquo;DHCP ACK&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>Lựa chọn 15:</strong> Tên miền.<!-- raw HTML omitted -->- <strong>Lựa chọn 51:</strong> Thời gian thuê IP đã được phân công.</td>
+					<td style="text-align: left">- <code>dhcp.option.domain_name contains &quot;keyword&quot;</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn &ldquo;DHCP NAK&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>Lựa chọn 56:</strong> Tin nhắn (chi tiết/lý do từ chối).</td>
+					<td style="text-align: left">Vì thông điệp có thể duy nhất tùy theo trường hợp/tình huống, nên nên đọc thông điệp thay vì lọc nó. Do đó, nhà phân tích có thể tạo ra giả thuyết/kết quả đáng tin cậy hơn bằng cách hiểu các hoàn cảnh sự kiện.</td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SkgY_WLdzl.png"></p>
+<h3 id="phân-tích-netbios--nbns-">Phân tích NetBIOS ( NBNS )<a hidden class="anchor" aria-hidden="true" href="#phân-tích-netbios--nbns-">#</a></h3>
+<ul>
+<li>Công nghệ chịu trách nhiệm cho phép các ứng dụng trên các máy chủ khác nhau giao tiếp với nhau</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Ghi chú</th>
+					<th>Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Tìm kiếm</td>
+					<td><code>nbns</code></td>
+			</tr>
+			<tr>
+					<td>Các lựa chọn <strong>&ldquo;NBNS&rdquo;</strong> để nắm bắt những lợi ích dễ dàng: <!-- raw HTML omitted --> <strong>Truy vấn</strong>:Chi tiết truy vấn <!-- raw HTML omitted --> Chi tiết truy vấn có thể chứa <strong>&ldquo;tên, Thời gian sống (TTL) và chi tiết địa chỉ IP&rdquo;</strong></td>
+					<td><code>nbns.name contains &quot;keyword&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJk4YWI_Mx.png"></p>
+<h3 id="phân-tích-kerberos">Phân tích Kerberos<a hidden class="anchor" aria-hidden="true" href="#phân-tích-kerberos">#</a></h3>
+<ul>
+<li>Nó chịu trách nhiệm xác thực các yêu cầu dịch vụ giữa hai hoặc nhiều máy tính qua mạng không đáng tin cậy</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">Tìm kiếm toàn cầu.</td>
+					<td style="text-align: left">- <code>kerberos</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Tìm kiếm tài khoản người dùng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>CNameString:</strong> Tên người dùng.<!-- raw HTML omitted --><!-- raw HTML omitted -->Lưu ý: Một số gói tin có thể cung cấp thông tin tên máy chủ trong trường này. Để tránh sự nhầm lẫn này, hãy lọc giá trị <code>&quot;$&quot;</code>. Các giá trị kết thúc bằng <code>&quot;$&quot;</code> là tên máy chủ, và những giá trị không có là tên người dùng.</td>
+					<td style="text-align: left">- <code>kerberos.CNameString contains &quot;keyword&quot;</code><!-- raw HTML omitted -->- <code>kerberos.CNameString and ! (kerberos.CNameString contains &quot;$&quot; )</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn &ldquo;Kerberos&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>PVNO:</strong> Phiên bản giao thức.<!-- raw HTML omitted -->- <strong>Realm:</strong> Tên miền cho vé được tạo.<!-- raw HTML omitted -->- <strong>SNAME:</strong> Dịch vụ và tên miền cho phiếu hỗ trợ được tạo.<!-- raw HTML omitted -->- <strong>Địa chỉ:</strong> Địa chỉ IP của máy khách và tên NetBIOS.<!-- raw HTML omitted --><!-- raw HTML omitted -->Lưu ý: thông tin &ldquo;địa chỉ&rdquo; chỉ có trong các gói yêu cầu.</td>
+					<td style="text-align: left">- <code>kerberos.pvno == 5</code><!-- raw HTML omitted -->- <code>kerberos.realm contains &quot;.org&quot;</code><!-- raw HTML omitted -->- <code>kerberos.SNameString == &quot;krbtg&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkm2YZIdGe.png"></p>
+<h2 id="mission-4--lưu-lượng-xuyên-hầm--dns-và-icmp">Mission 4 : Lưu lượng xuyên hầm : DNS và ICMP<a hidden class="anchor" aria-hidden="true" href="#mission-4--lưu-lượng-xuyên-hầm--dns-và-icmp">#</a></h2>
+<h3 id="giao-thông-đào-hầm-icmp-và-dns">Giao thông đào hầm ICMP và DNS<a hidden class="anchor" aria-hidden="true" href="#giao-thông-đào-hầm-icmp-và-dns">#</a></h3>
+<ul>
+<li>Là truyền dữ liệu/tài nguyên theo phương pháp an toàn đến các phân đoạn và vùng mạng</li>
+<li>Tunnelling mang lại sự ẩn danh và an ninh giao thông</li>
+</ul>
+<h3 id="phân-tích-icmp">Phân tích ICMP<a hidden class="anchor" aria-hidden="true" href="#phân-tích-icmp">#</a></h3>
+<ul>
+<li>Được thiết kế để chẩn đoán và báo cáo các sự cố giao tiếp mạng</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Ghi chú</th>
+					<th>Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Tìm kiến</td>
+					<td><code>icmp</code></td>
+			</tr>
+			<tr>
+					<td><strong>Các lựa chọn &ldquo;ICMP&rdquo; để nắm bắt những lợi ích dễ dàng:</strong> <!-- raw HTML omitted --> Độ dài gói <!-- raw HTML omitted --> Địa chỉ đích ICMP <!-- raw HTML omitted --> Các ký hiệu giao thức được đóng gói trong tải trọng ICMP</td>
+					<td><code>data.len &gt; 64 and icmp</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1k7CW8dMl.png"></p>
+<h3 id="phân-tích-dns">Phân tích DNS<a hidden class="anchor" aria-hidden="true" href="#phân-tích-dns">#</a></h3>
+<ul>
+<li>Được thiết kế để chuyển đổi/chuyển đổi địa chỉ miền IP thành địa chỉ IP</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">Tìm kiếm toàn cầu</td>
+					<td style="text-align: left">- <code>dns</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn &ldquo;DNS&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- Độ dài truy vấn.<!-- raw HTML omitted -->- Tên bất thường và không đều trong địa chỉ DNS.<!-- raw HTML omitted -->- Địa chỉ DNS dài với địa chỉ tên miền phụ được mã hóa.<!-- raw HTML omitted -->- Các mẫu đã biết như dnscat và dns2tcp.<!-- raw HTML omitted -->- Phân tích thống kê như khối lượng yêu cầu DNS bất thường cho một mục tiêu cụ thể.<!-- raw HTML omitted --><!-- raw HTML omitted --><code>!mdns</code>: Vô hiệu hóa truy vấn thiết bị liên kết cục bộ.</td>
+					<td style="text-align: left">- <code>dns contains &quot;dnscat&quot;</code><!-- raw HTML omitted -->- <code>dns.qry.name.len &gt; 15 and !mdns</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJvsCWIOze.png"></p>
+<h2 id="mission-5--phân-tích-giao-thức-cleartext--ftp">Mission 5 : Phân tích giao thức Cleartext : FTP<a hidden class="anchor" aria-hidden="true" href="#mission-5--phân-tích-giao-thức-cleartext--ftp">#</a></h2>
+<h3 id="phân-tích-giao-thức-cleartext">Phân tích giao thức Cleartext<a hidden class="anchor" aria-hidden="true" href="#phân-tích-giao-thức-cleartext">#</a></h3>
+<h3 id="ftp-phân-tích">FTP phân tích<a hidden class="anchor" aria-hidden="true" href="#ftp-phân-tích">#</a></h3>
+<ul>
+<li>Được thiết kế để truyền tệp một cách dễ dàng, vì vậy nó tập trung vào sự đơn giản hơn là bảo mật
+<blockquote>
+<p>MITM các cuộc tấn công
+Đánh cắp thông tin đăng nhập và truy cập trái phép
+Phishing
+Gài phần mềm độc hại
+Trích xuất dữ liệu</p>
+</blockquote>
+</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">Tìm kiếm toàn cầu</td>
+					<td style="text-align: left">- <code>ftp</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn &ldquo;FTP&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>Dòng x1x:</strong> Phản hồi yêu cầu thông tin.<!-- raw HTML omitted -->- <strong>Dòng x2x:</strong> Thông báo kết nối.<!-- raw HTML omitted -->- <strong>Dòng x3x:</strong> Thông điệp xác thực.<!-- raw HTML omitted --><!-- raw HTML omitted -->Lưu ý: &ldquo;200&rdquo; nghĩa là lệnh thành công.</td>
+					<td style="text-align: left">&mdash;</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn trong dòng &ldquo;x1x&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>211:</strong> Tình trạng hệ thống.<!-- raw HTML omitted -->- <strong>212:</strong> Trạng thái thư mục.<!-- raw HTML omitted -->- <strong>213:</strong> Tình trạng tệp</td>
+					<td style="text-align: left">- <code>ftp.response.code == 211</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn trong dòng &ldquo;x2x&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>220:</strong> Dịch vụ sẵn sàng.<!-- raw HTML omitted -->- <strong>227:</strong> Đang vào chế độ thụ động.<!-- raw HTML omitted -->- <strong>228:</strong> Chế độ thụ động kéo dài.<!-- raw HTML omitted -->- <strong>229:</strong> Chế độ thụ động mở rộng.</td>
+					<td style="text-align: left">- <code>ftp.response.code == 227</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lựa chọn dòng &ldquo;x3x&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>230:</strong> Đăng nhập người dùng.<!-- raw HTML omitted -->- <strong>231:</strong> Đăng xuất người dùng.<!-- raw HTML omitted -->- <strong>331:</strong> Tên người dùng hợp lệ.<!-- raw HTML omitted -->- <strong>430:</strong> Tên đăng nhập hoặc mật khẩu không hợp lệ.<!-- raw HTML omitted -->- <strong>530:</strong> Không đăng nhập, mật khẩu không hợp lệ.</td>
+					<td style="text-align: left">- <code>ftp.response.code == 230</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Các lệnh &ldquo;FTP&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>NGƯỜI DÙNG:</strong> Tên người dùng.<!-- raw HTML omitted -->- <strong>ĐẠT:</strong> Mật khẩu.<!-- raw HTML omitted -->- <strong>CWD:</strong> Thư mục công việc hiện tại.<!-- raw HTML omitted -->- <strong>DANH SÁCH:</strong> Danh sách.</td>
+					<td style="text-align: left">- <code>ftp.request.command == &quot;USER&quot;</code><!-- raw HTML omitted -->- <code>ftp.request.command == &quot;PASS&quot;</code><!-- raw HTML omitted -->- <code>ftp.request.arg == &quot;password&quot;</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Ví dụ về cách sử dụng nâng cao để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>Tín hiệu bruteforce:</strong> Liệt kê các lần đăng nhập thất bại.<!-- raw HTML omitted -->- <strong>Tín hiệu bruteforce:</strong> Danh sách tên người dùng mục tiêu.<!-- raw HTML omitted -->- <strong>Tín hiệu phun mật khẩu:</strong> Liệt kê các mục tiêu cho mật khẩu tĩnh.</td>
+					<td style="text-align: left">- <code>ftp.response.code == 530</code><!-- raw HTML omitted -->- <code>(ftp.response.code == 530) and (ftp.response.arg contains &quot;username&quot;)</code><!-- raw HTML omitted -->- <code>(ftp.request.command == &quot;PASS&quot; ) and (ftp.request.arg == &quot;password&quot;)</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJ2VWfIOze.png"></p>
+<h2 id="mission-6--phân-tích-giao-thức-cleartext--http">Mission 6 : Phân tích giao thức Cleartext : HTTP<a hidden class="anchor" aria-hidden="true" href="#mission-6--phân-tích-giao-thức-cleartext--http">#</a></h2>
+<h3 id="http-phân-tích">HTTP Phân tích<a hidden class="anchor" aria-hidden="true" href="#http-phân-tích">#</a></h3>
+<ul>
+<li>Là một giao thức dựa trên văn bản rõ, kết hợp yêu cầu-phản hồi và giao thức client-server
+<blockquote>
+<p>Phishing các trang
+Các cuộc tấn công web
+Trích xuất dữ liệu
+Giao thông chỉ hay và kiểm soát ( C2 )</p>
+</blockquote>
+</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">Tìm kiếm toàn cầu<!-- raw HTML omitted --><!-- raw HTML omitted -->Lưu ý: HTTP2 là phiên bản sửa đổi của giao thức HTTP nhằm nâng cao hiệu suất và bảo mật. Nó hỗ trợ truyền dữ liệu nhị phân và ghép kênh yêu cầu&amp;phản hồi.</td>
+					<td style="text-align: left">- <code>http</code><!-- raw HTML omitted -->- <code>http2</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">&ldquo;Phương thức yêu cầu HTTP&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- LẤY<!-- raw HTML omitted -->- BƯU TIÊN<!-- raw HTML omitted -->- Yêu cầu: Liệt kê tất cả các yêu cầu</td>
+					<td style="text-align: left">- <code>http.request.method == &quot;GET&quot;</code><!-- raw HTML omitted -->- <code>http.request.method == &quot;POST&quot;</code><!-- raw HTML omitted -->- <code>http.request</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">&ldquo;Mã trạng thái phản hồi HTTP&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>200 OK:</strong> Yêu cầu thành công.<!-- raw HTML omitted -->- <strong>301 Di chuyển vĩnh viễn:</strong> Tài nguyên được di chuyển đến URL/đường dẫn mới (vĩnh viễn).<!-- raw HTML omitted -->- <strong>302 Di chuyển tạm thời:</strong> Tài nguyên được di chuyển đến URL/đường dẫn mới (tạm thời).<!-- raw HTML omitted -->- <strong>400 Yêu cầu xấu:</strong> Nhân viên phục vụ không hiểu yêu cầu đó.<!-- raw HTML omitted -->- <strong>401 Không được phép:</strong> URL cần xác thực (đăng nhập, v.v.).<!-- raw HTML omitted -->- <strong>403 Cấm:</strong> Không có quyền truy cập URL được yêu cầu.<!-- raw HTML omitted -->- <strong>404 Không tìm thấy:</strong> Máy chủ không tìm thấy URL được yêu cầu.<!-- raw HTML omitted -->- <strong>Phương pháp 405 không được phép:</strong> Phương pháp sử dụng không phù hợp hoặc bị chặn.<!-- raw HTML omitted -->- <strong>Thời gian chờ yêu cầu 408:</strong> Yêu cầu trông dài hơn thời gian chờ của máy chủ.<!-- raw HTML omitted -->- <strong>Lỗi máy chủ nội bộ 500:</strong> Yêu cầu chưa hoàn thành, lỗi bất ngờ.<!-- raw HTML omitted -->- <strong>Dịch vụ 503 Không khả dụng:</strong> Yêu cầu chưa hoàn thành máy chủ hoặc dịch vụ bị sập.</td>
+					<td style="text-align: left">- <code>http.response.code == 200</code><!-- raw HTML omitted -->- <code>http.response.code == 401</code><!-- raw HTML omitted -->- <code>http.response.code == 403</code><!-- raw HTML omitted -->- <code>http.response.code == 404</code><!-- raw HTML omitted -->- <code>http.response.code == 405</code><!-- raw HTML omitted -->- <code>http.response.code == 503</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">&ldquo;Tham số HTTP&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>User agent:</strong> Nhận diện trình duyệt và hệ điều hành với ứng dụng máy chủ web.<!-- raw HTML omitted -->- <strong>Yêu cầu URI:</strong> Trỏ tài nguyên được yêu cầu khỏi máy chủ.<!-- raw HTML omitted -->- <strong>*URI đầy đủ:</strong> Thông tin đầy đủ về URI.<!-- raw HTML omitted --><!-- raw HTML omitted -->*URI: Định danh Tài nguyên Thống nhất.</td>
+					<td style="text-align: left">- <code>http.user_agent contains &quot;nmap&quot;</code><!-- raw HTML omitted -->- <code>http.request.uri contains &quot;admin&quot;</code><!-- raw HTML omitted -->- <code>http.request.full_uri contains &quot;admin&quot;</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">&ldquo;Tham số HTTP&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>Máy chủ:</strong> Tên dịch vụ máy chủ.<!-- raw HTML omitted -->- <strong>Người dẫn chương trình:</strong> Tên máy chủ của máy chủ<!-- raw HTML omitted -->- <strong>Kết nối:</strong> Trạng thái kết nối.<!-- raw HTML omitted -->- <strong>Dữ liệu văn bản dựa trên dòng:</strong> Dữ liệu văn bản rõ do máy chủ cung cấp.<!-- raw HTML omitted -->- <strong>URL biểu mẫu HTML đã mã hóa:</strong> Thông tin biểu mẫu web.</td>
+					<td style="text-align: left">- <code>http.server contains &quot;apache&quot;</code><!-- raw HTML omitted -->- <code>http.host contains &quot;keyword&quot;</code><!-- raw HTML omitted -->- <code>http.host == &quot;keyword&quot;</code><!-- raw HTML omitted -->- <code>http.connection == &quot;Keep-Alive&quot;</code><!-- raw HTML omitted -->- <code>data-text-lines contains &quot;keyword&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="phân-tích-user-agent">Phân tích User Agent<a hidden class="anchor" aria-hidden="true" href="#phân-tích-user-agent">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">Tìm kiếm toàn cầu.</td>
+					<td style="text-align: left">- <code>http.user_agent</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">Kết quả nghiên cứu để nắm bắt những thành quả dễ hái:<!-- raw HTML omitted --><!-- raw HTML omitted -->- Thông tin user agent khác nhau từ cùng một máy chủ trong thời gian ngắn.<!-- raw HTML omitted -->- Thông tin user agent không chuẩn và tùy chỉnh.<!-- raw HTML omitted -->- Sự khác biệt về chính tả tinh tế. (&ldquo;Mozilla&rdquo; không giống với &ldquo;Mozlilla&rdquo; hay &ldquo;Mozlila&rdquo;)<!-- raw HTML omitted -->- Kiểm tra thông tin các công cụ như Nmap, Nikto, Wfuzz và sqlmap trong trường user agent.<!-- raw HTML omitted -->- Dữ liệu payload trong trường user agent.</td>
+					<td style="text-align: left">- <code>(http.user_agent contains &quot;sqlmap&quot;) or (http.user_agent contains &quot;Nmap&quot;) or (http.user_agent contains &quot;Wfuzz&quot;) or (http.user_agent contains &quot;Nikto&quot;)</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkTuGGIdGe.png"></p>
+<h3 id="phân-tích-log4j">Phân tích Log4j<a hidden class="anchor" aria-hidden="true" href="#phân-tích-log4j">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">Kết quả nghiên cứu để nắm bắt những thành quả dễ hái:<!-- raw HTML omitted --><!-- raw HTML omitted -->- Cuộc tấn công bắt đầu với yêu cầu &ldquo;POST&rdquo;<!-- raw HTML omitted -->- Có các mẫu văn bản rõ ràng đã biết: &ldquo;jndi:ldap&rdquo; và &ldquo;Exploit.class&rdquo;.</td>
+					<td style="text-align: left">- <code>http.request.method == &quot;POST&quot;</code><!-- raw HTML omitted -->- <code>(ip contains &quot;jndi&quot;) or ( ip contains &quot;Exploit&quot;)</code><!-- raw HTML omitted -->- <code>(frame contains &quot;jndi&quot;) or ( frame contains &quot;Exploit&quot;)</code><!-- raw HTML omitted -->- <code>(http.user_agent contains &quot;$&quot;) or (http.user_agent contains &quot;==&quot;)</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJPyXzUdfe.png"></p>
+<h2 id="phân-tích-giao-thức-mã-hóa--giải-mã-https">Phân tích giao thức mã hóa : Giải mã HTTPS<a hidden class="anchor" aria-hidden="true" href="#phân-tích-giao-thức-mã-hóa--giải-mã-https">#</a></h2>
+<h3 id="giải-mã-lưu-lượng-https">Giải mã lưu lượng HTTPS<a hidden class="anchor" aria-hidden="true" href="#giải-mã-lưu-lượng-https">#</a></h3>
+<ul>
+<li>Tăng cường bảo mật chống lại các cuộc tấn công giả mạo, đánh dấu và chặn</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">Ghi chú</th>
+					<th style="text-align: left">Bộ lọc Wireshark</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">&ldquo;Tham số HTTPS&rdquo; để nắm bắt những lợi ích dễ dàng:<!-- raw HTML omitted --><!-- raw HTML omitted -->- <strong>Yêu cầu:</strong> Liệt kê tất cả yêu cầu<!-- raw HTML omitted -->- <strong>TLS:</strong> Tìm kiếm TLS toàn cục<!-- raw HTML omitted -->- Yêu cầu Khách hàng TLS<!-- raw HTML omitted -->- Phản hồi của máy chủ TLS<!-- raw HTML omitted -->- Giao thức Khám phá Dịch vụ Đơn giản cục bộ (SSDP)<!-- raw HTML omitted --><!-- raw HTML omitted -->Lưu ý: SSDP là một giao thức mạng cung cấp quảng cáo và khám phá các dịch vụ mạng.</td>
+					<td style="text-align: left">- <code>http.request</code><!-- raw HTML omitted -->- <code>tls</code><!-- raw HTML omitted -->- <code>tls.handshake.type == 1</code><!-- raw HTML omitted -->- <code>tls.handshake.type == 2</code><!-- raw HTML omitted -->- <code>ssdp</code></td>
+			</tr>
+	</tbody>
+</table>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJVD7zIdGl.png"></p>
+<ul>
+<li>Tương tự như quy trình bắt tay ba chiều TCP, giao thức TLS cũng có quy trình bắt tay riêng</li>
+<li>Hai bước đầu tiên chứa các thông điệp &ldquo;Client Hello&rdquo; và &ldquo;Server Hello&rdquo;</li>
+<li>Xin chào khách hàng: <code>(http.request or tls.handshake.type == 1) and !(ssdp)</code></li>
+<li>Xin chào máy chủ: <code>(http.request or tls.handshake.type == 2) and !(ssdp)</code></li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1D3QMIdMl.png"></p>
+<h2 id="mission-7--thông-tin-đăng-nhập-hunt-cleartext">Mission 7 : Thông tin đăng nhập Hunt Cleartext<a hidden class="anchor" aria-hidden="true" href="#mission-7--thông-tin-đăng-nhập-hunt-cleartext">#</a></h2>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1zlNfL_Gg.png"></p>
+<h2 id="mission-8--phần-thưởng--kết-quả-có-thể-hành-động-">Mission 8 : Phần thưởng : Kết quả có thể hành động !<a hidden class="anchor" aria-hidden="true" href="#mission-8--phần-thưởng--kết-quả-có-thể-hành-động-">#</a></h2>
+<ul>
+<li>Hiện tại, Wireshark có thể tạo các quy tắc cho
+<blockquote>
+<p>Netfilter (iptables)
+Cisco IOS (tiêu chuẩn/mở rộng)
+Bộ lọc IP (ipfilter)
+IPFirewall (ipfw)
+Bộ lọc gói tin (pf)
+Windows Firewall (netsh định dạng mới/cũ)</p>
+</blockquote>
+</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HkXtVzLdfx.png"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/tools/">Tools</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

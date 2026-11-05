@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Network | WuFort</title>
+<meta name="keywords" content="Knowledge">
+<meta name="description" content=". Giao thức TCP
+
+Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại
+Các tệp tin sẽ được đánh số thứ tự, lần lượt
+
+Vì 2 lí do trên nên tuy tốc độ chậm nhưng có độ chính xác, tin cậy cao
+
+
+Phù hợp để gửi những tệp tin đòi hỏi sự chính xác như : Gmail, Ngân hàng v.v
+TCP có cơ chế bắt tay (3-way handshake )
+
+Bước 1 : Client gửi yêu cầu tới Server : SYN ( SYN : The Synchronous Idle Character - Ký tự đồng bộ hóa )
+Bước 2 : Server gửi phản hồi chấp nhận tới Client : SYN &#43; ACK ( ACK : Acknowledgement - Chấp nhận )
+Bước 3 : Client gửi xác nhận tới Server : ACK
+Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/knowledge/network/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/knowledge/network/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Network
+    </h1>
+    <div class="post-meta">
+
+
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="-giao-thức-tcp">. Giao thức TCP<a hidden class="anchor" aria-hidden="true" href="#-giao-thức-tcp">#</a></h1>
+<ul>
+<li>Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại</li>
+<li>Các tệp tin sẽ được đánh số thứ tự, lần lượt
+<blockquote>
+<p>Vì 2 lí do trên nên tuy tốc độ chậm nhưng có độ chính xác, tin cậy cao</p>
+</blockquote>
+</li>
+<li>Phù hợp để gửi những tệp tin đòi hỏi sự chính xác như : Gmail, Ngân hàng v.v</li>
+<li>TCP có cơ chế bắt tay (3-way handshake )
+<blockquote>
+<p>Bước 1 : <strong>Client gửi yêu cầu</strong> tới Server : SYN ( SYN : The Synchronous Idle Character - Ký tự đồng bộ hóa )
+Bước 2 : <strong>Server gửi phản hồi</strong> chấp nhận tới Client : SYN + ACK ( ACK : Acknowledgement - Chấp nhận )
+Bước 3 : <strong>Client gửi xác nhận</strong> tới Server : ACK
+Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ</p>
+</blockquote>
+</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rylax2bdGx.png"></p>
+<h1 id="ii-giao-thức-udp">II. Giao thức UDP<a hidden class="anchor" aria-hidden="true" href="#ii-giao-thức-udp">#</a></h1>
+<ul>
+<li>Các tệp tin gửi đi bởi UDP sẽ được gửi đi hàng loạt</li>
+<li>Các tệp tin sẽ ko được đánh số, ko được kiểm tra
+<blockquote>
+<p>Vì 2 lí do trên nên tốc độ tuy nhanh nhưng tộ tin cậy thấp</p>
+</blockquote>
+</li>
+<li>Phù hợp trong môi trường đòi hỏi tốc độ : Game online, Video Youtube, v.v</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HJE0x3Zdzl.png"></p>
+<h1 id="iii-so-sánh-tcp-và-udp">III. So sánh TCP và UDP<a hidden class="anchor" aria-hidden="true" href="#iii-so-sánh-tcp-và-udp">#</a></h1>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkZb-2bdfg.png"></p>
+<ul>
+<li>UDP được sử dụng cho DNS vì DNS sẽ không cần mất thời gian kết nối</li>
+<li>HTTP hay HTTPS là các đối tượng web cần tải về chính xác nên sử dụng TCP</li>
+</ul>
+<h1 id="iv-giao-thức-http">IV. Giao thức HTTP<a hidden class="anchor" aria-hidden="true" href="#iv-giao-thức-http">#</a></h1>
+<ul>
+<li>HTTP (HyperText Transfer Protocol ) là giao thức truyền tải siêu văn bản</li>
+<li>Cách thức hoạt động của HTTP dựa trên mô hình Yêu cầu-phản hồi giữa Client và Server
+<blockquote>
+<p>Bước 1 : Người dùng nhập URL, Client gửi yêu cầu tới Server chứa nội dung đó
+Bước 2 : Máy chủ sẽ phản hồi với dữ liệu được yêu cầu</p>
+</blockquote>
+</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1cb-3WuMe.png"></p>
+<ul>
+<li>Khía cạnh cơ bản của HTTP
+<blockquote>
+<p>1.HTTP đơn giản : Được thiết kế với tính đơn giản, rõ ràng giúp dễ dàng kiểm thử và sửa lỗi
+2.HTTP là stateless, nhưng không thể mở rộng :
+stateless (không trạng thái ) có nghĩa là mỗi yêu cầu gửi đi không liên kết nào với yêu cầu trước đó
+&ndash;&gt; đòi hỏi sự bổ sung như cookie, session
+3. HTTP có thể mở rộng phục phụ nhu cầu cụ thể :
+HTTPS : tăng cường bảo mật
+HTTP/2 và HTTP/3 : tăng cường tốc độ</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="v-giao-thức-https">V. Giao thức HTTPS<a hidden class="anchor" aria-hidden="true" href="#v-giao-thức-https">#</a></h1>
+<ul>
+<li>HTTPS (Hypertext Transfer Protocol Secure ) giao thức truyền tải siêu văn bản an toàn</li>
+<li>Bản chất là HTTPS nhưng thêm SSL (Secure Sockets Layer - tầng ổ bảo mật ) hoặc TLS (Transport Layer Security - bảo mật tầng truyền tải )</li>
+<li>SSL và TLS đều sử dụng hệ thống PKI (Public Key Infrastructure - hạ tầng khóa công khai ) không đối xứng</li>
+<li>Hệ thống sử dụng 2 khóa để mã hóa thông tin liên lạc, gồm Public Key và Private Key</li>
+<li>Thứ gì được mã hóa bằng Public Key chỉ được giải mã bảo Private Key và ngược lại
+<blockquote>
+<p>Đảm bảo nội dung đc mã hóa khi truyền và giải mã khi nhận</p>
+</blockquote>
+</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/ryQfbhbdGx.png"></p>
+<h1 id="vi-so-sánh-http-và-https">VI. So sánh HTTP và HTTPS<a hidden class="anchor" aria-hidden="true" href="#vi-so-sánh-http-và-https">#</a></h1>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BJJQZh-_Gg.png"></p>
+<h1 id="vii-giao-thức-dns">VII. Giao thức DNS<a hidden class="anchor" aria-hidden="true" href="#vii-giao-thức-dns">#</a></h1>
+<ul>
+<li>DNS (Domain Name System ) phân giải tên miền dễ nhớ như facebook.com thành địa chỉ IP và ngược lại</li>
+<li>Giống như danh bạ cho phép người dùng truy cập thông qua tên miền dễ nhớ</li>
+<li>Quản lý tên miền và bản ghi DNS khác nhau
+<blockquote>
+<p><strong>A record (Address)</strong>: Liên kết tên miền với địa chỉ IPv4 thật
+<strong>MX (Mail Exchange)</strong>: Xác định máy chủ nhận email
+<strong>CNAME (Canonical Name)</strong>: Tạo bí danh, giúp chuyển hướng từ subdomain sang domain chính
+<strong>TXT record</strong>: Lưu thông tin xác thực như SPF, DKIM, bảo mật email và chống giả mạo</p>
+</blockquote>
+</li>
+<li>Phân giải ngược (từ IP về tên miền tương ứng )
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rJzrb2WOGl.png"></li>
+</ul>
+<h1 id="vii-giao-thức-arp">VII. Giao thức ARP<a hidden class="anchor" aria-hidden="true" href="#vii-giao-thức-arp">#</a></h1>
+<ul>
+<li>ARP (Address Resolution Protocol ) xác định MAC tương ứng với một địa chỉ IP trong mạng LAN
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJlL-nZ_zg.png"></li>
+<li>Hoạt động liên kết trong mô hình OSI, đóng vai trò thiết yếu trong quá trình truyền dữ liệu nội bộ mạng, nhất là trong mạng Ethernet</li>
+<li>Việc sử dụng ARP giúp tối ưu hóa việc truyền thông tin trong mạng, đảm bảo dữ liệu được gửi đến đúng thiết bị thông qua việc ánh xạ địa chỉ IP sang địa chỉ MAC phù hợp</li>
+</ul>
+<h1 id="viii-mô-hình-osi">VIII. Mô hình OSI<a hidden class="anchor" aria-hidden="true" href="#viii-mô-hình-osi">#</a></h1>
+<ul>
+<li>OSI là khung tham chiếu tiêu chuẩn, chia thành 7 tầng riêng biệt để chuẩn hóa và đơn giản hóa việc giao tiếp giữa các hệ thống mạng	
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/S1zDZhZdMx.png"></li>
+<li>Tầng 7 : Tầng ứng dụng (Application Layer) : Tầng mà web, ứng dụng tương tác trực tiếp với người dùng</li>
+<li>Tầng 6 : Tầng trình bày (Presentation Layer) : Đảm bảo giữ liệu được định dạng đúng, mã hóa, giải mã, nén và giải nén</li>
+<li>Tầng 5 : Tầng phiên (Session Layer) : Thiết lập phiên, duy trì phiên, đồng bộ hóa và kết thúc phiên</li>
+<li>Tầng 4: Tầng vận chuyển (Transport Layer) : Phân đoạn và tái lắp ráp các segment, đánh địa chỉ cổng, kiểm soát kết nối, kiểm soát luồng, kiểm soát lỗi</li>
+<li>Tầng 3: Tầng mạng (Network Layer) : Định địa chỉ logic, định tuyến, phân mảnh và tái lắp ráp gói tin ( Nếu gói tin quá to thì mới cần phân mảnh  )</li>
+<li>Tầng 2: Tầng liên kết dữ liệu (Data Link Layer) : Đóng khung, địa chỉ vật lý, kiểm soát luồng, kiểm soát lỗi, Kiểm soát truy cập đường truyền</li>
+<li>Tầng 1 : Tầng vật lý (Physical Layer) : Đặc tính môi trường, biểu diễn bit, tốc độ dữ liệu, đồng bộ hóa bit,</li>
+<li>Dữ liệu được truyền lần lượt từ tầng cao nhất xuống tầng thấp nhất</li>
+</ul>
+<h1 id="ix-mô-hình-tcpip">IX. Mô hình TCP/IP<a hidden class="anchor" aria-hidden="true" href="#ix-mô-hình-tcpip">#</a></h1>
+<ul>
+<li>TCP/IP là nền tảng giao thức giúp kết nối và truyền dữ liệu trên mạng Internet, gồm 4 tầng 	
+<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1EubhWOfg.png"></li>
+<li>Tầng 4 – Tầng ứng dụng (Application) : Đây là tầng mà HTTP, HTTPS, FTP, SMP, v.v kết nối tới người dùng</li>
+<li>Tầng 3 – Tầng giao vận (Transport) : Chịu trách nhiệm truyền tải dữ liệu, phổ biến là TCP và UDP</li>
+<li>Tầng 2 – Tầng mạng (Internet)	: Định tuyến, gắn địa chỉ đồng thời tìm đường đi tối ưu</li>
+<li>Tầng 1 – Tầng vật lý (Physical) : Chịu trách nhiệm truyền dữ liệu giữa các thiết bị trong cùng một mạng</li>
+</ul>
+<h1 id="x-so-sánh-mô-hình-osi-và-tcpip">X. So sánh mô hình OSI và TCP/IP<a hidden class="anchor" aria-hidden="true" href="#x-so-sánh-mô-hình-osi-và-tcpip">#</a></h1>
+<ul>
+<li>OSI và TCP/IP khác nhau lớn về số tầng</li>
+<li>TCP/IP gộp tầng 7, 6, 5 của OSI lại thành tầng 4</li>
+<li>TCP/IP gộp tầng 2, 1 của OSI lại thành tầng 1</li>
+<li>OSI giống như mô hình lý thuyết, còn TCP/IP là thực tế</li>
+<li>OSI giúp ta hiểu sâu hơn về mạng, đồng thời việc tách riêng từng tầng giúp dễ dàng kiểm tra nếu có lỗi</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/knowledge/">Knowledge</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

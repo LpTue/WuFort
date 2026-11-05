@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>BKSec on WuFort</title>
+    <link>http://localhost:1313/tags/bksec/</link>
+    <description>Recent content in BKSec on WuFort</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/bksec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>American bee</title>
+      <link>http://localhost:1313/bksec/american-bee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bksec/american-bee/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://training.bksec.vn/api/files/3bfcffe4-ef84-48c6-8b6d-fd1f8d279152&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;i-phổ-cập-kiến-thức&#34;&gt;I. Phổ cập kiến thức&lt;/h1&gt;
+&lt;p&gt;Với một pcap usb, ta sẽ có 3 cách import ra flag&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1plLlXhze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Thêm nữa là host gửi dữ liệu để hỏi coi chuột hay bàn phím có dữ liệu không
+Nên sẽ có lúc dữ liệu trống, lúc thì có dữ liệu
+Có thể coi video để hiểu cách usb giao tiếp &lt;a href=&#34;https://www.youtube.com/watch?v=_ysUxOKyGGU&amp;amp;t=302s&#34;&gt;tại đây&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ii-phân-tích&#34;&gt;II. Phân tích&lt;/h1&gt;
+&lt;p&gt;Đầu tiên ta thấy host đang giao tiếp tới 2 thiết bị&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Behind the mountain</title>
+      <link>http://localhost:1313/bksec/behind-the-mountain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bksec/behind-the-mountain/</guid>
+      <description>&lt;p&gt;Tải bài tập tại [đây]
+Các câu hỏi&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;Cuộc tấn công bắt đầu từ khoảng thời gian nào? (Format: HourAM/PM;dd-mm-yy Timezone GMT+7. Ví dụ: 18pm;01-01-2024 GMT+7)
+
+Kẻ tấn công (được cho là) có nguồn gốc từ quốc gia nào, và hắn đang thực hiện tấn công ở thành phố nào? Format: City/Country (all lowercase, bỏ tất cả dấu cách)
+ 
+Kẻ tấn công đang sử dụng công cụ gì để che giấu hành vi trên Internet?
+ 
+Server đang mở những cổng nào? (Format: viết các cổng từ nhỏ đến lớn, ngăn cách bằng dấu phẩy, chỉ tính các cổng từ 1-10000)
+ 
+Webserver đang được serve tại cổng nào?
+ 
+Sau khi thực hiện quét cổng, kẻ tấn công đã tiến hành quét tự động bằng một công cụ, User-Agent của công cụ này là gì?
+ 
+Tên của dịch vụ đang chạy ở Webserver là gì? Dịch vụ này có 1 CVE được biết đến rộng rãi, bạn có thể nêu tên được không? (Format: ServiceName_CVE. Ví dụ: Atlassian Confluence_CVE-2023-22527)
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;câu-1&#34;&gt;Câu 1&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkwkqEZnfl.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DDNNNNSS</title>
+      <link>http://localhost:1313/bksec/ddnnnnss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bksec/ddnnnnss/</guid>
+      <description>&lt;p&gt;Tải bài tập tại đây &lt;a href=&#34;https://training.bksec.vn/challenges/34&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mở bằng Hierarchy thấy nhiều packet DNS + tên đề bài nhấn mạnh vào dns
+Ta lọc dns&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H1MPWhBTGe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta lướt thấy nhiều req từ ip 198.168.1.100
+Ta lọc &lt;code&gt;ip.src == 198.168.1.100 and dns&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BybkG2HpGe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta để ý nội dung tuân theo cú pháp &lt;code&gt;seq&amp;lt;số&amp;gt;.&amp;lt;chuỗi nhìn giống hex&amp;gt;.1337xBetbkseccom&lt;/code&gt;
+Ta lọc lấy nhanh nội dung bằng Tshark&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rk4OMnHaMe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta viết code để lấy đoạn mã&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-py=&#34; data-lang=&#34;py=&#34;&gt;fi = open(&amp;#34;out.txt&amp;#34;,&amp;#34;r&amp;#34;)
+s = &amp;#34;&amp;#34;
+for i in range(1,147):
+    a = fi.readline()
+    b = a[88:96]
+    s += b
+
+print(s)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Ta dùng cyberchef thấy ko nhận diện nên cần kiểm tra lại
+Lấy ví dụ với &lt;code&gt;d3523319&lt;/code&gt; thì trong đó có &lt;code&gt;5233&lt;/code&gt; nằm trong dải ASCII đọc được (từ 20 đến 7E)
+Ta sử lại code&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to MemFor</title>
+      <link>http://localhost:1313/bksec/introduction-to-memfor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bksec/introduction-to-memfor/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sử dụng vol 3 thay vì vol 2 để tăng tốc&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vol=&#34; data-lang=&#34;vol=&#34;&gt;cd ~
+python3 -m venv mt
+source mt/bin/activate
+pip install --upgrade pip
+pip install volatility3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Di chuyển tới nơi lưu trữ file
+Lấy thông tin của image&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;vol -f memdump.mem windows.info.Info
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryg3GAk2Mx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta có được thông tin phiên bản là &lt;strong&gt;&lt;code&gt;10&lt;/code&gt;&lt;/strong&gt; và múi giờ khi chuyển về VN là &lt;strong&gt;&lt;code&gt;2025-02-20 22:05:26&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Để kiểm tra phần mền đáng ngờ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ThumbThumb</title>
+      <link>http://localhost:1313/bksec/thumbthumb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bksec/thumbthumb/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Đọc file bằng công cụ &lt;a href=&#34;https://thumbcacheviewer.github.io/&#34;&gt;này&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Byo_SOAoGe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta export hết ra được &lt;code&gt;b}muh7{KBSEC&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : BKSEC{7humb}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tư tưởng Hồ Chí Minh</title>
+      <link>http://localhost:1313/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ta sử dụng binwalk để kiểm tra file ẩn tại ko thể lấy được nội dung bị bôi đen&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Byis2DAoMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy có file ảnh nên ta lấy ra &lt;code&gt;dd if=TTHCM.pdf of=anh.jpg bs=266037 skip=1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJva2wRiGx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : BKSEC{hav3_s0me_commun1sm_my_c0mrade}&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

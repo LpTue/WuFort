@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Document analysis | WuFort</title>
+<meta name="keywords" content="Tools">
+<meta name="description" content="I. Tài liệu Microsoft
+
+Những tài liệu có thể chứa các thông điệp ẩn hoặc mã độc hại có thể được thực thi khi ta mở các tài liệu này
+
+Tài liệu
+
+Có hai định dạng tệp được sử dụng chính gồm :
+
+OLE ( Object Linking and Embedding : Liên kết và nhúng đối tượng )
+OOOXML ( Office Open XML )
+
+
+
+OLE
+
+Là định dạng cũ từ 1997 - 2003
+Định nghĩa cấu trúc &quot; tệp trong tệp &ldquo;, cho phép nhúng một tệp khác vào một tệp
+
+Ví dụ : bảng tính Excel có thể nhúng vào tài liệu">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tools/document-analysis/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tools/document-analysis/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Document analysis
+    </h1>
+    <div class="post-meta">
+
+
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="i-tài-liệu-microsoft">I. Tài liệu Microsoft<a hidden class="anchor" aria-hidden="true" href="#i-tài-liệu-microsoft">#</a></h1>
+<ul>
+<li>Những tài liệu có thể chứa các thông điệp ẩn hoặc mã độc hại có thể được thực thi khi ta mở các tài liệu này</li>
+</ul>
+<h2 id="tài-liệu">Tài liệu<a hidden class="anchor" aria-hidden="true" href="#tài-liệu">#</a></h2>
+<ul>
+<li>Có hai định dạng tệp được sử dụng chính gồm :
+<blockquote>
+<p>OLE ( Object Linking and Embedding : Liên kết và nhúng đối tượng )
+OOOXML ( Office Open XML )</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="ole">OLE<a hidden class="anchor" aria-hidden="true" href="#ole">#</a></h2>
+<ul>
+<li>Là định dạng cũ từ 1997 - 2003</li>
+<li>Định nghĩa cấu trúc &quot; tệp trong tệp &ldquo;, cho phép nhúng một tệp khác vào một tệp
+<blockquote>
+<p>Ví dụ : bảng tính Excel có thể nhúng vào tài liệu</p>
+</blockquote>
+</li>
+<li>Hỗ trợ các tệp mở rộng tệp như <code>.rtf</code>, <code>.doc</code>, <code>ppt</code>, <code>xls</code>, cùng nhiều phần mở rộng khác</li>
+</ul>
+<h2 id="ooxml">OOXML<a hidden class="anchor" aria-hidden="true" href="#ooxml">#</a></h2>
+<ul>
+<li>Là định dạng tệp hiện đại dựa trên XML cho các tài liệu văn phòng
+<blockquote>
+<p>Tệp XML ( Extensible Markup Language : ngôn ngữ đánh đấu mở rộng ) là các file văn bản thuần túy mô tả cấu trúc và các tính năng khác của tài liệu</p>
+</blockquote>
+</li>
+<li>Các phần mở rộng tài liệu gồm <code>.docx</code>, <code>.pptx</code>, <code>xlsx</code>, cùng nhiều phần mở rộng khác</li>
+<li>Định dạng lưu các tài liệu dưới dạng các tệp Zip</li>
+<li>Bằng cách đổi tên phần mở rộng <code>.docx.zip</code>, <code>.xlsx.zip</code>, <code>pptx.zip</code>, bạn có thể giải nén nội dung các tệp thành các XML
+riêng lẻ</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Sy8TYpt_fe.png"></p>
+<ul>
+<li>Đây là tính năng hữu ích cho điều tra số, vì cho phép các nhà kiểm tra nội dung tài liệu mà không cần sửa đổi nó</li>
+</ul>
+<h2 id="cấu-trúc-giải-nén-của-tài-liệu-ooxml">Cấu trúc giải nén của tài liệu OOXML<a hidden class="anchor" aria-hidden="true" href="#cấu-trúc-giải-nén-của-tài-liệu-ooxml">#</a></h2>
+<ul>
+<li>Sau khi giải nén bằng cách thêm đuôi <code>.zip</code></li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HkK95aY_Mg.png"></p>
+<h3 id="content_typesxml">[Content_Types].xml<a hidden class="anchor" aria-hidden="true" href="#content_typesxml">#</a></h3>
+<ul>
+<li>Là tệp chứa thông tin về các loại nội dung có trong tài liệu và phần mở rộng tệp tương ứng của chúng</li>
+</ul>
+<h3 id="-docprops">📂 docProps<a hidden class="anchor" aria-hidden="true" href="#-docprops">#</a></h3>
+<ul>
+<li>Chứa <code>app.xml</code> và <code>core.xml</code></li>
+<li><code>app.xml</code> : chứa thông tin về ứng dụng sử dụng để tạo tài liệu</li>
+</ul>
+<pre tabindex="0"><code class="language-xml=" data-lang="xml=">&lt;Properties xmlns=&#34;http://schemas.openxmlformats.org/officeDocument/2006/extended-properties&#34; xmlns:vt=&#34;http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes&#34;&gt;
+  &lt;Template&gt;Normal.dotm&lt;/Template&gt;
+  &lt;TotalTime&gt;0&lt;/TotalTime&gt;
+  &lt;Pages&gt;1&lt;/Pages&gt;
+  &lt;Words&gt;1&lt;/Words&gt;
+  &lt;Characters&gt;12&lt;/Characters&gt;
+  &lt;Application&gt;Microsoft Office Word&lt;/Application&gt;
+  &lt;DocSecurity&gt;0&lt;/DocSecurity&gt;
+  &lt;Lines&gt;1&lt;/Lines&gt;
+  &lt;Paragraphs&gt;1&lt;/Paragraphs&gt;
+  &lt;ScaleCrop&gt;false&lt;/ScaleCrop&gt;
+  &lt;Company/&gt;
+  &lt;LinksUpToDate&gt;false&lt;/LinksUpToDate&gt;
+  &lt;CharactersWithSpaces&gt;12&lt;/CharactersWithSpaces&gt;
+  &lt;SharedDoc&gt;false&lt;/SharedDoc&gt;
+  &lt;HyperlinksChanged&gt;false&lt;/HyperlinksChanged&gt;
+  &lt;AppVersion&gt;16.0000&lt;/AppVersion&gt;
+&lt;/Properties&gt;
+</code></pre><p>-<code>core.xml</code> : chứa siêu dữ liệu của tài liệu, chẳng hạn như tên tác giả, ngày tạo và ngày sửa đổi</p>
+<pre tabindex="0"><code class="language-xml=" data-lang="xml=">&lt;cp:coreProperties xmlns:cp=&#34;http://schemas.openxmlformats.org/package/2006/metadata/core-properties&#34; xmlns:dc=&#34;http://purl.org/dc/elements/1.1/&#34; xmlns:dcterms=&#34;http://purl.org/dc/terms/&#34; xmlns:dcmitype=&#34;http://purl.org/dc/dcmitype/&#34; xmlns:xsi=&#34;http://www.w3.org/2001/XMLSchema-instance&#34;&gt;
+  &lt;dc:title/&gt;
+  &lt;dc:subject/&gt;
+  &lt;dc:creator&gt;Saad Javed&lt;/dc:creator&gt;
+  &lt;cp:keywords/&gt;
+  &lt;dc:description/&gt;
+  &lt;cp:lastModifiedBy&gt;Saad Javed&lt;/cp:lastModifiedBy&gt;
+  &lt;cp:revision&gt;2&lt;/cp:revision&gt;
+  &lt;dcterms:created xsi:type=&#34;dcterms:W3CDTF&#34;&gt;2023-02-04T15:44:00Z&lt;/dcterms:created&gt;
+  &lt;dcterms:modified xsi:type=&#34;dcterms:W3CDTF&#34;&gt;2023-02-04T15:44:00Z&lt;/dcterms:modified&gt;
+&lt;/cp:coreProperties&gt;
+</code></pre><h3 id="-_rels">📂 _rels<a hidden class="anchor" aria-hidden="true" href="#-_rels">#</a></h3>
+<p>-<code>.rels</code> : chứa thông tin về mối quan hệ giữa các phần khác nhau của tài liệu, ví dụ như &lsquo;app.xml&rsquo; và &lsquo;core.xml&rsquo;</p>
+<h3 id="-word">📂 word<a hidden class="anchor" aria-hidden="true" href="#-word">#</a></h3>
+<ul>
+<li>Thư mục này chứa nội dung thực tế của tài liệu</li>
+<li><code>document.xml</code> : chứa nội dung văn bản thực tế của tài liệu</li>
+</ul>
+<pre tabindex="0"><code class="language-xml=" data-lang="xml="> &lt;w:body&gt;
+    &lt;w:p w14:paraId=&#34;68F74602&#34; w14:textId=&#34;442B891B&#34; w:rsidR=&#34;00D473D4&#34; w:rsidRPr=&#34;00B20485&#34; w:rsidRDefault=&#34;00B20485&#34;&gt;
+      &lt;w:pPr&gt;
+        &lt;w:rPr&gt;
+          &lt;w:lang w:val=&#34;en-US&#34;/&gt;
+        &lt;/w:rPr&gt;
+      &lt;/w:pPr&gt;
+      &lt;w:r&gt;
+        &lt;w:rPr&gt;
+          &lt;w:lang w:val=&#34;en-US&#34;/&gt;
+        &lt;/w:rPr&gt;
+        &lt;w:t&gt;Hello World!&lt;/w:t&gt;
+      &lt;/w:r&gt;
+    &lt;/w:p&gt;
+    &lt;w:sectPr w:rsidR=&#34;00D473D4&#34; w:rsidRPr=&#34;00B20485&#34;&gt;
+      &lt;w:pgSz w:w=&#34;11906&#34; w:h=&#34;16838&#34;/&gt;
+      &lt;w:pgMar w:top=&#34;1440&#34; w:right=&#34;1440&#34; w:bottom=&#34;1440&#34; w:left=&#34;1440&#34; w:header=&#34;708&#34; w:footer=&#34;708&#34; w:gutter=&#34;0&#34;/&gt;
+      &lt;w:cols w:space=&#34;708&#34;/&gt;
+      &lt;w:docGrid w:linePitch=&#34;360&#34;/&gt;
+    &lt;/w:sectPr&gt;
+  &lt;/w:body&gt;
+&lt;/w:document&gt;
+</code></pre><p>-<code>fontTable.xml</code> : chứa thông tin về các phông chữ được sử dụng trong tài liệu</p>
+<ul>
+<li>📂 _rels : chứa tệp tin <code>document.xml.rels</code>
+<blockquote>
+<p><code>document.xml.rels</code> : chứa thông tin về các mối quan hệ giữa các phần khác nhau của tài liệu, chẳng hạn như kiểu dáng, chủ đề, cài đặt cx như các URL cho liên kết bên ngoài</p>
+</blockquote>
+</li>
+<li><code>settings.xml</code> : chứa các cài đặt tài liệu và thông tin cấu hình</li>
+<li><code>styles.xml</code> : chứa các thông tin về các kiểu định dạng được sử dụng trong tài liệu</li>
+<li>📂 theme : chứa các tệp về chủ đề được sử dụng trong tài liệu
+<blockquote>
+<p><code>theme1.xml</code> : chứa nội dung chủ đề thực tế</p>
+</blockquote>
+</li>
+<li><code>webSettings.xml</code> : chứa các thông tin về các cài đặt dành riêng cho web tài liệu, chẳng hạn như khung HTML cx như các định dạng lưu dưới dạng HTML</li>
+</ul>
+<h1 id="ii-tài-liệu-hỗ-trợ-macro">II. Tài liệu hỗ trợ macro<a hidden class="anchor" aria-hidden="true" href="#ii-tài-liệu-hỗ-trợ-macro">#</a></h1>
+<ul>
+<li>Là tập hợp các lệnh tự động hóa các tác vụ</li>
+<li>Macro được viết bằng Visual Basic for Applications ( VBA )</li>
+<li>Kẻ tấn công thường lợi dụng trong các cuộc tấn công lừa đảo và nhúng các mã độc để thực hiện hành động xấu và cài đặt phần mền vào hệ thống</li>
+</ul>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1u_bkq_zl.png"></p>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HyiKZk5_Gg.png"></p>
+<h2 id="phân-tích-macro">Phân tích macro<a hidden class="anchor" aria-hidden="true" href="#phân-tích-macro">#</a></h2>
+<ul>
+<li>Đọc tại <a href="https://hackmd.io/@LpTue/SkRcH19uze">đây</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/tools/">Tools</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
