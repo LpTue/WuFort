@@ -34,18 +34,17 @@ params:
     imageHeight: 120
     buttons:
       - name: Knowledge
-        url: "knowledge/"
+        url: "https://lptue.github.io/WuFort/knowledge/"
       - name: Tools
-        url: "tools/"
+        url: "https://lptue.github.io/WuFort/tools/"
       - name: PicoCTF_Easy
-        url: "picoctf_easy/"
+        url: "https://lptue.github.io/WuFort/picoctf_easy/"
       - name: PicoCTF_Medium
-        url: "picoctf_medium/"
+        url: "https://lptue.github.io/WuFort/picoctf_medium/"
       - name: MiniCTF
-        url: "minictf/"
+        url: "https://lptue.github.io/WuFort/minictf/"
       - name: BKSec
-        url: "bksec/"
-
+        url: "https://lptue.github.io/WuFort/bksec/"
   socialIcons:
     - name: facebook
       url: "https://www.facebook.com/profile.php?id=61593526254843"
@@ -56,9 +55,9 @@ menu:
   main:
     - identifier: tags
       name: Tags
-      url: tags/
+      pageRef: /tags
       weight: 10
     - identifier: search
       name: Search
-      url: search/
+      pageRef: /search
       weight: 20
