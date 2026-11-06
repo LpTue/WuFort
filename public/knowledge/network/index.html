@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/WuFort/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WuFort/livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Network | WuFort</title>
 <meta name="keywords" content="Knowledge">
 <meta name="description" content=". Giao thức TCP
@@ -23,16 +23,16 @@ Bước 2 : Server gửi phản hồi chấp nhận tới Client : SYN &#43; ACK
 Bước 3 : Client gửi xác nhận tới Server : ACK
 Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/WuFort/knowledge/network/">
+<link rel="canonical" href="https://lptue.github.io/WuFort/knowledge/network/">
 <link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/WuFort/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/WuFort/safari-pinned-tab.svg">
+<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/WuFort/knowledge/network/">
+<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/knowledge/network/">
 <noscript>
     <style>
         #theme-toggle,
@@ -78,13 +78,77 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://lptue.github.io/WuFort/knowledge/network/">
+  <meta property="og:site_name" content="WuFort">
+  <meta property="og:title" content="Network">
+  <meta property="og:description" content=". Giao thức TCP Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại Các tệp tin sẽ được đánh số thứ tự, lần lượt Vì 2 lí do trên nên tuy tốc độ chậm nhưng có độ chính xác, tin cậy cao
+Phù hợp để gửi những tệp tin đòi hỏi sự chính xác như : Gmail, Ngân hàng v.v TCP có cơ chế bắt tay (3-way handshake ) Bước 1 : Client gửi yêu cầu tới Server : SYN ( SYN : The Synchronous Idle Character - Ký tự đồng bộ hóa ) Bước 2 : Server gửi phản hồi chấp nhận tới Client : SYN &#43; ACK ( ACK : Acknowledgement - Chấp nhận ) Bước 3 : Client gửi xác nhận tới Server : ACK Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="knowledge">
+    <meta property="article:tag" content="Knowledge">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Network">
+  <meta name="twitter:description" content=". Giao thức TCP Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại Các tệp tin sẽ được đánh số thứ tự, lần lượt Vì 2 lí do trên nên tuy tốc độ chậm nhưng có độ chính xác, tin cậy cao
+Phù hợp để gửi những tệp tin đòi hỏi sự chính xác như : Gmail, Ngân hàng v.v TCP có cơ chế bắt tay (3-way handshake ) Bước 1 : Client gửi yêu cầu tới Server : SYN ( SYN : The Synchronous Idle Character - Ký tự đồng bộ hóa ) Bước 2 : Server gửi phản hồi chấp nhận tới Client : SYN &#43; ACK ( ACK : Acknowledgement - Chấp nhận ) Bước 3 : Client gửi xác nhận tới Server : ACK Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Knowledge",
+      "item": "https://lptue.github.io/WuFort/knowledge/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Network",
+      "item": "https://lptue.github.io/WuFort/knowledge/network/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Network",
+  "name": "Network",
+  "description": ". Giao thức TCP Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại Các tệp tin sẽ được đánh số thứ tự, lần lượt Vì 2 lí do trên nên tuy tốc độ chậm nhưng có độ chính xác, tin cậy cao\nPhù hợp để gửi những tệp tin đòi hỏi sự chính xác như : Gmail, Ngân hàng v.v TCP có cơ chế bắt tay (3-way handshake ) Bước 1 : Client gửi yêu cầu tới Server : SYN ( SYN : The Synchronous Idle Character - Ký tự đồng bộ hóa ) Bước 2 : Server gửi phản hồi chấp nhận tới Client : SYN + ACK ( ACK : Acknowledgement - Chấp nhận ) Bước 3 : Client gửi xác nhận tới Server : ACK Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ\n",
+  "keywords": [
+    "Knowledge"
+  ],
+  "articleBody": ". Giao thức TCP Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại Các tệp tin sẽ được đánh số thứ tự, lần lượt Vì 2 lí do trên nên tuy tốc độ chậm nhưng có độ chính xác, tin cậy cao\nPhù hợp để gửi những tệp tin đòi hỏi sự chính xác như : Gmail, Ngân hàng v.v TCP có cơ chế bắt tay (3-way handshake ) Bước 1 : Client gửi yêu cầu tới Server : SYN ( SYN : The Synchronous Idle Character - Ký tự đồng bộ hóa ) Bước 2 : Server gửi phản hồi chấp nhận tới Client : SYN + ACK ( ACK : Acknowledgement - Chấp nhận ) Bước 3 : Client gửi xác nhận tới Server : ACK Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ\nII. Giao thức UDP Các tệp tin gửi đi bởi UDP sẽ được gửi đi hàng loạt Các tệp tin sẽ ko được đánh số, ko được kiểm tra Vì 2 lí do trên nên tốc độ tuy nhanh nhưng tộ tin cậy thấp\nPhù hợp trong môi trường đòi hỏi tốc độ : Game online, Video Youtube, v.v III. So sánh TCP và UDP UDP được sử dụng cho DNS vì DNS sẽ không cần mất thời gian kết nối HTTP hay HTTPS là các đối tượng web cần tải về chính xác nên sử dụng TCP IV. Giao thức HTTP HTTP (HyperText Transfer Protocol ) là giao thức truyền tải siêu văn bản Cách thức hoạt động của HTTP dựa trên mô hình Yêu cầu-phản hồi giữa Client và Server Bước 1 : Người dùng nhập URL, Client gửi yêu cầu tới Server chứa nội dung đó Bước 2 : Máy chủ sẽ phản hồi với dữ liệu được yêu cầu\nKhía cạnh cơ bản của HTTP 1.HTTP đơn giản : Được thiết kế với tính đơn giản, rõ ràng giúp dễ dàng kiểm thử và sửa lỗi 2.HTTP là stateless, nhưng không thể mở rộng : stateless (không trạng thái ) có nghĩa là mỗi yêu cầu gửi đi không liên kết nào với yêu cầu trước đó –\u003e đòi hỏi sự bổ sung như cookie, session 3. HTTP có thể mở rộng phục phụ nhu cầu cụ thể : HTTPS : tăng cường bảo mật HTTP/2 và HTTP/3 : tăng cường tốc độ\nV. Giao thức HTTPS HTTPS (Hypertext Transfer Protocol Secure ) giao thức truyền tải siêu văn bản an toàn Bản chất là HTTPS nhưng thêm SSL (Secure Sockets Layer - tầng ổ bảo mật ) hoặc TLS (Transport Layer Security - bảo mật tầng truyền tải ) SSL và TLS đều sử dụng hệ thống PKI (Public Key Infrastructure - hạ tầng khóa công khai ) không đối xứng Hệ thống sử dụng 2 khóa để mã hóa thông tin liên lạc, gồm Public Key và Private Key Thứ gì được mã hóa bằng Public Key chỉ được giải mã bảo Private Key và ngược lại Đảm bảo nội dung đc mã hóa khi truyền và giải mã khi nhận\nVI. So sánh HTTP và HTTPS VII. Giao thức DNS DNS (Domain Name System ) phân giải tên miền dễ nhớ như facebook.com thành địa chỉ IP và ngược lại Giống như danh bạ cho phép người dùng truy cập thông qua tên miền dễ nhớ Quản lý tên miền và bản ghi DNS khác nhau A record (Address): Liên kết tên miền với địa chỉ IPv4 thật MX (Mail Exchange): Xác định máy chủ nhận email CNAME (Canonical Name): Tạo bí danh, giúp chuyển hướng từ subdomain sang domain chính TXT record: Lưu thông tin xác thực như SPF, DKIM, bảo mật email và chống giả mạo\nPhân giải ngược (từ IP về tên miền tương ứng ) VII. Giao thức ARP ARP (Address Resolution Protocol ) xác định MAC tương ứng với một địa chỉ IP trong mạng LAN Hoạt động liên kết trong mô hình OSI, đóng vai trò thiết yếu trong quá trình truyền dữ liệu nội bộ mạng, nhất là trong mạng Ethernet Việc sử dụng ARP giúp tối ưu hóa việc truyền thông tin trong mạng, đảm bảo dữ liệu được gửi đến đúng thiết bị thông qua việc ánh xạ địa chỉ IP sang địa chỉ MAC phù hợp VIII. Mô hình OSI OSI là khung tham chiếu tiêu chuẩn, chia thành 7 tầng riêng biệt để chuẩn hóa và đơn giản hóa việc giao tiếp giữa các hệ thống mạng\tTầng 7 : Tầng ứng dụng (Application Layer) : Tầng mà web, ứng dụng tương tác trực tiếp với người dùng Tầng 6 : Tầng trình bày (Presentation Layer) : Đảm bảo giữ liệu được định dạng đúng, mã hóa, giải mã, nén và giải nén Tầng 5 : Tầng phiên (Session Layer) : Thiết lập phiên, duy trì phiên, đồng bộ hóa và kết thúc phiên Tầng 4: Tầng vận chuyển (Transport Layer) : Phân đoạn và tái lắp ráp các segment, đánh địa chỉ cổng, kiểm soát kết nối, kiểm soát luồng, kiểm soát lỗi Tầng 3: Tầng mạng (Network Layer) : Định địa chỉ logic, định tuyến, phân mảnh và tái lắp ráp gói tin ( Nếu gói tin quá to thì mới cần phân mảnh ) Tầng 2: Tầng liên kết dữ liệu (Data Link Layer) : Đóng khung, địa chỉ vật lý, kiểm soát luồng, kiểm soát lỗi, Kiểm soát truy cập đường truyền Tầng 1 : Tầng vật lý (Physical Layer) : Đặc tính môi trường, biểu diễn bit, tốc độ dữ liệu, đồng bộ hóa bit, Dữ liệu được truyền lần lượt từ tầng cao nhất xuống tầng thấp nhất IX. Mô hình TCP/IP TCP/IP là nền tảng giao thức giúp kết nối và truyền dữ liệu trên mạng Internet, gồm 4 tầng Tầng 4 – Tầng ứng dụng (Application) : Đây là tầng mà HTTP, HTTPS, FTP, SMP, v.v kết nối tới người dùng Tầng 3 – Tầng giao vận (Transport) : Chịu trách nhiệm truyền tải dữ liệu, phổ biến là TCP và UDP Tầng 2 – Tầng mạng (Internet)\t: Định tuyến, gắn địa chỉ đồng thời tìm đường đi tối ưu Tầng 1 – Tầng vật lý (Physical) : Chịu trách nhiệm truyền dữ liệu giữa các thiết bị trong cùng một mạng X. So sánh mô hình OSI và TCP/IP OSI và TCP/IP khác nhau lớn về số tầng TCP/IP gộp tầng 7, 6, 5 của OSI lại thành tầng 4 TCP/IP gộp tầng 2, 1 của OSI lại thành tầng 1 OSI giống như mô hình lý thuyết, còn TCP/IP là thực tế OSI giúp ta hiểu sâu hơn về mạng, đồng thời việc tách riêng từng tầng giúp dễ dàng kiểm tra nếu có lỗi ",
+  "wordCount" : "1153",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lptue.github.io/WuFort/knowledge/network/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WuFort",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lptue.github.io/WuFort/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="http://localhost:1313/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -110,12 +174,12 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="http://localhost:1313/WuFort/tags/" title="Tags">
+                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -301,14 +365,14 @@ HTTP/2 và HTTP/3 : tăng cường tốc độ</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/WuFort/tags/knowledge/">Knowledge</a></li>
+      <li><a href="https://lptue.github.io/WuFort/tags/knowledge/">Knowledge</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/WuFort/">WuFort</a></span> · 
+        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
 
     
     

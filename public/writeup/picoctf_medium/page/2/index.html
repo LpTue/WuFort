@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>PicoCTF_Medium | WuFort</title>
+<meta name="keywords" content="">
+<meta name="description" content="PicoCTF_Medium - WuFort">
+<meta name="author" content="">
+<link rel="canonical" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/">
+<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://lptue.github.io/WuFort/writeup/picoctf_medium/">
+  <meta property="og:site_name" content="WuFort">
+  <meta property="og:title" content="PicoCTF_Medium">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PicoCTF_Medium">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "WriteUp",
+      "item": "https://lptue.github.io/WuFort/writeup/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "PicoCTF_Medium",
+      "item": "https://lptue.github.io/WuFort/writeup/picoctf_medium/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    PicoCTF_Medium
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Disk, disk, sleuth!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây Đọc kỹ miêu tả
+Ta thấy đề cập tới strings Nên mở bằng HxD
+Tìm kiếm strings academy Flag là : academy{f0r3ns1c4t0r_n30phyt3_6502313d}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Disk, disk, sleuth!" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/disk-disk-sleuth/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Disk, disk, sleuth! II
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây Đọc kỹ miêu tả cần tìm file down-at-the-bottom.txt
+Ta mở bằng autopsy và dùng công cụ tìm kiếm để tìm file
+Falg là : academy{f0r3ns1c4t0r_n0v1c3_95c645ad}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Disk, disk, sleuth! II" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/disk-disk-sleuth-ii/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">DISKO 3
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây Mở file tìm kiếm
+Flag là : academy{n3v3r_z1p_2_h1d3_d7b201f3}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to DISKO 3" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-3/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">DISKO 4
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây Tìm bằng autopsy
+Flag là : academy{d3l_d0n7_h1d3_w3ll_187a1210}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to DISKO 4" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-4/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Eavesdrop
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây Mở bằng pcap ta đọc lén được đoạn văn bản
+Ta thu thập được
+Lệnh : openssl des3 -d -salt -md md5 -in file.des3 -out file.txt -k supersecretpassword123 Và có tệp tin nào đó được gửi qua cổng 9002 Ta coppy mã hex để dựng lại file.des3 Và chạy lệnh
+Flag là : academy{nc_73115_411_02612719}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Eavesdrop" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/eavesdrop/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Endianness-v2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tại đây
+Mở bằng HxD
+Ta thấy file dường như đang bị đảo Ta chuyển về hex –&gt; swap (đảo Big-Endian &amp; Little-Endian) –&gt; chuyển về dữ liệu thô –&gt; render ra ảnh
+Flag là : academy{cert!f1Ed_iNd!4n_s0rrY_3nDian_5b37ea4e}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Endianness-v2" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/endianness-v2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Enhance!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây Mở bth thấy chạy ra web Nên mở thử bằng vscode để đọc code
+Flag là : academy{3nh4nc3d_9f31c04b}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Enhance!" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/enhance/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Event-Viewing
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây
+Đọc mô tả
+Install –&gt; ID : 1033 Registry change –&gt; ID : 4657 Shutdown –&gt; ID : 1074
+Flag là : academy{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Event-Viewing" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/event-viewing/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Extensions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây Ta thấy đầu png nên ta chỉnh về đuôi .png
+Flag là : academy{now_you_know_about_extensions}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Extensions" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/extensions/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">File types
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tải bài tập tại đây Mở file pdf ko được nên ta đọc bằng cat
+&lt; Đoạn này em ko hiểu mã hóa nên cho AI phân tích &gt;
+Flag là : academy{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_35957b68}
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to File types" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/file-types/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

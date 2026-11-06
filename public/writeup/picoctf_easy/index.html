@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>PicoCTF_Easy | WuFort</title>
+<meta name="keywords" content="">
+<meta name="description" content="PicoCTF_Easy - WuFort">
+<meta name="author" content="">
+<link rel="canonical" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/">
+<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://lptue.github.io/WuFort/writeup/picoctf_easy/">
+  <meta property="og:site_name" content="WuFort">
+  <meta property="og:title" content="PicoCTF_Easy">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PicoCTF_Easy">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "WriteUp",
+      "item": "https://lptue.github.io/WuFort/writeup/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "PicoCTF_Easy",
+      "item": "https://lptue.github.io/WuFort/writeup/picoctf_easy/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    PicoCTF_Easy
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Binary Digits
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Thấy file chứa toàn 0,1 –&gt; nghĩ ngay tới mã nhị phân
+Có thể tự code tách 8 ký tự 1 (chuyển thành từng mã nhị phân riêng biệt )
+Hoặc bỏ lên CyberChef (Hiện tại chưa khuyến khích tại nó giới hạn ý tưởng )
+Sau tách chúng ta có thể chuyển nó thành dạng ASCII để xem có đọc được ko (Có thể dùng CyberChef để tiện lưu file ASCII lại )
+–&gt; Khi đó thấy 1 file chuỗi ký tự không thể đọc và còn bị lặp nx
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Binary Digits" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/binary-digits/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Corrupted file
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Đầu tiên mở file bằng hex, thấy phần đầu là JFIF
+Khi ta thay đuôi bằng .jpg thì báo lỗi Đây là một điều khá lạ bởi nếu đúng thì sửa đuôi phải ra
+Thêm nx phân tích đoạn văn bản thấy nó đúng kiểu ko thể đọc bằng ASCII
+–&gt; Nghĩ đến trường hợp có thể sai định dạng văn bản
+Truy cập https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5 Ta phát hiện đoạn đầu đúng của ảnh JFIF có dạng : ffd8 ffe0 0010 4a46 4946 0001 0101 0047 theo như github nói
+Ta thay lại đoạn đầu bằng mã hex kia
+Sau đó ta đổi lại đuôi file
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Corrupted file" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">DISKO 1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Đầu tiên thấy file lạ lạ ( ko phải kiểu ảnh cx ko phải dạng kiểu đĩa ) nên cứ strings trước Ăn may ra flag :D
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to DISKO 1" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/disko-1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Flag in Flame
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Đầu tiên hãy thử phân tích file
+Thấy đây là file thuần ASCII Thử strings logs.txt | grep pico
+Thấy ko ra kết quả nên đổi cách
+Khúc này, nếu bạn khôn sẽ thấy “=” ở cuối –&gt; có thể đây là dạng text của base64
+Do file quá lớn nên CyberChef ko thể hỗ trợ
+Dùng lệnh base --decode logs.txt &gt; da
+Lúc này bạn nhận được file base64
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Flag in Flame" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Glory of the Garden
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Sử dụng Strings	</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Glory of the Garden" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/glory-of-the-garden/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hidden in plainsight
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Đầu tiên kiểm tra bằng exiftool
+Thấy đoạn mã đáng ngờ đem giải mã
+Thấy steghide và paZZword
+Thì bước đầu cứ phải tải steghide đã sudo apt install steghide Tiếp đó mò lệnh steghide
+Cuối cùng là đọc file flag
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Hidden in plainsight" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/hidden-in-plainsight/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Information
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Dùng exiftool	Sau đó thì giải qua Base64
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Information" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/information/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ph4nt0m 1ntrud3r
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Khi vào ta thấy : - Các ASCII có kết thúc bằng “=”	–&gt; Ta có thể nghĩ ngay tới Base64	Tiếp đó nhìn vào ta thấy phân chia rõ ràng các độ dài : 4, 8, 12	Lúc này ta sẽ nghĩ ngay tới độ dài 12 có thể chứa mã hóa Base64 (do 12 chia hết cho 3 )	Tham khảo Base64 : https://en.wikipedia.org/wiki/Base64	Lúc này ta lấy chúng ra để giải mã : ...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Ph4nt0m 1ntrud3r" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/ph4nt0m-1ntrud3r/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">RED
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Đầu tiên, khi thấy tên bài là màu sắc –&gt; Nghĩ ngay tới các màu sắc –&gt; nghĩ tới Zsteg
+Dùng lệnh zsteg red.png Thấy đoạn mã dài đáng ngờ, thấy dấu “=” ở cuối –&gt; nên nghi là base 64	</p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to RED" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/red/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Riddle Registry
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Check thấy câu có chữ METADATA –&gt; nghĩ tới exiftool Check exiftool –&gt; Thấy dấu “=” –&gt; nghi là base64 </p>
+  </div>
+  <footer class="entry-footer">
+
+<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Riddle Registry" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/riddle-registry/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

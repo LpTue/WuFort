@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MiniCTF on WuFort</title>
-    <link>http://localhost:1313/WuFort/tags/minictf/</link>
+    <link>https://lptue.github.io/WuFort/tags/minictf/</link>
     <description>Recent content in MiniCTF on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/WuFort/tags/minictf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lptue.github.io/WuFort/tags/minictf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AUTH</title>
-      <link>http://localhost:1313/WuFort/minictf/auth/</link>
+      <link>https://lptue.github.io/WuFort/writeup/minictf/auth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/minictf/auth/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/minictf/auth/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1DGWGeqfx.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tập trung vào tài khoản &lt;code&gt;student&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkziWMgqMl.png&#34;&gt;&lt;/p&gt;
@@ -23,9 +23,9 @@ Nên ta dùng grep theo format đó&lt;/p&gt;
     </item>
     <item>
       <title>CTQ1</title>
-      <link>http://localhost:1313/WuFort/minictf/ctq1/</link>
+      <link>https://lptue.github.io/WuFort/writeup/minictf/ctq1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/minictf/ctq1/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/minictf/ctq1/</guid>
       <description>&lt;p&gt;Khi đọc file pcap ta thấy ó file script.ps1&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HksUWXg9fe.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Export HTTP object list ta được &lt;code&gt;flag.txt&lt;/code&gt; và &lt;code&gt;script.ps1&lt;/code&gt;
@@ -44,9 +44,9 @@ Ta mở file &lt;code&gt;flag.txt&lt;/code&gt; thấy flag giả&lt;/p&gt;
     </item>
     <item>
       <title>EnderDragon</title>
-      <link>http://localhost:1313/WuFort/minictf/enderdragon/</link>
+      <link>https://lptue.github.io/WuFort/writeup/minictf/enderdragon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/minictf/enderdragon/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/minictf/enderdragon/</guid>
       <description>&lt;p&gt;Đọc giới thiệu ta thấy đây là file map minecraft&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkhKMfg9Ge.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Nhập file game zô, ta thấy có bản đồ&lt;/p&gt;
@@ -62,9 +62,9 @@ Ta tìm và thấy rương trên trời&lt;/p&gt;
     </item>
     <item>
       <title>OnthiTHPT</title>
-      <link>http://localhost:1313/WuFort/minictf/onthithpt/</link>
+      <link>https://lptue.github.io/WuFort/writeup/minictf/onthithpt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/minictf/onthithpt/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/minictf/onthithpt/</guid>
       <description>&lt;p&gt;Chuyển đổi đuôi &lt;code&gt;.docx&lt;/code&gt; thành &lt;code&gt;.docx.zip&lt;/code&gt;
 Truy cập theo đường dẫn &lt;code&gt;OnthiTHPT\De-thi-thu-TN-THPT-2026-mon-Toan-So-GD-Tuyen-Quang\word\media&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkP_rrZqfe.png&#34;&gt;&lt;/p&gt;
@@ -73,9 +73,9 @@ Truy cập theo đường dẫn &lt;code&gt;OnthiTHPT\De-thi-thu-TN-THPT-2026-mo
     </item>
     <item>
       <title>Trodua</title>
-      <link>http://localhost:1313/WuFort/minictf/trodua/</link>
+      <link>https://lptue.github.io/WuFort/writeup/minictf/trodua/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/minictf/trodua/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/minictf/trodua/</guid>
       <description>&lt;p&gt;Đọc mô tả, ta thấy nó chạy mỗi khi mở máy &amp;ndash;&amp;gt; có thể được lưu trong start up
 Tìm theo đường dẫn &lt;code&gt;Trodua\[root]\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup****&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJjAJQe5fl.png&#34;&gt;&lt;/p&gt;

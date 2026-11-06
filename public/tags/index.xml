@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on WuFort</title>
-    <link>http://localhost:1313/WuFort/tags/</link>
+    <link>https://lptue.github.io/WuFort/tags/</link>
     <description>Recent content in Tags on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/WuFort/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lptue.github.io/WuFort/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BKSec</title>
-      <link>http://localhost:1313/WuFort/tags/bksec/</link>
+      <link>https://lptue.github.io/WuFort/tags/bksec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/tags/bksec/</guid>
+      <guid>https://lptue.github.io/WuFort/tags/bksec/</guid>
       <description></description>
     </item>
     <item>
       <title>Knowledge</title>
-      <link>http://localhost:1313/WuFort/tags/knowledge/</link>
+      <link>https://lptue.github.io/WuFort/tags/knowledge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/tags/knowledge/</guid>
+      <guid>https://lptue.github.io/WuFort/tags/knowledge/</guid>
       <description></description>
     </item>
     <item>
       <title>MiniCTF</title>
-      <link>http://localhost:1313/WuFort/tags/minictf/</link>
+      <link>https://lptue.github.io/WuFort/tags/minictf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/tags/minictf/</guid>
+      <guid>https://lptue.github.io/WuFort/tags/minictf/</guid>
       <description></description>
     </item>
     <item>
       <title>PicoCTF_Easy</title>
-      <link>http://localhost:1313/WuFort/tags/picoctf_easy/</link>
+      <link>https://lptue.github.io/WuFort/tags/picoctf_easy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/tags/picoctf_easy/</guid>
+      <guid>https://lptue.github.io/WuFort/tags/picoctf_easy/</guid>
       <description></description>
     </item>
     <item>
       <title>PicoCTF_Hard</title>
-      <link>http://localhost:1313/WuFort/tags/picoctf_hard/</link>
+      <link>https://lptue.github.io/WuFort/tags/picoctf_hard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/tags/picoctf_hard/</guid>
+      <guid>https://lptue.github.io/WuFort/tags/picoctf_hard/</guid>
       <description></description>
     </item>
     <item>
       <title>PicoCTF_Medium</title>
-      <link>http://localhost:1313/WuFort/tags/picoctf_medium/</link>
+      <link>https://lptue.github.io/WuFort/tags/picoctf_medium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/tags/picoctf_medium/</guid>
+      <guid>https://lptue.github.io/WuFort/tags/picoctf_medium/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
-      <link>http://localhost:1313/WuFort/tags/tools/</link>
+      <link>https://lptue.github.io/WuFort/tags/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/tags/tools/</guid>
+      <guid>https://lptue.github.io/WuFort/tags/tools/</guid>
       <description></description>
     </item>
   </channel>

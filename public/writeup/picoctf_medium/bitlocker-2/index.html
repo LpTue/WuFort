@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Bitlocker-2 | WuFort</title>
+<meta name="keywords" content="PicoCTF_Medium">
+<meta name="description" content="Tại bài tập tại đây
+
+Cách 1
+
+
+
+Cách 2
+
+Dựa vào gợi ý bảo ta sử dụng plugin
+Ta sử dụng plugin Bitlocker">
+<meta name="author" content="">
+<link rel="canonical" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-2/">
+<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-2/">
+  <meta property="og:site_name" content="WuFort">
+  <meta property="og:title" content="Bitlocker-2">
+  <meta property="og:description" content="Tại bài tập tại đây
+Cách 1 Cách 2 Dựa vào gợi ý bảo ta sử dụng plugin Ta sử dụng plugin Bitlocker">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="writeup">
+    <meta property="article:tag" content="PicoCTF_Medium">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bitlocker-2">
+  <meta name="twitter:description" content="Tại bài tập tại đây
+Cách 1 Cách 2 Dựa vào gợi ý bảo ta sử dụng plugin Ta sử dụng plugin Bitlocker">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "WriteUp",
+      "item": "https://lptue.github.io/WuFort/writeup/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "PicoCTF_Medium",
+      "item": "https://lptue.github.io/WuFort/writeup/picoctf_medium/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Bitlocker-2",
+      "item": "https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Bitlocker-2",
+  "name": "Bitlocker-2",
+  "description": "Tại bài tập tại đây\nCách 1 Cách 2 Dựa vào gợi ý bảo ta sử dụng plugin Ta sử dụng plugin Bitlocker\n",
+  "keywords": [
+    "PicoCTF_Medium"
+  ],
+  "articleBody": "Tại bài tập tại đây\nCách 1 Cách 2 Dựa vào gợi ý bảo ta sử dụng plugin Ta sử dụng plugin Bitlocker\n",
+  "wordCount" : "23",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WuFort",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lptue.github.io/WuFort/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Bitlocker-2
+    </h1>
+    <div class="post-meta">
+
+<span>1 min</span>
+
+</div>
+  </header> <details class="toc"  open>
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#c%c3%a1ch-1" aria-label="Cách 1">Cách 1</a></li>
+            <li>
+                <a href="#c%c3%a1ch-2" aria-label="Cách 2">Cách 2</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><p>Tại bài tập tại <a href="https://learn.cylabacademy.org/library/454?page=1&amp;category=4&amp;difficulty=2&amp;workspace=true">đây</a></p>
+<hr>
+<h3 id="cách-1">Cách 1<a hidden class="anchor" aria-hidden="true" href="#cách-1">#</a></h3>
+<hr>
+<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Hkz1r_C2Gl.png"></p>
+<hr>
+<h3 id="cách-2">Cách 2<a hidden class="anchor" aria-hidden="true" href="#cách-2">#</a></h3>
+<hr>
+<p>Dựa vào gợi ý bảo ta sử dụng plugin
+Ta sử dụng plugin <code>Bitlocker</code></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://lptue.github.io/WuFort/tags/picoctf_medium/">PicoCTF_Medium</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                target.scrollIntoView();
+            }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
+        }
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

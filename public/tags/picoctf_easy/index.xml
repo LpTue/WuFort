@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>PicoCTF_Easy on WuFort</title>
-    <link>http://localhost:1313/WuFort/tags/picoctf_easy/</link>
+    <link>https://lptue.github.io/WuFort/tags/picoctf_easy/</link>
     <description>Recent content in PicoCTF_Easy on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/WuFort/tags/picoctf_easy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lptue.github.io/WuFort/tags/picoctf_easy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binary Digits</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/binary-digits/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/binary-digits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/binary-digits/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/binary-digits/</guid>
       <description>&lt;p&gt;Thấy file chứa toàn 0,1 &amp;ndash;&amp;gt; nghĩ ngay tới mã nhị phân&lt;/p&gt;
 &lt;p&gt;Có thể tự code tách 8 ký tự 1 (chuyển thành từng mã nhị phân riêng biệt )&lt;br&gt;
 Hoặc bỏ lên CyberChef (Hiện tại chưa khuyến khích tại nó giới hạn ý tưởng )&lt;br&gt;
@@ -23,9 +23,9 @@ Hoặc bỏ lên CyberChef (Hiện tại chưa khuyến khích tại nó giới 
     </item>
     <item>
       <title>Corrupted file</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/corrupted-file/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/corrupted-file/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/</guid>
       <description>&lt;p&gt;Đầu tiên mở file bằng hex, thấy phần đầu là JFIF&lt;br&gt;
 Khi ta thay đuôi bằng .jpg thì báo lỗi  &lt;br&gt;
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJBMl3-OGx.png&#34;&gt;&lt;/p&gt;
@@ -41,18 +41,18 @@ Sau đó ta đổi lại đuôi file&lt;br&gt;
     </item>
     <item>
       <title>DISKO 1</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/disko-1/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/disko-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/disko-1/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/disko-1/</guid>
       <description>&lt;p&gt;Đầu tiên thấy file lạ lạ ( ko phải kiểu ảnh cx ko phải dạng kiểu đĩa ) nên cứ strings trước
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1o9ss-uMg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ăn may ra flag :D&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flag in Flame</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/flag-in-flame/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/flag-in-flame/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/</guid>
       <description>&lt;p&gt;Đầu tiên hãy thử phân tích file&lt;br&gt;
 Thấy đây là file thuần ASCII
 Thử &lt;code&gt;strings logs.txt | grep pico&lt;/code&gt;&lt;br&gt;
@@ -65,17 +65,17 @@ Lúc này bạn nhận được file base64&lt;br&gt;
     </item>
     <item>
       <title>Glory of the Garden</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/glory-of-the-garden/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/glory-of-the-garden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/glory-of-the-garden/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/glory-of-the-garden/</guid>
       <description>&lt;p&gt;Sử dụng Strings		
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkNKajW_fx.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hidden in plainsight</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/hidden-in-plainsight/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/hidden-in-plainsight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/hidden-in-plainsight/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/hidden-in-plainsight/</guid>
       <description>&lt;p&gt;Đầu tiên kiểm tra bằng exiftool&lt;br&gt;
 Thấy đoạn mã đáng ngờ đem giải mã&lt;br&gt;
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ByoTpsb_Gg.png&#34;&gt;&lt;/p&gt;
@@ -87,18 +87,18 @@ Tiếp đó mò lệnh steghide&lt;br&gt;
     </item>
     <item>
       <title>Information</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/information/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/information/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/information/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/information/</guid>
       <description>&lt;p&gt;Dùng exiftool	
 &lt;img alt=&#34;image (1)&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1m6yn-_zg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sau đó thì giải qua Base64&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ph4nt0m 1ntrud3r</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/ph4nt0m-1ntrud3r/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/ph4nt0m-1ntrud3r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/ph4nt0m-1ntrud3r/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/ph4nt0m-1ntrud3r/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryTm0iZuMg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Khi vào ta thấy : - Các ASCII có kết thúc bằng &amp;ldquo;=&amp;rdquo;		   &lt;br&gt;
 &amp;ndash;&amp;gt; Ta có thể nghĩ ngay tới Base64	&lt;br&gt;
@@ -110,9 +110,9 @@ Lúc này ta lấy chúng ra để giải mã :    &lt;br&gt;
     </item>
     <item>
       <title>RED</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/red/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/red/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/red/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/red/</guid>
       <description>&lt;p&gt;Đầu tiên, khi thấy tên bài là màu sắc 	
 &amp;ndash;&amp;gt; Nghĩ ngay tới các màu sắc &amp;ndash;&amp;gt; nghĩ tới Zsteg&lt;/p&gt;
 &lt;p&gt;Dùng lệnh &lt;code&gt;zsteg red.png&lt;/code&gt;
@@ -122,9 +122,9 @@ Lúc này ta lấy chúng ra để giải mã :    &lt;br&gt;
     </item>
     <item>
       <title>Riddle Registry</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/riddle-registry/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/riddle-registry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/riddle-registry/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/riddle-registry/</guid>
       <description>&lt;p&gt;Check thấy câu có chữ METADATA &amp;ndash;&amp;gt; nghĩ tới exiftool
 Check exiftool &amp;ndash;&amp;gt; Thấy dấu &amp;ldquo;=&amp;rdquo; &amp;ndash;&amp;gt; nghi là base64
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BySp0iZdMg.png&#34;&gt;&lt;/p&gt;
@@ -132,18 +132,18 @@ Check exiftool &amp;ndash;&amp;gt; Thấy dấu &amp;ldquo;=&amp;rdquo; &amp;nda
     </item>
     <item>
       <title>Scan Surprise</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/scan-surprise/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/scan-surprise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/scan-surprise/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/scan-surprise/</guid>
       <description>&lt;p&gt;Tải về và giải nén file
 Sau đó di chuyển tới cuối file và quét qr :D
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rk4T9sZuGl.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Secret of the Polyglot</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/secret-of-the-polyglot/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/secret-of-the-polyglot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/secret-of-the-polyglot/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/secret-of-the-polyglot/</guid>
       <description>&lt;p&gt;Đầu tiên mở file nên       &lt;br&gt;
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H1mtcjWdzg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Có thể thấy file dường như đang thiếu đoạn đầu	
@@ -155,9 +155,9 @@ Thấy ko có đoạn mã nào nên ta thử đọc với HxD   &lt;br&gt;
     </item>
     <item>
       <title>Verify</title>
-      <link>http://localhost:1313/WuFort/picoctf_easy/verify/</link>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_easy/verify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/WuFort/picoctf_easy/verify/</guid>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_easy/verify/</guid>
       <description>&lt;p&gt;Đầu tiên ta hãy kết nối tới server
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SyVuKoZOfg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta hãy thử dịch các gợi ý của bài tập

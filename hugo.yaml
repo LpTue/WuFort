@@ -37,16 +37,8 @@ params:
         url: "https://lptue.github.io/WuFort/knowledge/"
       - name: Tools
         url: "https://lptue.github.io/WuFort/tools/"
-      - name: PicoCTF_Easy
-        url: "https://lptue.github.io/WuFort/picoctf_easy/"
-      - name: PicoCTF_Medium
-        url: "https://lptue.github.io/WuFort/picoctf_medium/"
-      - name: MiniCTF
-        url: "https://lptue.github.io/WuFort/minictf/"
-      - name: BKSec
-        url: "https://lptue.github.io/WuFort/bksec/"
-      - name: PicoCTF_Hard
-        url: "https://lptue.github.io/WuFort/picoctf_hard/"
+      - name: WriteUp
+        url: "https://lptue.github.io/WuFort/writeup/"
   socialIcons:
     - name: facebook
       url: "https://www.facebook.com/profile.php?id=61593526254843"

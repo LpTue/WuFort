@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PicoCTF_Medium on WuFort</title>
+    <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/</link>
+    <description>Recent content in PicoCTF_Medium on WuFort</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://lptue.github.io/WuFort/writeup/picoctf_medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> DISKO 2</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-2/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/506?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Đọc kỹ hint ta sẽ thấy nó đề cập tới phân vùng linux&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B19YLVHcMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta tìm tới phân vùng và mở bằng HxD&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Sy4n8NHcGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tìm kiếm flag dạng academy&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJy08NH9Ge.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{4_P4Rt_1t_i5_3d183cc0}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title> MSB</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/msb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/msb/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/359?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Bài này cần sử dụng tới công cụ phân tích MSB Steganography
+Tải tool tại &lt;a href=&#34;https://github.com/Pulho/sigBits&#34;&gt;đây&lt;/a&gt;
+Chạy lệnh &lt;code&gt;python3 sigBits.py -i Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png -t MSB -out flag.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ByTfBgO9Me.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta có thể thấy chuỗi ký tự dài
+Ta có thể dùng tìm kiếm của HxD để tìm flag&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkSLBlO5fl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{15_y0ur_que57_qu1x071c_0r_h3r01c_80119e7f}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title> Redaction gone wrong</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/redaction-gone-wrong/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/redaction-gone-wrong/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/290?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Coppy và paste&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1RoaXLqMl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1fnT7Lqzx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{C4n_Y0u_S33_m3_fully}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title> So Meta</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/so-meta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/so-meta/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/19?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mò thử bằng zsteg&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r18ctsP5Gg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{s0_m3ta_d5c3711a}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>advanced-potion-making</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/advanced-potion-making/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/advanced-potion-making/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/205?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ta mở bằng HxD&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJaIQO22ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Thấy dấu hiệu của file png
+Chỉnh lại signature file&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJhPV_hhMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJIYNOh2ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta sử dụng web &lt;a href=&#34;https://picoctfsolutions.com/tools/stegall&#34;&gt;này&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1aoNO33fl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;picoCTF{w1z4rdry}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bitlocker-1</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-1/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/453?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;bookmarked=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Đầu tiên ta cần lấy được mã băm của file bitlock
+&lt;code&gt;bitlocker2john bitlocker-1.dd&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJFq0V03Ml.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Lúc này ta sẽ thấy được 4 mã băm bitlock khác nhau
+4 mã băm này sẽ đều dẫn tới 1 pass
+Ta test với mã bitlock0 trước
+Lưu mã lại 1 file tên &lt;code&gt;hash.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1QL1B02Ge.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta sử dụng phương pháp tấn công từ điển
+&lt;code&gt;john --format=bitlocker --wordlist=rockyou.txt hash.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r11ukH02zl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta được pass là : &lt;code&gt;jacqueline&lt;/code&gt;
+Ta import file bitlock vào autospy&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bitlocker-2</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-2/</guid>
+      <description>&lt;p&gt;Tại bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/454?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;cách-1&#34;&gt;Cách 1&lt;/h3&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Hkz1r_C2Gl.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;cách-2&#34;&gt;Cách 2&lt;/h3&gt;
+&lt;hr&gt;
+&lt;p&gt;Dựa vào gợi ý bảo ta sử dụng plugin
+Ta sử dụng plugin &lt;code&gt;Bitlocker&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blast from the past</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/blast-from-the-past/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/blast-from-the-past/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/432?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Đọc miêu tả&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Sk8i5Cp2zl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy đề cập tới thời gian và exiftool&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Bye7j0phMg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta đổi tên file cho phù hợp với bên host&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryqKo0a3Ml.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta chỉnh lại từng tag cho tới khi nào đúng&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkFdhR6hzl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Với SamSung: TimeStamp nó dùng hệ riêng nên ta phải dùng HxD, tham khảo tại &lt;a href=&#34;https://stackoverflow.com/questions/78185037/how-to-edit-the-samsung-trailer-tag-timestamp&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryH7TCThMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Với &lt;code&gt;1700513181420&lt;/code&gt; là mili giây sau &lt;code&gt;1/1/1970&lt;/code&gt;
+Nên ta đổi về &lt;code&gt;0000000000001&lt;/code&gt;, lúc này ta có thể chỉnh bằng exiftool được rồi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>C0rrupt</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/c0rrupt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/c0rrupt/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/53?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mở bằng hxd kéo xuống dưới&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkLzorhnMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Đây là dấu hiệu của file png
+Ta sửa lại 8bit đầu về đúng signature number&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1Yuir2nze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkRjoS2hfg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta tìm hiểu thấy chỗ đúng của C&amp;quot;DR phải thay bằng IHDR&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJDWnH2hGg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta tiếp tục thấy sai lúc này ở chunk pHYs chứa hình ảnh &amp;ndash;&amp;gt; liên tưởng tới IDAT&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyLShS33fg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta khoanh vùng vì đoạn này khá giống IDAT nhưng bị đổi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dear Diary</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/dear-diary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/dear-diary/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/413?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đầu tiên mở bằng autopsy&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJnJIqDqGg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tìm được file đáng ngờ
+&lt;code&gt;It&#39;s all in the name&lt;/code&gt; nghĩa là Tất cả đều nằm ở cái tên
+Mở bằng HxD và tìm kiếm &lt;code&gt;innocuous&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJEOPcw5Gg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ghép lại ra flag là : academy{1_533_n4m35_a1eed517}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disk, disk, sleuth!</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/disk-disk-sleuth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/disk-disk-sleuth/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/113?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đọc kỹ miêu tả&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rysinj8qMl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy đề cập tới strings
+Nên mở bằng HxD&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryhJTjLcMl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1Bepj8qMe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tìm kiếm strings academy
+Flag là : academy{f0r3ns1c4t0r_n30phyt3_6502313d}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disk, disk, sleuth! II</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/disk-disk-sleuth-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/disk-disk-sleuth-ii/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/137?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đọc kỹ miêu tả cần tìm file &lt;code&gt;down-at-the-bottom.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJa8xw8cfx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta mở bằng autopsy và dùng công cụ tìm kiếm để tìm file&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ByIYlw85fe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJvcxD8cMl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Falg là : academy{f0r3ns1c4t0r_n0v1c3_95c645ad}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DISKO 3</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-3/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/507?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở file tìm kiếm&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryk7kBHqfl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{n3v3r_z1p_2_h1d3_d7b201f3}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DISKO 4</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-4/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/704?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Tìm bằng autopsy&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Sy7kWBr5fe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{d3l_d0n7_h1d3_w3ll_187a1210}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eavesdrop</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/eavesdrop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/eavesdrop/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/264?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở bằng pcap ta đọc lén được đoạn văn bản&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJWy8BU5Mg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thu thập được&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lệnh : &lt;code&gt;openssl des3 -d -salt -md md5 -in file.des3 -out file.txt -k supersecretpassword123&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Và có tệp tin nào đó được gửi qua cổng 9002&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryd4ISL5zx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta coppy mã hex để dựng lại file.des3
+Và chạy lệnh&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkn9IHI5zl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{nc_73115_411_02612719}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Endianness-v2</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/endianness-v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/endianness-v2/</guid>
+      <description>&lt;p&gt;Tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/415?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mở bằng HxD&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Hk0UgF2hzg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy file dường như đang bị đảo
+Ta chuyển về hex &amp;ndash;&amp;gt; swap (đảo Big-Endian &amp;amp; Little-Endian) &amp;ndash;&amp;gt; chuyển về dữ liệu thô &amp;ndash;&amp;gt; render ra ảnh&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Hyi_gtnhGx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{cert!f1Ed_iNd!4n_s0rrY_3nDian_5b37ea4e}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Enhance!</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/enhance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/enhance/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/265?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở bth thấy chạy ra web
+Nên mở thử bằng vscode để đọc code&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyJR64IqGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{3nh4nc3d_9f31c04b}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Event-Viewing</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/event-viewing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/event-viewing/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/456?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Đọc mô tả&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryKIbq3hMg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Install &amp;ndash;&amp;gt; ID : 1033
+Registry change &amp;ndash;&amp;gt; ID : 4657
+Shutdown &amp;ndash;&amp;gt; ID : 1074&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJoC-q32Me.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1m4Gcnhfl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Sklozcn2ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJeiofq3nfx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Extensions</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/extensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/extensions/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/52?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Ta thấy đầu &lt;code&gt;png&lt;/code&gt; nên ta chỉnh về đuôi &lt;code&gt;.png&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryQwYp89Mg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{now_you_know_about_extensions}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>File types</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/file-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/file-types/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/268?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở file pdf ko được nên ta đọc bằng cat&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1815EUqzg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt; Đoạn này em ko hiểu mã hóa nên cho AI phân tích &amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJfbcEI5ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_35957b68}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FindAndOpen</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/findandopen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/findandopen/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/348?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mở tệp Pcap ta thu được các đoạn hội thoại&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkWCD_n3fg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dùng &lt;code&gt;academy{R34DING_LOKd_&lt;/code&gt; để giải nén file zip&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJdJ_O3hGx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{R34DING_LOKd_fil56_succ3ss_9989a41b} &lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flags are stepic</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/flags-are-stepic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/flags-are-stepic/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/481?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ta tìm thấy lá cờ kỳ lạ và tải về&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJ2oUdi2fx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Để ý đề bài ta tạm dịch : Cờ là stepic
+Ta tải stepic về&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1elDdi3zg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Đọc hướng dẫn sử dụng&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryebwOi3fg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{fl4g_h45_fl4gb3d9ea13}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forensics Git 0</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-0/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/705?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở bằng autopsy và tìm&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkYvNlFqGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{g17_1n_7h3_d15k_041217d8}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forensics Git 1</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-1/</guid>
+      <description>&lt;p&gt;Tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/706?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rywB1Oo2fx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mở bằng autospy và trích xuất file ra
+Di chuyển tới file .git
+Dựa vào gợi ý dẫn ta tới cách khôi phục&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJHxg_shzg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Vậy trước hết ta cần lấy được mã gì đó&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B19tyuohzg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Chạy lệnh git để coi toàn bộ lệnh
+Ta đọc log&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkgaeujnGg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta chạy checkout&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Hy4Ceds2ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{g17_r3m3mb3r5_d4ddf904}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forensics Git 2</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-2/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/707?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ta trích xuất file chứa git&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyXtmdihMg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Khi đọc log thì nó báo chưa có cái commit nào trước đó&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H1JhQOs2fe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Nhưng khi đọc bằng autospy thì ta thấy có mấy cái git&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H1YaXdohGe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{g17_r35cu3_16ac6bf3}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hideme</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/hideme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/hideme/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/350?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Ta phân tích bằng binwalk thấy bất bình thường nên tách ra&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJkxX78qGe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ra được flag&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJOH7QU5ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{Hiddinng_An_imag3_within_@n_ima9e_ba7f84d1}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Like1000</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/like1000/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/like1000/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/81?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở file thấy bị lồng nhiều file lại với nhau&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJARVFRnGe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Đợi kết quả&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyloSyhczl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{L0t5_0f_TAR5}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lookey here</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/lookey-here/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/lookey-here/</guid>
+      <description>&lt;p&gt;Tại bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/279?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Thấy đoạn văn bản dài nên ta dùng&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJwoLNU5ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{gr3p_15_@w3s0m3_33595e98}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>M00nwalk</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/m00nwalk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/m00nwalk/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/26?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ta sử dụng công cụ &lt;a href=&#34;https://bucknova.github.io/Open-SSTV/&#34;&gt;open-sstv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2026-10-26_021913_scottie_s1&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJY3_Vn3Ge.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là :&lt;code&gt;picoCTF{beep_boop_im_in_space}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacroHard WeakEdge</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/macrohard-weakedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/macrohard-weakedge/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/130?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Chuyển đổi thành file zip và giải nén&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyeljHuqGx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta tìm thấy file đáng ngờ&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryiZjS_9zl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta viết lệnh đơn giản để xóa khoảng cách&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-py=&#34; data-lang=&#34;py=&#34;&gt;fi = open(&amp;#34;hidden&amp;#34;,&amp;#34;r&amp;#34;)
+chuoi = fi.readline().split()
+
+a = &amp;#34;&amp;#34;
+for i in chuoi:
+    a += str(i)
+
+print(a)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Ta đem giải mã&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryd4jSO9Ml.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{D1d_u_kn0w_ppts_r_z1p5}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Matryoshka doll</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/matryoshka-doll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/matryoshka-doll/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/129?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đọc miêu tả thấy ẩn giấu file&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryTw658cGe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta dùng binwalk&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SyEiT9Icze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{ZNTyvSDXRNO1d0xCkBRMhAoiafpCTvgW}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Milkslap</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/milkslap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/milkslap/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/139?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mở web cha vào check source&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1Zrgya2ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta tải về bằng cách mở tab mới lưu ảnh hoặc dùng &lt;code&gt;wget&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyBKe1a3zg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Check bằng exiftool ta thấy dòng RGB &amp;ndash;&amp;gt; nghĩ tới zsteg
+&lt;code&gt;export RUBY_THREAD_VM_STACK_SIZE=500000000&lt;/code&gt; : tăng ruby&amp;rsquo;s stack size limit&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJpnxkahMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{imag3_m4n1pul4t10n_sl4p5}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mob psycho</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/mob-psycho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/mob-psycho/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/420?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Đọc gợi ý ta thấy nó bảo ta phải &lt;code&gt;unzip&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1OUJx6hMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta sử dụng thẳng lệnh unzip&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1HD1g63Ge.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta mò các thư mục&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkttklTnzx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;61636164656d797b6178386d433052553676655f4e5838356c346178386d436c5f32313936636262397d &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJMwlxT3fx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{ax8mC0RU6ve_NX85l4ax8mCl_2196cbb9}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Operation Oni</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/operation-oni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/operation-oni/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/284?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ta tìm thấy file mã&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1zvdy6hfl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta trích xuất file dưới dạng &lt;code&gt;key_file&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1d3uJ6hMl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HkCmKJp2fg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Theo log thì nó báo quyền truy cập
+&lt;code&gt;chmod 600 key_file&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJ3091ahGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Theo tìm hiểu thì do wsl ko hỗ trợ chỉnh sửa trực tiếp
+Ta phải làm theo các bước :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tạo hoặc chỉnh sửa file &lt;code&gt;wsl.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;sudo nano /etc/wsl.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Thêm nội dung sau vào file (nếu chưa có):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;[automount]
+options = &amp;#34;metadata&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Lưu file (nhấn Ctrl+O, Enter, rồi Ctrl+X nếu dùng nano).
+Khởi động lại WSL bằng cách mở PowerShell hoặc Command Prompt của Windows (không phải terminal Linux) và gõ:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Operation Orchid</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/operation-orchid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/operation-orchid/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/285?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Tìm kiếm file đáng ngờ&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJTIQr_qMe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Đọc vào history&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S19OmBu5Mg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy có lệnh mã hóa
+&lt;code&gt;openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567&lt;/code&gt;
+Thì ta extract file đã được mã hóa và
+&lt;code&gt;openssl aes256 -d -salt -in flag.txt.enc -out flag.txt -k unbreakablepassword1234567&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1Uh7SOcGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{h4un71ng_p457_718ebd29}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Packets Primer</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/packets-primer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/packets-primer/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/286?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở file bằng pcap và đọc từng pack&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1-S0Q8qzl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{p4ck37_5h4rk_1c872e64}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PcapPoisoning</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/pcappoisoning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/pcappoisoning/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/362?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở file ta để ý pack số 4 có đăng nhập và pass&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkfYRGL9Gg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta lọc với với ip đến&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1XiRfLqMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{P64P_4N4L7S1S_SU55355FUL_1f7d0a45}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pitter, Patter, Platters</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/pitter-patter-platters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/pitter-patter-platters/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/87?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở file bằng FTK Imagine phân tích&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJO9ST_5Mx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;}.e.1.e.1.a.8.1.d._.3.&amp;lt;._.|.L.m._.1.1.1.t.5._.3.b.{.y.m.e.d.a.c.a&lt;/code&gt;
+Sau khi bỏ &lt;code&gt;.&lt;/code&gt; và đảo ngược
+Flag là : academy{b3_5t111_mL|_&amp;lt;3_d18a1e1e}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rogue Tower</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/rogue-tower/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/rogue-tower/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/714?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ta trích xuất file qua protocol html
+Ta được đoạn code &lt;code&gt;U1ZXUlxbTEpABVFDCmlWAl5ZaUIJQQZDbVFSUl0DVwJQSA==&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1bR9chhzg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta để ý &lt;code&gt;key&lt;/code&gt; &amp;ndash;&amp;gt; thuật toán mã hóa
+Từ IMSI của nạn nhân&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BylSjc3hze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy IMSI cuối xuất hiện trước khi có post file là &lt;code&gt;310410725669651&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1vqs93hGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tạm giải thích ngta lấy 8 số cuối là vì đó là 5 số đầu là mã chung&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SytJ25hhGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJXEhc33Mg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{r0gu3_c3ll_t0w3r_dddd5b3b}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shark on wire 1</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/shark-on-wire-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/shark-on-wire-1/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/30?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Chịu khó lần theo UDP Stream&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Skum9y2cMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{StaT31355_636f6e6e}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shark on wire 2</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/shark-on-wire-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/shark-on-wire-2/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/84?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đầu tiên lọc bằng data&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1MzoJ25Mg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Thấy nhận tại cổng 22 khá bất thường
+Bởi cổng 22 thường của ssh
+Thêm nữa tại cổng số 22 ta tìm thấy đoạn &amp;lsquo;start&amp;rsquo; và &amp;rsquo;end&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H1i_ik3cfg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1mYiy2cfe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Lọc theo &lt;code&gt;udp.dstport == 22&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy được gửi từ cổng bắt đầu bằng số 5 theo sau 3 số
+Nhìn khá giống số thập phân (byte )&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1hEn1hqGx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{p1LLf3r3d_data_v1a_st3g0}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sleuthkit Apprentice</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/sleuthkit-apprentice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/sleuthkit-apprentice/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/300?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở bằng autopsy và mò&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Byjh2QUcMe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{by73_5urf3r_6395be48}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sleuthkit Intro</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/sleuthkit-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/sleuthkit-intro/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/301?page=1&#34;&gt;đây&lt;/a&gt;
+Mở bằng autopsy thấy độ dài là 202752&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJvSi7Lcfl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{mm15_f7w!}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>St3g0</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/st3g0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/st3g0/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/305?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Mở file chạy zsteg&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H19ZqXL9Ge.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{7h3r3_15_n0_5p00n_3e86461e}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Timeline0</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/timeline0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/timeline0/</guid>
+      <description>&lt;p&gt;Link bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/720?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đọc kỹ hint : tạo mactime và xem cái rất cũ&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkvyZ5Vqzg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy file rất cũ từ 1985&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJCWbc4qze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Giải mã qua từ base64&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HkNNZ5Vcfx.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Timeline1</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/timeline1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/timeline1/</guid>
+      <description>&lt;p&gt;Link tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/721?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đọc kỹ hint thấy đề cập tới lọc macb theo timeline và đọc những cái gần đây&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJL0B54qGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Do tạm thời chưa biết lọc macb timeline trên autopsy nên ta sẽ tìm kiếm từng file đủ ACBM&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1hG8qNqfg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Đem đi giải mã&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H14HLcEqMe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Vậy flag là : picoCTF{573417h13r_7h4n_7h3_1457_58527bb222}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Torrent Analyze</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/torrent-analyze/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/torrent-analyze/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/311?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Đọc sơ qua về miêu tả ta thấy liên quan tới protocol BT-DHT&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1bJdoT2fg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tìm hiểu sơ qua về BT-DHT ta biết được rằng nó sẽ mã hóa thành hash MD1 trước khi chia sẻ lên internet&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkDHuo62zx.png&#34;&gt;
+Đầu tiên lần theo DNS ta thấy ip == 192.168.73.132 đang tải file từ torrent ubuntu&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJG2ui63Mx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Khi lọc với ip.src thì ta thấy nó đang lấy file liên tục từ các Leechers
+Lướt lúc ta sẽ thấy protocol BT-DHT như bài đã đề cập&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trivial Flag Transfer Protocol</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/trivial-flag-transfer-protocol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/trivial-flag-transfer-protocol/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/103?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đầu tiên phân tích thấy nhiều protocol TFTP&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1fJL2Uqfx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta trích xuất ra&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1pJ83L5Gx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta đọc file plan&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Skip9nL5Ml.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1OR5nUcfe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Nội dung : I USED THE PROGRAMANDHIDIT WITH-DUEDILIGENCE .CHECKOUT THE PHOTOS
+Ta steghide với từng file&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SyaXih8cGl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1YEohL9fg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{h1dd3n_1n_pLa1n_51GHT_18375919}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weird File</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/weird-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/weird-file/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/101?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đọc kỹ giới thiệu&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyVlR3U5Ml.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta nghĩ ngay tới bị giấu macro&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ry-QChIcGg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta dùng tool lấy chuỗi ra&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-doc=&#34; data-lang=&#34;doc=&#34;&gt;Sub AutoOpen()
+    MsgBox &amp;#34;Macros can run any program&amp;#34;, 0, &amp;#34;Title&amp;#34;
+    Signature
+
+End Sub
+
+ Sub Signature()
+    Selection.TypeText Text:=&amp;#34;some text&amp;#34;
+    Selection.TypeParagraph
+
+ End Sub
+
+ Sub runpython()
+
+Dim Ret_Val
+Args = &amp;#34;&amp;#34;&amp;#34;&amp;#34; &amp;#39;&amp;#34;&amp;#34;&amp;#34;
+Ret_Val = Shell(&amp;#34;python -c &amp;#39;print(\&amp;#34;cGljb0NURnttNGNyMHNfcl9kNG5nM3IwdXN9\&amp;#34;)&amp;#39;&amp;#34; &amp;amp; &amp;#34; &amp;#34; &amp;amp; Args, vbNormalFocus)
+If Ret_Val = 0 Then
+   MsgBox &amp;#34;Couldn&amp;#39;t run python script!&amp;#34;, vbOKOnly
+End If
+End Sub
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Thấy đoạn đáng ngờ
+&lt;code&gt;cGljb0NURnttNGNyMHNfcl9kNG5nM3IwdXN9&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Lies Within</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/what-lies-within/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/what-lies-within/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/74?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Sử dụng zsteg&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJgYzup8cfl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{h1d1ng_1n_th3_b1t5}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WhitePages</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/whitepages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/whitepages/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/51?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Đầu tiên mở bằng hex ta thấy 3 chuỗi &lt;code&gt;â€ƒ&lt;/code&gt; luôn đi chung với nhau&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkBD64hhMg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sau tìm hiểu ta biết được đó là &lt;code&gt;em space&lt;/code&gt;
+Vậy file kia gồm 2 loại đó là &lt;code&gt;em space&lt;/code&gt; và &lt;code&gt;normal space&lt;/code&gt;
+Ta viết code để chuyển thử về 0 và 1&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-py=&#34; data-lang=&#34;py=&#34;&gt;fi = open(&amp;#34;whitepages.txt&amp;#34;,&amp;#34;r&amp;#34;)
+chuoi = fi.readline()
+
+bin = &amp;#34;&amp;#34;
+binsau = &amp;#34;&amp;#34;
+t = 0
+for i in chuoi :
+    if i == &amp;#34;â&amp;#34; or i == &amp;#34;€&amp;#34; or i == &amp;#34;ƒ&amp;#34;:
+        bin += &amp;#34;0&amp;#34;
+    else:
+        bin += &amp;#34;1&amp;#34;
+
+for i in bin :
+    if i == &amp;#34;0&amp;#34;:
+        t += 1
+        if t == 3:
+            binsau += &amp;#34;0&amp;#34;
+            t = 0
+    else:
+        t = 0
+        binsau += &amp;#34;1&amp;#34;
+
+print(binsau)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Sk2J0EhhGx.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wireshark2</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/wireshark2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/wireshark2/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/110?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Khi mở ta thấy nhiều cờ giả &amp;ndash;&amp;gt; bỏ qua
+Khi lọc theo dns&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJfqh9a3fg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta thấy hầu như gửi tới 8.8.8.8
+Có cái Ip 18.217.1.57 lạc loài&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJGancanMe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta lọc ip đến và dns
+Thấy được đoạn encode giống base64 ở phần info&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1jkpcanzg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : &lt;code&gt;academy{dns_3xf1l_ftw_deadbeef}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wiresharkdo</title>
+      <link>https://lptue.github.io/WuFort/writeup/picoctf_medium/wiresharkdo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lptue.github.io/WuFort/writeup/picoctf_medium/wiresharkdo/</guid>
+      <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/115?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
+Đọc file thấy có nhiều protocol HTTP POST
+Ta nghĩ ngay tới lấy file thông qua HTTP&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJ2ygiLcMx.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ta được đoạn như này&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkugxsU5fe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mở bằng VScode thấy có thể đây là mã hóa rot&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryhZgoU5ze.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Flag là : academy{p33kab00_1_s33_u_deadbeef}&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
