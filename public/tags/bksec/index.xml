@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>BKSec on WuFort</title>
-    <link>http://localhost:1313/tags/bksec/</link>
+    <link>http://localhost:1313/WuFort/tags/bksec/</link>
     <description>Recent content in BKSec on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/bksec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/WuFort/tags/bksec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>American bee</title>
-      <link>http://localhost:1313/bksec/american-bee/</link>
+      <link>http://localhost:1313/WuFort/bksec/american-bee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/american-bee/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/american-bee/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://training.bksec.vn/api/files/3bfcffe4-ef84-48c6-8b6d-fd1f8d279152&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;i-phổ-cập-kiến-thức&#34;&gt;I. Phổ cập kiến thức&lt;/h1&gt;
 &lt;p&gt;Với một pcap usb, ta sẽ có 3 cách import ra flag&lt;/p&gt;
@@ -24,9 +24,9 @@ Có thể coi video để hiểu cách usb giao tiếp &lt;a href=&#34;https://w
     </item>
     <item>
       <title>Behind the mountain</title>
-      <link>http://localhost:1313/bksec/behind-the-mountain/</link>
+      <link>http://localhost:1313/WuFort/bksec/behind-the-mountain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/behind-the-mountain/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/behind-the-mountain/</guid>
       <description>&lt;p&gt;Tải bài tập tại [đây]
 Các câu hỏi&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;Cuộc tấn công bắt đầu từ khoảng thời gian nào? (Format: HourAM/PM;dd-mm-yy Timezone GMT+7. Ví dụ: 18pm;01-01-2024 GMT+7)
@@ -47,9 +47,9 @@ Tên của dịch vụ đang chạy ở Webserver là gì? Dịch vụ này có 
     </item>
     <item>
       <title>DDNNNNSS</title>
-      <link>http://localhost:1313/bksec/ddnnnnss/</link>
+      <link>http://localhost:1313/WuFort/bksec/ddnnnnss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/ddnnnnss/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/ddnnnnss/</guid>
       <description>&lt;p&gt;Tải bài tập tại đây &lt;a href=&#34;https://training.bksec.vn/challenges/34&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng Hierarchy thấy nhiều packet DNS + tên đề bài nhấn mạnh vào dns
 Ta lọc dns&lt;/p&gt;
@@ -75,9 +75,9 @@ Ta sử lại code&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to MemFor</title>
-      <link>http://localhost:1313/bksec/introduction-to-memfor/</link>
+      <link>http://localhost:1313/WuFort/bksec/introduction-to-memfor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/introduction-to-memfor/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/introduction-to-memfor/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Sử dụng vol 3 thay vì vol 2 để tăng tốc&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vol=&#34; data-lang=&#34;vol=&#34;&gt;cd ~
@@ -94,9 +94,9 @@ Lấy thông tin của image&lt;/p&gt;
     </item>
     <item>
       <title>ThumbThumb</title>
-      <link>http://localhost:1313/bksec/thumbthumb/</link>
+      <link>http://localhost:1313/WuFort/bksec/thumbthumb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/thumbthumb/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/thumbthumb/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc file bằng công cụ &lt;a href=&#34;https://thumbcacheviewer.github.io/&#34;&gt;này&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Byo_SOAoGe.png&#34;&gt;&lt;/p&gt;
@@ -105,9 +105,9 @@ Lấy thông tin của image&lt;/p&gt;
     </item>
     <item>
       <title>Tư tưởng Hồ Chí Minh</title>
-      <link>http://localhost:1313/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</link>
+      <link>http://localhost:1313/WuFort/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta sử dụng binwalk để kiểm tra file ẩn tại ko thể lấy được nội dung bị bôi đen&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Byis2DAoMx.png&#34;&gt;&lt;/p&gt;

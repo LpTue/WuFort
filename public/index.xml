@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>WuFort</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/WuFort/</link>
     <description>Recent content on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/WuFort/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> DISKO 2</title>
-      <link>http://localhost:1313/picoctf_medium/disko-2/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/disko-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/disko-2/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/disko-2/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/506?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc kỹ hint ta sẽ thấy nó đề cập tới phân vùng linux&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B19YLVHcMx.png&#34;&gt;&lt;/p&gt;
@@ -23,9 +23,9 @@
     </item>
     <item>
       <title> MSB</title>
-      <link>http://localhost:1313/picoctf_medium/msb/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/msb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/msb/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/msb/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/359?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Bài này cần sử dụng tới công cụ phân tích MSB Steganography
 Tải tool tại &lt;a href=&#34;https://github.com/Pulho/sigBits&#34;&gt;đây&lt;/a&gt;
@@ -38,9 +38,9 @@ Ta có thể dùng tìm kiếm của HxD để tìm flag&lt;/p&gt;
     </item>
     <item>
       <title> Redaction gone wrong</title>
-      <link>http://localhost:1313/picoctf_medium/redaction-gone-wrong/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/redaction-gone-wrong/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/redaction-gone-wrong/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/redaction-gone-wrong/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/290?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Coppy và paste&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1RoaXLqMl.png&#34;&gt;&lt;/p&gt;
@@ -49,9 +49,9 @@ Coppy và paste&lt;/p&gt;
     </item>
     <item>
       <title> So Meta</title>
-      <link>http://localhost:1313/picoctf_medium/so-meta/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/so-meta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/so-meta/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/so-meta/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/19?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mò thử bằng zsteg&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r18ctsP5Gg.png&#34;&gt;&lt;/p&gt;
@@ -59,9 +59,9 @@ Mò thử bằng zsteg&lt;/p&gt;
     </item>
     <item>
       <title>advanced-potion-making</title>
-      <link>http://localhost:1313/picoctf_medium/advanced-potion-making/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/advanced-potion-making/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/advanced-potion-making/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/advanced-potion-making/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/205?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta mở bằng HxD&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJaIQO22ze.png&#34;&gt;&lt;/p&gt;
@@ -75,9 +75,9 @@ Chỉnh lại signature file&lt;/p&gt;
     </item>
     <item>
       <title>American bee</title>
-      <link>http://localhost:1313/bksec/american-bee/</link>
+      <link>http://localhost:1313/WuFort/bksec/american-bee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/american-bee/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/american-bee/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://training.bksec.vn/api/files/3bfcffe4-ef84-48c6-8b6d-fd1f8d279152&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;i-phổ-cập-kiến-thức&#34;&gt;I. Phổ cập kiến thức&lt;/h1&gt;
 &lt;p&gt;Với một pcap usb, ta sẽ có 3 cách import ra flag&lt;/p&gt;
@@ -90,9 +90,9 @@ Có thể coi video để hiểu cách usb giao tiếp &lt;a href=&#34;https://w
     </item>
     <item>
       <title>AUTH</title>
-      <link>http://localhost:1313/minictf/auth/</link>
+      <link>http://localhost:1313/WuFort/minictf/auth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/minictf/auth/</guid>
+      <guid>http://localhost:1313/WuFort/minictf/auth/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1DGWGeqfx.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tập trung vào tài khoản &lt;code&gt;student&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkziWMgqMl.png&#34;&gt;&lt;/p&gt;
@@ -104,9 +104,9 @@ Nên ta dùng grep theo format đó&lt;/p&gt;
     </item>
     <item>
       <title>Behind the mountain</title>
-      <link>http://localhost:1313/bksec/behind-the-mountain/</link>
+      <link>http://localhost:1313/WuFort/bksec/behind-the-mountain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/behind-the-mountain/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/behind-the-mountain/</guid>
       <description>&lt;p&gt;Tải bài tập tại [đây]
 Các câu hỏi&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;Cuộc tấn công bắt đầu từ khoảng thời gian nào? (Format: HourAM/PM;dd-mm-yy Timezone GMT+7. Ví dụ: 18pm;01-01-2024 GMT+7)
@@ -127,9 +127,9 @@ Tên của dịch vụ đang chạy ở Webserver là gì? Dịch vụ này có 
     </item>
     <item>
       <title>Binary Digits</title>
-      <link>http://localhost:1313/picoctf_easy/binary-digits/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/binary-digits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/binary-digits/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/binary-digits/</guid>
       <description>&lt;p&gt;Thấy file chứa toàn 0,1 &amp;ndash;&amp;gt; nghĩ ngay tới mã nhị phân&lt;/p&gt;
 &lt;p&gt;Có thể tự code tách 8 ký tự 1 (chuyển thành từng mã nhị phân riêng biệt )&lt;br&gt;
 Hoặc bỏ lên CyberChef (Hiện tại chưa khuyến khích tại nó giới hạn ý tưởng )&lt;br&gt;
@@ -141,9 +141,9 @@ Hoặc bỏ lên CyberChef (Hiện tại chưa khuyến khích tại nó giới 
     </item>
     <item>
       <title>Binwalk</title>
-      <link>http://localhost:1313/tools/binwalk/</link>
+      <link>http://localhost:1313/WuFort/tools/binwalk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/binwalk/</guid>
+      <guid>http://localhost:1313/WuFort/tools/binwalk/</guid>
       <description>&lt;h1 id=&#34;i-bản-chất-của-binwalk&#34;&gt;I. Bản chất của Binwalk&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Binwalk được viết bằng ruby &amp;ndash;&amp;gt; làm tăng đáng kể tốc độ so với Python&lt;/li&gt;
@@ -159,9 +159,9 @@ Trục Y : Đo từ sự không ngẫu nhiên tới ngẫu nhiên (khá khó hi�
     </item>
     <item>
       <title>Bitlocker-1</title>
-      <link>http://localhost:1313/picoctf_medium/bitlocker-1/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/bitlocker-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/bitlocker-1/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/bitlocker-1/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/453?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;bookmarked=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đầu tiên ta cần lấy được mã băm của file bitlock
 &lt;code&gt;bitlocker2john bitlocker-1.dd&lt;/code&gt;&lt;/p&gt;
@@ -179,9 +179,9 @@ Ta import file bitlock vào autospy&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bitlocker-2</title>
-      <link>http://localhost:1313/picoctf_medium/bitlocker-2/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/bitlocker-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/bitlocker-2/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/bitlocker-2/</guid>
       <description>&lt;p&gt;Tại bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/454?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;cách-1&#34;&gt;Cách 1&lt;/h3&gt;
@@ -195,9 +195,9 @@ Ta sử dụng plugin &lt;code&gt;Bitlocker&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Blast from the past</title>
-      <link>http://localhost:1313/picoctf_medium/blast-from-the-past/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/blast-from-the-past/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/blast-from-the-past/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/blast-from-the-past/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/432?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc miêu tả&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Sk8i5Cp2zl.png&#34;&gt;&lt;/p&gt;
@@ -214,9 +214,9 @@ Nên ta đổi về &lt;code&gt;0000000000001&lt;/code&gt;, lúc này ta có th�
     </item>
     <item>
       <title>C0rrupt</title>
-      <link>http://localhost:1313/picoctf_medium/c0rrupt/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/c0rrupt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/c0rrupt/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/c0rrupt/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/53?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng hxd kéo xuống dưới&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkLzorhnMx.png&#34;&gt;&lt;/p&gt;
@@ -232,9 +232,9 @@ Ta sửa lại 8bit đầu về đúng signature number&lt;/p&gt;
     </item>
     <item>
       <title>Common WinDows Artifacts</title>
-      <link>http://localhost:1313/knowledge/common-windows-artifacts/</link>
+      <link>http://localhost:1313/WuFort/knowledge/common-windows-artifacts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/common-windows-artifacts/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/common-windows-artifacts/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Gồm tệp tin, thư mục, nhật ký, registry, lịch sử trình duyệt, tài khoản người dùng và các dữ liệu quan trọng khác&lt;/li&gt;
@@ -262,9 +262,9 @@ Ta sửa lại 8bit đầu về đúng signature number&lt;/p&gt;
     </item>
     <item>
       <title>Corrupted file</title>
-      <link>http://localhost:1313/picoctf_easy/corrupted-file/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/corrupted-file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/corrupted-file/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/corrupted-file/</guid>
       <description>&lt;p&gt;Đầu tiên mở file bằng hex, thấy phần đầu là JFIF&lt;br&gt;
 Khi ta thay đuôi bằng .jpg thì báo lỗi  &lt;br&gt;
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJBMl3-OGx.png&#34;&gt;&lt;/p&gt;
@@ -280,9 +280,9 @@ Sau đó ta đổi lại đuôi file&lt;br&gt;
     </item>
     <item>
       <title>Cracking Passwords</title>
-      <link>http://localhost:1313/tools/cracking-passwords/</link>
+      <link>http://localhost:1313/WuFort/tools/cracking-passwords/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/cracking-passwords/</guid>
+      <guid>http://localhost:1313/WuFort/tools/cracking-passwords/</guid>
       <description>&lt;h1 id=&#34;i-mật-khẩu-và-mã-băm&#34;&gt;I. Mật khẩu và Mã băm&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Mật khẩu thường được lưu dưới dạng mã băm&lt;/li&gt;
@@ -300,9 +300,9 @@ Sau đó ta đổi lại đuôi file&lt;br&gt;
     </item>
     <item>
       <title>CTQ1</title>
-      <link>http://localhost:1313/minictf/ctq1/</link>
+      <link>http://localhost:1313/WuFort/minictf/ctq1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/minictf/ctq1/</guid>
+      <guid>http://localhost:1313/WuFort/minictf/ctq1/</guid>
       <description>&lt;p&gt;Khi đọc file pcap ta thấy ó file script.ps1&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HksUWXg9fe.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Export HTTP object list ta được &lt;code&gt;flag.txt&lt;/code&gt; và &lt;code&gt;script.ps1&lt;/code&gt;
@@ -321,9 +321,9 @@ Ta mở file &lt;code&gt;flag.txt&lt;/code&gt; thấy flag giả&lt;/p&gt;
     </item>
     <item>
       <title>DDNNNNSS</title>
-      <link>http://localhost:1313/bksec/ddnnnnss/</link>
+      <link>http://localhost:1313/WuFort/bksec/ddnnnnss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/ddnnnnss/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/ddnnnnss/</guid>
       <description>&lt;p&gt;Tải bài tập tại đây &lt;a href=&#34;https://training.bksec.vn/challenges/34&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng Hierarchy thấy nhiều packet DNS + tên đề bài nhấn mạnh vào dns
 Ta lọc dns&lt;/p&gt;
@@ -349,9 +349,9 @@ Ta sử lại code&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dear Diary</title>
-      <link>http://localhost:1313/picoctf_medium/dear-diary/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/dear-diary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/dear-diary/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/dear-diary/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/413?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đầu tiên mở bằng autopsy&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJnJIqDqGg.png&#34;&gt;&lt;/p&gt;
@@ -363,9 +363,9 @@ Mở bằng HxD và tìm kiếm &lt;code&gt;innocuous&lt;/code&gt;&lt;/p&gt;
     </item>
     <item>
       <title>Disk Image Forensics</title>
-      <link>http://localhost:1313/tools/disk-image-forensics/</link>
+      <link>http://localhost:1313/WuFort/tools/disk-image-forensics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/disk-image-forensics/</guid>
+      <guid>http://localhost:1313/WuFort/tools/disk-image-forensics/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-các-thuật-ngữ-cơ-bản&#34;&gt;I. Giới thiệu về các thuật ngữ cơ bản&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Disk Image : bản sao từng bit toàn bộ ổ đĩa, phân vùng, giữ chính xác cấu trúc và nội dung&lt;/li&gt;
@@ -386,9 +386,9 @@ Mở bằng HxD và tìm kiếm &lt;code&gt;innocuous&lt;/code&gt;&lt;/p&gt;
     </item>
     <item>
       <title>Disk, disk, sleuth!</title>
-      <link>http://localhost:1313/picoctf_medium/disk-disk-sleuth/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/disk-disk-sleuth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/disk-disk-sleuth/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/disk-disk-sleuth/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/113?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ miêu tả&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rysinj8qMl.png&#34;&gt;&lt;/p&gt;
@@ -401,9 +401,9 @@ Flag là : academy{f0r3ns1c4t0r_n30phyt3_6502313d}&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disk, disk, sleuth! II</title>
-      <link>http://localhost:1313/picoctf_medium/disk-disk-sleuth-ii/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/disk-disk-sleuth-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/disk-disk-sleuth-ii/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/disk-disk-sleuth-ii/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/137?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ miêu tả cần tìm file &lt;code&gt;down-at-the-bottom.txt&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJa8xw8cfx.png&#34;&gt;&lt;/p&gt;
@@ -414,18 +414,18 @@ Flag là : academy{f0r3ns1c4t0r_n30phyt3_6502313d}&lt;/p&gt;</description>
     </item>
     <item>
       <title>DISKO 1</title>
-      <link>http://localhost:1313/picoctf_easy/disko-1/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/disko-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/disko-1/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/disko-1/</guid>
       <description>&lt;p&gt;Đầu tiên thấy file lạ lạ ( ko phải kiểu ảnh cx ko phải dạng kiểu đĩa ) nên cứ strings trước
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1o9ss-uMg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ăn may ra flag :D&lt;/p&gt;</description>
     </item>
     <item>
       <title>DISKO 3</title>
-      <link>http://localhost:1313/picoctf_medium/disko-3/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/disko-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/disko-3/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/disko-3/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/507?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file tìm kiếm&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryk7kBHqfl.png&#34;&gt;&lt;/p&gt;
@@ -433,9 +433,9 @@ Mở file tìm kiếm&lt;/p&gt;
     </item>
     <item>
       <title>DISKO 4</title>
-      <link>http://localhost:1313/picoctf_medium/disko-4/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/disko-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/disko-4/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/disko-4/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/704?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Tìm bằng autopsy&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Sy7kWBr5fe.png&#34;&gt;&lt;/p&gt;
@@ -443,9 +443,9 @@ Tìm bằng autopsy&lt;/p&gt;
     </item>
     <item>
       <title>Document analysis</title>
-      <link>http://localhost:1313/tools/document-analysis/</link>
+      <link>http://localhost:1313/WuFort/tools/document-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/document-analysis/</guid>
+      <guid>http://localhost:1313/WuFort/tools/document-analysis/</guid>
       <description>&lt;h1 id=&#34;i-tài-liệu-microsoft&#34;&gt;I. Tài liệu Microsoft&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Những tài liệu có thể chứa các thông điệp ẩn hoặc mã độc hại có thể được thực thi khi ta mở các tài liệu này&lt;/li&gt;
@@ -468,9 +468,9 @@ OOOXML ( Office Open XML )&lt;/p&gt;
     </item>
     <item>
       <title>Eavesdrop</title>
-      <link>http://localhost:1313/picoctf_medium/eavesdrop/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/eavesdrop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/eavesdrop/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/eavesdrop/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/264?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở bằng pcap ta đọc lén được đoạn văn bản&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJWy8BU5Mg.png&#34;&gt;&lt;/p&gt;
@@ -487,9 +487,9 @@ Và chạy lệnh&lt;/p&gt;
     </item>
     <item>
       <title>EnderDragon</title>
-      <link>http://localhost:1313/minictf/enderdragon/</link>
+      <link>http://localhost:1313/WuFort/minictf/enderdragon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/minictf/enderdragon/</guid>
+      <guid>http://localhost:1313/WuFort/minictf/enderdragon/</guid>
       <description>&lt;p&gt;Đọc giới thiệu ta thấy đây là file map minecraft&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkhKMfg9Ge.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Nhập file game zô, ta thấy có bản đồ&lt;/p&gt;
@@ -505,9 +505,9 @@ Ta tìm và thấy rương trên trời&lt;/p&gt;
     </item>
     <item>
       <title>Endianness-v2</title>
-      <link>http://localhost:1313/picoctf_medium/endianness-v2/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/endianness-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/endianness-v2/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/endianness-v2/</guid>
       <description>&lt;p&gt;Tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/415?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng HxD&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Hk0UgF2hzg.png&#34;&gt;&lt;/p&gt;
@@ -518,9 +518,9 @@ Ta chuyển về hex &amp;ndash;&amp;gt; swap (đảo Big-Endian &amp;amp; Littl
     </item>
     <item>
       <title>Enhance!</title>
-      <link>http://localhost:1313/picoctf_medium/enhance/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/enhance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/enhance/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/enhance/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/265?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở bth thấy chạy ra web
 Nên mở thử bằng vscode để đọc code&lt;/p&gt;
@@ -529,9 +529,9 @@ Nên mở thử bằng vscode để đọc code&lt;/p&gt;
     </item>
     <item>
       <title>Event-Viewing</title>
-      <link>http://localhost:1313/picoctf_medium/event-viewing/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/event-viewing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/event-viewing/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/event-viewing/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/456?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc mô tả&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryKIbq3hMg.png&#34;&gt;&lt;/p&gt;
@@ -546,9 +546,9 @@ Shutdown &amp;ndash;&amp;gt; ID : 1074&lt;/p&gt;
     </item>
     <item>
       <title>Exiftool</title>
-      <link>http://localhost:1313/tools/exiftool/</link>
+      <link>http://localhost:1313/WuFort/tools/exiftool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/exiftool/</guid>
+      <guid>http://localhost:1313/WuFort/tools/exiftool/</guid>
       <description>&lt;h1 id=&#34;i-bản-chất&#34;&gt;I. Bản chất&lt;/h1&gt;
 &lt;p&gt;-Trong mỗi bức ảnh, ngoài ảnh mình nhìn thấy đằng sau đó còn tồn tại các dữ liệu không thể đọc bằng mắt thường
 -Để đọc được những dữ liệu ấy, chúng ta cần dùng đến công cụ exiftool  
@@ -557,9 +557,9 @@ Shutdown &amp;ndash;&amp;gt; ID : 1074&lt;/p&gt;
     </item>
     <item>
       <title>Extensions</title>
-      <link>http://localhost:1313/picoctf_medium/extensions/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/extensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/extensions/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/extensions/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/52?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Ta thấy đầu &lt;code&gt;png&lt;/code&gt; nên ta chỉnh về đuôi &lt;code&gt;.png&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryQwYp89Mg.png&#34;&gt;&lt;/p&gt;
@@ -567,9 +567,9 @@ Ta thấy đầu &lt;code&gt;png&lt;/code&gt; nên ta chỉnh về đuôi &lt;co
     </item>
     <item>
       <title>File types</title>
-      <link>http://localhost:1313/picoctf_medium/file-types/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/file-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/file-types/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/file-types/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/268?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file pdf ko được nên ta đọc bằng cat&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1815EUqzg.png&#34;&gt;&lt;/p&gt;
@@ -579,9 +579,9 @@ Mở file pdf ko được nên ta đọc bằng cat&lt;/p&gt;
     </item>
     <item>
       <title>FindAndOpen</title>
-      <link>http://localhost:1313/picoctf_medium/findandopen/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/findandopen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/findandopen/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/findandopen/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/348?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở tệp Pcap ta thu được các đoạn hội thoại&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkWCD_n3fg.png&#34;&gt;&lt;/p&gt;
@@ -591,9 +591,9 @@ Mở file pdf ko được nên ta đọc bằng cat&lt;/p&gt;
     </item>
     <item>
       <title>Flag in Flame</title>
-      <link>http://localhost:1313/picoctf_easy/flag-in-flame/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/flag-in-flame/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/flag-in-flame/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/flag-in-flame/</guid>
       <description>&lt;p&gt;Đầu tiên hãy thử phân tích file&lt;br&gt;
 Thấy đây là file thuần ASCII
 Thử &lt;code&gt;strings logs.txt | grep pico&lt;/code&gt;&lt;br&gt;
@@ -606,9 +606,9 @@ Lúc này bạn nhận được file base64&lt;br&gt;
     </item>
     <item>
       <title>Flags are stepic</title>
-      <link>http://localhost:1313/picoctf_medium/flags-are-stepic/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/flags-are-stepic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/flags-are-stepic/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/flags-are-stepic/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/481?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta tìm thấy lá cờ kỳ lạ và tải về&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJ2oUdi2fx.png&#34;&gt;&lt;/p&gt;
@@ -621,9 +621,9 @@ Ta tải stepic về&lt;/p&gt;
     </item>
     <item>
       <title>Foremost</title>
-      <link>http://localhost:1313/tools/foremost/</link>
+      <link>http://localhost:1313/WuFort/tools/foremost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/foremost/</guid>
+      <guid>http://localhost:1313/WuFort/tools/foremost/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-foremost&#34;&gt;I. Giới thiệu về foremost&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Foremost là chương trình phục hồi dữ liệu dựa trên tiêu đề, chân trang và cấu trúc dữ liệu&lt;/li&gt;
@@ -653,9 +653,9 @@ Ta tải stepic về&lt;/p&gt;
     </item>
     <item>
       <title>Forensics Git 0</title>
-      <link>http://localhost:1313/picoctf_medium/forensics-git-0/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/forensics-git-0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/forensics-git-0/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/forensics-git-0/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/705?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở bằng autopsy và tìm&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkYvNlFqGl.png&#34;&gt;&lt;/p&gt;
@@ -663,9 +663,9 @@ Mở bằng autopsy và tìm&lt;/p&gt;
     </item>
     <item>
       <title>Forensics Git 1</title>
-      <link>http://localhost:1313/picoctf_medium/forensics-git-1/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/forensics-git-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/forensics-git-1/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/forensics-git-1/</guid>
       <description>&lt;p&gt;Tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/706?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rywB1Oo2fx.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng autospy và trích xuất file ra
@@ -683,9 +683,9 @@ Ta đọc log&lt;/p&gt;
     </item>
     <item>
       <title>Forensics Git 2</title>
-      <link>http://localhost:1313/picoctf_medium/forensics-git-2/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/forensics-git-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/forensics-git-2/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/forensics-git-2/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/707?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta trích xuất file chứa git&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyXtmdihMg.png&#34;&gt;&lt;/p&gt;
@@ -697,17 +697,17 @@ Ta đọc log&lt;/p&gt;
     </item>
     <item>
       <title>Glory of the Garden</title>
-      <link>http://localhost:1313/picoctf_easy/glory-of-the-garden/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/glory-of-the-garden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/glory-of-the-garden/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/glory-of-the-garden/</guid>
       <description>&lt;p&gt;Sử dụng Strings		
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkNKajW_fx.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hex editor</title>
-      <link>http://localhost:1313/tools/hex-editor/</link>
+      <link>http://localhost:1313/WuFort/tools/hex-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/hex-editor/</guid>
+      <guid>http://localhost:1313/WuFort/tools/hex-editor/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-hex-editor&#34;&gt;I. Giới thiệu về Hex Editor&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Mỗi tệp tin đều được cấu thành từ các đoạn mã Hex mà mắt người không thể thấy&lt;/li&gt;
@@ -724,9 +724,9 @@ Ta đọc log&lt;/p&gt;
     </item>
     <item>
       <title>Hidden in plainsight</title>
-      <link>http://localhost:1313/picoctf_easy/hidden-in-plainsight/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/hidden-in-plainsight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/hidden-in-plainsight/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/hidden-in-plainsight/</guid>
       <description>&lt;p&gt;Đầu tiên kiểm tra bằng exiftool&lt;br&gt;
 Thấy đoạn mã đáng ngờ đem giải mã&lt;br&gt;
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ByoTpsb_Gg.png&#34;&gt;&lt;/p&gt;
@@ -738,9 +738,9 @@ Tiếp đó mò lệnh steghide&lt;br&gt;
     </item>
     <item>
       <title>Hideme</title>
-      <link>http://localhost:1313/picoctf_medium/hideme/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/hideme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/hideme/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/hideme/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/350?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Ta phân tích bằng binwalk thấy bất bình thường nên tách ra&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJkxX78qGe.png&#34;&gt;&lt;/p&gt;
@@ -750,18 +750,18 @@ Ta phân tích bằng binwalk thấy bất bình thường nên tách ra&lt;/p&g
     </item>
     <item>
       <title>Information</title>
-      <link>http://localhost:1313/picoctf_easy/information/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/information/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/information/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/information/</guid>
       <description>&lt;p&gt;Dùng exiftool	
 &lt;img alt=&#34;image (1)&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1m6yn-_zg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sau đó thì giải qua Base64&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to MemFor</title>
-      <link>http://localhost:1313/bksec/introduction-to-memfor/</link>
+      <link>http://localhost:1313/WuFort/bksec/introduction-to-memfor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/introduction-to-memfor/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/introduction-to-memfor/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Sử dụng vol 3 thay vì vol 2 để tăng tốc&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vol=&#34; data-lang=&#34;vol=&#34;&gt;cd ~
@@ -778,9 +778,9 @@ Lấy thông tin của image&lt;/p&gt;
     </item>
     <item>
       <title>Like1000</title>
-      <link>http://localhost:1313/picoctf_medium/like1000/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/like1000/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/like1000/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/like1000/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/81?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file thấy bị lồng nhiều file lại với nhau&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJARVFRnGe.png&#34;&gt;&lt;/p&gt;
@@ -790,9 +790,9 @@ Mở file thấy bị lồng nhiều file lại với nhau&lt;/p&gt;
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/knowledge/linux/</link>
+      <link>http://localhost:1313/WuFort/knowledge/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/linux/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/linux/</guid>
       <description>&lt;h1 id=&#34;i--các-lệnh-cơ-bản&#34;&gt;I : Các lệnh cơ bản&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;whoami&lt;/code&gt; : Quyền hiện tại của người dùng trong session terminal đang dùng&lt;/li&gt;
@@ -807,9 +807,9 @@ Mở file thấy bị lồng nhiều file lại với nhau&lt;/p&gt;
     </item>
     <item>
       <title>Lookey here</title>
-      <link>http://localhost:1313/picoctf_medium/lookey-here/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/lookey-here/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/lookey-here/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/lookey-here/</guid>
       <description>&lt;p&gt;Tại bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/279?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Thấy đoạn văn bản dài nên ta dùng&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJwoLNU5ze.png&#34;&gt;&lt;/p&gt;
@@ -817,9 +817,9 @@ Thấy đoạn văn bản dài nên ta dùng&lt;/p&gt;
     </item>
     <item>
       <title>M00nwalk</title>
-      <link>http://localhost:1313/picoctf_medium/m00nwalk/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/m00nwalk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/m00nwalk/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/m00nwalk/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/26?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta sử dụng công cụ &lt;a href=&#34;https://bucknova.github.io/Open-SSTV/&#34;&gt;open-sstv&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;2026-10-26_021913_scottie_s1&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJY3_Vn3Ge.png&#34;&gt;&lt;/p&gt;
@@ -827,9 +827,9 @@ Thấy đoạn văn bản dài nên ta dùng&lt;/p&gt;
     </item>
     <item>
       <title>MacroHard WeakEdge</title>
-      <link>http://localhost:1313/picoctf_medium/macrohard-weakedge/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/macrohard-weakedge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/macrohard-weakedge/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/macrohard-weakedge/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/130?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Chuyển đổi thành file zip và giải nén&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyeljHuqGx.png&#34;&gt;&lt;/p&gt;
@@ -850,9 +850,9 @@ print(a)
     </item>
     <item>
       <title>Matryoshka doll</title>
-      <link>http://localhost:1313/picoctf_medium/matryoshka-doll/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/matryoshka-doll/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/matryoshka-doll/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/matryoshka-doll/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/129?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc miêu tả thấy ẩn giấu file&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryTw658cGe.png&#34;&gt;&lt;/p&gt;
@@ -862,9 +862,9 @@ print(a)
     </item>
     <item>
       <title>Mem Win</title>
-      <link>http://localhost:1313/tools/mem-win/</link>
+      <link>http://localhost:1313/WuFort/tools/mem-win/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/mem-win/</guid>
+      <guid>http://localhost:1313/WuFort/tools/mem-win/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Bài nào yêu cầu phân tích memory &amp;ndash;&amp;gt; sử dụng vol&lt;/li&gt;
@@ -892,9 +892,9 @@ cp ~/volatility3-bitlocker/bitlocker.py &amp;lt;path&amp;gt;
     </item>
     <item>
       <title>Milkslap</title>
-      <link>http://localhost:1313/picoctf_medium/milkslap/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/milkslap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/milkslap/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/milkslap/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/139?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở web cha vào check source&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1Zrgya2ze.png&#34;&gt;&lt;/p&gt;
@@ -907,9 +907,9 @@ cp ~/volatility3-bitlocker/bitlocker.py &amp;lt;path&amp;gt;
     </item>
     <item>
       <title>Mob psycho</title>
-      <link>http://localhost:1313/picoctf_medium/mob-psycho/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/mob-psycho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/mob-psycho/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/mob-psycho/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/420?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc gợi ý ta thấy nó bảo ta phải &lt;code&gt;unzip&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1OUJx6hMx.png&#34;&gt;&lt;/p&gt;
@@ -923,9 +923,9 @@ cp ~/volatility3-bitlocker/bitlocker.py &amp;lt;path&amp;gt;
     </item>
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/knowledge/network/</link>
+      <link>http://localhost:1313/WuFort/knowledge/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/network/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/network/</guid>
       <description>&lt;h1 id=&#34;-giao-thức-tcp&#34;&gt;. Giao thức TCP&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại&lt;/li&gt;
@@ -944,9 +944,9 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
     </item>
     <item>
       <title>Oletools</title>
-      <link>http://localhost:1313/tools/oletools/</link>
+      <link>http://localhost:1313/WuFort/tools/oletools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/oletools/</guid>
+      <guid>http://localhost:1313/WuFort/tools/oletools/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-oletools&#34;&gt;I. Giới thiệu về Oletools&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Là gói công cụ phân tích các tệp Microsoft&lt;/li&gt;
@@ -963,9 +963,9 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
     </item>
     <item>
       <title>OnthiTHPT</title>
-      <link>http://localhost:1313/minictf/onthithpt/</link>
+      <link>http://localhost:1313/WuFort/minictf/onthithpt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/minictf/onthithpt/</guid>
+      <guid>http://localhost:1313/WuFort/minictf/onthithpt/</guid>
       <description>&lt;p&gt;Chuyển đổi đuôi &lt;code&gt;.docx&lt;/code&gt; thành &lt;code&gt;.docx.zip&lt;/code&gt;
 Truy cập theo đường dẫn &lt;code&gt;OnthiTHPT\De-thi-thu-TN-THPT-2026-mon-Toan-So-GD-Tuyen-Quang\word\media&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SkP_rrZqfe.png&#34;&gt;&lt;/p&gt;
@@ -974,9 +974,9 @@ Truy cập theo đường dẫn &lt;code&gt;OnthiTHPT\De-thi-thu-TN-THPT-2026-mo
     </item>
     <item>
       <title>Operation Oni</title>
-      <link>http://localhost:1313/picoctf_medium/operation-oni/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/operation-oni/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/operation-oni/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/operation-oni/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/284?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta tìm thấy file mã&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1zvdy6hfl.png&#34;&gt;&lt;/p&gt;
@@ -999,9 +999,9 @@ Khởi động lại WSL bằng cách mở PowerShell hoặc Command Prompt củ
     </item>
     <item>
       <title>Operation Orchid</title>
-      <link>http://localhost:1313/picoctf_medium/operation-orchid/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/operation-orchid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/operation-orchid/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/operation-orchid/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/285?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Tìm kiếm file đáng ngờ&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJTIQr_qMe.png&#34;&gt;&lt;/p&gt;
@@ -1016,9 +1016,9 @@ Thì ta extract file đã được mã hóa và
     </item>
     <item>
       <title>Packets Primer</title>
-      <link>http://localhost:1313/picoctf_medium/packets-primer/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/packets-primer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/packets-primer/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/packets-primer/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/286?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file bằng pcap và đọc từng pack&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1-S0Q8qzl.png&#34;&gt;&lt;/p&gt;
@@ -1026,9 +1026,9 @@ Mở file bằng pcap và đọc từng pack&lt;/p&gt;
     </item>
     <item>
       <title>PcapPoisoning</title>
-      <link>http://localhost:1313/picoctf_medium/pcappoisoning/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/pcappoisoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/pcappoisoning/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/pcappoisoning/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/362?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file ta để ý pack số 4 có đăng nhập và pass&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkfYRGL9Gg.png&#34;&gt;&lt;/p&gt;
@@ -1038,9 +1038,9 @@ Mở file ta để ý pack số 4 có đăng nhập và pass&lt;/p&gt;
     </item>
     <item>
       <title>Ph4nt0m 1ntrud3r</title>
-      <link>http://localhost:1313/picoctf_easy/ph4nt0m-1ntrud3r/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/ph4nt0m-1ntrud3r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/ph4nt0m-1ntrud3r/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/ph4nt0m-1ntrud3r/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryTm0iZuMg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Khi vào ta thấy : - Các ASCII có kết thúc bằng &amp;ldquo;=&amp;rdquo;		   &lt;br&gt;
 &amp;ndash;&amp;gt; Ta có thể nghĩ ngay tới Base64	&lt;br&gt;
@@ -1052,9 +1052,9 @@ Lúc này ta lấy chúng ra để giải mã :    &lt;br&gt;
     </item>
     <item>
       <title>Pitter, Patter, Platters</title>
-      <link>http://localhost:1313/picoctf_medium/pitter-patter-platters/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/pitter-patter-platters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/pitter-patter-platters/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/pitter-patter-platters/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/87?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file bằng FTK Imagine phân tích&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJO9ST_5Mx.png&#34;&gt;&lt;/p&gt;
@@ -1064,9 +1064,9 @@ Flag là : academy{b3_5t111_mL|_&amp;lt;3_d18a1e1e}&lt;/p&gt;</description>
     </item>
     <item>
       <title>RED</title>
-      <link>http://localhost:1313/picoctf_easy/red/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/red/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/red/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/red/</guid>
       <description>&lt;p&gt;Đầu tiên, khi thấy tên bài là màu sắc 	
 &amp;ndash;&amp;gt; Nghĩ ngay tới các màu sắc &amp;ndash;&amp;gt; nghĩ tới Zsteg&lt;/p&gt;
 &lt;p&gt;Dùng lệnh &lt;code&gt;zsteg red.png&lt;/code&gt;
@@ -1076,9 +1076,9 @@ Flag là : academy{b3_5t111_mL|_&amp;lt;3_d18a1e1e}&lt;/p&gt;</description>
     </item>
     <item>
       <title>Riddle Registry</title>
-      <link>http://localhost:1313/picoctf_easy/riddle-registry/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/riddle-registry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/riddle-registry/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/riddle-registry/</guid>
       <description>&lt;p&gt;Check thấy câu có chữ METADATA &amp;ndash;&amp;gt; nghĩ tới exiftool
 Check exiftool &amp;ndash;&amp;gt; Thấy dấu &amp;ldquo;=&amp;rdquo; &amp;ndash;&amp;gt; nghi là base64
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BySp0iZdMg.png&#34;&gt;&lt;/p&gt;
@@ -1086,9 +1086,9 @@ Check exiftool &amp;ndash;&amp;gt; Thấy dấu &amp;ldquo;=&amp;rdquo; &amp;nda
     </item>
     <item>
       <title>Rogue Tower</title>
-      <link>http://localhost:1313/picoctf_medium/rogue-tower/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/rogue-tower/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/rogue-tower/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/rogue-tower/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/714?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta trích xuất file qua protocol html
 Ta được đoạn code &lt;code&gt;U1ZXUlxbTEpABVFDCmlWAl5ZaUIJQQZDbVFSUl0DVwJQSA==&lt;/code&gt;&lt;/p&gt;
@@ -1105,18 +1105,18 @@ Từ IMSI của nạn nhân&lt;/p&gt;
     </item>
     <item>
       <title>Scan Surprise</title>
-      <link>http://localhost:1313/picoctf_easy/scan-surprise/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/scan-surprise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/scan-surprise/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/scan-surprise/</guid>
       <description>&lt;p&gt;Tải về và giải nén file
 Sau đó di chuyển tới cuối file và quét qr :D
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rk4T9sZuGl.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Secret of the Polyglot</title>
-      <link>http://localhost:1313/picoctf_easy/secret-of-the-polyglot/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/secret-of-the-polyglot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/secret-of-the-polyglot/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/secret-of-the-polyglot/</guid>
       <description>&lt;p&gt;Đầu tiên mở file nên       &lt;br&gt;
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H1mtcjWdzg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Có thể thấy file dường như đang thiếu đoạn đầu	
@@ -1128,9 +1128,9 @@ Thấy ko có đoạn mã nào nên ta thử đọc với HxD   &lt;br&gt;
     </item>
     <item>
       <title>Shark on wire 1</title>
-      <link>http://localhost:1313/picoctf_medium/shark-on-wire-1/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/shark-on-wire-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/shark-on-wire-1/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/shark-on-wire-1/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/30?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Chịu khó lần theo UDP Stream&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Skum9y2cMx.png&#34;&gt;&lt;/p&gt;
@@ -1138,9 +1138,9 @@ Chịu khó lần theo UDP Stream&lt;/p&gt;
     </item>
     <item>
       <title>Shark on wire 2</title>
-      <link>http://localhost:1313/picoctf_medium/shark-on-wire-2/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/shark-on-wire-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/shark-on-wire-2/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/shark-on-wire-2/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/84?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đầu tiên lọc bằng data&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1MzoJ25Mg.png&#34;&gt;&lt;/p&gt;
@@ -1157,9 +1157,9 @@ Nhìn khá giống số thập phân (byte )&lt;/p&gt;
     </item>
     <item>
       <title>Sleuthkit Apprentice</title>
-      <link>http://localhost:1313/picoctf_medium/sleuthkit-apprentice/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/sleuthkit-apprentice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/sleuthkit-apprentice/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/sleuthkit-apprentice/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/300?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở bằng autopsy và mò&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Byjh2QUcMe.png&#34;&gt;&lt;/p&gt;
@@ -1167,9 +1167,9 @@ Mở bằng autopsy và mò&lt;/p&gt;
     </item>
     <item>
       <title>Sleuthkit Intro</title>
-      <link>http://localhost:1313/picoctf_medium/sleuthkit-intro/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/sleuthkit-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/sleuthkit-intro/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/sleuthkit-intro/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/301?page=1&#34;&gt;đây&lt;/a&gt;
 Mở bằng autopsy thấy độ dài là 202752&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJvSi7Lcfl.png&#34;&gt;&lt;/p&gt;
@@ -1177,9 +1177,9 @@ Mở bằng autopsy thấy độ dài là 202752&lt;/p&gt;
     </item>
     <item>
       <title>Sonic</title>
-      <link>http://localhost:1313/tools/sonic/</link>
+      <link>http://localhost:1313/WuFort/tools/sonic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/sonic/</guid>
+      <guid>http://localhost:1313/WuFort/tools/sonic/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-sonic-visualiser&#34;&gt;I. Giới thiệu về Sonic Visualiser&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Là ứng dụng miễn phí giúp ta phân tích nội dung tệp âm thanh&lt;/li&gt;
@@ -1212,9 +1212,9 @@ Màu sắc - thể hiện sự hiện diện của tần số&lt;/p&gt;
     </item>
     <item>
       <title>St3g0</title>
-      <link>http://localhost:1313/picoctf_medium/st3g0/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/st3g0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/st3g0/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/st3g0/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/305?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file chạy zsteg&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/H19ZqXL9Ge.png&#34;&gt;&lt;/p&gt;
@@ -1222,9 +1222,9 @@ Mở file chạy zsteg&lt;/p&gt;
     </item>
     <item>
       <title>Step</title>
-      <link>http://localhost:1313/knowledge/step/</link>
+      <link>http://localhost:1313/WuFort/knowledge/step/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/step/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/step/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Đây là writeup tổng hợp lại các phương pháp phân tích từng dạng bài&lt;/li&gt;
@@ -1284,9 +1284,9 @@ Mở file chạy zsteg&lt;/p&gt;
     </item>
     <item>
       <title>Structure image</title>
-      <link>http://localhost:1313/knowledge/structure-image/</link>
+      <link>http://localhost:1313/WuFort/knowledge/structure-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/structure-image/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/structure-image/</guid>
       <description>&lt;h1 id=&#34;i-tìm-hiểu-về-thành-phần-tạo-nên-một-ảnh&#34;&gt;I. Tìm hiểu về thành phần tạo nên một ảnh&lt;/h1&gt;
 &lt;h2 id=&#34;tìm-hiểu-về-kích-thước-của-một-ảnh&#34;&gt;Tìm hiểu về kích thước của một ảnh&lt;/h2&gt;
 &lt;ul&gt;
@@ -1313,9 +1313,9 @@ Mở file chạy zsteg&lt;/p&gt;
     </item>
     <item>
       <title>ThumbThumb</title>
-      <link>http://localhost:1313/bksec/thumbthumb/</link>
+      <link>http://localhost:1313/WuFort/bksec/thumbthumb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/thumbthumb/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/thumbthumb/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc file bằng công cụ &lt;a href=&#34;https://thumbcacheviewer.github.io/&#34;&gt;này&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Byo_SOAoGe.png&#34;&gt;&lt;/p&gt;
@@ -1324,9 +1324,9 @@ Mở file chạy zsteg&lt;/p&gt;
     </item>
     <item>
       <title>Timeline0</title>
-      <link>http://localhost:1313/picoctf_medium/timeline0/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/timeline0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/timeline0/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/timeline0/</guid>
       <description>&lt;p&gt;Link bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/720?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ hint : tạo mactime và xem cái rất cũ&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkvyZ5Vqzg.png&#34;&gt;&lt;/p&gt;
@@ -1337,9 +1337,9 @@ Mở file chạy zsteg&lt;/p&gt;
     </item>
     <item>
       <title>Timeline1</title>
-      <link>http://localhost:1313/picoctf_medium/timeline1/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/timeline1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/timeline1/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/timeline1/</guid>
       <description>&lt;p&gt;Link tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/721?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ hint thấy đề cập tới lọc macb theo timeline và đọc những cái gần đây&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJL0B54qGl.png&#34;&gt;&lt;/p&gt;
@@ -1351,9 +1351,9 @@ Mở file chạy zsteg&lt;/p&gt;
     </item>
     <item>
       <title>Torrent Analyze</title>
-      <link>http://localhost:1313/picoctf_medium/torrent-analyze/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/torrent-analyze/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/torrent-analyze/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/torrent-analyze/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/311?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc sơ qua về miêu tả ta thấy liên quan tới protocol BT-DHT&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1bJdoT2fg.png&#34;&gt;&lt;/p&gt;
@@ -1366,9 +1366,9 @@ Lướt lúc ta sẽ thấy protocol BT-DHT như bài đã đề cập&lt;/p&gt;
     </item>
     <item>
       <title>Trivial Flag Transfer Protocol</title>
-      <link>http://localhost:1313/picoctf_medium/trivial-flag-transfer-protocol/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/trivial-flag-transfer-protocol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/trivial-flag-transfer-protocol/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/trivial-flag-transfer-protocol/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/103?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đầu tiên phân tích thấy nhiều protocol TFTP&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/r1fJL2Uqfx.png&#34;&gt;&lt;/p&gt;
@@ -1385,9 +1385,9 @@ Ta steghide với từng file&lt;/p&gt;
     </item>
     <item>
       <title>Trodua</title>
-      <link>http://localhost:1313/minictf/trodua/</link>
+      <link>http://localhost:1313/WuFort/minictf/trodua/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/minictf/trodua/</guid>
+      <guid>http://localhost:1313/WuFort/minictf/trodua/</guid>
       <description>&lt;p&gt;Đọc mô tả, ta thấy nó chạy mỗi khi mở máy &amp;ndash;&amp;gt; có thể được lưu trong start up
 Tìm theo đường dẫn &lt;code&gt;Trodua\[root]\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup****&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJjAJQe5fl.png&#34;&gt;&lt;/p&gt;
@@ -1403,9 +1403,9 @@ Ta lần theo đường dẫn &lt;code&gt;Trodua\[root]\Users\Administrator\AppD
     </item>
     <item>
       <title>Tư tưởng Hồ Chí Minh</title>
-      <link>http://localhost:1313/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</link>
+      <link>http://localhost:1313/WuFort/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</guid>
+      <guid>http://localhost:1313/WuFort/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta sử dụng binwalk để kiểm tra file ẩn tại ko thể lấy được nội dung bị bôi đen&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Byis2DAoMx.png&#34;&gt;&lt;/p&gt;
@@ -1415,9 +1415,9 @@ Ta lần theo đường dẫn &lt;code&gt;Trodua\[root]\Users\Administrator\AppD
     </item>
     <item>
       <title>Verify</title>
-      <link>http://localhost:1313/picoctf_easy/verify/</link>
+      <link>http://localhost:1313/WuFort/picoctf_easy/verify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_easy/verify/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_easy/verify/</guid>
       <description>&lt;p&gt;Đầu tiên ta hãy kết nối tới server
 &lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SyVuKoZOfg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta hãy thử dịch các gợi ý của bài tập
@@ -1432,9 +1432,9 @@ Ta lần theo đường dẫn &lt;code&gt;Trodua\[root]\Users\Administrator\AppD
     </item>
     <item>
       <title>Weird File</title>
-      <link>http://localhost:1313/picoctf_medium/weird-file/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/weird-file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/weird-file/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/weird-file/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/101?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ giới thiệu&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HyVlR3U5Ml.png&#34;&gt;&lt;/p&gt;
@@ -1467,9 +1467,9 @@ End Sub
     </item>
     <item>
       <title>What Lies Within</title>
-      <link>http://localhost:1313/picoctf_medium/what-lies-within/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/what-lies-within/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/what-lies-within/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/what-lies-within/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/74?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Sử dụng zsteg&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJgYzup8cfl.png&#34;&gt;&lt;/p&gt;
@@ -1477,9 +1477,9 @@ Sử dụng zsteg&lt;/p&gt;
     </item>
     <item>
       <title>WhitePages</title>
-      <link>http://localhost:1313/picoctf_medium/whitepages/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/whitepages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/whitepages/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/whitepages/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/51?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đầu tiên mở bằng hex ta thấy 3 chuỗi &lt;code&gt;â€ƒ&lt;/code&gt; luôn đi chung với nhau&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BkBD64hhMg.png&#34;&gt;&lt;/p&gt;
@@ -1513,9 +1513,9 @@ print(binsau)
     </item>
     <item>
       <title>Win</title>
-      <link>http://localhost:1313/knowledge/win/</link>
+      <link>http://localhost:1313/WuFort/knowledge/win/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/win/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/win/</guid>
       <description>&lt;h1 id=&#34;i--win_1&#34;&gt;I . Win_1&lt;/h1&gt;
 &lt;h2 id=&#34;misson-1&#34;&gt;Misson 1&lt;/h2&gt;
 &lt;ul&gt;
@@ -1548,9 +1548,9 @@ Mã hóa (Hệ thống tệp mã hóa hoặc EFS )&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wireshark</title>
-      <link>http://localhost:1313/tools/wireshark/</link>
+      <link>http://localhost:1313/WuFort/tools/wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/wireshark/</guid>
+      <guid>http://localhost:1313/WuFort/tools/wireshark/</guid>
       <description>&lt;h1 id=&#34;i-wireshark-the-basics&#34;&gt;I. Wireshark: The Basics&lt;/h1&gt;
 &lt;h2 id=&#34;misson-1--tổng-quan-về-công-cụ&#34;&gt;Misson 1 : Tổng quan về công cụ&lt;/h2&gt;
 &lt;h3 id=&#34;giới-thiệu&#34;&gt;Giới thiệu&lt;/h3&gt;
@@ -1578,9 +1578,9 @@ Phát hiện bất thường về bảo mật
     </item>
     <item>
       <title>Wireshark2</title>
-      <link>http://localhost:1313/picoctf_medium/wireshark2/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/wireshark2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/wireshark2/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/wireshark2/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/110?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Khi mở ta thấy nhiều cờ giả &amp;ndash;&amp;gt; bỏ qua
 Khi lọc theo dns&lt;/p&gt;
@@ -1595,9 +1595,9 @@ Thấy được đoạn encode giống base64 ở phần info&lt;/p&gt;
     </item>
     <item>
       <title>Wiresharkdo</title>
-      <link>http://localhost:1313/picoctf_medium/wiresharkdo/</link>
+      <link>http://localhost:1313/WuFort/picoctf_medium/wiresharkdo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/picoctf_medium/wiresharkdo/</guid>
+      <guid>http://localhost:1313/WuFort/picoctf_medium/wiresharkdo/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/115?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc file thấy có nhiều protocol HTTP POST
 Ta nghĩ ngay tới lấy file thông qua HTTP&lt;/p&gt;
@@ -1610,9 +1610,9 @@ Ta nghĩ ngay tới lấy file thông qua HTTP&lt;/p&gt;
     </item>
     <item>
       <title>Zsteg</title>
-      <link>http://localhost:1313/tools/zsteg/</link>
+      <link>http://localhost:1313/WuFort/tools/zsteg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/zsteg/</guid>
+      <guid>http://localhost:1313/WuFort/tools/zsteg/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-qua-về-zsteg&#34;&gt;I. Giới thiệu qua về Zsteg&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Zsteg là công cụ phát hiện dữ liệu ẩn của stegano trong PNG &amp;amp; BMP&lt;/li&gt;

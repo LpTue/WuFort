@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Knowledge on WuFort</title>
-    <link>http://localhost:1313/knowledge/</link>
+    <link>http://localhost:1313/WuFort/knowledge/</link>
     <description>Recent content in Knowledge on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/WuFort/knowledge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Common WinDows Artifacts</title>
-      <link>http://localhost:1313/knowledge/common-windows-artifacts/</link>
+      <link>http://localhost:1313/WuFort/knowledge/common-windows-artifacts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/common-windows-artifacts/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/common-windows-artifacts/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Gồm tệp tin, thư mục, nhật ký, registry, lịch sử trình duyệt, tài khoản người dùng và các dữ liệu quan trọng khác&lt;/li&gt;
@@ -39,9 +39,9 @@
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/knowledge/linux/</link>
+      <link>http://localhost:1313/WuFort/knowledge/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/linux/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/linux/</guid>
       <description>&lt;h1 id=&#34;i--các-lệnh-cơ-bản&#34;&gt;I : Các lệnh cơ bản&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;whoami&lt;/code&gt; : Quyền hiện tại của người dùng trong session terminal đang dùng&lt;/li&gt;
@@ -56,9 +56,9 @@
     </item>
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/knowledge/network/</link>
+      <link>http://localhost:1313/WuFort/knowledge/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/network/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/network/</guid>
       <description>&lt;h1 id=&#34;-giao-thức-tcp&#34;&gt;. Giao thức TCP&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Các tệp tin gửi đi bởi TCP sẽ được đánh dấu và kiểm tra, nếu thiếu thì gửi lại&lt;/li&gt;
@@ -77,9 +77,9 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
     </item>
     <item>
       <title>Step</title>
-      <link>http://localhost:1313/knowledge/step/</link>
+      <link>http://localhost:1313/WuFort/knowledge/step/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/step/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/step/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Đây là writeup tổng hợp lại các phương pháp phân tích từng dạng bài&lt;/li&gt;
@@ -139,9 +139,9 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
     </item>
     <item>
       <title>Structure image</title>
-      <link>http://localhost:1313/knowledge/structure-image/</link>
+      <link>http://localhost:1313/WuFort/knowledge/structure-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/structure-image/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/structure-image/</guid>
       <description>&lt;h1 id=&#34;i-tìm-hiểu-về-thành-phần-tạo-nên-một-ảnh&#34;&gt;I. Tìm hiểu về thành phần tạo nên một ảnh&lt;/h1&gt;
 &lt;h2 id=&#34;tìm-hiểu-về-kích-thước-của-một-ảnh&#34;&gt;Tìm hiểu về kích thước của một ảnh&lt;/h2&gt;
 &lt;ul&gt;
@@ -168,9 +168,9 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
     </item>
     <item>
       <title>Win</title>
-      <link>http://localhost:1313/knowledge/win/</link>
+      <link>http://localhost:1313/WuFort/knowledge/win/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/knowledge/win/</guid>
+      <guid>http://localhost:1313/WuFort/knowledge/win/</guid>
       <description>&lt;h1 id=&#34;i--win_1&#34;&gt;I . Win_1&lt;/h1&gt;
 &lt;h2 id=&#34;misson-1&#34;&gt;Misson 1&lt;/h2&gt;
 &lt;ul&gt;

@@ -45,6 +45,8 @@ params:
         url: "https://lptue.github.io/WuFort/minictf/"
       - name: BKSec
         url: "https://lptue.github.io/WuFort/bksec/"
+      - name: PicoCTF_Hard
+        url: "https://lptue.github.io/WuFort/picoctf_hard/"
   socialIcons:
     - name: facebook
       url: "https://www.facebook.com/profile.php?id=61593526254843"
