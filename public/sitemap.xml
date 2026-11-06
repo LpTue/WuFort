@@ -150,6 +150,10 @@
   </url><url>
     <loc>http://localhost:1313/WuFort/tags/picoctf_easy/</loc>
   </url><url>
+    <loc>http://localhost:1313/WuFort/picoctf_hard/</loc>
+  </url><url>
+    <loc>http://localhost:1313/WuFort/tags/picoctf_hard/</loc>
+  </url><url>
     <loc>http://localhost:1313/WuFort/picoctf_medium/</loc>
   </url><url>
     <loc>http://localhost:1313/WuFort/tags/picoctf_medium/</loc>
@@ -203,6 +207,8 @@
     <loc>http://localhost:1313/WuFort/minictf/trodua/</loc>
   </url><url>
     <loc>http://localhost:1313/WuFort/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</loc>
+  </url><url>
+    <loc>http://localhost:1313/WuFort/picoctf_hard/unforgottenbits/</loc>
   </url><url>
     <loc>http://localhost:1313/WuFort/picoctf_easy/verify/</loc>
   </url><url>
