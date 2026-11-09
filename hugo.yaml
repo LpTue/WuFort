@@ -1,6 +1,4 @@
 baseURL: "https://lptue.github.io/WuFort/"
-relativeURLs: true
-canonifyURLs: false
 locale: en-us
 title: WuFort
 theme: ["PaperMod"]
