@@ -21,7 +21,7 @@ Sau đó ta đổi lại đuôi file
 ">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_easy/corrupted-file/">
-<link crossorigin="anonymous" href="../../../WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
@@ -136,16 +136,16 @@ Sau đó ta đổi lại đuôi file
 
   <div class="post-content md-content"><p>Đầu tiên mở file bằng hex, thấy phần đầu là JFIF<br>
 Khi ta thay đuôi bằng .jpg thì báo lỗi  <br>
-<img alt="image" loading="lazy" src="../../../images/283906ec238beebd5f34d635e954a7e7.png"></p>
+<img alt="image" loading="lazy" src="/images/283906ec238beebd5f34d635e954a7e7.png"></p>
 <p>Đây là một điều khá lạ bởi nếu đúng thì sửa đuôi phải ra<br>
 Thêm nx phân tích đoạn văn bản thấy nó đúng kiểu ko thể đọc bằng ASCII<br>
 &ndash;&gt; Nghĩ đến trường hợp có thể sai định dạng văn bản<br>
 Truy cập <a href="https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5">https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5</a>
-<img alt="image" loading="lazy" src="../../../images/83d52da9ae051615835cb3c7917daf77.png"></p>
+<img alt="image" loading="lazy" src="/images/83d52da9ae051615835cb3c7917daf77.png"></p>
 <p>Ta phát hiện đoạn đầu đúng của ảnh JFIF có dạng : ffd8 ffe0 0010 4a46 4946 0001 0101 0047 theo như github nói<br>
 Ta thay lại đoạn đầu bằng mã hex kia<br>
 Sau đó ta đổi lại đuôi file<br>
-<img alt="image" loading="lazy" src="../../../images/975b56271375d331e58e2c306b3c8499.png"></p>
+<img alt="image" loading="lazy" src="/images/975b56271375d331e58e2c306b3c8499.png"></p>
 
 
   </div>

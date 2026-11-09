@@ -12,14 +12,14 @@
       <link>http://localhost:1313/WuFort/writeup/minictf/auth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/WuFort/writeup/minictf/auth/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/44c81a133f36df073fe90167908ea5ad.png&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/44c81a133f36df073fe90167908ea5ad.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tập trung vào tài khoản &lt;code&gt;student&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/4f6fafde687e3d96e0a7f83e4f4d633c.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/4f6fafde687e3d96e0a7f83e4f4d633c.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Để ý thấy có format &lt;code&gt;host sudo: &lt;/code&gt;
 Nên ta dùng grep theo format đó&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/2f750235060315eccbe675c89f843813.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/2f750235060315eccbe675c89f843813.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/7d741b8f7ca4fce9e28fc4941b75f96e.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7d741b8f7ca4fce9e28fc4941b75f96e.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CTQ1</title>
@@ -27,11 +27,11 @@ Nên ta dùng grep theo format đó&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/WuFort/writeup/minictf/ctq1/</guid>
       <description>&lt;p&gt;Khi đọc file pcap ta thấy ó file script.ps1&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/4cfd69e1762e0935fdd201c27c506f8a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/4cfd69e1762e0935fdd201c27c506f8a.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Export HTTP object list ta được &lt;code&gt;flag.txt&lt;/code&gt; và &lt;code&gt;script.ps1&lt;/code&gt;
 Ta mở file &lt;code&gt;flag.txt&lt;/code&gt; thấy flag giả&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/f2dfd7dfe56ad8b7b5ee1ca7ddab7c01.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/cdec96486493581e32dc5ba8f51651bf.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/f2dfd7dfe56ad8b7b5ee1ca7ddab7c01.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/cdec96486493581e32dc5ba8f51651bf.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Đọc code của file &lt;code&gt;.ps1&lt;/code&gt; tạm hiểu&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Đầu tiên file được mã hóa base64 2 lần&lt;/li&gt;
@@ -39,7 +39,7 @@ Ta mở file &lt;code&gt;flag.txt&lt;/code&gt; thấy flag giả&lt;/p&gt;
 &lt;li&gt;Sau đó upload lên thông qua FTP&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ta export toàn bộ FTP-DATA object list&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/2dabda1346012592c21e6de2bf57a1a1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/2dabda1346012592c21e6de2bf57a1a1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sau đó ta viết chương trình dịch ngược đoạn mã hóa&lt;/p&gt;</description>
     </item>
     <item>
@@ -48,16 +48,16 @@ Ta mở file &lt;code&gt;flag.txt&lt;/code&gt; thấy flag giả&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/WuFort/writeup/minictf/enderdragon/</guid>
       <description>&lt;p&gt;Đọc giới thiệu ta thấy đây là file map minecraft&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/89c1e5d8161d670cd20a8d29953439db.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/89c1e5d8161d670cd20a8d29953439db.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Nhập file game zô, ta thấy có bản đồ&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/516af95cb6cd19b0e88af6162e35cf20.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/516af95cb6cd19b0e88af6162e35cf20.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Để thuận tiện tra map ta tìm vị trí bằng tool đọc map mc&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b5f5f43297a7c5637556e694931267e6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b5f5f43297a7c5637556e694931267e6.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tìm được tọa độ giống trong map&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b0e2b38c6c83181fd7544f66381a8948.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b0e2b38c6c83181fd7544f66381a8948.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Dùng ChestESP tìm cho tiện ta thấy nội dung ghi ko phải dưới đất
 Ta tìm và thấy rương trên trời&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/dd4ab6069292c21cea5def4381f92ac9.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/dd4ab6069292c21cea5def4381f92ac9.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ghép lại ta có flag : KCSC{Bur13d_7reaSur3}&lt;/p&gt;</description>
     </item>
     <item>
@@ -67,8 +67,8 @@ Ta tìm và thấy rương trên trời&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/minictf/onthithpt/</guid>
       <description>&lt;p&gt;Chuyển đổi đuôi &lt;code&gt;.docx&lt;/code&gt; thành &lt;code&gt;.docx.zip&lt;/code&gt;
 Truy cập theo đường dẫn &lt;code&gt;OnthiTHPT\De-thi-thu-TN-THPT-2026-mon-Toan-So-GD-Tuyen-Quang\word\media&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/c586f6a17f9b89ab73df64638bb0f16a.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/dd0a3e6dee040ff5f89fe1f95ec41d92.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/c586f6a17f9b89ab73df64638bb0f16a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/dd0a3e6dee040ff5f89fe1f95ec41d92.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : KCSC{d0cx_jv57_@_zlp}&lt;/p&gt;</description>
     </item>
     <item>
@@ -78,14 +78,14 @@ Truy cập theo đường dẫn &lt;code&gt;OnthiTHPT\De-thi-thu-TN-THPT-2026-mo
       <guid>http://localhost:1313/WuFort/writeup/minictf/trodua/</guid>
       <description>&lt;p&gt;Đọc mô tả, ta thấy nó chạy mỗi khi mở máy &amp;ndash;&amp;gt; có thể được lưu trong start up
 Tìm theo đường dẫn &lt;code&gt;Trodua\[root]\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup****&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/247a16095b25d58b6493548e842e96ef.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/602f507118960dc4cfcc1dff8e84a9df.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/247a16095b25d58b6493548e842e96ef.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/602f507118960dc4cfcc1dff8e84a9df.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta giải mã xor ra&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/dae5b06fb5c201be3c4e77ec7b3e3713.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/ba0abf333ecb110714199f94fbb89e24.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/dae5b06fb5c201be3c4e77ec7b3e3713.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ba0abf333ecb110714199f94fbb89e24.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ra được khúc sau là &lt;code&gt;N1ce_7rY&lt;/code&gt;
 Ta lần theo đường dẫn &lt;code&gt;Trodua\[root]\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/ae6393cef5c658c6ab981915b120e0ea.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ae6393cef5c658c6ab981915b120e0ea.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Thấy nửa đầu là &lt;code&gt;MY_SUP3R_S3CR3T_D4T4&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Vậy flag là: KCSC{MY_SUP3R_S3CR3T_D4T4_N1ce_7rY}&lt;/p&gt;</description>
     </item>

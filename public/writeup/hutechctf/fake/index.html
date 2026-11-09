@@ -19,7 +19,7 @@ Ta thay từ đoạn Rar! --&gt; IHDR bằng PNG --&gt; IHDR như đoạn đầu
 Ta kiểm tra bằng lại bằng binwalk và lấy ra bằng foremost">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/WuFort/writeup/hutechctf/fake/">
-<link crossorigin="anonymous" href="../../../WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
@@ -134,16 +134,16 @@ Ta kiểm tra bằng lại bằng binwalk và lấy ra bằng foremost">
 
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://brotherctf.com/practice/fake">đây</a></p>
 <p>Sử dụng <code>zsteg</code> và <code>png check</code></p>
-<p><img alt="image" loading="lazy" src="../../../images/816fa6bd20300d748a79b03a.png"></p>
+<p><img alt="image" loading="lazy" src="/images/816fa6bd20300d748a79b03a.png"></p>
 <p>Có thể thấy pngcheck báo sau <code>IEND</code> còn data, zsteg chỉ ra rõ data đằng sau là gì</p>
-<p><img alt="image" loading="lazy" src="../../../images/70949f783d1bc3957162e0c3.png"></p>
+<p><img alt="image" loading="lazy" src="/images/70949f783d1bc3957162e0c3.png"></p>
 <p>Ta mở bằng HxD, thấy đằng sau là cấu trúc một file png
 Ta thay từ đoạn <code>Rar! --&gt; IHDR</code> bằng <code>PNG --&gt; IHDR như đoạn đầu</code></p>
-<p><img alt="image" loading="lazy" src="../../../images/71c5d309dd51dfe55e33c49a.png"></p>
-<p><img alt="image" loading="lazy" src="../../../images/055d65bb650524b624083140.png"></p>
+<p><img alt="image" loading="lazy" src="/images/71c5d309dd51dfe55e33c49a.png"></p>
+<p><img alt="image" loading="lazy" src="/images/055d65bb650524b624083140.png"></p>
 <p>Ta kiểm tra bằng lại bằng <code>binwalk</code> và lấy ra bằng <code>foremost</code></p>
-<p><img alt="image" loading="lazy" src="../../../images/78730f8d8fe4cb5c8ccba58e.png"></p>
-<p><img alt="image" loading="lazy" src="../../../images/24a26a017cd0f187dfb0e5bb.png"></p>
+<p><img alt="image" loading="lazy" src="/images/78730f8d8fe4cb5c8ccba58e.png"></p>
+<p><img alt="image" loading="lazy" src="/images/24a26a017cd0f187dfb0e5bb.png"></p>
 <p>Flag là : <code>HUTECH_CTF{D3n_R0i_A_T01_D01_H01_L4u}</code></p>
 
 

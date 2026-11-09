@@ -22,7 +22,7 @@ Với 1700513181420 là mili giây sau 1/1/1970
 Nên ta đổi về 0000000000001, lúc này ta có thể chỉnh bằng exiftool được rồi">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_medium/blast-from-the-past/">
-<link crossorigin="anonymous" href="../../../WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
@@ -137,20 +137,20 @@ Nên ta đổi về 0000000000001, lúc này ta có thể chỉnh bằng exiftoo
 
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://learn.cylabacademy.org/library/432?page=1&amp;category=4&amp;difficulty=2&amp;workspace=true&amp;solved=true">đây</a></p>
 <p>Đọc miêu tả</p>
-<p><img alt="image" loading="lazy" src="../../../images/bc8db68f60a3d7953ac4dfc971c788d1.png"></p>
+<p><img alt="image" loading="lazy" src="/images/bc8db68f60a3d7953ac4dfc971c788d1.png"></p>
 <p>Ta thấy đề cập tới thời gian và exiftool</p>
-<p><img alt="image" loading="lazy" src="../../../images/b46f7fc0cd0e55d9a32ddff142670075.png"></p>
+<p><img alt="image" loading="lazy" src="/images/b46f7fc0cd0e55d9a32ddff142670075.png"></p>
 <p>Ta đổi tên file cho phù hợp với bên host</p>
-<p><img alt="image" loading="lazy" src="../../../images/30b9025534468faf773d81cf5807eb9a.png"></p>
+<p><img alt="image" loading="lazy" src="/images/30b9025534468faf773d81cf5807eb9a.png"></p>
 <p>Ta chỉnh lại từng tag cho tới khi nào đúng</p>
-<p><img alt="image" loading="lazy" src="../../../images/0dc32acc969e4837c6064e7e7b7c02f4.png"></p>
+<p><img alt="image" loading="lazy" src="/images/0dc32acc969e4837c6064e7e7b7c02f4.png"></p>
 <p>Với SamSung: TimeStamp nó dùng hệ riêng nên ta phải dùng HxD, tham khảo tại <a href="https://stackoverflow.com/questions/78185037/how-to-edit-the-samsung-trailer-tag-timestamp">đây</a></p>
-<p><img alt="image" loading="lazy" src="../../../images/c73b9efa199c8aaae23f92a7e3115deb.png"></p>
+<p><img alt="image" loading="lazy" src="/images/c73b9efa199c8aaae23f92a7e3115deb.png"></p>
 <p>Với <code>1700513181420</code> là mili giây sau <code>1/1/1970</code>
 Nên ta đổi về <code>0000000000001</code>, lúc này ta có thể chỉnh bằng exiftool được rồi</p>
-<p><img alt="image" loading="lazy" src="../../../images/d2045ba4dfaead8ea8c6ed3536b8e0a8.png"></p>
+<p><img alt="image" loading="lazy" src="/images/d2045ba4dfaead8ea8c6ed3536b8e0a8.png"></p>
 <p>Thời gian tự động đổi về <code>1970:01:01 00:00:00.001</code></p>
-<p><img alt="image" loading="lazy" src="../../../images/a06aeb0dc80b01029ae4fc260e6ca2ee.png"></p>
+<p><img alt="image" loading="lazy" src="/images/a06aeb0dc80b01029ae4fc260e6ca2ee.png"></p>
 <p>Flag là : <code>academy{71m3_7r4v311ng_p1c7ur3_046dc81d}</code></p>
 
 
