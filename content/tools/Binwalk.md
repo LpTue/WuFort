@@ -15,7 +15,7 @@ Chi tiết tại [đây](https://github.com/ReFirmLabs/binwalk/wiki/Supported-Si
     > Trục X : Độ lệch của tệp
 	Trục Y : Đo từ sự không ngẫu nhiên tới ngẫu nhiên (khá khó hiểu )
 
-![image](/images/3cd5f3a0fc7e23a051c13a5e01f1cb5b.png)
+![image](https://lptue.github.io/WuFort/images/3cd5f3a0fc7e23a051c13a5e01f1cb5b.png)
 
 # II. Cài đặt Binwalk 
 	
@@ -25,7 +25,7 @@ Chi tiết tại [đây](https://github.com/ReFirmLabs/binwalk/wiki/Supported-Si
 - `binwalk` + <file > : Scan một tệp tin
 - `binwalk --dd=.*` + <file > : Trích xuất tấp cả tệp tin 
     
-![image (2)](/images/5f6b783b1d16bee7c71b7ebc6ebeb125.png)
+![image (2)](https://lptue.github.io/WuFort/images/5f6b783b1d16bee7c71b7ebc6ebeb125.png)
     
 # IV. Mở rộng 
 	
@@ -41,7 +41,7 @@ Chi tiết tại [đây](https://github.com/ReFirmLabs/binwalk/wiki/Supported-Si
 		
     Vì vậy, nếu để bs = 512 thì skip = 153493 / 512 = 299.76 <khá lẻ >
 
-![image (4)](/images/3e946cea90a8bea461adf1687b68d2fe.png)
+![image (4)](https://lptue.github.io/WuFort/images/3e946cea90a8bea461adf1687b68d2fe.png)
 
 
 

@@ -6,14 +6,14 @@ tags: ["MiniCTF"]
 
 Khi đọc file pcap ta thấy ó file script.ps1
 
-![image](/images/4cfd69e1762e0935fdd201c27c506f8a.png)
+![image](https://lptue.github.io/WuFort/images/4cfd69e1762e0935fdd201c27c506f8a.png)
 
 Export HTTP object list ta được `flag.txt` và `script.ps1`
 Ta mở file `flag.txt` thấy flag giả
 
-![image](/images/f2dfd7dfe56ad8b7b5ee1ca7ddab7c01.png)
+![image](https://lptue.github.io/WuFort/images/f2dfd7dfe56ad8b7b5ee1ca7ddab7c01.png)
 
-![image](/images/cdec96486493581e32dc5ba8f51651bf.png)
+![image](https://lptue.github.io/WuFort/images/cdec96486493581e32dc5ba8f51651bf.png)
 
 Đọc code của file `.ps1` tạm hiểu
 
@@ -23,7 +23,7 @@ Ta mở file `flag.txt` thấy flag giả
 
 Ta export toàn bộ FTP-DATA object list
 
-![image](/images/2dabda1346012592c21e6de2bf57a1a1.png)
+![image](https://lptue.github.io/WuFort/images/2dabda1346012592c21e6de2bf57a1a1.png)
 
 Sau đó ta viết chương trình dịch ngược đoạn mã hóa
 
@@ -120,10 +120,10 @@ if __name__ == "__main__":
 
 Đọc lại giới thiệu 
 
-![image](/images/f248195cdba7932f13161f30da4a2f4d.png)
+![image](https://lptue.github.io/WuFort/images/f248195cdba7932f13161f30da4a2f4d.png)
 
 Nếu là học sinh thì thứ quan trọng sẽ nhắm tới đó là file đề thi
 
-![image](/images/24d1d52681e42770dd1dcc7a750ff50e.png)
+![image](https://lptue.github.io/WuFort/images/24d1d52681e42770dd1dcc7a750ff50e.png)
 
 Ta đem đi giải và được flag : KCSC{u_f0und_m3_n1c3_try}

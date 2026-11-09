@@ -35,13 +35,13 @@ Về mặt bảo mật, các nhà viết phần mền độc hại dùng ADS đ�
 > FAT : Là dạng tệp tin kiểu cũ, là dạng tệp tin 8-bit, do vậy số lượng cụm tăng khi ổ đĩa tăng dẫn tới sự ra đời của FAT12 - 12bit, FAT16 - 16bit, FAT32 - 32bit
 
 - Cấu trúc FAT : 
-![image](/images/ac73a48d0f8f2e7bd631f12e2c802404.png)
+![image](https://lptue.github.io/WuFort/images/ac73a48d0f8f2e7bd631f12e2c802404.png)
 
 - Điểm khác biệt giữa FAT, FAT12, FAT16, FAT32 : 
-![image](/images/d1229b2c9fb25d931b6df09ec1dccd5a.png)
+![image](https://lptue.github.io/WuFort/images/d1229b2c9fb25d931b6df09ec1dccd5a.png)
 	
 - Điểm khac nhau so với NTFS :
-![image](/images/715e96f28cc67fa15b2b05deccd17eec.png)
+![image](https://lptue.github.io/WuFort/images/715e96f28cc67fa15b2b05deccd17eec.png)
 
 - Mở rộng về ExFAT 
 >Giống FAT32 nhưng loại bỏ được hạn chế về giới hạn 4Gb
@@ -61,23 +61,23 @@ System32 lưu trữ các tệp quan trọng với hệ điều hành
 - Mở window + r (hoặc chuột phải vào biểu tượng window và chọn run )
 - Gõ `lusrmgr.msc`
 - Tất cả những đáp án cần đều ở trong đây
-![image](/images/7ecb5bfda2d69f2d30737e0acd9088a2.png)
+![image](https://lptue.github.io/WuFort/images/7ecb5bfda2d69f2d30737e0acd9088a2.png)
 
 ## Misson 6 : Khái niệm UAC (User Account Control )
 - **Quyền cấp cao tăng nguy cơ xâm nhập** vì giúp phần mền đọc hại dễ lây hệ thống hơn
 - Vì vậy UAC sẽ hiển thị để **xác nhận** xem họ có chạy thao tác đó không
 - Khi chuột phải vào phần mền, chọn **Properties**, chọn mục **Security** sẽ xem được quyền của từng người dùng
-![image](/images/7a7b96da6356943c4e8e6f2e419ea7f6.png)
+![image](https://lptue.github.io/WuFort/images/7a7b96da6356943c4e8e6f2e419ea7f6.png)
 
 ## Misson 7 : Ngoài cài đặt còn Control Panel
 - Để mở : gõ `Control Panel` vào thanh tìm kiếm
 - Cung cấp nhiều lựa chọn tùy chỉnh
-![image](/images/8153b6e329ac466b582842574d6fbb81.png)
+![image](https://lptue.github.io/WuFort/images/8153b6e329ac466b582842574d6fbb81.png)
 
 ## Misson 8 : Task manager
 - Quản lý các tiến trình đang chạy
 - Có thể bật bằng tổ hợp phím Ctrl + Shift + ESC
-![image](/images/d7def95ae5a006c1a5d2b29ac39fdcd2.png)
+![image](https://lptue.github.io/WuFort/images/d7def95ae5a006c1a5d2b29ac39fdcd2.png)
 
 # II . Win_2
 
@@ -90,18 +90,18 @@ Dịch vụ <Services > : Cho biết trạng thái chạy hay dừng của các 
 Khởi động <Startup > : Gồm các cấu hình hệ thống KHÔNG phải quản lý chương trình như Task Manager
 Công cụ <Tools > : Danh sách các tiện ích của hệ điều hành
 
-![image](/images/125fef0cc93093d07f429fd2f8945299.png)
+![image](https://lptue.github.io/WuFort/images/125fef0cc93093d07f429fd2f8945299.png)
 
 ## Misson 1.2 : Tìm hiểu về Advanced System Settings
 - Kiểm soát hành vi hiệu suất và phục hồi hệ thống
 - Win sử dụng tệp làm RAM ảo khi RAM thật đầy, chỉnh chi tiết tại **Advanced** > mục **Performance** >**Settings**
 - Có thể xem và chỉnh sửa cài đặt file crash dump tại tab **Advanced** > mục **Startup and Recovery** > **Settings**
-![image](/images/01f5570a9cf82b2a64dc28145b0ded15.png)
+![image](https://lptue.github.io/WuFort/images/01f5570a9cf82b2a64dc28145b0ded15.png)
 
 ## Misson 2 : Thay đổi cài đặt UAC
 - Nhắc lại : UAC tạm hiểu là **thông báo** khi kích hoạt chức năng nâng cao
 - Để mở, gõ `UAC` vào thanh tìm kiếm
-![image](/images/c9dfce5c2ffac834ad5df6872e62af6d.png)
+![image](https://lptue.github.io/WuFort/images/c9dfce5c2ffac834ad5df6872e62af6d.png)
 
 ## Misson 3 : Tìm hiểu về Computer Management
 - Để mở : Gõ `compmgmt` vào thanh tìm kiếm
@@ -113,7 +113,7 @@ Performance : Xem dữ liệu hiệu suất theo thời gian thực từ tệp n
 Device Manager : Xem và cấu hình phần cứng
 
 - Mở rộng về Task Scheduler : 
-![image](/images/40bba5d3f205ef64f1c9de2f25597e7c.png)
+![image](https://lptue.github.io/WuFort/images/40bba5d3f205ef64f1c9de2f25597e7c.png)
 
 			
 > Bức ảnh cho ta thấy tác vụ chạy một lệnh powershell vào mỗi 10h hàng ngày		
@@ -121,7 +121,7 @@ Kẻ tấn công có thể tạo tác vụ với phương thức xác thực Bat
 Để khai thác, kẻ tấn công cần có mật khẩu của tài khoản mục tiêu, có thể thu được qua các phương pháp như bẻ khóa hash NTLMv2 hoặc khai thác lỗ hổng khác như CVE-2023-21726.​
 Link bài viết tại [đây](https://www.facebook.com/groups/GroupWhiteHat/posts/4001955763465921/)
 
-![image](/images/bfdef46dbe1f1efb0129d6e5b34eb427.png)
+![image](https://lptue.github.io/WuFort/images/bfdef46dbe1f1efb0129d6e5b34eb427.png)
 
 
 - Mở rộng về Event Viewer 
@@ -130,10 +130,10 @@ hung ở giữa hiển thị tổng quan và tóm tắt về sự kiện cụ th
 Khung bên phải là khung hành động
 
 - Các loại sự kiện ghi lại 
-![image](/images/c84537e4ffa7dc324bb55f3261cfc6f1.png)
+![image](https://lptue.github.io/WuFort/images/c84537e4ffa7dc324bb55f3261cfc6f1.png)
 
 - Các nhật ký tiêu chuẩn 
-![image](/images/212fef746fe7903be5f2c0d3af5b17c4.png)
+![image](https://lptue.github.io/WuFort/images/212fef746fe7903be5f2c0d3af5b17c4.png)
 
 - Trong mục Storage có Disk Management : Cho phép quản lý ổ đĩa
 - Trong mục Services and Applications gồm 
@@ -151,12 +151,12 @@ Software Environment : Thông tin về phần mền được tích hợp trong h
 > Lưu trữ thông tin về môi trường hệ điều hành
 Biến môi trường lưu trữ giữ liệu được sử dụng bởi hệ điều hành và các chương trình khác
 
-![MT](/images/463ad2b1a57e3b14f452e7d469bcd41c.png)
+![MT](https://lptue.github.io/WuFort/images/463ad2b1a57e3b14f452e7d469bcd41c.png)
 			
 - Một phương pháp khác xem biến môi trường là OR
 - Gõ Advanced system settings vào thanh tìm kiếm, sau đó chọn  Environment Variables <nút ở dưới >
     
-![OR](/images/56bf7d7e5854a7ea24530555ef86b48d.png)
+![OR](https://lptue.github.io/WuFort/images/56bf7d7e5854a7ea24530555ef86b48d.png)
 		
 ## Misson 5 : Tìm hiểu về Resource Monitor
 - Để mở : Gõ `resmon` vào thanh tìm kiếm
@@ -170,7 +170,7 @@ Memory
 Disk
 Network
     
-![RM](/images/182dfd16344ae7e99df102fabcb31350.png)
+![RM](https://lptue.github.io/WuFort/images/182dfd16344ae7e99df102fabcb31350.png)
 
 ## Misson 6 : Tìm hiểu về CMD
 - Để mở : Gõ `CMD` vào thanh tìm kiếm
@@ -201,7 +201,7 @@ Các cổng đang được sử dụng
 - Cập nhật thường xuyên nhằm vá các lỗi nằm tăng tường bảo mật
 - Gõ `Windows Update Setting` vào thanh tìm kiếm để xem chi tiết
     
-![image](/images/d468ecea07f8a90fa7029d30e6a0824d.png)
+![image](https://lptue.github.io/WuFort/images/d468ecea07f8a90fa7029d30e6a0824d.png)
 
 ## Misson 2 : Windows Security
 - Là cài đặt quản lý các cài đặt về bảo mật
@@ -217,7 +217,7 @@ Device security
 Vàng : Khuyến nghị cần xem xét
 Đỏ : Cảnh báo về các mối nguy hại
 
-![image](/images/b796f9f6b462064a21bed11523068a10.png)
+![image](https://lptue.github.io/WuFort/images/b796f9f6b462064a21bed11523068a10.png)
 
 ## Misson 3 : Tìm hiểu sâu về Virus & threat protection 
 - Các lựa chọn gồm : Scan, settings, update, ransomware protections (bảo vệ khỏi phần mền tống tiền )
@@ -227,7 +227,7 @@ Quét toàn bộ : Kiểm tra toàn bộ thư mục và chương trình
 
 - Nhìn mục Virus & threat protection settings > Manage settings
     
-![image](/images/e2ae37f1c6a4ef3385eef83ac42b0058.png)
+![image](https://lptue.github.io/WuFort/images/e2ae37f1c6a4ef3385eef83ac42b0058.png)
 
 - Trong Manage Settings gồm
 > Real-time protection : Phát hiện ngay lập tức 
@@ -246,7 +246,7 @@ Public network <mạng công cộng > : Hồ sơ công khai, sử dụng mạng 
 - Định nghĩa : Lưu lượng truy cập vào và ra thiết bị thông qua cổng, và tường lửa quản lý những gì đi qua cổng đó
 - Chỉnh sửa chi tiết tại nút Allow an app throught firewall
 
-![image](/images/f8baebaaa298f5d775c73434d4246d24.png)
+![image](https://lptue.github.io/WuFort/images/f8baebaaa298f5d775c73434d4246d24.png)
 
 ## Misson 5 : Tìm hiểu sâu về App & browser control
 - Chức năng : Chống lại các web lừa đảo, chứa phần mền độc hại cũng như tải các phần mền độc hại

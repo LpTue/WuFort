@@ -178,55 +178,55 @@ Sau khi thực hiện quét cổng, kẻ tấn công đã tiến hành quét t�
  
 Tên của dịch vụ đang chạy ở Webserver là gì? Dịch vụ này có 1 CVE được biết đến rộng rãi, bạn có thể nêu tên được không? (Format: ServiceName_CVE. Ví dụ: Atlassian Confluence_CVE-2023-22527)
 </code></pre><h1 id="câu-1">Câu 1<a hidden class="anchor" aria-hidden="true" href="#câu-1">#</a></h1>
-<p><img alt="image" loading="lazy" src="/images/c9ae2e8f8dc15b2d7862dd35b80c3b0d.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/c9ae2e8f8dc15b2d7862dd35b80c3b0d.png"></p>
 <p>Ta tìm thấy được tgian</p>
-<p><img alt="image" loading="lazy" src="/images/007399595f44ea074d600d5991a812cf.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/007399595f44ea074d600d5991a812cf.png"></p>
 <p>Đổi về giờ VN là <code>11am;30-03-2024 GMT+7</code></p>
 <h1 id="câu-2">Câu 2<a hidden class="anchor" aria-hidden="true" href="#câu-2">#</a></h1>
-<p><img alt="image" loading="lazy" src="/images/3a13b7598641d913eb51ea0d49e41b61.png"></p>
-<p><img alt="image" loading="lazy" src="/images/0d1b6ecd839bba395b85c59a8efb4ab1.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/3a13b7598641d913eb51ea0d49e41b61.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/0d1b6ecd839bba395b85c59a8efb4ab1.png"></p>
 <p>Ta thấy lượng truy packet nhiều bất thường</p>
 <blockquote>
 <p>Ip attacker : 45.134.190.42
 Ip Victim : 157.230.41.56</p>
 </blockquote>
-<p><img alt="image" loading="lazy" src="/images/4d1e668670a64a956cd8becdc6735d72.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/4d1e668670a64a956cd8becdc6735d72.png"></p>
 <p>Ta dùng công cụ check vị trí theo ip
 Câu trả lời là <code>bandarseribegawan/brunei</code></p>
 <h1 id="câu-3">Câu 3<a hidden class="anchor" aria-hidden="true" href="#câu-3">#</a></h1>
-<p><img alt="image" loading="lazy" src="/images/d3aaecdb72330c46d470a5a7db2eaca1.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/d3aaecdb72330c46d470a5a7db2eaca1.png"></p>
 <p>Ta thấy có ip attacker thì ta lần được bên cung cấp VPN</p>
 <p>Câu trả lời là <code>NordVPN</code></p>
 <h1 id="câu-4">Câu 4<a hidden class="anchor" aria-hidden="true" href="#câu-4">#</a></h1>
 <p>Ta hiểu, khi đang mở cổng tức là có SYN và ACK
 Ta lọc theo SYN và ACK với ip victim
 <code>ip.src == 157.230.41.56 and tcp.flags.syn==1 and tcp.flags.ack==1</code></p>
-<p><img alt="image" loading="lazy" src="/images/13b6c2ec2b7f77937a5e71c2b051ef95.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/13b6c2ec2b7f77937a5e71c2b051ef95.png"></p>
 <p>Ta đọc thủ công từng cổng và sắp xếp lại
 Câu trả lời là <code>22,135,139,445,5040,5357,7680,8001,8090</code></p>
 <h1 id="câu-5">Câu 5<a hidden class="anchor" aria-hidden="true" href="#câu-5">#</a></h1>
 <p>Vẫn tận dụng cái lọc cũ</p>
-<p><img alt="image" loading="lazy" src="/images/71b4f6bf3144f79c919aaf382fdfac46.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/71b4f6bf3144f79c919aaf382fdfac46.png"></p>
 <p>Ta thấy tại cổng 8090 có đề cập tới server
 Câu trả lời là <code>8090</code></p>
 <h1 id="câu-6">Câu 6<a hidden class="anchor" aria-hidden="true" href="#câu-6">#</a></h1>
 <p>Đề yêu cầu tìm User-Agent
 <code>http.user_agent and ip.src == 45.134.190.42 and ip.dst == 157.230.41.56</code></p>
-<p><img alt="image" loading="lazy" src="/images/a2afbb0240b39fa084033cb962ecc1c3.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/a2afbb0240b39fa084033cb962ecc1c3.png"></p>
 <p>Ta để ý lúc khúc sau User-Agent là feroxbuster/2.10.1
 Câu trả lời là <code>feroxbuster/2.10.1</code></p>
 <h1 id="câu-7">Câu 7<a hidden class="anchor" aria-hidden="true" href="#câu-7">#</a></h1>
 <p>Nhắc lại câu 5 ta trả lời webserver ở port 8090
 Ta lọc theo port 8090 và http
 <code>http or tcp.port == 8090</code></p>
-<p><img alt="image" loading="lazy" src="/images/48f9eb12c4aa56d89ebe8117483641fa.png"></p>
-<p><img alt="image" loading="lazy" src="/images/9e81a949af5f87665ccdcf3e9d421729.png"></p>
-<p><img alt="image" loading="lazy" src="/images/3434e0e296bcfb88d1a107075c4405d1.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/48f9eb12c4aa56d89ebe8117483641fa.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/9e81a949af5f87665ccdcf3e9d421729.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/3434e0e296bcfb88d1a107075c4405d1.png"></p>
 <p>Hầu như chỉ có DNN mới dùng cấu trúc thư mục <code>/DesktopModules/</code> như vậy</p>
 <p>Ta tìm được tên đầu là <code>DotNetNuke</code>
 Ta check CVE nổi tiếng của nó</p>
 <p>Câu trả lời là <code>DotNetNuke_CVE-2017-9822</code></p>
-<p><img alt="image" loading="lazy" src="/images/b04d0c105a103c98dee9f4275e71d6b8.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/b04d0c105a103c98dee9f4275e71d6b8.png"></p>
 
 
   </div>

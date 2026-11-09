@@ -139,19 +139,19 @@ Ta import file bitlock vào autospy">
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://learn.cylabacademy.org/library/453?page=1&amp;category=4&amp;difficulty=2&amp;workspace=true&amp;bookmarked=true">đây</a></p>
 <p>Đầu tiên ta cần lấy được mã băm của file bitlock
 <code>bitlocker2john bitlocker-1.dd</code></p>
-<p><img alt="image" loading="lazy" src="/images/1041ab8058df0cc43bea4dba90a759b6.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/1041ab8058df0cc43bea4dba90a759b6.png"></p>
 <p>Lúc này ta sẽ thấy được 4 mã băm bitlock khác nhau
 4 mã băm này sẽ đều dẫn tới 1 pass
 Ta test với mã bitlock0 trước
 Lưu mã lại 1 file tên <code>hash.txt</code></p>
-<p><img alt="image" loading="lazy" src="/images/0e3588a9e122459ff76405b7b81b68d3.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/0e3588a9e122459ff76405b7b81b68d3.png"></p>
 <p>Ta sử dụng phương pháp tấn công từ điển
 <code>john --format=bitlocker --wordlist=rockyou.txt hash.txt</code></p>
-<p><img alt="image" loading="lazy" src="/images/76215b8badfb670cbf51a9f4f635587d.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/76215b8badfb670cbf51a9f4f635587d.png"></p>
 <p>Ta được pass là : <code>jacqueline</code>
 Ta import file bitlock vào autospy</p>
-<p><img alt="image" loading="lazy" src="/images/80831a61c1167a06a60ac552b9d7e597.png"></p>
-<p><img alt="image" loading="lazy" src="/images/2ee84156d76ef6ff5aebeeab692dc4db.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/80831a61c1167a06a60ac552b9d7e597.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/2ee84156d76ef6ff5aebeeab692dc4db.png"></p>
 <p>Flag là : <code>academy{us3_b3tt3r_p4ssw0rd5_pl5!_3242adb1}</code></p>
 
 

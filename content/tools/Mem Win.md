@@ -33,6 +33,6 @@ git clone https://github.com/lorelyai/volatility3-bitlocker.git
 cp ~/volatility3-bitlocker/bitlocker.py <path>
 ```
 
-![image](/images/17cf9fcaa1464d730679e111.png)
+![image](https://lptue.github.io/WuFort/images/17cf9fcaa1464d730679e111.png)
 
 `vol -f mem.raw windows.bitlocker.BitlockerFVEKScan --dislocker` : Trích xuất FVEK

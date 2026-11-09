@@ -17,7 +17,7 @@ tags: ["Tools"]
 sudo apt install hash-identifier
 ```
 
-![image](/images/17a12a5b4a825f2278a358294d2fb214.png)
+![image](https://lptue.github.io/WuFort/images/17a12a5b4a825f2278a358294d2fb214.png)
 
 Ví dụ với mã `098f6bcd4621d373cade4e832627b4f6` xác định là mã `MD5` hoặc `Domain Cached Credentials`
 

@@ -19,12 +19,12 @@ tags: ["Tools"]
 # III. Hướng dẫn sử dụng 
 	
 - Sonic cho phép ta tách các layer ra để quan sát và phân tích
-![image](/images/31deac12dc8072deb3d38c23fb8a56d7.png)
+![image](https://lptue.github.io/WuFort/images/31deac12dc8072deb3d38c23fb8a56d7.png)
 - Ngoài ra, sonic còn cho phép ta cài thêm plugin
 - Tùy bài sẽ có những cách khai thác Sonic theo những hướng khác nhau
 
 # IV. Ví dụ
 - Khi tách lớp layer spectrogram channel 2 của tệp đính kèm
 
-![image (5)](/images/ced64caa28bb8cd1ea39f89095a2a146.png)
+![image (5)](https://lptue.github.io/WuFort/images/ced64caa28bb8cd1ea39f89095a2a146.png)
 

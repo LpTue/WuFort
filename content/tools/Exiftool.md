@@ -18,7 +18,7 @@ tags: ["Tools"]
 
 - `exiftool` + <file ảnh > : đọc metadata của <file ảnh 
 
-![image (1)](/images/3d34b0d3e84eebca7111c4a1b7edb1b3.png)
+![image (1)](https://lptue.github.io/WuFort/images/3d34b0d3e84eebca7111c4a1b7edb1b3.png)
 
 - `exiftool -a -u` + <file ảnh > : đọc metadata bao gồm thẻ ẩn và thẻ không chuẩn 
 - `exiftool -Artist=` + "Ten Tac Gia " + <file ảnh > : Chỉnh sửa tên tác giả

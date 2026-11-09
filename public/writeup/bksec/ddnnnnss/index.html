@@ -147,13 +147,13 @@ Ta sử lại code">
   <div class="post-content md-content"><p>Tải bài tập tại đây <a href="https://training.bksec.vn/challenges/34">đây</a></p>
 <p>Mở bằng Hierarchy thấy nhiều packet DNS + tên đề bài nhấn mạnh vào dns
 Ta lọc dns</p>
-<p><img alt="image" loading="lazy" src="/images/c99345d1d629f868ae71f832a3fbf024.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/c99345d1d629f868ae71f832a3fbf024.png"></p>
 <p>Ta lướt thấy nhiều req từ ip 198.168.1.100
 Ta lọc <code>ip.src == 198.168.1.100 and dns</code></p>
-<p><img alt="image" loading="lazy" src="/images/eba9fb1ce4bc06eb65a0c64558e3df4e.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/eba9fb1ce4bc06eb65a0c64558e3df4e.png"></p>
 <p>Ta để ý nội dung tuân theo cú pháp <code>seq&lt;số&gt;.&lt;chuỗi nhìn giống hex&gt;.1337xBetbkseccom</code>
 Ta lọc lấy nhanh nội dung bằng Tshark</p>
-<p><img alt="image" loading="lazy" src="/images/24167bc7ace249ae54fd2eb26c0b8ad6.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/24167bc7ace249ae54fd2eb26c0b8ad6.png"></p>
 <p>Ta viết code để lấy đoạn mã</p>
 <pre tabindex="0"><code class="language-py=" data-lang="py=">fi = open(&#34;out.txt&#34;,&#34;r&#34;)
 s = &#34;&#34;
@@ -174,7 +174,7 @@ for i in range(1,147):
     s += b
 
 print(s)
-</code></pre><p><img alt="image" loading="lazy" src="/images/17d61aca2ee751600c4dabc83f79bb80.png"></p>
+</code></pre><p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/17d61aca2ee751600c4dabc83f79bb80.png"></p>
 <p>Flag là: <code>BKSEC{dns_3xf1ll_is_n0t_a_b4d_choic3}</code></p>
 
 

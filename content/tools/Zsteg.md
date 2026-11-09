@@ -25,7 +25,7 @@ tags: ["Tools"]
 - `zsteg -a` + <tên file > : Thử tất cả các phương pháp đã biết
 - `zsteg -E` + <tên kênh > + <tên file > : Trích xuất kênh 
 
-![image (6)](/images/e894f48aaa946577a39ff6a5bd28cfac.png)
+![image (6)](https://lptue.github.io/WuFort/images/e894f48aaa946577a39ff6a5bd28cfac.png)
 
 
 

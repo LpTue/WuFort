@@ -7,6 +7,6 @@ Tải bài tập tại [đây](https://learn.cylabacademy.org/library/265?page=3
 Mở bth thấy chạy ra web
 Nên mở thử bằng vscode để đọc code
 
-![image](/images/367f318c997dfef5fb6839e624aa2c19.png)
+![image](https://lptue.github.io/WuFort/images/367f318c997dfef5fb6839e624aa2c19.png)
 
 Flag là : academy{3nh4nc3d_9f31c04b}

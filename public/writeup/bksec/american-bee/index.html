@@ -147,13 +147,13 @@ II. Phân tích
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://training.bksec.vn/challenges/15">đây</a></p>
 <h1 id="i-phổ-cập-kiến-thức">I. Phổ cập kiến thức<a hidden class="anchor" aria-hidden="true" href="#i-phổ-cập-kiến-thức">#</a></h1>
 <p>Với một pcap usb, ta sẽ có 3 cách import ra flag</p>
-<p><img alt="image" loading="lazy" src="/images/eba8fb3a7509e141a18b0e55e0152673.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/eba8fb3a7509e141a18b0e55e0152673.png"></p>
 <p>Thêm nữa là host gửi dữ liệu để hỏi coi chuột hay bàn phím có dữ liệu không
 Nên sẽ có lúc dữ liệu trống, lúc thì có dữ liệu
 Có thể coi video để hiểu cách usb giao tiếp <a href="https://www.youtube.com/watch?v=_ysUxOKyGGU&amp;t=302s">tại đây</a></p>
 <h1 id="ii-phân-tích">II. Phân tích<a hidden class="anchor" aria-hidden="true" href="#ii-phân-tích">#</a></h1>
 <p>Đầu tiên ta thấy host đang giao tiếp tới 2 thiết bị</p>
-<p><img alt="image" loading="lazy" src="/images/6c25120acad680a00cb7e66a55ade87c.png"></p>
+<p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/6c25120acad680a00cb7e66a55ade87c.png"></p>
 <p>Ta sử dụng công cụ <a href="https://github.com/Nissen96/USB-HID-decoders">này</a> để lấy dữ liệu</p>
 <p>Ta tạo một môi trường ảo</p>
 <pre tabindex="0"><code class="language-=" data-lang="=">cd ~
@@ -165,7 +165,7 @@ cd USB-HID-decoders
 pip install -r requirements.txt
 </code></pre><pre tabindex="0"><code class="language-=" data-lang="=">./extract_hid_data.sh AA.pcapng
 </code></pre><pre tabindex="0"><code class="language-=" data-lang="=">python keyboard_decode.py usbdata-5.3.1.txt
-</code></pre><p><img alt="image" loading="lazy" src="/images/75995531718c1e8fccf9b89eb88c1490.png"></p>
+</code></pre><p><img alt="image" loading="lazy" src="https://lptue.github.io/WuFort/images/75995531718c1e8fccf9b89eb88c1490.png"></p>
 <p>Ta được flag là : <code>BKSEC{n4ughty_bee_fr0m_AMERIKAAA}</code></p>
 
 

@@ -43,7 +43,7 @@ Trục Y : Đo từ sự không ngẫu nhiên tới ngẫu nhiên (khá khó hi�
 &lt;/ul&gt;
 &lt;h3 id=&#34;cài-công-cụ-xác-định-mã-băm&#34;&gt;Cài công cụ xác định mã băm&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;sudo apt install hash-identifier
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/17a12a5b4a825f2278a358294d2fb214.png&#34;&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/17a12a5b4a825f2278a358294d2fb214.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disk Image Forensics</title>
@@ -66,7 +66,7 @@ Trục Y : Đo từ sự không ngẫu nhiên tới ngẫu nhiên (khá khó hi�
 &lt;ul&gt;
 &lt;li&gt;Nhập ảnh đĩa vào&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/1833dfe4df0ba6a3b46839c8f1a60d51.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/1833dfe4df0ba6a3b46839c8f1a60d51.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Document analysis</title>
@@ -153,7 +153,7 @@ OOOXML ( Office Open XML )&lt;/p&gt;
 &lt;li&gt;Chọn tệp tin cần đọc hoặc chỉnh sửa&lt;/li&gt;
 &lt;li&gt;Tùy bài sẽ có những cách áp dụng khác nhau&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/1d099aed70ac0337f75e20f737f529fd.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/1d099aed70ac0337f75e20f737f529fd.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mem Win</title>
@@ -183,7 +183,7 @@ git clone https://github.com/lorelyai/volatility3-bitlocker.git
 
 # 2. Copy file plugin vào đúng thư mục
 cp ~/volatility3-bitlocker/bitlocker.py &amp;lt;path&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/17cf9fcaa1464d730679e111.png&#34;&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/17cf9fcaa1464d730679e111.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oletools</title>
@@ -202,7 +202,7 @@ cp ~/volatility3-bitlocker/bitlocker.py &amp;lt;path&amp;gt;
 &lt;li&gt;Là công cục hính để phát hiện tài liệu chứa bất kỳ macro này được nhúng bên trong hay không&lt;/li&gt;
 &lt;li&gt;Sử dụng lệnh  &lt;code&gt;oleid &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/891cb9594c960cd68e1d37065d8df869.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/891cb9594c960cd68e1d37065d8df869.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sonic</title>
@@ -229,7 +229,7 @@ Màu sắc - thể hiện sự hiện diện của tần số&lt;/p&gt;
 &lt;h1 id=&#34;iii-hướng-dẫn-sử-dụng&#34;&gt;III. Hướng dẫn sử dụng&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Sonic cho phép ta tách các layer ra để quan sát và phân tích
-&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/31deac12dc8072deb3d38c23fb8a56d7.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/31deac12dc8072deb3d38c23fb8a56d7.png&#34;&gt;&lt;/li&gt;
 &lt;li&gt;Ngoài ra, sonic còn cho phép ta cài thêm plugin&lt;/li&gt;
 &lt;li&gt;Tùy bài sẽ có những cách khai thác Sonic theo những hướng khác nhau&lt;/li&gt;
 &lt;/ul&gt;
@@ -237,7 +237,7 @@ Màu sắc - thể hiện sự hiện diện của tần số&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Khi tách lớp layer spectrogram channel 2 của tệp đính kèm&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image (5)&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ced64caa28bb8cd1ea39f89095a2a146.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image (5)&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/ced64caa28bb8cd1ea39f89095a2a146.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wireshark</title>
@@ -258,7 +258,7 @@ Phát hiện bất thường về bảo mật
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;giao-diện-và-dữ-liệu&#34;&gt;Giao diện và dữ liệu&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7d9af824cfcbd0a0ee2978a93dc09455.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/7d9af824cfcbd0a0ee2978a93dc09455.png&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Toolbar : Chứa nhiều menu và phím tắt&lt;/li&gt;
 &lt;li&gt;Display filter : Phần truy vấn và lọc&lt;/li&gt;
@@ -267,7 +267,7 @@ Phát hiện bất thường về bảo mật
 &lt;li&gt;Status bar : Trạng thái công cụ, hồ sơ và thông tin gói số&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;tải-file-pcap-files&#34;&gt;Tải file PCAP Files&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/5b06b2dd6d2df4fa250245ebd80d2330.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/5b06b2dd6d2df4fa250245ebd80d2330.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zsteg</title>
@@ -299,7 +299,7 @@ zlib-compressed data&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;zsteg -a&lt;/code&gt; + &amp;lt;tên file &amp;gt; : Thử tất cả các phương pháp đã biết&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;zsteg -E&lt;/code&gt; + &amp;lt;tên kênh &amp;gt; + &amp;lt;tên file &amp;gt; : Trích xuất kênh&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image (6)&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/e894f48aaa946577a39ff6a5bd28cfac.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image (6)&#34; loading=&#34;lazy&#34; src=&#34;https://lptue.github.io/WuFort/images/e894f48aaa946577a39ff6a5bd28cfac.png&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

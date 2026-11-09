@@ -15,20 +15,20 @@ tags: ["Tools"]
 ## Với FTK Image
 - Nhập ảnh đĩa vào
 
-![image](/images/1833dfe4df0ba6a3b46839c8f1a60d51.png)
+![image](https://lptue.github.io/WuFort/images/1833dfe4df0ba6a3b46839c8f1a60d51.png)
 
-![image](/images/af439320a917604ae8e41e7898dcae23.png)
+![image](https://lptue.github.io/WuFort/images/af439320a917604ae8e41e7898dcae23.png)
 
-![image](/images/50dbc659849b7ee14521f78d553248f7.png)
+![image](https://lptue.github.io/WuFort/images/50dbc659849b7ee14521f78d553248f7.png)
 
 ## Với Autopsy
 - Tạo case mới
 
-![image](/images/13dc7c58031fb42c4bd44ee8f6c75149.png)
+![image](https://lptue.github.io/WuFort/images/13dc7c58031fb42c4bd44ee8f6c75149.png)
 
 - Thêm disk vào
 
-![image](/images/63a59462f431fcb8be79811ad656a5e4.png)
+![image](https://lptue.github.io/WuFort/images/63a59462f431fcb8be79811ad656a5e4.png)
 
 # IV. Một số tệp đáng lưu ý
 - $MFT : Lưu trữ thông tin về tất cả các tệp và thư mục trên một ổ đĩa, bao gồm tên, quyền truy cập và thuộc tính của chúng
