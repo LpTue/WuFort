@@ -7,15 +7,15 @@ Tải bài tập tại [đây](https://learn.cylabacademy.org/library/707?page=1
 
 Ta trích xuất file chứa git
 
-![image](https://hackmd.io/_uploads/HyXtmdihMg.png)
+![image](/images/1e46c81581fa7fac59b13c470d3db56d.png)
 
 Khi đọc log thì nó báo chưa có cái commit nào trước đó
 
-![image](https://hackmd.io/_uploads/H1JhQOs2fe.png)
+![image](/images/a6edb76a0af7aa1758e623626f2e63d5.png)
 
 Nhưng khi đọc bằng autospy thì ta thấy có mấy cái git
 
-![image](https://hackmd.io/_uploads/H1YaXdohGe.png)
+![image](/images/d9b3968cdfef034bba55b12db2b11047.png)
 
 Flag là : `academy{g17_r35cu3_16ac6bf3}`
 

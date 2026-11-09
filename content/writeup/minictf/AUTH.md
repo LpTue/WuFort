@@ -4,20 +4,20 @@ tags: ["MiniCTF"]
 
 ---
 
-![image](https://hackmd.io/_uploads/r1DGWGeqfx.png)
+![image](/images/44c81a133f36df073fe90167908ea5ad.png)
 
 Ta tập trung vào tài khoản `student` 
 
-![image](https://hackmd.io/_uploads/SkziWMgqMl.png)
+![image](/images/4f6fafde687e3d96e0a7f83e4f4d633c.png)
 
 Để ý thấy có format `host sudo: ` 
 Nên ta dùng grep theo format đó
 
-![image](https://hackmd.io/_uploads/SJr0bMx5zg.png)
+![image](/images/2f750235060315eccbe675c89f843813.png)
 
 Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64
 
-![image](https://hackmd.io/_uploads/B1HXGfl9fl.png)
+![image](/images/7d741b8f7ca4fce9e28fc4941b75f96e.png)
 
 
 

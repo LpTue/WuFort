@@ -9,7 +9,7 @@ Tại bài tập tại [đây](https://learn.cylabacademy.org/library/454?page=1
 ### Cách 1
 ---
 
-![image](https://hackmd.io/_uploads/Hkz1r_C2Gl.png)
+![image](/images/5b412617da41ceac9626086e.png)
 
 ---
 ### Cách 2

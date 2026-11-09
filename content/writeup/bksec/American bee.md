@@ -9,7 +9,7 @@ Tải bài tập tại [đây](https://training.bksec.vn/challenges/15)
 # I. Phổ cập kiến thức
 Với một pcap usb, ta sẽ có 3 cách import ra flag
 
-![image](https://hackmd.io/_uploads/S1plLlXhze.png)
+![image](/images/eba8fb3a7509e141a18b0e55e0152673.png)
 
 Thêm nữa là host gửi dữ liệu để hỏi coi chuột hay bàn phím có dữ liệu không
 Nên sẽ có lúc dữ liệu trống, lúc thì có dữ liệu
@@ -19,7 +19,7 @@ Có thể coi video để hiểu cách usb giao tiếp [tại đây](https://www
 # II. Phân tích
 Đầu tiên ta thấy host đang giao tiếp tới 2 thiết bị
 
-![image](https://hackmd.io/_uploads/rydFveX3Gg.png)
+![image](/images/6c25120acad680a00cb7e66a55ade87c.png)
 
 Ta sử dụng công cụ [này](https://github.com/Nissen96/USB-HID-decoders) để lấy dữ liệu 
 
@@ -43,6 +43,6 @@ pip install -r requirements.txt
 python keyboard_decode.py usbdata-5.3.1.txt
 ```
 
-![image](https://hackmd.io/_uploads/ryawue7nze.png)
+![image](/images/75995531718c1e8fccf9b89eb88c1490.png)
 
 Ta được flag là : `BKSEC{n4ughty_bee_fr0m_AMERIKAAA}`

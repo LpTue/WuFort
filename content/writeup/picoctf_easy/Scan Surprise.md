@@ -5,4 +5,4 @@ tags: ["PicoCTF_Easy"]
 
 Tải về và giải nén file 
 Sau đó di chuyển tới cuối file và quét qr :D
-![image](https://hackmd.io/_uploads/rk4T9sZuGl.png)
+![image](/images/af072a7297c7e4f5717924fa17572f24.png)

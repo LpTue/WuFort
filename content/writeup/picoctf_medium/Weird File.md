@@ -6,11 +6,11 @@ tags: ["PicoCTF_Medium"]
 Tải bài tập tại [đây](https://learn.cylabacademy.org/library/101?page=4&category=4&difficulty=2&workspace=true)
 Đọc kỹ giới thiệu
 
-![image](https://hackmd.io/_uploads/HyVlR3U5Ml.png)
+![image](/images/b2badff56b97ecb2732254825a317f28.png)
 
 Ta nghĩ ngay tới bị giấu macro
 
-![image](https://hackmd.io/_uploads/ry-QChIcGg.png)
+![image](/images/6d3b4b491a7541917163a2f9256b2d65.png)
 
 Ta dùng tool lấy chuỗi ra
 ```doc=
@@ -39,10 +39,10 @@ End Sub
 Thấy đoạn đáng ngờ 
 `cGljb0NURnttNGNyMHNfcl9kNG5nM3IwdXN9`
 
-![image](https://hackmd.io/_uploads/r11DA3I9zx.png)
+![image](/images/a77da81f2e6947b7e219ecd4b19461c0.png)
 
 Ta đưa về dạng academy
 
-![image](https://hackmd.io/_uploads/S10D02I5Gg.png)
+![image](/images/eb445753d9c562866f9661d39b768bc1.png)
 
 Flag là : academy{m4cr0s_r_d4ng3r0us}

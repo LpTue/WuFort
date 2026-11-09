@@ -24,14 +24,14 @@ tags: ["Tools"]
 - Bằng cách đổi tên phần mở rộng `.docx.zip`, `.xlsx.zip`, `pptx.zip`, bạn có thể giải nén nội dung các tệp thành các XML 
 riêng lẻ
 
-![image](https://hackmd.io/_uploads/Sy8TYpt_fe.png)
+![image](/images/426641c39c436fb5bd2161429774b85b.png)
 
 - Đây là tính năng hữu ích cho điều tra số, vì cho phép các nhà kiểm tra nội dung tài liệu mà không cần sửa đổi nó
 
 ## Cấu trúc giải nén của tài liệu OOXML
 - Sau khi giải nén bằng cách thêm đuôi `.zip`
 
-![image](https://hackmd.io/_uploads/HkK95aY_Mg.png)
+![image](/images/abb98a548b1eb5ea7ffedf2ce86d6339.png)
 
 ### [Content_Types].xml
 - Là tệp chứa thông tin về các loại nội dung có trong tài liệu và phần mở rộng tệp tương ứng của chúng
@@ -118,9 +118,9 @@ riêng lẻ
 - Macro được viết bằng Visual Basic for Applications ( VBA )
 - Kẻ tấn công thường lợi dụng trong các cuộc tấn công lừa đảo và nhúng các mã độc để thực hiện hành động xấu và cài đặt phần mền vào hệ thống
 
-![image](https://hackmd.io/_uploads/B1u_bkq_zl.png)
+![image](/images/f697866ca47191e0c5ca06ae5f5ae36d.png)
 
-![image](https://hackmd.io/_uploads/HyiKZk5_Gg.png)
+![image](/images/2c7781f64730e83ca2e7f671b76e65ed.png)
 
 ## Phân tích macro
 - Đọc tại [đây](https://hackmd.io/@LpTue/SkRcH19uze)

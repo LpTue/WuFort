@@ -15,20 +15,20 @@ tags: ["Tools"]
 ## Với FTK Image
 - Nhập ảnh đĩa vào
 
-![image](https://hackmd.io/_uploads/rkqjpM0tze.png)
+![image](/images/1833dfe4df0ba6a3b46839c8f1a60d51.png)
 
-![image](https://hackmd.io/_uploads/HJnTTGRKGg.png)
+![image](/images/af439320a917604ae8e41e7898dcae23.png)
 
-![image](https://hackmd.io/_uploads/SyzJ0MRYMl.png)
+![image](/images/50dbc659849b7ee14521f78d553248f7.png)
 
 ## Với Autopsy
 - Tạo case mới
 
-![image](https://hackmd.io/_uploads/H1u-AM0tMl.png)
+![image](/images/13dc7c58031fb42c4bd44ee8f6c75149.png)
 
 - Thêm disk vào
 
-![image](https://hackmd.io/_uploads/Bkv_CGAKfg.png)
+![image](/images/63a59462f431fcb8be79811ad656a5e4.png)
 
 # IV. Một số tệp đáng lưu ý
 - $MFT : Lưu trữ thông tin về tất cả các tệp và thư mục trên một ổ đĩa, bao gồm tên, quyền truy cập và thuộc tính của chúng

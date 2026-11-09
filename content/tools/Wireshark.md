@@ -12,14 +12,14 @@ tags: ["Tools"]
     Phát hiện bất thường về bảo mật
     Điều tra và tìm hiểu về các giao thức
 ### Giao diện và dữ liệu
-![image](https://hackmd.io/_uploads/S1R-WJGdMl.png)
+![image](/images/7d9af824cfcbd0a0ee2978a93dc09455.png)
 - Toolbar : Chứa nhiều menu và phím tắt 
 - Display filter : Phần truy vấn và lọc
 - Recent files : Các tệp tin gần đây
 - Capture filter and available sniffing interfaces : Giao diện mạng là điểm kết nối giữa máy tính và mạng, kết nối phần mền
 - Status bar : Trạng thái công cụ, hồ sơ và thông tin gói số
 ### Tải file PCAP Files
-![image](https://hackmd.io/_uploads/SJHz7JzOMl.png)
+![image](/images/5b06b2dd6d2df4fa250245ebd80d2330.png)
 - Chi tiết gói được hiển thị trong 3 ngăn khác nhau 
     > Packet List Pane : Tóm tắt từng gói địa chỉ
     Packet Details Panel : Phân tích chi tiết gói đã chọn
@@ -30,96 +30,96 @@ tags: ["Tools"]
     > Quy tắc tạm thời : Trong phiên do mình đặt
     Quy tắc vĩnh viễn : Lưu dưới tệp hồ sơ
 
-![image](https://hackmd.io/_uploads/BJ5DdkfuGl.png)
+![image](/images/5114b4e91544caec8e1e5567c1f0fa34.png)
 
 ### Traffic Sniffing
 - Dùng nút "shark" xanh dương để bắt đầu quét 
 - Nút đỏ để dừng quét
 - Nút xanh lá để khởi động lại quá trình quét
 
-![image](https://hackmd.io/_uploads/BJQ1YkG_Ge.png)
+![image](/images/3708e749544133b4333a291998908ba2.png)
 
 ### Hợp nhất các tệp PCAP
-![image](https://hackmd.io/_uploads/BJnptkfuGe.png)
+![image](/images/0a4f983dc3309a9b2140268ae2a91226.png)
 
 ### Xem chi tiết tệp 
 - Góc dưới bên trái
-![image](https://hackmd.io/_uploads/HJMcckG_fe.png)
+![image](/images/37af3be5f818380a2c630c7255f5a54d.png)
 
-![image](https://hackmd.io/_uploads/rkKT51Muze.png)
+![image](/images/192d6f97194ea79ac7c035807a214ce8.png)
 
 ## Misson 2 : Phân tích gói tin
 ### Chi tiết gói dữ liệu
-![img](https://hackmd.io/_uploads/HJ5GhJzOzl.svg)
+![img](/images/6eee83b86a68fbf61b15bb9319123804.svg)
 
 - Mỗi lần trỏ vào 1 chi tiết, nó sẽ làm nổi bật phần tương ứng trong khung byte
 
-![image](https://hackmd.io/_uploads/H1RYhkz_fg.png)
+![image](/images/b7a7882673effb70ed75546c7afc1bfb.png)
 
 - Hãy cùng xem chi tiết
 
-![image](https://hackmd.io/_uploads/Bympn1G_Gl.png)
+![image](/images/b46feed5e02d09ae55c71a531d5225c7.png)
 
 - Tương ứng trong lớp OSI
     > Frame/packet : Layer 1
-    ![image](https://hackmd.io/_uploads/rJGbWxfdGl.png)
+    ![image](/images/7ad47278bfac001a8cf9a0435e6e51cd.png)
     Source [MAC] : Layer 2 
-    ![image](https://hackmd.io/_uploads/S1o-ZeG_Gg.png)
+    ![image](/images/aceac2d18e3aec81662399837483037c.png)
     Source [IP] : Layer 3 
-    ![image](https://hackmd.io/_uploads/S1-7-lfdfg.png)
+    ![image](/images/a6fa60bf7e4de24be966198578d4ba5c.png)
     Giao thức : Layer 4 
-    ![image](https://hackmd.io/_uploads/BJiV-gf_zg.png)
+    ![image](/images/e2fe8f378dd285bdcf8504478e8511dd.png)
     Lỗi giao thức
-    ![image](https://hackmd.io/_uploads/S1_HbeGdfx.png)
+    ![image](/images/1269873be6f5f6481a4ab51957119e90.png)
     Giao thức ứng dụng : Layer 5
-    ![image](https://hackmd.io/_uploads/HkKLblfdze.png)
+    ![image](/images/bc3095a4c18c3a5ef818ce43292919c7.png)
     Dữ liệu
-    ![image](https://hackmd.io/_uploads/rkxOWezdMe.png)
+    ![image](/images/f263d95b902fda0b206623538d9d3f77.png)
 
 ## Misson 3 : Điều hướng gói tin
 ### Số gói tin 
 - Wireshark tính toán số lượng gói tin, giúp quá trình phân tích cho các bản ghi lớn và dễ dàng quay lại điểm cụ thể của sự kiện
 
-![image](https://hackmd.io/_uploads/HkX8fxGdfx.png)
+![image](/images/adae64068406f28f0e91e3c43ef271e1.png)
 
 ### Đi đến gói tin
 - Giúp dễ dàng tìm kiếm/điều tra các gói cụ thể
 
-![image](https://hackmd.io/_uploads/HkUcMgz_Ml.png)
+![image](/images/49f88c4f12ada8c94a26f881934e2e28.png)
 
 ### Tìm gói dữ liệu
 - Tìm kiếm bên trong các gói tin cho một sự kiện cụ thể 
 
-![image](https://hackmd.io/_uploads/HJCfmxGuze.png)
+![image](/images/f39a1619e5e4843422a515f0b059ef64.png)
 
 ### Gói đánh dấu
 - Giúp các nhà phân tích chỉ ra một sự kiện quan tâm hoặc xuất các gói cụ thể từ quá trình thu thập
 
-![image](https://hackmd.io/_uploads/HyVZ4xMdfg.png)
+![image](/images/de31de86d0403f9a20ef61156724f9a7.png)
 
 ### Bình luận gói tin
 - Thêm chú thích cho các gói cụ thể để hỗ trợ điều tra thêm hoặc nhắc nhở và chỉ ra các điểm quan trọng/đáng ngờ
 
-![image](https://hackmd.io/_uploads/SJpFVlf_Mx.png)
+![image](/images/429b04e8c7930cb7d2d9bb31d4f6293d.png)
 
 ### Xuất gói dữ liệu
 - Chức năng này giúp các nhà phân tích chia sẻ những gói đáng ngờ duy nhất (phạm vi đã được xác định)
 
-![image](https://hackmd.io/_uploads/B1Q-BgzuMe.png)
+![image](/images/64c5b405ad0f08c57339d86469968d75.png)
 
-![image](https://hackmd.io/_uploads/SkAfBlGOfx.png)
+![image](/images/b2c41a1dd315aff6a98632d1491dfa13.png)
 
 ### Xuất đối tượng ( Tệp )
 - Wireshark có thể trích xuất các tệp được truyền qua đường dây
 
-![image](https://hackmd.io/_uploads/H1qy8eGdze.png)
+![image](/images/4c5cec8d908948d6eb958b37bbd1a149.png)
 
 ### Định dạng hiển thị thời gian
 - Wireshark liệt kê các gói tin khi chúng được ghi nhận, nên việc điều tra luồng mặc định không phải lúc nào cũng là lựa chọn tốt nhất
 
-![image](https://hackmd.io/_uploads/HyNrUlfdMl.png)
+![image](/images/3a47a14b098969297e2108cdfa3bf937.png)
 
-![image](https://hackmd.io/_uploads/HJIUIgzOfe.png)
+![image](/images/e51bb915e5252ef744e2c0f0bdac68a6.png)
 
 ### Expert Info ( Thông tin chuyên gia )
 - Cung cấp một nhóm với 3 loại mức độ nghiêm trọng khác nhau
@@ -138,7 +138,7 @@ Error | Đỏ | Các vấn đề như gói dữ liệu bị lỗi
 | Checksum   | Lỗi kiểm tra tổng     | Deprecated    |   Việc sử dụng giao thức bị loại bỏ  | 
 Comment | Phát hiện bình luận gói tin | Malformed | Phát hiện gói dữ liệu bị lỗi 
 
-![image](https://hackmd.io/_uploads/ryUv5lfuzl.png)
+![image](/images/667f211bcab805a4a16e0c92ce8e6d72.png)
 
 ## Misson 3 : Lọc gói tin
 ### Giới thiệu bộ lọc
@@ -148,59 +148,59 @@ Comment | Phát hiện bình luận gói tin | Malformed | Phát hiện gói d�
 ### Apply as Filter ( Áp dụng bộ lọc )
 - Đây là cách cơ bản nhất để lọc lưu lượng
 
-![image](https://hackmd.io/_uploads/SkKnngGdGx.png)
+![image](/images/2c29ea93f27f5bf956f639f7a6ef6410.png)
 
 ### Conversation Filter ( Bộ lọc hội thoại )
 - Điều tra một số gói cụ thể và tất cả các gói liên kết bằng cách tập trung vào địa chỉ IP và số cổng
 
-![image](https://hackmd.io/_uploads/SJtcTgzOzg.png)
+![image](/images/3947662b707044edf3333c6335d62652.png)
 
 ### Colourise Conversation ( Tô màu cuộc hội thoại )
 - Tương tự **Conversation Filter** nhưng nổi bật các gói tin liên kết mà không áp dụng bộ lọc hiển thị và giảm số lượng gói đã xem
 
-![image](https://hackmd.io/_uploads/rJ_XCgf_fg.png)
+![image](/images/8c7779ae40dd2584e2043c4f6206033e.png)
 
 - Khi muốn phục hồi lại màu gốc
 
-![image](https://hackmd.io/_uploads/S1qrRefdMl.png)
+![image](/images/ad02aa9c9726b5609755817b9db79fda.png)
 
 ### Prepare as Filter ( Chuẩn bị làm bộ lọc )
 - Tương tự như **Apply as Filter** nhưng ko làm thay đổi thứ tự như **Apply as Filter** mà chỉ trỏ tới
 
-![image](https://hackmd.io/_uploads/Bks31ZM_fe.png)
+![image](/images/e449f0f09c1f876dcba6809d9212dce6.png)
 
 ### Apply as Column ( Áp dụng dưới dạng cột )
 - Giúp các nhà phân tích kiểm tra sự xuất hiện của một giá trị/trường cụ thể trên các gói dữ liệu
 
-![image](https://hackmd.io/_uploads/B1nSeWGOfl.png)
+![image](/images/6698e8dedb544e30679a567c26a311fd.png)
 
 - Cột mới đã được thêm 
 
-![image](https://hackmd.io/_uploads/B1R_l-fuzx.png)
+![image](/images/ce48d7bf146f395ff828e2f39a9536a4.png)
 
 ### Follow Stream ( Theo dõi luồng )
 - Giúp các nhà phân tích tái tạo dữ liệu cấp ứng dụng và hiểu sự kiện quan tâm
 
-![image](https://hackmd.io/_uploads/SJI_--MOfx.png)
+![image](/images/557436ffbca5b08f5be3877edb713249.png)
 
 - Khi này bộ lọc tương ứng sẽ được áp dụng vậy nên cần gỡ chúng bằng nút "X" trên thanh lọc 
 
-![image](https://hackmd.io/_uploads/HktBfbM_zx.png)
+![image](/images/daf1a63a817cb79a2d52008b0cf2daa6.png)
 
 ### Simple Display Filter Queries ( Truy vấn bộ lọc hiển thị đơn giản )
 - Cách dễ nhất để lọc nhanh số lượng gói dữ liệu khổng lồ là áp dụng bộ lọc hiển thị qua thanh lọc
 
-![image](https://hackmd.io/_uploads/SytjQWfuGl.png)
+![image](/images/12fa8ad691da3b083642d49875c914a9.png)
 
 - Lọc theo tên giao thức hoặc cổng ( Protocol hoặc port )
 
-![image](https://hackmd.io/_uploads/rJI-E-Mufl.png)
+![image](/images/6b8a5f95b537ddb9442fa616cf9eda15.png)
 
-![image](https://hackmd.io/_uploads/r1omEZG_Ge.png)
+![image](/images/e9f89a508ad2bfcd279d632f8204b321.png)
 
 - Lọc theo địa chỉ IP 
 
-![image](https://hackmd.io/_uploads/BkDUNWzuGl.png)
+![image](/images/49bc241b63764e61449576af29774a88.png)
 
 # II. Wireshark: Packet Operations
 ## Misson 1 : Thống kê | Tóm tắt ( Summary )
@@ -209,60 +209,60 @@ Comment | Phát hiện bình luận gói tin | Malformed | Phát hiện gói d�
 ### Resolved Addresses 
 - Giúp các nhà phân tích xác định địa chỉ IP và tên DNS có trong tệp ghi
 
-- ![image](https://hackmd.io/_uploads/SyTrLlmOfe.png)
+- ![image](/images/f46f18dae3abe5f9c9f9b983d7a0c325.png)
 
 ### Protocol Hierarchy
 - Giúp các nhà phân tích xem giao thức dưới dạng cây dựa trên bộ đếm gói và tỷ lệ phần trăm
 
-![image](https://hackmd.io/_uploads/r1vAIx7uMx.png)
+![image](/images/71e09da6a1e53ffa96c8bca2152ba0ac.png)
 
 ### Conversations
 - Cung cấp danh sách các cuộc trò chuyện dưới năm định dạng cơ sở
 - **Conservation** nó là hiển thị flow giao tiếp 2 chiều A <-> B
 
-![image](https://hackmd.io/_uploads/BJ0RqgmOzg.png)
+![image](/images/267ba939d2139173819d38a772e75d66.png)
 
 
 ### Endpoints 
 - Tương tự **Conversations** nhưng tùy chọn này cung cấp thông tin duy nhất cho một trường thông tin duy nhất 
 - **Endpoints** chỉ là 1 chiều thôi A->B hoặc B->A
 
-![image](https://hackmd.io/_uploads/H1_kslXdfx.png)
+![image](/images/4d0bd0eb2c21e86f03efa973c186b053.png)
 
 - Wireshark cũng cung cấp các tùy chọn phân giải IP và tên cổng
 
-![image](https://hackmd.io/_uploads/Bkhwig7_Ge.png)
+![image](/images/f3472a3d979314d51fe1da696889d877.png)
 
 - Chế độ xem **Endpoimts** với phân giải tên miền 
 
-![image](https://hackmd.io/_uploads/rJIxhgXuzl.png)
+![image](/images/6b4a0d688ae6139bf1e745c6cf046878.png)
 
 - Wireshark còn cung cấp bản đồ định vị địa lý IP giúp các nhà phân tích xác định địa chỉ nguồn và đích của bản đồ
 
-![image](https://hackmd.io/_uploads/SkLeJbXufl.png)
+![image](/images/c62ba691a0eb9aaa626505ffc0fd4a11.png)
 
-![image](https://hackmd.io/_uploads/B1qolWQufe.png)
+![image](/images/188f1c88e84a3827d7d7ec5d26d898e1.png)
 
 - Endpoint và góc nhìn GeoIP
 
-![image](https://hackmd.io/_uploads/rJPTgWQuGg.png)
+![image](/images/92f1686e38470e4354b2405d898f84c5.png)
 
 ## Mission 2 : Thống kê | Chi tiết giao thức ( Protocol Details )
 ### IPv4 và IPv6
 - Tùy chọn đều cung cấp thông tin chứa cả hai phiên bản địa chỉ IP
 - Menu thống kê có hai tùy chọn để thu hẹp thống kê về các gói tin chứa phiên bản IP cụ thể
 
-![image](https://hackmd.io/_uploads/HJyvz-m_Gg.png)
+![image](/images/abac4bcb4cd5676988ce744556fef72e.png)
 
 ### DNS 
 - Phân tích tất cả các gói DNS từ tệp thu thập và giúp các nhà phân tích xem kết quả dưới dạng cây dựa trên bộ đếm gói và tỷ lệ phần trăm của giao thức DNS
 
-![image](https://hackmd.io/_uploads/r1BJUZQOGg.png)
+![image](/images/cf2205bc15581c453270531f607b5d3b.png)
 
 ### HTTP
 - Phân tích tất cả các gói HTTP từ tệp thu thập và giúp các nhà phân tích xem kết quả dưới dạng cây dựa trên bộ đếm gói và tỷ lệ phần trăm của giao thức HTTP
 
-![image](https://hackmd.io/_uploads/ByycLWmOMx.png)
+![image](/images/8e3b293fa5490e489c87d9744d9d5985.png)
 
 ## Misson 3 : Lọc gói tin | Nguyên tắc
 ### Giới thiệu
@@ -279,13 +279,13 @@ Comment | Phát hiện bình luận gói tin | Malformed | Phát hiện gói d�
     > Bộ lọc mẫu để thu thập lưu lượng cổng 80 : `tcp port 80` 
 - Tài liệu tham khảo nhanh có sẵn
 
-![image](https://hackmd.io/_uploads/Hk2A3bXOze.png)
+![image](/images/86db891ced54f8b1e298dffcf5647099.png)
 
 ### Cú pháp lọc Display
 - **Display Filter Expression** lưu trữ tất cả các cấu trúc giao thức được hỗ trợ để giúp các nhà phân tích tạo bộ lọc hiển thị
 - Tài liệu tham khảo nhanh có sẵn
 
-![image](https://hackmd.io/_uploads/H1MgTWQufl.png)
+![image](/images/fbb1982516f75eace0f1fcb92897217b.png)
 
 ### Các bài toán so sánh
 
@@ -312,13 +312,13 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
     > Bộ lọc có tính năng tự động hoàn thành
     > Bộ lọc được biểu diễn bằng 3 màu
 
-![image](https://hackmd.io/_uploads/r11PsMQdfg.png)
+![image](/images/28c2286d54f0201c332690072feabf36.png)
 
-![image](https://hackmd.io/_uploads/SkXOozXOMe.png)
+![image](/images/2ec007e994183279fa72edf2af0342f9.png)
 
 - Các tính năng của thanh lọc 
 
-![image](https://hackmd.io/_uploads/SyJ9jGmufx.png)
+![image](/images/3db4370f5ecd715aa02405a1084362a4.png)
 
 ## Misson 4 : Lọc gói tin | Lọc giao thức
 ### Lọc giao thức
@@ -357,7 +357,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 ### Lọc hiển thị ( Display Filter Expressions )
 - Menu **Display Filter Expressions** cung cấp hướng dẫn xây dựng bộ lọc hiển thị dễ sử dụng
 
-![image](https://hackmd.io/_uploads/Byp8UmQOzx.png)
+![image](/images/a78f83cf475ae9f4a541d68c2703b5a8.png)
 
 ## Misson 5 : Lọc nâng cao
 ### Giới thiệu
@@ -374,7 +374,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 |**Quy trình**|Liệt kê tất cả HTTP các gói tin mà trường "server" của gói tin chứa từ khóa "Apache"|
 | **Lệnh** | `http.server contains "Apache"` |
 
-![image](https://hackmd.io/_uploads/r1UVu7Qufe.png)
+![image](/images/24aa0ee039a2868264d804492ebdd847.png)
 
 ### Lọc : "matches"
 
@@ -387,7 +387,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | **Quy trình** | Liệt kê tất cả các gói HTTP mà trường "host" của gói trùng với từ khóa ".php" hoặc ".html" |
 | **Lệnh** |`http.host matches "\.(php\|html)"`|
 
-![image](https://hackmd.io/_uploads/ByoFcm7_Gx.png)
+![image](/images/361663785c119c2502aad2e9f15b1628.png)
 
 ### Lọc : "in"
 
@@ -400,7 +400,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | **Quy trình** | Liệt kê tất cả các gói TCP mà các trường "port" của gói tin có giá trị 80, 443 hoặc 8080 |
 | **Lệnh** | `tcp.port in {80 443 8080}` |
 
-![image](https://hackmd.io/_uploads/B1ROoXXufx.png)
+![image](/images/73c6224277eab40de096973223708fe8.png)
 
 ### Lọc : "upper"
 
@@ -413,7 +413,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | **Quy trình** | Chuyển đổi tất cả các trường "server" của gói HTTP sang chữ hoa và liệt kê các gói chứa từ khóa "APACHE" |
 | **Lệnh** | `upper(http.server) contains "APACHE"` |
 
-![image](https://hackmd.io/_uploads/SJYG3mQ_Ml.png)
+![image](/images/c84c788ba0e8c9187d53dde7ac135b0c.png)
 
 ### Lọc : "lower"
 
@@ -426,7 +426,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | **Quy trình** | Chuyển đổi thông tin trường "máy chủ" của tất cả các gói HTTP sang chữ thường và liệt kê các gói chứa từ khóa "apache" |
 | **Lệnh** | `lower(http.server) contains "apache"` |
 
-![image](https://hackmd.io/_uploads/r12YRQ7dMg.png)
+![image](/images/0bf0f67b4beca410ca476177552dad50.png)
 
 ### Lọc : "string"
 
@@ -439,20 +439,20 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | **Quy trình** | Chuyển tất cả các trường "frame" thành giá trị chuỗi, và các khung danh sách kết thúc bằng giá trị lẻ |
 | **Lệnh** | `string(frame.number) matches "[13579]$"` |
 
-![image](https://hackmd.io/_uploads/rkjE1EX_Mx.png)
+![image](/images/a26fd6f1862ab35e41523377df95a0f8.png)
 
 ### Dấu trang và nút lọc 
 - Dấu trang giúp các nhà phân tích tái sử dụng các bộ lọc yêu thích/phức tạp chỉ với vài cú nhấp chuột
 - Tương tự như dấu trang, bạn có thể tạo các nút lọc sẵn sàng áp dụng chỉ với một cú nhấp chuột
 
-![image](https://hackmd.io/_uploads/rJ8-lNQuzx.png)
+![image](/images/5acad1f3025ccae2facb98eada65def4.png)
 
-![image](https://hackmd.io/_uploads/HJmmgNmuGl.png)
+![image](/images/f808c256f924b164c52e7b825ffa35c7.png)
 
 ### Hồ sơ ( Profiles )
 - Giúp tạo nhiều hồ sơ cho các vụ án điều tra khác nhau và sử dụng chúng cho phù hợp
 
-![image](https://hackmd.io/_uploads/S1jOe4Xuzg.png)
+![image](/images/eeb6bbdbe375ab8fee68424ea5b7e826.png)
 
 # III. Wireshark: Traffic Analysis
 ## Mission 1 : Nmap Scans
@@ -486,16 +486,16 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 
 - Mở cổng TCP ( kết nối )
 
-![image](https://hackmd.io/_uploads/H18v1b8dMx.png)
+![image](/images/2968b04af4f4ceeca3482a1f7dcba5b3.png)
 
 - Cổng TCP đóng ( kết nối )
 
-![image](https://hackmd.io/_uploads/rJEFJZIOfg.png)
+![image](/images/720956f186ef301f2fdd505362e7a733.png)
 
 - Bộ lọc được cung cấp hiển thị các mẫu quét TCP Connect trong tệp ghi hình
 `tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024`
 
-![image](https://hackmd.io/_uploads/rJTugW8dze.png)
+![image](/images/2344ac208ae1fa1ba77859260b6fee4c.png)
 
 ### Quét UDP
 - Tóm tắt
@@ -510,16 +510,16 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 
 - Đóng ( cổng số 69 ) và mở ( cổng số 68 ) UDP ports
 
-![image](https://hackmd.io/_uploads/Hks0W-Ldfg.png)
+![image](/images/e3acfbf58fe80d2401f54686ecfd9c42.png)
 
 - Khi bạn mở rộng phần ICMP trong khung chi tiết gói tin, bạn sẽ thấy dữ liệu đóng gói và yêu cầu gốc
 
-![image](https://hackmd.io/_uploads/HJFDMWUdGg.png)
+![image](/images/a2fe6ec0d0ea681ebaa20f6df0621430.png)
 
 - Bộ lọc cung cấp hiển thị UDP trong tệp
 `icmp.type==3 and icmp.code==3`
 
-![image](https://hackmd.io/_uploads/HJ3izZ8dfe.png)
+![image](/images/d131071d70ea0e3e861d7055f8b567bc.png)
 
 ## Misson 2 : ARP Poisoning/ Spoofing ( Cuộc tấn công người ở giữa )
 ### Giới thiệu 
@@ -539,15 +539,15 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 
 - Yêu cầu ARP
 
-![image](https://hackmd.io/_uploads/rJHZUZLOfx.png)
+![image](/images/da6e277c1ac4b8f17ec774035293ee42.png)
 
 - Phản hồi ARP 
 
-![image](https://hackmd.io/_uploads/rJEfU-8dfg.png)
+![image](/images/02ea2e816371c8ba9837a82270a788b3.png)
 
 - Một tình huống đáng ngờ có nghĩa là có hai phản hồi ARP khác nhau (xung đột) cho một địa chỉ IP cụ thể
 
-![image](https://hackmd.io/_uploads/rkQU8bLuzx.png)
+![image](/images/39c183e291db00b8b58852e745026904.png)
 
 ## Mission 3 : Xác định máy chủ : DHCP, NetBIOS và Kerberos
 ### Nhận diện máy chủ
@@ -567,7 +567,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | Các lựa chọn "DHCP ACK" để nắm bắt những lợi ích dễ dàng:<br><br>- **Lựa chọn 15:** Tên miền.<br>- **Lựa chọn 51:** Thời gian thuê IP đã được phân công. | - `dhcp.option.domain_name contains "keyword"` |
 | Các lựa chọn "DHCP NAK" để nắm bắt những lợi ích dễ dàng:<br><br>- **Lựa chọn 56:** Tin nhắn (chi tiết/lý do từ chối). | Vì thông điệp có thể duy nhất tùy theo trường hợp/tình huống, nên nên đọc thông điệp thay vì lọc nó. Do đó, nhà phân tích có thể tạo ra giả thuyết/kết quả đáng tin cậy hơn bằng cách hiểu các hoàn cảnh sự kiện. |
 
-![image](https://hackmd.io/_uploads/SkgY_WLdzl.png)
+![image](/images/0fb5449fb533fa3b228607738467cc9e.png)
 
 ### Phân tích NetBIOS ( NBNS )
 - Công nghệ chịu trách nhiệm cho phép các ứng dụng trên các máy chủ khác nhau giao tiếp với nhau
@@ -577,7 +577,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 |Tìm kiếm|`nbns`|
 | Các lựa chọn **"NBNS"** để nắm bắt những lợi ích dễ dàng: <br> **Truy vấn**:Chi tiết truy vấn <br> Chi tiết truy vấn có thể chứa **"tên, Thời gian sống (TTL) và chi tiết địa chỉ IP"** | `nbns.name contains "keyword"` |
 
-![image](https://hackmd.io/_uploads/HJk4YWI_Mx.png)
+![image](/images/96377b2ec9ad3f345cfc4884412e81d1.png)
 
 ### Phân tích Kerberos
 - Nó chịu trách nhiệm xác thực các yêu cầu dịch vụ giữa hai hoặc nhiều máy tính qua mạng không đáng tin cậy
@@ -588,7 +588,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | Tìm kiếm tài khoản người dùng:<br><br>- **CNameString:** Tên người dùng.<br><br>Lưu ý: Một số gói tin có thể cung cấp thông tin tên máy chủ trong trường này. Để tránh sự nhầm lẫn này, hãy lọc giá trị ` "$" `. Các giá trị kết thúc bằng ` "$" ` là tên máy chủ, và những giá trị không có là tên người dùng. | - `kerberos.CNameString contains "keyword"`<br>- `kerberos.CNameString and ! (kerberos.CNameString contains "$" )` |
 | Các lựa chọn "Kerberos" để nắm bắt những lợi ích dễ dàng:<br><br>- **PVNO:** Phiên bản giao thức.<br>- **Realm:** Tên miền cho vé được tạo.<br>- **SNAME:** Dịch vụ và tên miền cho phiếu hỗ trợ được tạo.<br>- **Địa chỉ:** Địa chỉ IP của máy khách và tên NetBIOS.<br><br>Lưu ý: thông tin "địa chỉ" chỉ có trong các gói yêu cầu. | - `kerberos.pvno == 5`<br>- `kerberos.realm contains ".org"`<br>- `kerberos.SNameString == "krbtg"` |
 
-![image](https://hackmd.io/_uploads/rkm2YZIdGe.png)
+![image](/images/68e9c827d935c4265d2aafef2857f41d.png)
 
 ## Mission 4 : Lưu lượng xuyên hầm : DNS và ICMP
 ### Giao thông đào hầm ICMP và DNS 
@@ -602,7 +602,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | Tìm kiến|`icmp`|
 | **Các lựa chọn "ICMP" để nắm bắt những lợi ích dễ dàng:** <br> Độ dài gói <br> Địa chỉ đích ICMP <br> Các ký hiệu giao thức được đóng gói trong tải trọng ICMP| `data.len > 64 and icmp`|
 
-![image](https://hackmd.io/_uploads/r1k7CW8dMl.png)
+![image](/images/050a4d5cfed243855597038d21c61d51.png)
 
 ### Phân tích DNS
 - Được thiết kế để chuyển đổi/chuyển đổi địa chỉ miền IP thành địa chỉ IP
@@ -612,7 +612,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | Tìm kiếm toàn cầu | - `dns` |
 | Các lựa chọn "DNS" để nắm bắt những lợi ích dễ dàng:<br><br>- Độ dài truy vấn.<br>- Tên bất thường và không đều trong địa chỉ DNS.<br>- Địa chỉ DNS dài với địa chỉ tên miền phụ được mã hóa.<br>- Các mẫu đã biết như dnscat và dns2tcp.<br>- Phân tích thống kê như khối lượng yêu cầu DNS bất thường cho một mục tiêu cụ thể.<br><br>`!mdns`: Vô hiệu hóa truy vấn thiết bị liên kết cục bộ. | - `dns contains "dnscat"`<br>- `dns.qry.name.len > 15 and !mdns` |
 
-![image](https://hackmd.io/_uploads/HJvsCWIOze.png)
+![image](/images/0a075dae8dca789d432a33524cc4c6a9.png)
 
 ## Mission 5 : Phân tích giao thức Cleartext : FTP
 ### Phân tích giao thức Cleartext
@@ -634,7 +634,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | Các lệnh "FTP" để nắm bắt những lợi ích dễ dàng:<br><br>- **NGƯỜI DÙNG:** Tên người dùng.<br>- **ĐẠT:** Mật khẩu.<br>- **CWD:** Thư mục công việc hiện tại.<br>- **DANH SÁCH:** Danh sách. | - `ftp.request.command == "USER"`<br>- `ftp.request.command == "PASS"`<br>- `ftp.request.arg == "password"` |
 | Ví dụ về cách sử dụng nâng cao để nắm bắt những lợi ích dễ dàng:<br><br>- **Tín hiệu bruteforce:** Liệt kê các lần đăng nhập thất bại.<br>- **Tín hiệu bruteforce:** Danh sách tên người dùng mục tiêu.<br>- **Tín hiệu phun mật khẩu:** Liệt kê các mục tiêu cho mật khẩu tĩnh. | - `ftp.response.code == 530`<br>- `(ftp.response.code == 530) and (ftp.response.arg contains "username")`<br>- `(ftp.request.command == "PASS" ) and (ftp.request.arg == "password")` |
 
-![image](https://hackmd.io/_uploads/rJ2VWfIOze.png)
+![image](/images/19d3395533944eb69273536ed4748c59.png)
 
 ## Mission 6 : Phân tích giao thức Cleartext : HTTP
 ### HTTP Phân tích
@@ -659,7 +659,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | Tìm kiếm toàn cầu. | - `http.user_agent` |
 | Kết quả nghiên cứu để nắm bắt những thành quả dễ hái:<br><br>- Thông tin user agent khác nhau từ cùng một máy chủ trong thời gian ngắn.<br>- Thông tin user agent không chuẩn và tùy chỉnh.<br>- Sự khác biệt về chính tả tinh tế. ("Mozilla" không giống với "Mozlilla" hay "Mozlila")<br>- Kiểm tra thông tin các công cụ như Nmap, Nikto, Wfuzz và sqlmap trong trường user agent.<br>- Dữ liệu payload trong trường user agent. | - `(http.user_agent contains "sqlmap") or (http.user_agent contains "Nmap") or (http.user_agent contains "Wfuzz") or (http.user_agent contains "Nikto")` |
 
-![image](https://hackmd.io/_uploads/rkTuGGIdGe.png)
+![image](/images/6b7dc3c5d48279b615ce5d7f6b89c00b.png)
 
 ### Phân tích Log4j
 
@@ -667,7 +667,7 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | :--- | :--- |
 | Kết quả nghiên cứu để nắm bắt những thành quả dễ hái:<br><br>- Cuộc tấn công bắt đầu với yêu cầu "POST"<br>- Có các mẫu văn bản rõ ràng đã biết: "jndi:ldap" và "Exploit.class". | - `http.request.method == "POST"`<br>- `(ip contains "jndi") or ( ip contains "Exploit")`<br>- `(frame contains "jndi") or ( frame contains "Exploit")`<br>- `(http.user_agent contains "$") or (http.user_agent contains "==")` |
 
-![image](https://hackmd.io/_uploads/HJPyXzUdfe.png)
+![image](/images/35bb5d8ddb49972956d4eb952224df6b.png)
 
 ## Phân tích giao thức mã hóa : Giải mã HTTPS
 ### Giải mã lưu lượng HTTPS
@@ -677,18 +677,18 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
 | :--- | :--- |
 | "Tham số HTTPS" để nắm bắt những lợi ích dễ dàng:<br><br>- **Yêu cầu:** Liệt kê tất cả yêu cầu<br>- **TLS:** Tìm kiếm TLS toàn cục<br>- Yêu cầu Khách hàng TLS<br>- Phản hồi của máy chủ TLS<br>- Giao thức Khám phá Dịch vụ Đơn giản cục bộ (SSDP)<br><br>Lưu ý: SSDP là một giao thức mạng cung cấp quảng cáo và khám phá các dịch vụ mạng. | - `http.request`<br>- `tls`<br>- `tls.handshake.type == 1`<br>- `tls.handshake.type == 2`<br>- `ssdp` |
 
-![image](https://hackmd.io/_uploads/HJVD7zIdGl.png)
+![image](/images/6c570950128284f337528f788e4e224d.png)
 
 - Tương tự như quy trình bắt tay ba chiều TCP, giao thức TLS cũng có quy trình bắt tay riêng
 - Hai bước đầu tiên chứa các thông điệp "Client Hello" và "Server Hello"
 - Xin chào khách hàng: ``(http.request or tls.handshake.type == 1) and !(ssdp)``
 - Xin chào máy chủ: ``(http.request or tls.handshake.type == 2) and !(ssdp)``
 
-![image](https://hackmd.io/_uploads/r1D3QMIdMl.png)
+![image](/images/32f27be73e73e55e5e3af4fe41e603b6.png)
 
 ## Mission 7 : Thông tin đăng nhập Hunt Cleartext
 
-![image](https://hackmd.io/_uploads/H1zlNfL_Gg.png)
+![image](/images/deb07fe7be3e51c9c19960bf6cfc3db9.png)
 
 ## Mission 8 : Phần thưởng : Kết quả có thể hành động !
 - Hiện tại, Wireshark có thể tạo các quy tắc cho
@@ -699,4 +699,4 @@ not | ! | không | `!(ip.src == 10.10.10.222)`
     > Bộ lọc gói tin (pf)
     > Windows Firewall (netsh định dạng mới/cũ)
 
-![image](https://hackmd.io/_uploads/HkXtVzLdfx.png)
+![image](/images/f8b762b1d221480bcddeade03deb6bf6.png)

@@ -25,32 +25,32 @@ Tên của dịch vụ đang chạy ở Webserver là gì? Dịch vụ này có 
  
 # Câu 1
 
-![image](https://hackmd.io/_uploads/rkwkqEZnfl.png)
+![image](/images/c9ae2e8f8dc15b2d7862dd35b80c3b0d.png)
 
 Ta tìm thấy được tgian
 
-![image](https://hackmd.io/_uploads/ry1McE-hGx.png)
+![image](/images/007399595f44ea074d600d5991a812cf.png)
 
 Đổi về giờ VN là `11am;30-03-2024 GMT+7`
  
 # Câu 2
 
-![image](https://hackmd.io/_uploads/ByTUq4W2Gx.png)
+![image](/images/3a13b7598641d913eb51ea0d49e41b61.png)
 
-![image](https://hackmd.io/_uploads/BkSaqEb3fx.png)
+![image](/images/0d1b6ecd839bba395b85c59a8efb4ab1.png)
 
 Ta thấy lượng truy packet nhiều bất thường 
 > Ip attacker : 45.134.190.42
 > Ip Victim : 157.230.41.56
 
-![image](https://hackmd.io/_uploads/r18XoVWnGg.png)
+![image](/images/4d1e668670a64a956cd8becdc6735d72.png)
 
 Ta dùng công cụ check vị trí theo ip 
 Câu trả lời là `bandarseribegawan/brunei`
 
 # Câu 3
 
-![image](https://hackmd.io/_uploads/Sk3Ko4-hze.png)
+![image](/images/d3aaecdb72330c46d470a5a7db2eaca1.png)
 
 Ta thấy có ip attacker thì ta lần được bên cung cấp VPN
 
@@ -61,7 +61,7 @@ Ta hiểu, khi đang mở cổng tức là có SYN và ACK
 Ta lọc theo SYN và ACK với ip victim
 `ip.src == 157.230.41.56 and tcp.flags.syn==1 and tcp.flags.ack==1`
 
-![image](https://hackmd.io/_uploads/SkrHh4bnGg.png)
+![image](/images/13b6c2ec2b7f77937a5e71c2b051ef95.png)
 
 Ta đọc thủ công từng cổng và sắp xếp lại
 Câu trả lời là `22,135,139,445,5040,5357,7680,8001,8090`
@@ -69,7 +69,7 @@ Câu trả lời là `22,135,139,445,5040,5357,7680,8001,8090`
 # Câu 5
 Vẫn tận dụng cái lọc cũ
 
-![image](https://hackmd.io/_uploads/ByYcnE-nfx.png)
+![image](/images/71b4f6bf3144f79c919aaf382fdfac46.png)
 
 Ta thấy tại cổng 8090 có đề cập tới server
 Câu trả lời là `8090`
@@ -78,7 +78,7 @@ Câu trả lời là `8090`
 Đề yêu cầu tìm User-Agent
 `http.user_agent and ip.src == 45.134.190.42 and ip.dst == 157.230.41.56`
 
-![image](https://hackmd.io/_uploads/HkWE6NZhMg.png)
+![image](/images/a2afbb0240b39fa084033cb962ecc1c3.png)
 
 Ta để ý lúc khúc sau User-Agent là feroxbuster/2.10.1
 Câu trả lời là `feroxbuster/2.10.1`
@@ -88,11 +88,11 @@ Nhắc lại câu 5 ta trả lời webserver ở port 8090
 Ta lọc theo port 8090 và http
 `http or tcp.port == 8090`
 
-![image](https://hackmd.io/_uploads/S1JsaVZnGl.png)
+![image](/images/48f9eb12c4aa56d89ebe8117483641fa.png)
 
-![image](https://hackmd.io/_uploads/r1Q1RNZ2fx.png)
+![image](/images/9e81a949af5f87665ccdcf3e9d421729.png)
 
-![image](https://hackmd.io/_uploads/HybXAVZnGx.png)
+![image](/images/3434e0e296bcfb88d1a107075c4405d1.png)
 
 
 Hầu như chỉ có DNN mới dùng cấu trúc thư mục `/DesktopModules/` như vậy
@@ -102,5 +102,5 @@ Ta check CVE nổi tiếng của nó
 
 Câu trả lời là `DotNetNuke_CVE-2017-9822`
 
-![image](https://hackmd.io/_uploads/SyPBWHZnMe.png)
+![image](/images/b04d0c105a103c98dee9f4275e71d6b8.png)
 

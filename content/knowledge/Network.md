@@ -14,7 +14,7 @@ Bước 2 : **Server gửi phản hồi** chấp nhận tới Client : SYN + ACK
 Bước 3 : **Client gửi xác nhận** tới Server : ACK 
 Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, dữ liệu sẵn sàng gửi tới máy chủ
 
-![image](https://hackmd.io/_uploads/rylax2bdGx.png)
+![image](/images/ae5993a00737ae977739651158462c34.png)
  
 # II. Giao thức UDP
 - Các tệp tin gửi đi bởi UDP sẽ được gửi đi hàng loạt
@@ -22,10 +22,10 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
     > Vì 2 lí do trên nên tốc độ tuy nhanh nhưng tộ tin cậy thấp
 - Phù hợp trong môi trường đòi hỏi tốc độ : Game online, Video Youtube, v.v
 
-![image](https://hackmd.io/_uploads/HJE0x3Zdzl.png)
+![image](/images/01af6f6d8477865a3202048a261e4026.png)
 
 # III. So sánh TCP và UDP
-![image](https://hackmd.io/_uploads/rkZb-2bdfg.png)
+![image](/images/5f586bf32ec2ddc216261844d087b6f7.png)
 
 - UDP được sử dụng cho DNS vì DNS sẽ không cần mất thời gian kết nối
 - HTTP hay HTTPS là các đối tượng web cần tải về chính xác nên sử dụng TCP 
@@ -36,7 +36,7 @@ Khi này quy trình hoàn tất, đánh số thứ tự được đồng bộ, d
     >Bước 1 : Người dùng nhập URL, Client gửi yêu cầu tới Server chứa nội dung đó
 Bước 2 : Máy chủ sẽ phản hồi với dữ liệu được yêu cầu
 
-![image](https://hackmd.io/_uploads/r1cb-3WuMe.png)
+![image](/images/0b80115e8fd4e6efc7cd06a36e7e213e.png)
 
 - Khía cạnh cơ bản của HTTP
     > 1.HTTP đơn giản : Được thiết kế với tính đơn giản, rõ ràng giúp dễ dàng kiểm thử và sửa lỗi
@@ -56,11 +56,11 @@ stateless (không trạng thái ) có nghĩa là mỗi yêu cầu gửi đi khô
 - Thứ gì được mã hóa bằng Public Key chỉ được giải mã bảo Private Key và ngược lại
 	> Đảm bảo nội dung đc mã hóa khi truyền và giải mã khi nhận
             
-![image](https://hackmd.io/_uploads/ryQfbhbdGx.png)
+![image](/images/956002387b001cc5885cbf40e32690ee.png)
 
 # VI. So sánh HTTP và HTTPS
 
-![image](https://hackmd.io/_uploads/BJJQZh-_Gg.png)
+![image](/images/a0d300de1ac0093321ec029d44a99f63.png)
 
 # VII. Giao thức DNS
 
@@ -72,19 +72,19 @@ stateless (không trạng thái ) có nghĩa là mỗi yêu cầu gửi đi khô
 **CNAME (Canonical Name)**: Tạo bí danh, giúp chuyển hướng từ subdomain sang domain chính
 **TXT record**: Lưu thông tin xác thực như SPF, DKIM, bảo mật email và chống giả mạo
 - Phân giải ngược (từ IP về tên miền tương ứng )
-![image](https://hackmd.io/_uploads/rJzrb2WOGl.png)
+![image](/images/489fc74fd15b9d142450bc5de4518f57.png)
 
 # VII. Giao thức ARP
 
 - ARP (Address Resolution Protocol ) xác định MAC tương ứng với một địa chỉ IP trong mạng LAN
-![image](https://hackmd.io/_uploads/SJlL-nZ_zg.png)
+![image](/images/c9205b6ce52613597ebad781272385a0.png)
 - Hoạt động liên kết trong mô hình OSI, đóng vai trò thiết yếu trong quá trình truyền dữ liệu nội bộ mạng, nhất là trong mạng Ethernet
 - Việc sử dụng ARP giúp tối ưu hóa việc truyền thông tin trong mạng, đảm bảo dữ liệu được gửi đến đúng thiết bị thông qua việc ánh xạ địa chỉ IP sang địa chỉ MAC phù hợp
 
 # VIII. Mô hình OSI
 	
 - OSI là khung tham chiếu tiêu chuẩn, chia thành 7 tầng riêng biệt để chuẩn hóa và đơn giản hóa việc giao tiếp giữa các hệ thống mạng		
-![image](https://hackmd.io/_uploads/S1zDZhZdMx.png)
+![image](/images/7f1c6cd04f5fc643c566db45ecb68f5d.png)
 - Tầng 7 : Tầng ứng dụng (Application Layer) : Tầng mà web, ứng dụng tương tác trực tiếp với người dùng		
 - Tầng 6 : Tầng trình bày (Presentation Layer) : Đảm bảo giữ liệu được định dạng đúng, mã hóa, giải mã, nén và giải nén					
 - Tầng 5 : Tầng phiên (Session Layer) : Thiết lập phiên, duy trì phiên, đồng bộ hóa và kết thúc phiên
@@ -97,7 +97,7 @@ stateless (không trạng thái ) có nghĩa là mỗi yêu cầu gửi đi khô
 # IX. Mô hình TCP/IP
 
 - TCP/IP là nền tảng giao thức giúp kết nối và truyền dữ liệu trên mạng Internet, gồm 4 tầng 		
-![image](https://hackmd.io/_uploads/B1EubhWOfg.png)
+![image](/images/9ac98e5af1fb0c5cac541457a31b8564.png)
 - Tầng 4 – Tầng ứng dụng (Application) : Đây là tầng mà HTTP, HTTPS, FTP, SMP, v.v kết nối tới người dùng		
 - Tầng 3 – Tầng giao vận (Transport) : Chịu trách nhiệm truyền tải dữ liệu, phổ biến là TCP và UDP		
 - Tầng 2 – Tầng mạng (Internet)	: Định tuyến, gắn địa chỉ đồng thời tìm đường đi tối ưu		

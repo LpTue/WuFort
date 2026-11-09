@@ -4,6 +4,6 @@ tags: ["PicoCTF_Easy"]
 ---
 
 Sử dụng Strings			
-![image](https://hackmd.io/_uploads/BkNKajW_fx.png)
+![image](/images/a66cf86b96db69941e734cf46829fa21.png)
 
 

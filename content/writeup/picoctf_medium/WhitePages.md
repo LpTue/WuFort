@@ -7,7 +7,7 @@ Tải bài tập tại [đây](https://learn.cylabacademy.org/library/51?page=5&
 
 Đầu tiên mở bằng hex ta thấy 3 chuỗi `â€ƒ` luôn đi chung với nhau
 
-![image](https://hackmd.io/_uploads/BkBD64hhMg.png)
+![image](/images/68374d956739341ad70d56b019f3ca1d.png)
 
 Sau tìm hiểu ta biết được đó là `em space`
 Vậy file kia gồm 2 loại đó là `em space` và `normal space`
@@ -39,7 +39,7 @@ for i in bin :
 print(binsau)
 ```
 
-![image](https://hackmd.io/_uploads/Sk2J0EhhGx.png)
+![image](/images/9c86b7145f4862b2a0263b561d2b74e2.png)
 
 Flag là : `academy{not_all_spaces_are_created_equal_743510e5f5459071ed7d4109b7832a8e}`
 

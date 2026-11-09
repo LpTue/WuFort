@@ -7,20 +7,20 @@ tags: ["MiniCTF"]
 Đọc mô tả, ta thấy nó chạy mỗi khi mở máy --> có thể được lưu trong start up
 Tìm theo đường dẫn `Trodua\[root]\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup****`
 
-![image](https://hackmd.io/_uploads/rJjAJQe5fl.png)
+![image](/images/247a16095b25d58b6493548e842e96ef.png)
 
-![image](https://hackmd.io/_uploads/S1nlx7x5Mg.png)
+![image](/images/602f507118960dc4cfcc1dff8e84a9df.png)
 
 Ta giải mã xor ra
 
-![image](https://hackmd.io/_uploads/BJSNgQxqzg.png)
+![image](/images/dae5b06fb5c201be3c4e77ec7b3e3713.png)
 
-![image](https://hackmd.io/_uploads/BkxSeXxcMl.png)
+![image](/images/ba0abf333ecb110714199f94fbb89e24.png)
 
 Ra được khúc sau là `N1ce_7rY`
 Ta lần theo đường dẫn `Trodua\[root]\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent`
 
-![image](https://hackmd.io/_uploads/rJzwgQxqze.png)
+![image](/images/ae6393cef5c658c6ab981915b120e0ea.png)
 
 Thấy nửa đầu là `MY_SUP3R_S3CR3T_D4T4`
 

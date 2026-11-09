@@ -9,17 +9,17 @@ Tải bài tập tại đây [đây](https://training.bksec.vn/challenges/34)
 Mở bằng Hierarchy thấy nhiều packet DNS + tên đề bài nhấn mạnh vào dns 
 Ta lọc dns
 
-![image](https://hackmd.io/_uploads/H1MPWhBTGe.png)
+![image](/images/c99345d1d629f868ae71f832a3fbf024.png)
 
 Ta lướt thấy nhiều req từ ip 198.168.1.100 
 Ta lọc `ip.src == 198.168.1.100 and dns`
 
-![image](https://hackmd.io/_uploads/BybkG2HpGe.png)
+![image](/images/eba9fb1ce4bc06eb65a0c64558e3df4e.png)
 
 Ta để ý nội dung tuân theo cú pháp `seq<số>.<chuỗi nhìn giống hex>.1337xBetbkseccom`
 Ta lọc lấy nhanh nội dung bằng Tshark
 
-![image](https://hackmd.io/_uploads/rk4OMnHaMe.png)
+![image](/images/24167bc7ace249ae54fd2eb26c0b8ad6.png)
 
 Ta viết code để lấy đoạn mã
 ```py=
@@ -48,6 +48,6 @@ for i in range(1,147):
 print(s)
 ```
 
-![image](https://hackmd.io/_uploads/HJOuShSaze.png)
+![image](/images/17d61aca2ee751600c4dabc83f79bb80.png)
 
 Flag là: `BKSEC{dns_3xf1ll_is_n0t_a_b4d_choic3}`

@@ -7,18 +7,18 @@ Tải bài tập tại [đây](https://learn.cylabacademy.org/library/456?page=1
 
 Đọc mô tả
 
-![image](https://hackmd.io/_uploads/ryKIbq3hMg.png)
+![image](/images/73dc34e8f3e46b60bed59b6b4e37e532.png)
 
 Install --> ID : 1033
 Registry change --> ID : 4657
 Shutdown --> ID : 1074
 
-![image](https://hackmd.io/_uploads/BJoC-q32Me.png)
+![image](/images/1574fbc30fbfed3acdae11e33992fb2f.png)
 
-![image](https://hackmd.io/_uploads/r1m4Gcnhfl.png)
+![image](/images/b1eb5e4888d78938b455fb4b62d873ad.png)
 
-![image](https://hackmd.io/_uploads/Sklozcn2ze.png)
+![image](/images/76fa71d42ef911602d9a2d2cc3ae906e.png)
 
-![image](https://hackmd.io/_uploads/rJeiofq3nfx.png)
+![image](/images/0ec66aad7d872d790d4c23a273455b15.png)
 
 Flag là : `academy{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}`

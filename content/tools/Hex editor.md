@@ -14,7 +14,7 @@ tags: ["Tools"]
 - Chọn tệp tin cần đọc hoặc chỉnh sửa 
 - Tùy bài sẽ có những cách áp dụng khác nhau
 
-![image](https://hackmd.io/_uploads/B1x_ERZdMx.png)
+![image](/images/1d099aed70ac0337f75e20f737f529fd.png)
 
 # IV. Kiến thức cần bổ trợ
 

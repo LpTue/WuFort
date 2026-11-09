@@ -6,12 +6,12 @@ tags: ["PicoCTF_Medium"]
 Link bài tập tại [đây](https://learn.cylabacademy.org/library/720?page=1&category=4&difficulty=2&workspace=true)
 Đọc kỹ hint : tạo mactime và xem cái rất cũ
 
-![image](https://hackmd.io/_uploads/rkvyZ5Vqzg.png)
+![image](/images/7b733e6ac205bdec6fc97dbec9308157.png)
 
 Ta thấy file rất cũ từ 1985
 
-![image](https://hackmd.io/_uploads/HJCWbc4qze.png)
+![image](/images/281a7d1a78c38ee61bf93b812fd541db.png)
 
 Giải mã qua từ base64
 
-![image](https://hackmd.io/_uploads/HkNNZ5Vcfx.png)
+![image](/images/26cdeb9ea123a6188f55a9ea1f0d58f9.png)

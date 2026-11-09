@@ -34,6 +34,6 @@ tags: ["Tools"]
 Thử áp dụng foremost vào phục phồi ảnh ở 1 ổ đĩa
 - `sudo fdisk -l` : quét phân vùng máy tính
 - `sudo foremost -v -q -t  png -i  /dev/sbd` : Hiển thị thông báo trên màn hình, quét nhanh, chỉ phục hồi png, đầu vào là /dev/sbd 	
-![image](https://hackmd.io/_uploads/Syy1E0bdGl.png)
+![image](/images/ebdb4ff1dcb98022494c67601961938e.png)
 
 	
