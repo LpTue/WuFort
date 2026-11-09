@@ -25,10 +25,10 @@ Ví dụ với mã `098f6bcd4621d373cade4e832627b4f6` xác định là mã `MD5`
 ### Brute-force Attack
 - Là kỹ thuật thử mọi tổ hợp có thể --> hơi mất thời gian
 - Cài công cụ `sudo apt install hashcat`
-- File hướng dẫn `hashcat` : tại [đây](https://github.com/LpTue/Forensics/blob/main/L%C6%B0u%20tr%E1%BB%AF/hashcat.html)
+- File hướng dẫn `hashcat` : tại [đây](https://lptue.github.io/WuFort/files/hashcat.html)
 
 ### Tấn công danh sách
 - Là kỹ thuật thử mọi pass từ danh sách tới khi khớp
 - Cài công cụ `sudo apt install john`
-- File hướng dẫn John : tại [đây](https://github.com/LpTue/Forensics/blob/main/L%C6%B0u%20tr%E1%BB%AF/john.html)
-- File hướng dẫn 2John : tại [đây](https://github.com/LpTue/Forensics/blob/main/L%C6%B0u%20tr%E1%BB%AF/2john.docx)
+- File hướng dẫn John : tại [đây](https://lptue.github.io/WuFort/files/john.html)
+- File hướng dẫn 2John : tại [đây](https://lptue.github.io/WuFort/files/2john.docx)

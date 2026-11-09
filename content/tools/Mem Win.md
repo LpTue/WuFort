@@ -15,7 +15,7 @@ pip install --upgrade pip
 pip install volatility3
 ```
 
-- File hướng dẫn `vol` : tại [đây](https://github.com/LpTue/Forensics/blob/main/L%C6%B0u%20tr%E1%BB%AF/vol.html)
+- File hướng dẫn `vol` : tại [đây](https://lptue.github.io/WuFort/files/vol.html)
 - Cấu trúc cú pháp đơn giản
 ```=
 vol -f <file mem> <option>
