@@ -4,7 +4,7 @@ tags: ["BKSec"]
 
 ---
 
-Tải bài tập tại [đây](https://)
+Tải bài tập tại [đây](https://training.bksec.vn/challenges/36)
 
 Đọc file bằng công cụ [này](https://thumbcacheviewer.github.io/)
 

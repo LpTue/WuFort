@@ -4,7 +4,7 @@ tags: ["BKSec"]
 
 ---
 
-Tải bài tập tại [đây](https://)
+Tải bài tập tại [đây](https://training.bksec.vn/challenges/165)
 
 Sử dụng vol 3 thay vì vol 2 để tăng tốc
 ```vol=

@@ -4,7 +4,7 @@ tags: ["BKSec"]
 
 ---
 
-Tải bài tập tại [đây]()
+Tải bài tập tại [đây](https://training.bksec.vn/challenges/35)
 
 Ta sử dụng binwalk để kiểm tra file ẩn tại ko thể lấy được nội dung bị bôi đen
 

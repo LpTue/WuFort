@@ -4,7 +4,7 @@ tags: ["BKSec"]
 
 ---
 
-Tải bài tập tại [đây](https://training.bksec.vn/api/files/3bfcffe4-ef84-48c6-8b6d-fd1f8d279152)
+Tải bài tập tại [đây](https://training.bksec.vn/challenges/15)
 
 # I. Phổ cập kiến thức
 Với một pcap usb, ta sẽ có 3 cách import ra flag

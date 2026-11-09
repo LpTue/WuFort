@@ -4,7 +4,7 @@ tags: ["BKSec"]
 
 ---
 
-Tải bài tập tại [đây]
+Tải bài tập tại [đây](https://training.bksec.vn/challenges/171)
 Các câu hỏi
 
 ```=
