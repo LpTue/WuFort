@@ -14,11 +14,11 @@
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/disko-2/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/506?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc kỹ hint ta sẽ thấy nó đề cập tới phân vùng linux&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b2335e2b0f955de46cce2819d8fd5ba6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b2335e2b0f955de46cce2819d8fd5ba6.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tìm tới phân vùng và mở bằng HxD&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/caeac2f77adf1e6cf85fc5dacb627197.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/caeac2f77adf1e6cf85fc5dacb627197.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Tìm kiếm flag dạng academy&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ff29549cbe3924b91abcbc5aced6a74e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/ff29549cbe3924b91abcbc5aced6a74e.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{4_P4Rt_1t_i5_3d183cc0}&lt;/p&gt;</description>
     </item>
     <item>
@@ -30,10 +30,10 @@
 Bài này cần sử dụng tới công cụ phân tích MSB Steganography
 Tải tool tại &lt;a href=&#34;https://github.com/Pulho/sigBits&#34;&gt;đây&lt;/a&gt;
 Chạy lệnh &lt;code&gt;python3 sigBits.py -i Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png -t MSB -out flag.txt&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/fcdd545a184c167e78993ad0e9b66f40.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/fcdd545a184c167e78993ad0e9b66f40.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta có thể thấy chuỗi ký tự dài
 Ta có thể dùng tìm kiếm của HxD để tìm flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/f43665899749b6372dfb0a3df0b97729.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/f43665899749b6372dfb0a3df0b97729.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{15_y0ur_que57_qu1x071c_0r_h3r01c_80119e7f}&lt;/p&gt;</description>
     </item>
     <item>
@@ -43,8 +43,8 @@ Ta có thể dùng tìm kiếm của HxD để tìm flag&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/redaction-gone-wrong/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/290?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Coppy và paste&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7df1939f6ce0b73b28b76ffd7e8212a4.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/50278f94977f9d31f8d5abb537a3a733.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/7df1939f6ce0b73b28b76ffd7e8212a4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/50278f94977f9d31f8d5abb537a3a733.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{C4n_Y0u_S33_m3_fully}&lt;/p&gt;</description>
     </item>
     <item>
@@ -54,7 +54,7 @@ Coppy và paste&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/so-meta/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/19?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mò thử bằng zsteg&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/114089399382b64cdd5223f82e31719f.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/114089399382b64cdd5223f82e31719f.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{s0_m3ta_d5c3711a}&lt;/p&gt;</description>
     </item>
     <item>
@@ -64,13 +64,13 @@ Mò thử bằng zsteg&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/advanced-potion-making/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/205?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta mở bằng HxD&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/730bf21de2ff707d1efb0481e1ec1093.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/730bf21de2ff707d1efb0481e1ec1093.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Thấy dấu hiệu của file png
 Chỉnh lại signature file&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/8e003fa65e562a629772247d62f9db11.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/41126ac7d0c6040347f92bd5967fd2a1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/8e003fa65e562a629772247d62f9db11.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/41126ac7d0c6040347f92bd5967fd2a1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta sử dụng web &lt;a href=&#34;https://picoctfsolutions.com/tools/stegall&#34;&gt;này&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/3afbe8494fb1086d857d55e7d90d230b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/3afbe8494fb1086d857d55e7d90d230b.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;picoCTF{w1z4rdry}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -81,15 +81,15 @@ Chỉnh lại signature file&lt;/p&gt;
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/453?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;bookmarked=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đầu tiên ta cần lấy được mã băm của file bitlock
 &lt;code&gt;bitlocker2john bitlocker-1.dd&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/1041ab8058df0cc43bea4dba90a759b6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/1041ab8058df0cc43bea4dba90a759b6.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Lúc này ta sẽ thấy được 4 mã băm bitlock khác nhau
 4 mã băm này sẽ đều dẫn tới 1 pass
 Ta test với mã bitlock0 trước
 Lưu mã lại 1 file tên &lt;code&gt;hash.txt&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/0e3588a9e122459ff76405b7b81b68d3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/0e3588a9e122459ff76405b7b81b68d3.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta sử dụng phương pháp tấn công từ điển
 &lt;code&gt;john --format=bitlocker --wordlist=rockyou.txt hash.txt&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/76215b8badfb670cbf51a9f4f635587d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/76215b8badfb670cbf51a9f4f635587d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta được pass là : &lt;code&gt;jacqueline&lt;/code&gt;
 Ta import file bitlock vào autospy&lt;/p&gt;</description>
     </item>
@@ -102,7 +102,7 @@ Ta import file bitlock vào autospy&lt;/p&gt;</description>
 &lt;hr&gt;
 &lt;h3 id=&#34;cách-1&#34;&gt;Cách 1&lt;/h3&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/5b412617da41ceac9626086e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/5b412617da41ceac9626086e.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;cách-2&#34;&gt;Cách 2&lt;/h3&gt;
 &lt;hr&gt;
@@ -116,15 +116,15 @@ Ta sử dụng plugin &lt;code&gt;Bitlocker&lt;/code&gt;&lt;/p&gt;</description>
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/blast-from-the-past/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/432?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc miêu tả&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/bc8db68f60a3d7953ac4dfc971c788d1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/bc8db68f60a3d7953ac4dfc971c788d1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy đề cập tới thời gian và exiftool&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b46f7fc0cd0e55d9a32ddff142670075.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b46f7fc0cd0e55d9a32ddff142670075.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta đổi tên file cho phù hợp với bên host&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/30b9025534468faf773d81cf5807eb9a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/30b9025534468faf773d81cf5807eb9a.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta chỉnh lại từng tag cho tới khi nào đúng&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/0dc32acc969e4837c6064e7e7b7c02f4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/0dc32acc969e4837c6064e7e7b7c02f4.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Với SamSung: TimeStamp nó dùng hệ riêng nên ta phải dùng HxD, tham khảo tại &lt;a href=&#34;https://stackoverflow.com/questions/78185037/how-to-edit-the-samsung-trailer-tag-timestamp&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/c73b9efa199c8aaae23f92a7e3115deb.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/c73b9efa199c8aaae23f92a7e3115deb.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Với &lt;code&gt;1700513181420&lt;/code&gt; là mili giây sau &lt;code&gt;1/1/1970&lt;/code&gt;
 Nên ta đổi về &lt;code&gt;0000000000001&lt;/code&gt;, lúc này ta có thể chỉnh bằng exiftool được rồi&lt;/p&gt;</description>
     </item>
@@ -135,15 +135,15 @@ Nên ta đổi về &lt;code&gt;0000000000001&lt;/code&gt;, lúc này ta có th�
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/c0rrupt/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/53?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng hxd kéo xuống dưới&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/69dff9efe260f7e6b3f47cad23f9fe92.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/69dff9efe260f7e6b3f47cad23f9fe92.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Đây là dấu hiệu của file png
 Ta sửa lại 8bit đầu về đúng signature number&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/a5a206143a116c3c0d48f667d105fc35.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/5e9dc3868c8412a7b3e42335ef82691d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/a5a206143a116c3c0d48f667d105fc35.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/5e9dc3868c8412a7b3e42335ef82691d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tìm hiểu thấy chỗ đúng của C&amp;quot;DR phải thay bằng IHDR&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/a68ca7120f0d7c30e8e5398dc879bed2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/a68ca7120f0d7c30e8e5398dc879bed2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tiếp tục thấy sai lúc này ở chunk pHYs chứa hình ảnh &amp;ndash;&amp;gt; liên tưởng tới IDAT&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/0fa1b062e5b2366e83f4026f660667a6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/0fa1b062e5b2366e83f4026f660667a6.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta khoanh vùng vì đoạn này khá giống IDAT nhưng bị đổi&lt;/p&gt;</description>
     </item>
     <item>
@@ -153,11 +153,11 @@ Ta sửa lại 8bit đầu về đúng signature number&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/dear-diary/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/413?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đầu tiên mở bằng autopsy&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/46907d886d3e839389d634c88d29dde2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/46907d886d3e839389d634c88d29dde2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Tìm được file đáng ngờ
 &lt;code&gt;It&#39;s all in the name&lt;/code&gt; nghĩa là Tất cả đều nằm ở cái tên
 Mở bằng HxD và tìm kiếm &lt;code&gt;innocuous&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/1ed5d28e575dbca77eed5591b189d823.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/1ed5d28e575dbca77eed5591b189d823.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ghép lại ra flag là : academy{1_533_n4m35_a1eed517}&lt;/p&gt;</description>
     </item>
     <item>
@@ -167,11 +167,11 @@ Mở bằng HxD và tìm kiếm &lt;code&gt;innocuous&lt;/code&gt;&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/disk-disk-sleuth/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/113?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ miêu tả&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/2d4ef98af5c99ba0bd5f1bc2c161f392.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/2d4ef98af5c99ba0bd5f1bc2c161f392.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy đề cập tới strings
 Nên mở bằng HxD&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/85ae31a63c07bcec97189d0e7ad841e5.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/3872e1aeaf0ec2230c298600949e4621.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/85ae31a63c07bcec97189d0e7ad841e5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/3872e1aeaf0ec2230c298600949e4621.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Tìm kiếm strings academy
 Flag là : academy{f0r3ns1c4t0r_n30phyt3_6502313d}&lt;/p&gt;</description>
     </item>
@@ -182,10 +182,10 @@ Flag là : academy{f0r3ns1c4t0r_n30phyt3_6502313d}&lt;/p&gt;</description>
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/disk-disk-sleuth-ii/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/137?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ miêu tả cần tìm file &lt;code&gt;down-at-the-bottom.txt&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/c665e5b018b8db8193477d1eb1b706be.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/c665e5b018b8db8193477d1eb1b706be.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta mở bằng autopsy và dùng công cụ tìm kiếm để tìm file&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/21edf28f3ba6073828232602079ec3e2.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/d9fe6072a653589035bae2b19a192d2c.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/21edf28f3ba6073828232602079ec3e2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/d9fe6072a653589035bae2b19a192d2c.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Falg là : academy{f0r3ns1c4t0r_n0v1c3_95c645ad}&lt;/p&gt;</description>
     </item>
     <item>
@@ -195,7 +195,7 @@ Flag là : academy{f0r3ns1c4t0r_n30phyt3_6502313d}&lt;/p&gt;</description>
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/disko-3/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/507?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file tìm kiếm&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/565f8d381968e541c53144cca3162787.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/565f8d381968e541c53144cca3162787.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{n3v3r_z1p_2_h1d3_d7b201f3}&lt;/p&gt;</description>
     </item>
     <item>
@@ -205,7 +205,7 @@ Mở file tìm kiếm&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/disko-4/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/704?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Tìm bằng autopsy&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/c19cd0943b0b3b449915634839cfcc2e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/c19cd0943b0b3b449915634839cfcc2e.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{d3l_d0n7_h1d3_w3ll_187a1210}&lt;/p&gt;</description>
     </item>
     <item>
@@ -215,16 +215,16 @@ Tìm bằng autopsy&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/eavesdrop/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/264?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở bằng pcap ta đọc lén được đoạn văn bản&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7f8e64462ef2d882ad14f3e2bbca7b25.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/7f8e64462ef2d882ad14f3e2bbca7b25.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thu thập được&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lệnh : &lt;code&gt;openssl des3 -d -salt -md md5 -in file.des3 -out file.txt -k supersecretpassword123&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Và có tệp tin nào đó được gửi qua cổng 9002&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/8b972d6c3ea967f953915508a84f4991.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/8b972d6c3ea967f953915508a84f4991.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta coppy mã hex để dựng lại file.des3
 Và chạy lệnh&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/6c2094eb8c01663566480015d0a62737.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/6c2094eb8c01663566480015d0a62737.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{nc_73115_411_02612719}&lt;/p&gt;</description>
     </item>
     <item>
@@ -234,10 +234,10 @@ Và chạy lệnh&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/endianness-v2/</guid>
       <description>&lt;p&gt;Tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/415?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng HxD&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/c38460047e509138af76a335746ce7fa.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/c38460047e509138af76a335746ce7fa.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy file dường như đang bị đảo
 Ta chuyển về hex &amp;ndash;&amp;gt; swap (đảo Big-Endian &amp;amp; Little-Endian) &amp;ndash;&amp;gt; chuyển về dữ liệu thô &amp;ndash;&amp;gt; render ra ảnh&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/60dbceaa7cbe8a9e66891bc214d30243.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/60dbceaa7cbe8a9e66891bc214d30243.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{cert!f1Ed_iNd!4n_s0rrY_3nDian_5b37ea4e}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -248,7 +248,7 @@ Ta chuyển về hex &amp;ndash;&amp;gt; swap (đảo Big-Endian &amp;amp; Littl
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/265?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở bth thấy chạy ra web
 Nên mở thử bằng vscode để đọc code&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/367f318c997dfef5fb6839e624aa2c19.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/367f318c997dfef5fb6839e624aa2c19.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{3nh4nc3d_9f31c04b}&lt;/p&gt;</description>
     </item>
     <item>
@@ -258,14 +258,14 @@ Nên mở thử bằng vscode để đọc code&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/event-viewing/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/456?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc mô tả&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/73dc34e8f3e46b60bed59b6b4e37e532.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/73dc34e8f3e46b60bed59b6b4e37e532.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Install &amp;ndash;&amp;gt; ID : 1033
 Registry change &amp;ndash;&amp;gt; ID : 4657
 Shutdown &amp;ndash;&amp;gt; ID : 1074&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/1574fbc30fbfed3acdae11e33992fb2f.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b1eb5e4888d78938b455fb4b62d873ad.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/76fa71d42ef911602d9a2d2cc3ae906e.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/0ec66aad7d872d790d4c23a273455b15.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/1574fbc30fbfed3acdae11e33992fb2f.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b1eb5e4888d78938b455fb4b62d873ad.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/76fa71d42ef911602d9a2d2cc3ae906e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/0ec66aad7d872d790d4c23a273455b15.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -275,7 +275,7 @@ Shutdown &amp;ndash;&amp;gt; ID : 1074&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/extensions/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/52?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Ta thấy đầu &lt;code&gt;png&lt;/code&gt; nên ta chỉnh về đuôi &lt;code&gt;.png&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b7d0e7f021f9646e2a84c51116efd7ed.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b7d0e7f021f9646e2a84c51116efd7ed.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{now_you_know_about_extensions}&lt;/p&gt;</description>
     </item>
     <item>
@@ -285,9 +285,9 @@ Ta thấy đầu &lt;code&gt;png&lt;/code&gt; nên ta chỉnh về đuôi &lt;co
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/file-types/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/268?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file pdf ko được nên ta đọc bằng cat&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/aa29232285f6b1021db4775e183d64a3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/aa29232285f6b1021db4775e183d64a3.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&amp;lt; Đoạn này em ko hiểu mã hóa nên cho AI phân tích &amp;gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b2df0f9eacba1a18f11d6b4546a2c3f1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b2df0f9eacba1a18f11d6b4546a2c3f1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_35957b68}&lt;/p&gt;</description>
     </item>
     <item>
@@ -297,9 +297,9 @@ Mở file pdf ko được nên ta đọc bằng cat&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/findandopen/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/348?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở tệp Pcap ta thu được các đoạn hội thoại&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/316ae7ea5d57721d4e36552379ea1799.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/316ae7ea5d57721d4e36552379ea1799.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Dùng &lt;code&gt;academy{R34DING_LOKd_&lt;/code&gt; để giải nén file zip&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/84117ff7bf71f5ea1e0f4e5ad694d699.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/84117ff7bf71f5ea1e0f4e5ad694d699.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{R34DING_LOKd_fil56_succ3ss_9989a41b} &lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -309,12 +309,12 @@ Mở file pdf ko được nên ta đọc bằng cat&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/flags-are-stepic/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/481?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta tìm thấy lá cờ kỳ lạ và tải về&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/3f28b18e7e75274982d78b97ad4fc8ae.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/3f28b18e7e75274982d78b97ad4fc8ae.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Để ý đề bài ta tạm dịch : Cờ là stepic
 Ta tải stepic về&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/728f6bd3787ce29f33b4305494a6a8c8.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/728f6bd3787ce29f33b4305494a6a8c8.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Đọc hướng dẫn sử dụng&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/eb415c055955ccc1b149e64ed9fca83d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/eb415c055955ccc1b149e64ed9fca83d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{fl4g_h45_fl4gb3d9ea13}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -324,7 +324,7 @@ Ta tải stepic về&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/forensics-git-0/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/705?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở bằng autopsy và tìm&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/590936b97b51fd75aec64061510d244e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/590936b97b51fd75aec64061510d244e.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{g17_1n_7h3_d15k_041217d8}&lt;/p&gt;</description>
     </item>
     <item>
@@ -333,18 +333,18 @@ Mở bằng autopsy và tìm&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/forensics-git-1/</guid>
       <description>&lt;p&gt;Tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/706?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/19dba5bc8a43e5eab2dbbab8af88392b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/19dba5bc8a43e5eab2dbbab8af88392b.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng autospy và trích xuất file ra
 Di chuyển tới file .git
 Dựa vào gợi ý dẫn ta tới cách khôi phục&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/059faeaee6c4fee7ef90456d41a43d68.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/059faeaee6c4fee7ef90456d41a43d68.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Vậy trước hết ta cần lấy được mã gì đó&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ce9ad57ea09b43b407ef52fe36623daa.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/ce9ad57ea09b43b407ef52fe36623daa.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Chạy lệnh git để coi toàn bộ lệnh
 Ta đọc log&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/19744387d799e331f19ae4b0e137dd64.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/19744387d799e331f19ae4b0e137dd64.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta chạy checkout&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b373f3d52eebc5ff08ffce4a96d42b09.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b373f3d52eebc5ff08ffce4a96d42b09.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{g17_r3m3mb3r5_d4ddf904}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -354,11 +354,11 @@ Ta đọc log&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/forensics-git-2/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/707?page=1&amp;amp;category=4&amp;amp;workspace=true&amp;amp;difficulty=2&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta trích xuất file chứa git&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/1e46c81581fa7fac59b13c470d3db56d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/1e46c81581fa7fac59b13c470d3db56d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Khi đọc log thì nó báo chưa có cái commit nào trước đó&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/a6edb76a0af7aa1758e623626f2e63d5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/a6edb76a0af7aa1758e623626f2e63d5.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Nhưng khi đọc bằng autospy thì ta thấy có mấy cái git&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/d9b3968cdfef034bba55b12db2b11047.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/d9b3968cdfef034bba55b12db2b11047.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{g17_r35cu3_16ac6bf3}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -368,9 +368,9 @@ Ta đọc log&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/hideme/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/350?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Ta phân tích bằng binwalk thấy bất bình thường nên tách ra&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/e1e17e83c6f94beb406f71b169d4e776.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/e1e17e83c6f94beb406f71b169d4e776.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ra được flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/e9f8cca5e42946d329dc6057de59222f.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/e9f8cca5e42946d329dc6057de59222f.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{Hiddinng_An_imag3_within_@n_ima9e_ba7f84d1}&lt;/p&gt;</description>
     </item>
     <item>
@@ -380,9 +380,9 @@ Ta phân tích bằng binwalk thấy bất bình thường nên tách ra&lt;/p&g
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/like1000/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/81?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file thấy bị lồng nhiều file lại với nhau&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/16d4d523ae160316a7a0ae6ffa62d027.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/16d4d523ae160316a7a0ae6ffa62d027.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Đợi kết quả&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7dc086a67d03120a947b055ab36d8136.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/7dc086a67d03120a947b055ab36d8136.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{L0t5_0f_TAR5}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -392,7 +392,7 @@ Mở file thấy bị lồng nhiều file lại với nhau&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/lookey-here/</guid>
       <description>&lt;p&gt;Tại bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/279?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Thấy đoạn văn bản dài nên ta dùng&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/df642dbf89897dc73fd9cd13981fc35e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/df642dbf89897dc73fd9cd13981fc35e.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{gr3p_15_@w3s0m3_33595e98}&lt;/p&gt;</description>
     </item>
     <item>
@@ -402,7 +402,7 @@ Thấy đoạn văn bản dài nên ta dùng&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/m00nwalk/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/26?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta sử dụng công cụ &lt;a href=&#34;https://bucknova.github.io/Open-SSTV/&#34;&gt;open-sstv&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;2026-10-26_021913_scottie_s1&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/be31214b4f2f897347490269d5224f3d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2026-10-26_021913_scottie_s1&#34; loading=&#34;lazy&#34; src=&#34;../../images/be31214b4f2f897347490269d5224f3d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là :&lt;code&gt;picoCTF{beep_boop_im_in_space}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -412,9 +412,9 @@ Thấy đoạn văn bản dài nên ta dùng&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/macrohard-weakedge/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/130?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Chuyển đổi thành file zip và giải nén&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/746ce5e30b0abae15075fb3ec981ec6f.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/746ce5e30b0abae15075fb3ec981ec6f.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tìm thấy file đáng ngờ&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/c10b38f7a5a535180df9c2d0d87f1cb0.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/c10b38f7a5a535180df9c2d0d87f1cb0.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta viết lệnh đơn giản để xóa khoảng cách&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-py=&#34; data-lang=&#34;py=&#34;&gt;fi = open(&amp;#34;hidden&amp;#34;,&amp;#34;r&amp;#34;)
 chuoi = fi.readline().split()
@@ -425,7 +425,7 @@ for i in chuoi:
 
 print(a)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Ta đem giải mã&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/63f824738ebb1ee648b098ca649e686c.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/63f824738ebb1ee648b098ca649e686c.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{D1d_u_kn0w_ppts_r_z1p5}&lt;/p&gt;</description>
     </item>
     <item>
@@ -435,9 +435,9 @@ print(a)
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/matryoshka-doll/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/129?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc miêu tả thấy ẩn giấu file&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/33dfa33a5613deb1fbff1a0b75cc1b02.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/33dfa33a5613deb1fbff1a0b75cc1b02.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta dùng binwalk&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/d63c274bf844d575cb8696be13f8931e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/d63c274bf844d575cb8696be13f8931e.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{ZNTyvSDXRNO1d0xCkBRMhAoiafpCTvgW}&lt;/p&gt;</description>
     </item>
     <item>
@@ -447,12 +447,12 @@ print(a)
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/milkslap/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/139?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mở web cha vào check source&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/23d15f69f58056427dd935928d8436ee.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/23d15f69f58056427dd935928d8436ee.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta tải về bằng cách mở tab mới lưu ảnh hoặc dùng &lt;code&gt;wget&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/0cba6c3af4507a16ea06ed0fe6e1f037.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/0cba6c3af4507a16ea06ed0fe6e1f037.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Check bằng exiftool ta thấy dòng RGB &amp;ndash;&amp;gt; nghĩ tới zsteg
 &lt;code&gt;export RUBY_THREAD_VM_STACK_SIZE=500000000&lt;/code&gt; : tăng ruby&amp;rsquo;s stack size limit&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/f431601e1602b287a3dd08833ad41d12.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/f431601e1602b287a3dd08833ad41d12.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{imag3_m4n1pul4t10n_sl4p5}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -462,13 +462,13 @@ print(a)
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/mob-psycho/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/420?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc gợi ý ta thấy nó bảo ta phải &lt;code&gt;unzip&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/5613fe0dc9c62bbfbe3a939f160d62b4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/5613fe0dc9c62bbfbe3a939f160d62b4.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta sử dụng thẳng lệnh unzip&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/f9541c5671e4e0c3f8ef64e33afef2b3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/f9541c5671e4e0c3f8ef64e33afef2b3.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta mò các thư mục&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/3f12add5bdc3a6b3ce435aa31efb409b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/3f12add5bdc3a6b3ce435aa31efb409b.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;61636164656d797b6178386d433052553676655f4e5838356c346178386d436c5f32313936636262397d &lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/88e0844afc28936ea3e16a14a7595e5d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/88e0844afc28936ea3e16a14a7595e5d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{ax8mC0RU6ve_NX85l4ax8mCl_2196cbb9}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -478,13 +478,13 @@ print(a)
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/operation-oni/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/284?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta tìm thấy file mã&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/dbc48047105dfc6697534e833adcdc02.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/dbc48047105dfc6697534e833adcdc02.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta trích xuất file dưới dạng &lt;code&gt;key_file&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7b5e423d3d2e6a581601cf84a00afce4.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/e88ab7bf1d8778fccfe8cdd8af291f46.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/7b5e423d3d2e6a581601cf84a00afce4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/e88ab7bf1d8778fccfe8cdd8af291f46.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Theo log thì nó báo quyền truy cập
 &lt;code&gt;chmod 600 key_file&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/0bfdab36bb75717619cf1e8de4ff7fb7.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/0bfdab36bb75717619cf1e8de4ff7fb7.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Theo tìm hiểu thì do wsl ko hỗ trợ chỉnh sửa trực tiếp
 Ta phải làm theo các bước :&lt;/p&gt;
 &lt;blockquote&gt;
@@ -503,14 +503,14 @@ Khởi động lại WSL bằng cách mở PowerShell hoặc Command Prompt củ
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/operation-orchid/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/285?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Tìm kiếm file đáng ngờ&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/c12b6ec2e939bbab31c1622cacf4cd57.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/c12b6ec2e939bbab31c1622cacf4cd57.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Đọc vào history&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/20c7037ef7b4e1980c627d9e051cab0a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/20c7037ef7b4e1980c627d9e051cab0a.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy có lệnh mã hóa
 &lt;code&gt;openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567&lt;/code&gt;
 Thì ta extract file đã được mã hóa và
 &lt;code&gt;openssl aes256 -d -salt -in flag.txt.enc -out flag.txt -k unbreakablepassword1234567&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/419c905ec5520dccc2fa9aa550003504.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/419c905ec5520dccc2fa9aa550003504.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{h4un71ng_p457_718ebd29}&lt;/p&gt;</description>
     </item>
     <item>
@@ -520,7 +520,7 @@ Thì ta extract file đã được mã hóa và
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/packets-primer/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/286?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file bằng pcap và đọc từng pack&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/30f20de6220adaa0c19574dd217bccf2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/30f20de6220adaa0c19574dd217bccf2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{p4ck37_5h4rk_1c872e64}&lt;/p&gt;</description>
     </item>
     <item>
@@ -530,9 +530,9 @@ Mở file bằng pcap và đọc từng pack&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/pcappoisoning/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/362?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file ta để ý pack số 4 có đăng nhập và pass&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/6a55e94668825e02217dcc8d003d9847.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/6a55e94668825e02217dcc8d003d9847.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta lọc với với ip đến&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/e55e8117db560e7770a839a8e0d06e9a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/e55e8117db560e7770a839a8e0d06e9a.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{P64P_4N4L7S1S_SU55355FUL_1f7d0a45}&lt;/p&gt;</description>
     </item>
     <item>
@@ -542,7 +542,7 @@ Mở file ta để ý pack số 4 có đăng nhập và pass&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/pitter-patter-platters/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/87?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file bằng FTK Imagine phân tích&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/e4d9aaffa2f199bc0d01f15f6cdfb504.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/e4d9aaffa2f199bc0d01f15f6cdfb504.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;}.e.1.e.1.a.8.1.d._.3.&amp;lt;._.|.L.m._.1.1.1.t.5._.3.b.{.y.m.e.d.a.c.a&lt;/code&gt;
 Sau khi bỏ &lt;code&gt;.&lt;/code&gt; và đảo ngược
 Flag là : academy{b3_5t111_mL|_&amp;lt;3_d18a1e1e}&lt;/p&gt;</description>
@@ -555,15 +555,15 @@ Flag là : academy{b3_5t111_mL|_&amp;lt;3_d18a1e1e}&lt;/p&gt;</description>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/714?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ta trích xuất file qua protocol html
 Ta được đoạn code &lt;code&gt;U1ZXUlxbTEpABVFDCmlWAl5ZaUIJQQZDbVFSUl0DVwJQSA==&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/383b77c243bca378ff48add8ab79a783.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/383b77c243bca378ff48add8ab79a783.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta để ý &lt;code&gt;key&lt;/code&gt; &amp;ndash;&amp;gt; thuật toán mã hóa
 Từ IMSI của nạn nhân&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/4eb214d744fa51205953e13988107e8e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/4eb214d744fa51205953e13988107e8e.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy IMSI cuối xuất hiện trước khi có post file là &lt;code&gt;310410725669651&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/67b8155585ec9f2f746b17569ef16046.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/67b8155585ec9f2f746b17569ef16046.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Tạm giải thích ngta lấy 8 số cuối là vì đó là 5 số đầu là mã chung&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/736bb4c4fd34b5f283e9c31735d62ae6.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/8e1759092cc61edd2f6a8758e9713e07.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/736bb4c4fd34b5f283e9c31735d62ae6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/8e1759092cc61edd2f6a8758e9713e07.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{r0gu3_c3ll_t0w3r_dddd5b3b}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -573,7 +573,7 @@ Từ IMSI của nạn nhân&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/shark-on-wire-1/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/30?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Chịu khó lần theo UDP Stream&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/0322f5854f3d7e711633725eea0977ab.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/0322f5854f3d7e711633725eea0977ab.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{StaT31355_636f6e6e}&lt;/p&gt;</description>
     </item>
     <item>
@@ -583,16 +583,16 @@ Chịu khó lần theo UDP Stream&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/shark-on-wire-2/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/84?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đầu tiên lọc bằng data&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/84401dc36ce9a263ba0f0a2e8811fd0d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/84401dc36ce9a263ba0f0a2e8811fd0d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Thấy nhận tại cổng 22 khá bất thường
 Bởi cổng 22 thường của ssh
 Thêm nữa tại cổng số 22 ta tìm thấy đoạn &amp;lsquo;start&amp;rsquo; và &amp;rsquo;end&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/6ff2cddcabf581f20fa6d719ab456825.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ece2fa2146c51bd82983b265a4fd2c4c.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/6ff2cddcabf581f20fa6d719ab456825.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/ece2fa2146c51bd82983b265a4fd2c4c.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Lọc theo &lt;code&gt;udp.dstport == 22&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy được gửi từ cổng bắt đầu bằng số 5 theo sau 3 số
 Nhìn khá giống số thập phân (byte )&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/80c8060c72cd3348a0f292aaa19c689b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/80c8060c72cd3348a0f292aaa19c689b.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{p1LLf3r3d_data_v1a_st3g0}&lt;/p&gt;</description>
     </item>
     <item>
@@ -602,7 +602,7 @@ Nhìn khá giống số thập phân (byte )&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/sleuthkit-apprentice/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/300?page=3&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở bằng autopsy và mò&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/0b191a3beab55e59b16dd4e0c0ae22c2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/0b191a3beab55e59b16dd4e0c0ae22c2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{by73_5urf3r_6395be48}&lt;/p&gt;</description>
     </item>
     <item>
@@ -612,7 +612,7 @@ Mở bằng autopsy và mò&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/sleuthkit-intro/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/301?page=1&#34;&gt;đây&lt;/a&gt;
 Mở bằng autopsy thấy độ dài là 202752&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ca14178d2ddbf06db33eaf4bb5c7219f.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/ca14178d2ddbf06db33eaf4bb5c7219f.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{mm15_f7w!}&lt;/p&gt;</description>
     </item>
     <item>
@@ -622,7 +622,7 @@ Mở bằng autopsy thấy độ dài là 202752&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/st3g0/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/305?page=2&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Mở file chạy zsteg&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/8a280afba751e7fe2c6b29aa24d23113.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/8a280afba751e7fe2c6b29aa24d23113.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{7h3r3_15_n0_5p00n_3e86461e}&lt;/p&gt;</description>
     </item>
     <item>
@@ -632,11 +632,11 @@ Mở file chạy zsteg&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/timeline0/</guid>
       <description>&lt;p&gt;Link bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/720?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ hint : tạo mactime và xem cái rất cũ&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7b733e6ac205bdec6fc97dbec9308157.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/7b733e6ac205bdec6fc97dbec9308157.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy file rất cũ từ 1985&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/281a7d1a78c38ee61bf93b812fd541db.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/281a7d1a78c38ee61bf93b812fd541db.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Giải mã qua từ base64&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/26cdeb9ea123a6188f55a9ea1f0d58f9.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/26cdeb9ea123a6188f55a9ea1f0d58f9.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Timeline1</title>
@@ -645,11 +645,11 @@ Mở file chạy zsteg&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/timeline1/</guid>
       <description>&lt;p&gt;Link tải bài tại &lt;a href=&#34;https://learn.cylabacademy.org/library/721?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ hint thấy đề cập tới lọc macb theo timeline và đọc những cái gần đây&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/4d524972b722deb7e012b2dc1199e786.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/4d524972b722deb7e012b2dc1199e786.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Do tạm thời chưa biết lọc macb timeline trên autopsy nên ta sẽ tìm kiếm từng file đủ ACBM&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/fe43da668efe8ba025df6710d68d4703.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/fe43da668efe8ba025df6710d68d4703.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Đem đi giải mã&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/f4cfa03c198851bd47d789ec7656ed01.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/f4cfa03c198851bd47d789ec7656ed01.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Vậy flag là : picoCTF{573417h13r_7h4n_7h3_1457_58527bb222}&lt;/p&gt;</description>
     </item>
     <item>
@@ -659,11 +659,11 @@ Mở file chạy zsteg&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/torrent-analyze/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/311?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đọc sơ qua về miêu tả ta thấy liên quan tới protocol BT-DHT&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/617bef33e95598f4920f1c8fb34e324d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/617bef33e95598f4920f1c8fb34e324d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Tìm hiểu sơ qua về BT-DHT ta biết được rằng nó sẽ mã hóa thành hash MD1 trước khi chia sẻ lên internet&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/baa116647d09222c601f50750e38bf07.png&#34;&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/baa116647d09222c601f50750e38bf07.png&#34;&gt;
 Đầu tiên lần theo DNS ta thấy ip == 192.168.73.132 đang tải file từ torrent ubuntu&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ac64d8ee191313219c62d62c381771f4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/ac64d8ee191313219c62d62c381771f4.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Khi lọc với ip.src thì ta thấy nó đang lấy file liên tục từ các Leechers
 Lướt lúc ta sẽ thấy protocol BT-DHT như bài đã đề cập&lt;/p&gt;</description>
     </item>
@@ -674,16 +674,16 @@ Lướt lúc ta sẽ thấy protocol BT-DHT như bài đã đề cập&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/trivial-flag-transfer-protocol/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/103?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đầu tiên phân tích thấy nhiều protocol TFTP&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/46cc555c7b1c26afab641b382c3e5dee.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/46cc555c7b1c26afab641b382c3e5dee.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta trích xuất ra&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b370a38e4641c8824ec671c0bf671155.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b370a38e4641c8824ec671c0bf671155.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta đọc file plan&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/6fbe15939d87a99c7385b5d2c741b4d8.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/97b8dea31ebb84716b412699096c1248.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/6fbe15939d87a99c7385b5d2c741b4d8.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/97b8dea31ebb84716b412699096c1248.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Nội dung : I USED THE PROGRAMANDHIDIT WITH-DUEDILIGENCE .CHECKOUT THE PHOTOS
 Ta steghide với từng file&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/6787aff039816b9d2345125a023ab192.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/01b29a1a95f5f98b700704c67f954ba7.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/6787aff039816b9d2345125a023ab192.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/01b29a1a95f5f98b700704c67f954ba7.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{h1dd3n_1n_pLa1n_51GHT_18375919}&lt;/p&gt;</description>
     </item>
     <item>
@@ -693,9 +693,9 @@ Ta steghide với từng file&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/weird-file/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/101?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc kỹ giới thiệu&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/b2badff56b97ecb2732254825a317f28.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/b2badff56b97ecb2732254825a317f28.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta nghĩ ngay tới bị giấu macro&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/6d3b4b491a7541917163a2f9256b2d65.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/6d3b4b491a7541917163a2f9256b2d65.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta dùng tool lấy chuỗi ra&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-doc=&#34; data-lang=&#34;doc=&#34;&gt;Sub AutoOpen()
     MsgBox &amp;#34;Macros can run any program&amp;#34;, 0, &amp;#34;Title&amp;#34;
@@ -728,7 +728,7 @@ End Sub
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/what-lies-within/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/74?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Sử dụng zsteg&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/15f5418074d55339f238e85392165a57.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/15f5418074d55339f238e85392165a57.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{h1d1ng_1n_th3_b1t5}&lt;/p&gt;</description>
     </item>
     <item>
@@ -738,7 +738,7 @@ Sử dụng zsteg&lt;/p&gt;
       <guid>http://localhost:1313/WuFort/writeup/picoctf_medium/whitepages/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/51?page=5&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đầu tiên mở bằng hex ta thấy 3 chuỗi &lt;code&gt;â€ƒ&lt;/code&gt; luôn đi chung với nhau&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/68374d956739341ad70d56b019f3ca1d.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/68374d956739341ad70d56b019f3ca1d.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Sau tìm hiểu ta biết được đó là &lt;code&gt;em space&lt;/code&gt;
 Vậy file kia gồm 2 loại đó là &lt;code&gt;em space&lt;/code&gt; và &lt;code&gt;normal space&lt;/code&gt;
 Ta viết code để chuyển thử về 0 và 1&lt;/p&gt;
@@ -765,7 +765,7 @@ for i in bin :
         binsau += &amp;#34;1&amp;#34;
 
 print(binsau)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/9c86b7145f4862b2a0263b561d2b74e2.png&#34;&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/9c86b7145f4862b2a0263b561d2b74e2.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wireshark2</title>
@@ -775,13 +775,13 @@ print(binsau)
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/110?page=1&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&amp;amp;solved=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Khi mở ta thấy nhiều cờ giả &amp;ndash;&amp;gt; bỏ qua
 Khi lọc theo dns&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/2118c3cd531548dd6227792b263ab097.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/2118c3cd531548dd6227792b263ab097.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy hầu như gửi tới 8.8.8.8
 Có cái Ip 18.217.1.57 lạc loài&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/fc0b9d51e33adcb40d4306d283ea13bb.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/fc0b9d51e33adcb40d4306d283ea13bb.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta lọc ip đến và dns
 Thấy được đoạn encode giống base64 ở phần info&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7591591b736f8031be50e9ecf916650e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/7591591b736f8031be50e9ecf916650e.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : &lt;code&gt;academy{dns_3xf1l_ftw_deadbeef}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -792,11 +792,11 @@ Thấy được đoạn encode giống base64 ở phần info&lt;/p&gt;
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/115?page=4&amp;amp;category=4&amp;amp;difficulty=2&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;
 Đọc file thấy có nhiều protocol HTTP POST
 Ta nghĩ ngay tới lấy file thông qua HTTP&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/a9170b5061a0879e9343203633399e3e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/a9170b5061a0879e9343203633399e3e.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta được đoạn như này&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/48ca264da105dfa1e094a20ed2e85fdf.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/48ca264da105dfa1e094a20ed2e85fdf.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Mở bằng VScode thấy có thể đây là mã hóa rot&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/94252cc078d5f8d8d6456031e435e5ab.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;../../images/94252cc078d5f8d8d6456031e435e5ab.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Flag là : academy{p33kab00_1_s33_u_deadbeef}&lt;/p&gt;</description>
     </item>
   </channel>

@@ -20,7 +20,7 @@ Khi dịch cả 3 file, ta thấy đây đều là cốt truyện game LOL &ndas
 Truy cập theo đường dẫn home\yone\notes\3.txt">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_hard/unforgottenbits/">
-<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
@@ -135,19 +135,19 @@ Truy cập theo đường dẫn home\yone\notes\3.txt">
 
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://learn.cylabacademy.org/library/383?page=1&amp;category=4&amp;difficulty=3&amp;workspace=true">đây</a></p>
 <p>Đầu tiên lần theo thư mục <code>home\yone\irclogs\01\04\#avidreader13.log</code></p>
-<p><img alt="image" loading="lazy" src="/images/8f4c89dfae88ab21bc0a02507040c536.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/8f4c89dfae88ab21bc0a02507040c536.png"></p>
 <p>Ta thấy đầu tiên dùng steghide sau đó liên quan tới mã hóa AES
 Hướng tới thư mục <code>home\yone\gallery</code>
 Ta sử steghide được 3 ảnh <code>1.bmp</code>, <code>2.bmp</code>, <code>3.bmp</code></p>
-<p><img alt="image" loading="lazy" src="/images/5a1bdb9190b4fd4789efa852d3ae186c.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/5a1bdb9190b4fd4789efa852d3ae186c.png"></p>
 <p>Ta thu được 3 file với chuỗi ký tự rất lạ, dựa vào đoạn hội thoại, ta sử dụng decryt AES online</p>
-<p><img alt="image" loading="lazy" src="/images/e69a85465fb2f9133b1d218d4ff6a3a2.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/e69a85465fb2f9133b1d218d4ff6a3a2.png"></p>
 <p>Khi dịch cả 3 file, ta thấy đây đều là cốt truyện game LOL &ndash;&gt; rác
 Truy cập theo đường dẫn <code>home\yone\notes\3.txt</code></p>
-<p><img alt="image" loading="lazy" src="/images/469a5783d7cf0b6a7091cc07f258bbce.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/469a5783d7cf0b6a7091cc07f258bbce.png"></p>
 <p>Ta thấy đoạn pass bị khuyết mất phía sau
 Dựa vào gợi ý</p>
-<p><img alt="image" loading="lazy" src="/images/8a3f65bbe2f7d145a33ddc61600ef620.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/8a3f65bbe2f7d145a33ddc61600ef620.png"></p>
 <p>Ta thấy pass nối thêm tên 2 vị tướng LOL
 Tải danh sách tướng tại <a href="https://github.com/jetnew/league-tools/blob/master/champion_list.txt">đây</a></p>
 <pre tabindex="0"><code class="language-py=" data-lang="py=">fi = open(&#34;champion_list.txt&#34;,&#34;r&#34;)
@@ -163,20 +163,20 @@ for i in range(0,148):
     for j in range(0,148):
         s = &#34;yasuoaatrox&#34; + str(l[i]) + str(l[j]) + &#34;\n&#34;
         fo.write(s)
-</code></pre><p><img alt="image" loading="lazy" src="/images/381b5213ed276e7b05b86154dfd49804.png"></p>
+</code></pre><p><img alt="image" loading="lazy" src="../../../images/381b5213ed276e7b05b86154dfd49804.png"></p>
 <p>Ta dùng stegseek để tấn công wordlist</p>
-<p><img alt="image" loading="lazy" src="/images/25ce4bfe9fd8b3fa401b1dc9b242e16a.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/25ce4bfe9fd8b3fa401b1dc9b242e16a.png"></p>
 <p>Ta thu được một file bị mã hóa AES</p>
-<p><img alt="image" loading="lazy" src="/images/9c3ce3eef1534b8b61f2e055a871cd98.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/9c3ce3eef1534b8b61f2e055a871cd98.png"></p>
 <p>Nhưng khóa ko khớp &ndash;&gt; tìm khóa thay thế</p>
-<p><img alt="image" loading="lazy" src="/images/10ac50aed3da07d57d0ffd1c8f287106.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/10ac50aed3da07d57d0ffd1c8f287106.png"></p>
 <p>Dựa vào gợi ý ta tìm được
 Mở file slack tại đường dẫn <code>home\yone\notes\1.txt-slack</code></p>
-<p><img alt="image" loading="lazy" src="/images/718ac9d522a270482b89555f862f1feb.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/718ac9d522a270482b89555f862f1feb.png"></p>
 <p>Tiếp tục tra tiếp <code>home\yone\.lynx\browsing-history.log</code></p>
-<p><img alt="image" loading="lazy" src="/images/391dce1e602f5bc9839f2c021820a164.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/391dce1e602f5bc9839f2c021820a164.png"></p>
 <p>Ta thấy có tìm hiểu về <code>Golden_ratio_base</code></p>
-<p><img alt="image" loading="lazy" src="/images/9d91f6cdf00784b037f74a0bd9c6b60f.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/9d91f6cdf00784b037f74a0bd9c6b60f.png"></p>
 <p>Lấy ví dụ <code>100</code> thì số sẽ là $\ (φ)^2$ tại số 1 ở vị trí số 2 từ dưới lên
 Dựa vào tư duy này, ta code để dịch ngược về số</p>
 <pre tabindex="0"><code class="language-py=" data-lang="py=">import math
@@ -211,9 +211,9 @@ fo.write(kq)
 </code></pre><p>Thuật toán sẽ dịch từ mã 0 và 1 qua số nguyên
 Với những số quá lớn, trừ dần cho tới khi về giá trị hợp lý (dưới 126 mà có thể hiển thị )
 Sau đó sẽ chuyển lại về char</p>
-<p><img alt="image" loading="lazy" src="/images/59401a870f60b9c88419d82e887692c6.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/59401a870f60b9c88419d82e887692c6.png"></p>
 <p>Ta dùng key và iv mới để decrypt</p>
-<p><img alt="image" loading="lazy" src="/images/28f5789a2b6cf5943d4ea6b1e7e80a6d.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/28f5789a2b6cf5943d4ea6b1e7e80a6d.png"></p>
 <p>Flag là: <code>academy{f473_53413d_e0c91991}</code></p>
 
 

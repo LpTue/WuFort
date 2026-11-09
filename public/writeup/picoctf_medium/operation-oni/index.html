@@ -28,7 +28,7 @@ Lưu file (nhấn Ctrl&#43;O, Enter, rồi Ctrl&#43;X nếu dùng nano).
 Khởi động lại WSL bằng cách mở PowerShell hoặc Command Prompt của Windows (không phải terminal Linux) và gõ:">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_medium/operation-oni/">
-<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
@@ -143,13 +143,13 @@ Khởi động lại WSL bằng cách mở PowerShell hoặc Command Prompt củ
 
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://learn.cylabacademy.org/library/284?page=1&amp;category=4&amp;difficulty=2&amp;workspace=true&amp;solved=true">đây</a></p>
 <p>Ta tìm thấy file mã</p>
-<p><img alt="image" loading="lazy" src="/images/dbc48047105dfc6697534e833adcdc02.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/dbc48047105dfc6697534e833adcdc02.png"></p>
 <p>Ta trích xuất file dưới dạng <code>key_file</code></p>
-<p><img alt="image" loading="lazy" src="/images/7b5e423d3d2e6a581601cf84a00afce4.png"></p>
-<p><img alt="image" loading="lazy" src="/images/e88ab7bf1d8778fccfe8cdd8af291f46.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/7b5e423d3d2e6a581601cf84a00afce4.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/e88ab7bf1d8778fccfe8cdd8af291f46.png"></p>
 <p>Theo log thì nó báo quyền truy cập
 <code>chmod 600 key_file</code></p>
-<p><img alt="image" loading="lazy" src="/images/0bfdab36bb75717619cf1e8de4ff7fb7.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/0bfdab36bb75717619cf1e8de4ff7fb7.png"></p>
 <p>Theo tìm hiểu thì do wsl ko hỗ trợ chỉnh sửa trực tiếp
 Ta phải làm theo các bước :</p>
 <blockquote>
@@ -163,8 +163,8 @@ Khởi động lại WSL bằng cách mở PowerShell hoặc Command Prompt củ
 <pre tabindex="0"><code class="language-=" data-lang="=">wsl --shutdown
 </code></pre><p>Mở lại terminal Linux (WSL). Bây giờ lệnh chmod 600 key_file trong thư mục /mnt/d/&hellip; của bạn sẽ hoạt động.</p>
 </blockquote>
-<p><img alt="image" loading="lazy" src="/images/e8b7031027f9b96b4cdba295e03a4f01.png"></p>
-<p><img alt="image" loading="lazy" src="/images/14a02958302b96327a53796ba65f158e.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/e8b7031027f9b96b4cdba295e03a4f01.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/14a02958302b96327a53796ba65f158e.png"></p>
 <p>Flag là : <code>academy{k3y_5l3u7h_127b8b44}</code></p>
 
 

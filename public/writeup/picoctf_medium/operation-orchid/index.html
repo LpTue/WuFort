@@ -20,7 +20,7 @@ openssl aes256 -d -salt -in flag.txt.enc -out flag.txt -k unbreakablepassword123
 Flag là : academy{h4un71ng_p457_718ebd29}">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_medium/operation-orchid/">
-<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
@@ -135,14 +135,14 @@ Flag là : academy{h4un71ng_p457_718ebd29}">
 
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://learn.cylabacademy.org/library/285?page=3&amp;category=4&amp;difficulty=2&amp;workspace=true">đây</a>
 Tìm kiếm file đáng ngờ</p>
-<p><img alt="image" loading="lazy" src="/images/c12b6ec2e939bbab31c1622cacf4cd57.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/c12b6ec2e939bbab31c1622cacf4cd57.png"></p>
 <p>Đọc vào history</p>
-<p><img alt="image" loading="lazy" src="/images/20c7037ef7b4e1980c627d9e051cab0a.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/20c7037ef7b4e1980c627d9e051cab0a.png"></p>
 <p>Ta thấy có lệnh mã hóa
 <code>openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567</code>
 Thì ta extract file đã được mã hóa và
 <code>openssl aes256 -d -salt -in flag.txt.enc -out flag.txt -k unbreakablepassword1234567</code></p>
-<p><img alt="image" loading="lazy" src="/images/419c905ec5520dccc2fa9aa550003504.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/419c905ec5520dccc2fa9aa550003504.png"></p>
 <p>Flag là : academy{h4un71ng_p457_718ebd29}</p>
 
 

@@ -22,7 +22,7 @@ Ta có được thông tin phiên bản là 10 và múi giờ khi chuyển về 
 Để kiểm tra phần mền đáng ngờ">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/WuFort/writeup/bksec/introduction-to-memfor/">
-<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
@@ -145,30 +145,30 @@ pip install volatility3
 </code></pre><p>Di chuyển tới nơi lưu trữ file
 Lấy thông tin của image</p>
 <pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.info.Info
-</code></pre><p><img alt="image" loading="lazy" src="/images/b81d63c27ca3c51b4c2c376dda5b3401.png"></p>
+</code></pre><p><img alt="image" loading="lazy" src="../../../images/b81d63c27ca3c51b4c2c376dda5b3401.png"></p>
 <p>Ta có được thông tin phiên bản là <strong><code>10</code></strong> và múi giờ khi chuyển về VN là <strong><code>2025-02-20 22:05:26</code></strong></p>
 <p>Để kiểm tra phần mền đáng ngờ</p>
 <pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.pslist.PsList
 </code></pre><p>Ta chú ý tới pid 8144</p>
-<p><img alt="image" loading="lazy" src="/images/53c413a2dc935c819d644c42a395c03f.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/53c413a2dc935c819d644c42a395c03f.png"></p>
 <p>Giải thích</p>
 <blockquote>
 <p>Bình thường sẽ là <code>svchost</code> thay vì là <code>svcost</code></p>
 </blockquote>
 <p>Để tìm pid cha thì ta chú ý tới ppid là 8268</p>
-<p><img alt="image" loading="lazy" src="/images/222fb32b8745ec4b69a0c3cbd89333d8.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/222fb32b8745ec4b69a0c3cbd89333d8.png"></p>
 <p>Ta kiểm tra các lệnh được chạy</p>
 <pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.cmdline.CmdLine
 </code></pre><p>Ta chú ý tới dòng gần cuối thấy</p>
-<p><img alt="image" loading="lazy" src="/images/55b323dcc66c2038028a0e271d2adcc4.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/55b323dcc66c2038028a0e271d2adcc4.png"></p>
 <p>Để scan network ta chạy</p>
 <pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.netscan.NetScan
 </code></pre><p>Ta chú ý tới tiến trình chạy bởi <code>svcost.exe</code></p>
-<p><img alt="image" loading="lazy" src="/images/a37ae5c271c472cacef5cdd73674ec2b.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/a37ae5c271c472cacef5cdd73674ec2b.png"></p>
 <p>Flag ẩn gồm 2 phần
 Ta kiểm tra các file có thể</p>
 <pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem windows.filescan | grep -iE &#34;flag|part|secret|\.txt|\.png|\.jpg|\.flag&#34;
-</code></pre><p><img alt="image" loading="lazy" src="/images/eed685792a9d0e1188e3a2b64df25583.png"></p>
+</code></pre><p><img alt="image" loading="lazy" src="../../../images/eed685792a9d0e1188e3a2b64df25583.png"></p>
 <p>Ta thấy có 2 file đáng nghi là flag1 và flag2
 Ta tạo 1 folder tạm thời lưu các file mới</p>
 <pre tabindex="0"><code class="language-=" data-lang="=">vol -f memdump.mem -o &lt;TemFolder&gt; windows.dumpfiles --virtaddr &lt;Mã&gt;
@@ -179,17 +179,17 @@ vol -f memdump.mem -o tem windows.dumpfiles --virtaddr 0xd20dfd97a640
 
 vol -f memdump.mem -o tem windows.dumpfiles --virtaddr 0xd20dfdc24e00
 </code></pre><p>Sau khi vào ta chỉnh lại về đúng định dạng</p>
-<p><img alt="image" loading="lazy" src="/images/7dfea3d4d6dab596c4d8f9ad344e4ad2.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/7dfea3d4d6dab596c4d8f9ad344e4ad2.png"></p>
 <p>Vì file flag1 ko extract được nên ta dùng cách kiểm tra mã hex</p>
-<p><img alt="image" loading="lazy" src="/images/e5a36c47da6023c882ca1805d2d8f6c9.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/e5a36c47da6023c882ca1805d2d8f6c9.png"></p>
 <p>Đoạn đầu là : <code>BKSEC{l00k_ljk3_w3_h4v3_a_n3w_</code></p>
 <p>Với file exe ta mở bằng cutter</p>
-<p><img alt="image" loading="lazy" src="/images/32e5a608f75149b30f6fe9b6cb4dd1dc.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/32e5a608f75149b30f6fe9b6cb4dd1dc.png"></p>
 <p>Đoạn sau là : <code>vol4tilitY_m4st3r_c0mjn9_in2_t0wn}</code>
 Ta kiểm tra với file còn lại thì cũng thế
 Vậy mã cuối là : <code>BKSEC{l00k_ljk3_w3_h4v3_a_n3w_vol4tilitY_m4st3r_c0mjn9_in2_t0wn}</code></p>
-<p><img alt="image" loading="lazy" src="/images/5455cd9a16ac4492bd5e4c22498d1139.png"></p>
-<p><img alt="image" loading="lazy" src="/images/3328a0510901fd272552f53d883a9e8c.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/5455cd9a16ac4492bd5e4c22498d1139.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/3328a0510901fd272552f53d883a9e8c.png"></p>
 <p>Flag cuối cùng là : <code>BKSEC{1e70e595ccc9f7ac9ccae129561c5f862d0f7e43d38210ba46dc6076363f9daf}</code></p>
 
 

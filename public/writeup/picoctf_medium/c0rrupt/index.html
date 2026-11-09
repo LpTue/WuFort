@@ -21,7 +21,7 @@ Ta tiếp tục thấy sai lúc này ở chunk pHYs chứa hình ảnh &ndash;&g
 Ta khoanh vùng vì đoạn này khá giống IDAT nhưng bị đổi">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_medium/c0rrupt/">
-<link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../../WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
@@ -136,18 +136,18 @@ Ta khoanh vùng vì đoạn này khá giống IDAT nhưng bị đổi">
 
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://learn.cylabacademy.org/library/53?page=5&amp;category=4&amp;difficulty=2&amp;workspace=true">đây</a></p>
 <p>Mở bằng hxd kéo xuống dưới</p>
-<p><img alt="image" loading="lazy" src="/images/69dff9efe260f7e6b3f47cad23f9fe92.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/69dff9efe260f7e6b3f47cad23f9fe92.png"></p>
 <p>Đây là dấu hiệu của file png
 Ta sửa lại 8bit đầu về đúng signature number</p>
-<p><img alt="image" loading="lazy" src="/images/a5a206143a116c3c0d48f667d105fc35.png"></p>
-<p><img alt="image" loading="lazy" src="/images/5e9dc3868c8412a7b3e42335ef82691d.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/a5a206143a116c3c0d48f667d105fc35.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/5e9dc3868c8412a7b3e42335ef82691d.png"></p>
 <p>Ta tìm hiểu thấy chỗ đúng của C&quot;DR phải thay bằng IHDR</p>
-<p><img alt="image" loading="lazy" src="/images/a68ca7120f0d7c30e8e5398dc879bed2.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/a68ca7120f0d7c30e8e5398dc879bed2.png"></p>
 <p>Ta tiếp tục thấy sai lúc này ở chunk pHYs chứa hình ảnh &ndash;&gt; liên tưởng tới IDAT</p>
-<p><img alt="image" loading="lazy" src="/images/0fa1b062e5b2366e83f4026f660667a6.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/0fa1b062e5b2366e83f4026f660667a6.png"></p>
 <p>Ta khoanh vùng vì đoạn này khá giống IDAT nhưng bị đổi</p>
-<p><img alt="image" loading="lazy" src="/images/6f6ec0a8982005c5e0d9648473d096f6.png"></p>
-<p><img alt="image" loading="lazy" src="/images/296b742275fba6bbadc7b2fe9dc7f75b.png">
+<p><img alt="image" loading="lazy" src="../../../images/6f6ec0a8982005c5e0d9648473d096f6.png"></p>
+<p><img alt="image" loading="lazy" src="../../../images/296b742275fba6bbadc7b2fe9dc7f75b.png">
 Flag là : <code>academy{c0rrupt10n_1847995}</code></p>
 
 
