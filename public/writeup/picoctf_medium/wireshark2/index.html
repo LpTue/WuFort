@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/WuFort/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WuFort/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Wireshark2 | WuFort</title>
 <meta name="keywords" content="PicoCTF_Medium">
 <meta name="description" content="Tải bài tập tại đây
@@ -19,16 +19,16 @@ Thấy được đoạn encode giống base64 ở phần info
 
 Flag là : academy{dns_3xf1l_ftw_deadbeef}">
 <meta name="author" content="">
-<link rel="canonical" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/wireshark2/">
+<link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_medium/wireshark2/">
 <link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/WuFort/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/wireshark2/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/WuFort/writeup/picoctf_medium/wireshark2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -74,89 +74,13 @@ Flag là : academy{dns_3xf1l_ftw_deadbeef}">
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://lptue.github.io/WuFort/writeup/picoctf_medium/wireshark2/">
-  <meta property="og:site_name" content="WuFort">
-  <meta property="og:title" content="Wireshark2">
-  <meta property="og:description" content="Tải bài tập tại đây
-Khi mở ta thấy nhiều cờ giả –&gt; bỏ qua Khi lọc theo dns
-Ta thấy hầu như gửi tới 8.8.8.8 Có cái Ip 18.217.1.57 lạc loài
-Ta lọc ip đến và dns Thấy được đoạn encode giống base64 ở phần info
-Flag là : academy{dns_3xf1l_ftw_deadbeef}">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="writeup">
-    <meta property="article:tag" content="PicoCTF_Medium">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Wireshark2">
-  <meta name="twitter:description" content="Tải bài tập tại đây
-Khi mở ta thấy nhiều cờ giả –&gt; bỏ qua Khi lọc theo dns
-Ta thấy hầu như gửi tới 8.8.8.8 Có cái Ip 18.217.1.57 lạc loài
-Ta lọc ip đến và dns Thấy được đoạn encode giống base64 ở phần info
-Flag là : academy{dns_3xf1l_ftw_deadbeef}">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "WriteUp",
-      "item": "https://lptue.github.io/WuFort/writeup/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "PicoCTF_Medium",
-      "item": "https://lptue.github.io/WuFort/writeup/picoctf_medium/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Wireshark2",
-      "item": "https://lptue.github.io/WuFort/writeup/picoctf_medium/wireshark2/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Wireshark2",
-  "name": "Wireshark2",
-  "description": "Tải bài tập tại đây\nKhi mở ta thấy nhiều cờ giả \u0026ndash;\u0026gt; bỏ qua Khi lọc theo dns\nTa thấy hầu như gửi tới 8.8.8.8 Có cái Ip 18.217.1.57 lạc loài\nTa lọc ip đến và dns Thấy được đoạn encode giống base64 ở phần info\nFlag là : academy{dns_3xf1l_ftw_deadbeef}\n",
-  "keywords": [
-    "PicoCTF_Medium"
-  ],
-  "articleBody": "Tải bài tập tại đây\nKhi mở ta thấy nhiều cờ giả –\u003e bỏ qua Khi lọc theo dns\nTa thấy hầu như gửi tới 8.8.8.8 Có cái Ip 18.217.1.57 lạc loài\nTa lọc ip đến và dns Thấy được đoạn encode giống base64 ở phần info\nFlag là : academy{dns_3xf1l_ftw_deadbeef}\n",
-  "wordCount" : "51",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lptue.github.io/WuFort/writeup/picoctf_medium/wireshark2/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "WuFort",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lptue.github.io/WuFort/favicon.ico"
-    }
-  }
-}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <a href="http://localhost:1313/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -182,12 +106,12 @@ Flag là : academy{dns_3xf1l_ftw_deadbeef}">
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
+                <a href="http://localhost:1313/WuFort/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -212,13 +136,13 @@ Flag là : academy{dns_3xf1l_ftw_deadbeef}">
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://learn.cylabacademy.org/library/110?page=1&amp;category=4&amp;difficulty=2&amp;workspace=true&amp;solved=true">đây</a></p>
 <p>Khi mở ta thấy nhiều cờ giả &ndash;&gt; bỏ qua
 Khi lọc theo dns</p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJfqh9a3fg.png"></p>
+<p><img alt="image" loading="lazy" src="/images/2118c3cd531548dd6227792b263ab097.png"></p>
 <p>Ta thấy hầu như gửi tới 8.8.8.8
 Có cái Ip 18.217.1.57 lạc loài</p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJGancanMe.png"></p>
+<p><img alt="image" loading="lazy" src="/images/fc0b9d51e33adcb40d4306d283ea13bb.png"></p>
 <p>Ta lọc ip đến và dns
 Thấy được đoạn encode giống base64 ở phần info</p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/S1jkpcanzg.png"></p>
+<p><img alt="image" loading="lazy" src="/images/7591591b736f8031be50e9ecf916650e.png"></p>
 <p>Flag là : <code>academy{dns_3xf1l_ftw_deadbeef}</code></p>
 
 
@@ -226,14 +150,14 @@ Thấy được đoạn encode giống base64 ở phần info</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://lptue.github.io/WuFort/tags/picoctf_medium/">PicoCTF_Medium</a></li>
+      <li><a href="http://localhost:1313/WuFort/tags/picoctf_medium/">PicoCTF_Medium</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/WuFort/">WuFort</a></span> · 
 
     
     

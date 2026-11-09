@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>WriteUp on WuFort</title>
-    <link>https://lptue.github.io/WuFort/writeup/</link>
+    <link>http://localhost:1313/WuFort/writeup/</link>
     <description>Recent content in WriteUp on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://lptue.github.io/WuFort/writeup/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/WuFort/writeup/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/WuFort/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WuFort/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Flag in Flame | WuFort</title>
 <meta name="keywords" content="PicoCTF_Easy">
 <meta name="description" content="Đầu tiên hãy thử phân tích file
@@ -17,16 +17,16 @@ Dùng lệnh base --decode logs.txt &gt; da
 Lúc này bạn nhận được file base64
 ">
 <meta name="author" content="">
-<link rel="canonical" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/">
+<link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_easy/flag-in-flame/">
 <link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/WuFort/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/WuFort/writeup/picoctf_easy/flag-in-flame/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,93 +72,13 @@ Lúc này bạn nhận được file base64
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/">
-  <meta property="og:site_name" content="WuFort">
-  <meta property="og:title" content="Flag in Flame">
-  <meta property="og:description" content="Đầu tiên hãy thử phân tích file
-Thấy đây là file thuần ASCII Thử strings logs.txt | grep pico
-Thấy ko ra kết quả nên đổi cách
-Khúc này, nếu bạn khôn sẽ thấy “=” ở cuối –&gt; có thể đây là dạng text của base64
-Do file quá lớn nên CyberChef ko thể hỗ trợ
-Dùng lệnh base --decode logs.txt &gt; da
-Lúc này bạn nhận được file base64">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="writeup">
-    <meta property="article:tag" content="PicoCTF_Easy">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Flag in Flame">
-  <meta name="twitter:description" content="Đầu tiên hãy thử phân tích file
-Thấy đây là file thuần ASCII Thử strings logs.txt | grep pico
-Thấy ko ra kết quả nên đổi cách
-Khúc này, nếu bạn khôn sẽ thấy “=” ở cuối –&gt; có thể đây là dạng text của base64
-Do file quá lớn nên CyberChef ko thể hỗ trợ
-Dùng lệnh base --decode logs.txt &gt; da
-Lúc này bạn nhận được file base64">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "WriteUp",
-      "item": "https://lptue.github.io/WuFort/writeup/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "PicoCTF_Easy",
-      "item": "https://lptue.github.io/WuFort/writeup/picoctf_easy/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Flag in Flame",
-      "item": "https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Flag in Flame",
-  "name": "Flag in Flame",
-  "description": "Đầu tiên hãy thử phân tích file\nThấy đây là file thuần ASCII Thử strings logs.txt | grep pico\nThấy ko ra kết quả nên đổi cách\nKhúc này, nếu bạn khôn sẽ thấy \u0026ldquo;=\u0026rdquo; ở cuối \u0026ndash;\u0026gt; có thể đây là dạng text của base64\nDo file quá lớn nên CyberChef ko thể hỗ trợ\nDùng lệnh base --decode logs.txt \u0026gt; da\nLúc này bạn nhận được file base64\n",
-  "keywords": [
-    "PicoCTF_Easy"
-  ],
-  "articleBody": "Đầu tiên hãy thử phân tích file\nThấy đây là file thuần ASCII Thử strings logs.txt | grep pico\nThấy ko ra kết quả nên đổi cách\nKhúc này, nếu bạn khôn sẽ thấy “=” ở cuối –\u003e có thể đây là dạng text của base64\nDo file quá lớn nên CyberChef ko thể hỗ trợ\nDùng lệnh base --decode logs.txt \u003e da\nLúc này bạn nhận được file base64\nKhi mở file thấy đề PNG –\u003e khả năng đây là file ảnh –\u003e cho nên cyberchef để giải\nNhận thấy file ảnh có dòng chữ nổi bật, hãy coppy chúng và đem lên cyberchef để giải\n",
-  "wordCount" : "107",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "WuFort",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lptue.github.io/WuFort/favicon.ico"
-    }
-  }
-}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <a href="http://localhost:1313/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -184,12 +104,12 @@ Lúc này bạn nhận được file base64">
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
+                <a href="http://localhost:1313/WuFort/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -219,25 +139,25 @@ Thấy ko ra kết quả nên đổi cách</p>
 Do file quá lớn nên CyberChef ko thể hỗ trợ<br>
 Dùng lệnh <code>base --decode logs.txt &gt; da</code><br>
 Lúc này bạn nhận được file base64<br>
-<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/Hkms3oZuMe.png"></p>
+<img alt="image" loading="lazy" src="/images/c8a92e22be058b578fd05307efcfb336.png"></p>
 <p>Khi mở file thấy đề PNG &ndash;&gt; khả năng đây là file ảnh &ndash;&gt; cho nên cyberchef để giải<br>
-<img alt="download (1)" loading="lazy" src="https://hackmd.io/_uploads/rkPMTi-uMl.png"></p>
+<img alt="download (1)" loading="lazy" src="/images/59c3c0fffed527493c89f79d65cf7c76.png"></p>
 <p>Nhận thấy file ảnh có dòng chữ nổi bật, hãy coppy chúng và đem lên cyberchef để giải<br>
-<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1CmajbOGl.png"></p>
+<img alt="image" loading="lazy" src="/images/bde018dc18ae9d72b06321ad0a038cc7.png"></p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://lptue.github.io/WuFort/tags/picoctf_easy/">PicoCTF_Easy</a></li>
+      <li><a href="http://localhost:1313/WuFort/tags/picoctf_easy/">PicoCTF_Easy</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/WuFort/">WuFort</a></span> · 
 
     
     

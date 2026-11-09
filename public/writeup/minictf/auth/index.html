@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/WuFort/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WuFort/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>AUTH | WuFort</title>
 <meta name="keywords" content="MiniCTF">
 <meta name="description" content="
@@ -16,16 +16,16 @@ Nên ta dùng grep theo format đó
 Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64
 ">
 <meta name="author" content="">
-<link rel="canonical" href="https://lptue.github.io/WuFort/writeup/minictf/auth/">
+<link rel="canonical" href="http://localhost:1313/WuFort/writeup/minictf/auth/">
 <link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/WuFort/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/writeup/minictf/auth/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/WuFort/writeup/minictf/auth/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,85 +71,13 @@ Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://lptue.github.io/WuFort/writeup/minictf/auth/">
-  <meta property="og:site_name" content="WuFort">
-  <meta property="og:title" content="AUTH">
-  <meta property="og:description" content="Ta tập trung vào tài khoản student
-Để ý thấy có format host sudo: Nên ta dùng grep theo format đó
-Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="writeup">
-    <meta property="article:tag" content="MiniCTF">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="AUTH">
-  <meta name="twitter:description" content="Ta tập trung vào tài khoản student
-Để ý thấy có format host sudo: Nên ta dùng grep theo format đó
-Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "WriteUp",
-      "item": "https://lptue.github.io/WuFort/writeup/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "MiniCTF",
-      "item": "https://lptue.github.io/WuFort/writeup/minictf/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "AUTH",
-      "item": "https://lptue.github.io/WuFort/writeup/minictf/auth/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "AUTH",
-  "name": "AUTH",
-  "description": "\nTa tập trung vào tài khoản student\nĐể ý thấy có format host sudo: Nên ta dùng grep theo format đó\nTa thấy đoạn mã đáng ngờ bị mã hóa theo base64\n",
-  "keywords": [
-    "MiniCTF"
-  ],
-  "articleBody": "\nTa tập trung vào tài khoản student\nĐể ý thấy có format host sudo: Nên ta dùng grep theo format đó\nTa thấy đoạn mã đáng ngờ bị mã hóa theo base64\n",
-  "wordCount" : "32",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lptue.github.io/WuFort/writeup/minictf/auth/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "WuFort",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lptue.github.io/WuFort/favicon.ico"
-    }
-  }
-}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <a href="http://localhost:1313/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -175,12 +103,12 @@ Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64">
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
+                <a href="http://localhost:1313/WuFort/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -202,28 +130,28 @@ Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64">
 </div>
   </header> 
 
-  <div class="post-content md-content"><p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/r1DGWGeqfx.png"></p>
+  <div class="post-content md-content"><p><img alt="image" loading="lazy" src="/images/44c81a133f36df073fe90167908ea5ad.png"></p>
 <p>Ta tập trung vào tài khoản <code>student</code></p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SkziWMgqMl.png"></p>
+<p><img alt="image" loading="lazy" src="/images/4f6fafde687e3d96e0a7f83e4f4d633c.png"></p>
 <p>Để ý thấy có format <code>host sudo: </code>
 Nên ta dùng grep theo format đó</p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/SJr0bMx5zg.png"></p>
+<p><img alt="image" loading="lazy" src="/images/2f750235060315eccbe675c89f843813.png"></p>
 <p>Ta thấy đoạn mã đáng ngờ bị mã hóa theo base64</p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1HXGfl9fl.png"></p>
+<p><img alt="image" loading="lazy" src="/images/7d741b8f7ca4fce9e28fc4941b75f96e.png"></p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://lptue.github.io/WuFort/tags/minictf/">MiniCTF</a></li>
+      <li><a href="http://localhost:1313/WuFort/tags/minictf/">MiniCTF</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/WuFort/">WuFort</a></span> · 
 
     
     

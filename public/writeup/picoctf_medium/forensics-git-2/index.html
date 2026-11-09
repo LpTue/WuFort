@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/WuFort/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WuFort/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Forensics Git 2 | WuFort</title>
 <meta name="keywords" content="PicoCTF_Medium">
 <meta name="description" content="Tải bài tập tại đây
@@ -16,16 +16,16 @@ Nhưng khi đọc bằng autospy thì ta thấy có mấy cái git
 
 Flag là : academy{g17_r35cu3_16ac6bf3}">
 <meta name="author" content="">
-<link rel="canonical" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-2/">
+<link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_medium/forensics-git-2/">
 <link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/WuFort/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-2/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/WuFort/writeup/picoctf_medium/forensics-git-2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,89 +71,13 @@ Flag là : academy{g17_r35cu3_16ac6bf3}">
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-2/">
-  <meta property="og:site_name" content="WuFort">
-  <meta property="og:title" content="Forensics Git 2">
-  <meta property="og:description" content="Tải bài tập tại đây
-Ta trích xuất file chứa git
-Khi đọc log thì nó báo chưa có cái commit nào trước đó
-Nhưng khi đọc bằng autospy thì ta thấy có mấy cái git
-Flag là : academy{g17_r35cu3_16ac6bf3}">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="writeup">
-    <meta property="article:tag" content="PicoCTF_Medium">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Forensics Git 2">
-  <meta name="twitter:description" content="Tải bài tập tại đây
-Ta trích xuất file chứa git
-Khi đọc log thì nó báo chưa có cái commit nào trước đó
-Nhưng khi đọc bằng autospy thì ta thấy có mấy cái git
-Flag là : academy{g17_r35cu3_16ac6bf3}">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "WriteUp",
-      "item": "https://lptue.github.io/WuFort/writeup/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "PicoCTF_Medium",
-      "item": "https://lptue.github.io/WuFort/writeup/picoctf_medium/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Forensics Git 2",
-      "item": "https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-2/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Forensics Git 2",
-  "name": "Forensics Git 2",
-  "description": "Tải bài tập tại đây\nTa trích xuất file chứa git\nKhi đọc log thì nó báo chưa có cái commit nào trước đó\nNhưng khi đọc bằng autospy thì ta thấy có mấy cái git\nFlag là : academy{g17_r35cu3_16ac6bf3}\n",
-  "keywords": [
-    "PicoCTF_Medium"
-  ],
-  "articleBody": "Tải bài tập tại đây\nTa trích xuất file chứa git\nKhi đọc log thì nó báo chưa có cái commit nào trước đó\nNhưng khi đọc bằng autospy thì ta thấy có mấy cái git\nFlag là : academy{g17_r35cu3_16ac6bf3}\n",
-  "wordCount" : "40",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-2/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "WuFort",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lptue.github.io/WuFort/favicon.ico"
-    }
-  }
-}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <a href="http://localhost:1313/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -179,12 +103,12 @@ Flag là : academy{g17_r35cu3_16ac6bf3}">
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
+                <a href="http://localhost:1313/WuFort/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -208,11 +132,11 @@ Flag là : academy{g17_r35cu3_16ac6bf3}">
 
   <div class="post-content md-content"><p>Tải bài tập tại <a href="https://learn.cylabacademy.org/library/707?page=1&amp;category=4&amp;workspace=true&amp;difficulty=2">đây</a></p>
 <p>Ta trích xuất file chứa git</p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/HyXtmdihMg.png"></p>
+<p><img alt="image" loading="lazy" src="/images/1e46c81581fa7fac59b13c470d3db56d.png"></p>
 <p>Khi đọc log thì nó báo chưa có cái commit nào trước đó</p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1JhQOs2fe.png"></p>
+<p><img alt="image" loading="lazy" src="/images/a6edb76a0af7aa1758e623626f2e63d5.png"></p>
 <p>Nhưng khi đọc bằng autospy thì ta thấy có mấy cái git</p>
-<p><img alt="image" loading="lazy" src="https://hackmd.io/_uploads/H1YaXdohGe.png"></p>
+<p><img alt="image" loading="lazy" src="/images/d9b3968cdfef034bba55b12db2b11047.png"></p>
 <p>Flag là : <code>academy{g17_r35cu3_16ac6bf3}</code></p>
 
 
@@ -220,14 +144,14 @@ Flag là : academy{g17_r35cu3_16ac6bf3}">
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://lptue.github.io/WuFort/tags/picoctf_medium/">PicoCTF_Medium</a></li>
+      <li><a href="http://localhost:1313/WuFort/tags/picoctf_medium/">PicoCTF_Medium</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/WuFort/">WuFort</a></span> · 
 
     
     

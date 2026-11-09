@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tools on WuFort</title>
-    <link>https://lptue.github.io/WuFort/tools/</link>
+    <link>http://localhost:1313/WuFort/tools/</link>
     <description>Recent content in Tools on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://lptue.github.io/WuFort/tools/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/WuFort/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binwalk</title>
-      <link>https://lptue.github.io/WuFort/tools/binwalk/</link>
+      <link>http://localhost:1313/WuFort/tools/binwalk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/binwalk/</guid>
+      <guid>http://localhost:1313/WuFort/tools/binwalk/</guid>
       <description>&lt;h1 id=&#34;i-bản-chất-của-binwalk&#34;&gt;I. Bản chất của Binwalk&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Binwalk được viết bằng ruby &amp;ndash;&amp;gt; làm tăng đáng kể tốc độ so với Python&lt;/li&gt;
@@ -27,9 +27,9 @@ Trục Y : Đo từ sự không ngẫu nhiên tới ngẫu nhiên (khá khó hi�
     </item>
     <item>
       <title>Cracking Passwords</title>
-      <link>https://lptue.github.io/WuFort/tools/cracking-passwords/</link>
+      <link>http://localhost:1313/WuFort/tools/cracking-passwords/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/cracking-passwords/</guid>
+      <guid>http://localhost:1313/WuFort/tools/cracking-passwords/</guid>
       <description>&lt;h1 id=&#34;i-mật-khẩu-và-mã-băm&#34;&gt;I. Mật khẩu và Mã băm&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Mật khẩu thường được lưu dưới dạng mã băm&lt;/li&gt;
@@ -43,13 +43,13 @@ Trục Y : Đo từ sự không ngẫu nhiên tới ngẫu nhiên (khá khó hi�
 &lt;/ul&gt;
 &lt;h3 id=&#34;cài-công-cụ-xác-định-mã-băm&#34;&gt;Cài công cụ xác định mã băm&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;sudo apt install hash-identifier
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ByxY9yCnfx.png&#34;&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/17a12a5b4a825f2278a358294d2fb214.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disk Image Forensics</title>
-      <link>https://lptue.github.io/WuFort/tools/disk-image-forensics/</link>
+      <link>http://localhost:1313/WuFort/tools/disk-image-forensics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/disk-image-forensics/</guid>
+      <guid>http://localhost:1313/WuFort/tools/disk-image-forensics/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-các-thuật-ngữ-cơ-bản&#34;&gt;I. Giới thiệu về các thuật ngữ cơ bản&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Disk Image : bản sao từng bit toàn bộ ổ đĩa, phân vùng, giữ chính xác cấu trúc và nội dung&lt;/li&gt;
@@ -66,13 +66,13 @@ Trục Y : Đo từ sự không ngẫu nhiên tới ngẫu nhiên (khá khó hi�
 &lt;ul&gt;
 &lt;li&gt;Nhập ảnh đĩa vào&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkqjpM0tze.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/1833dfe4df0ba6a3b46839c8f1a60d51.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Document analysis</title>
-      <link>https://lptue.github.io/WuFort/tools/document-analysis/</link>
+      <link>http://localhost:1313/WuFort/tools/document-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/document-analysis/</guid>
+      <guid>http://localhost:1313/WuFort/tools/document-analysis/</guid>
       <description>&lt;h1 id=&#34;i-tài-liệu-microsoft&#34;&gt;I. Tài liệu Microsoft&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Những tài liệu có thể chứa các thông điệp ẩn hoặc mã độc hại có thể được thực thi khi ta mở các tài liệu này&lt;/li&gt;
@@ -95,9 +95,9 @@ OOOXML ( Office Open XML )&lt;/p&gt;
     </item>
     <item>
       <title>Exiftool</title>
-      <link>https://lptue.github.io/WuFort/tools/exiftool/</link>
+      <link>http://localhost:1313/WuFort/tools/exiftool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/exiftool/</guid>
+      <guid>http://localhost:1313/WuFort/tools/exiftool/</guid>
       <description>&lt;h1 id=&#34;i-bản-chất&#34;&gt;I. Bản chất&lt;/h1&gt;
 &lt;p&gt;-Trong mỗi bức ảnh, ngoài ảnh mình nhìn thấy đằng sau đó còn tồn tại các dữ liệu không thể đọc bằng mắt thường
 -Để đọc được những dữ liệu ấy, chúng ta cần dùng đến công cụ exiftool  
@@ -106,9 +106,9 @@ OOOXML ( Office Open XML )&lt;/p&gt;
     </item>
     <item>
       <title>Foremost</title>
-      <link>https://lptue.github.io/WuFort/tools/foremost/</link>
+      <link>http://localhost:1313/WuFort/tools/foremost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/foremost/</guid>
+      <guid>http://localhost:1313/WuFort/tools/foremost/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-foremost&#34;&gt;I. Giới thiệu về foremost&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Foremost là chương trình phục hồi dữ liệu dựa trên tiêu đề, chân trang và cấu trúc dữ liệu&lt;/li&gt;
@@ -138,9 +138,9 @@ OOOXML ( Office Open XML )&lt;/p&gt;
     </item>
     <item>
       <title>Hex editor</title>
-      <link>https://lptue.github.io/WuFort/tools/hex-editor/</link>
+      <link>http://localhost:1313/WuFort/tools/hex-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/hex-editor/</guid>
+      <guid>http://localhost:1313/WuFort/tools/hex-editor/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-hex-editor&#34;&gt;I. Giới thiệu về Hex Editor&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Mỗi tệp tin đều được cấu thành từ các đoạn mã Hex mà mắt người không thể thấy&lt;/li&gt;
@@ -153,13 +153,13 @@ OOOXML ( Office Open XML )&lt;/p&gt;
 &lt;li&gt;Chọn tệp tin cần đọc hoặc chỉnh sửa&lt;/li&gt;
 &lt;li&gt;Tùy bài sẽ có những cách áp dụng khác nhau&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/B1x_ERZdMx.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/1d099aed70ac0337f75e20f737f529fd.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mem Win</title>
-      <link>https://lptue.github.io/WuFort/tools/mem-win/</link>
+      <link>http://localhost:1313/WuFort/tools/mem-win/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/mem-win/</guid>
+      <guid>http://localhost:1313/WuFort/tools/mem-win/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu&#34;&gt;I. Giới thiệu&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Bài nào yêu cầu phân tích memory &amp;ndash;&amp;gt; sử dụng vol&lt;/li&gt;
@@ -183,13 +183,13 @@ git clone https://github.com/lorelyai/volatility3-bitlocker.git
 
 # 2. Copy file plugin vào đúng thư mục
 cp ~/volatility3-bitlocker/bitlocker.py &amp;lt;path&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/ryT68W16Ge.png&#34;&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/17cf9fcaa1464d730679e111.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oletools</title>
-      <link>https://lptue.github.io/WuFort/tools/oletools/</link>
+      <link>http://localhost:1313/WuFort/tools/oletools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/oletools/</guid>
+      <guid>http://localhost:1313/WuFort/tools/oletools/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-oletools&#34;&gt;I. Giới thiệu về Oletools&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Là gói công cụ phân tích các tệp Microsoft&lt;/li&gt;
@@ -202,13 +202,13 @@ cp ~/volatility3-bitlocker/bitlocker.py &amp;lt;path&amp;gt;
 &lt;li&gt;Là công cục hính để phát hiện tài liệu chứa bất kỳ macro này được nhúng bên trong hay không&lt;/li&gt;
 &lt;li&gt;Sử dụng lệnh  &lt;code&gt;oleid &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/HJ-rdk5Oze.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/891cb9594c960cd68e1d37065d8df869.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sonic</title>
-      <link>https://lptue.github.io/WuFort/tools/sonic/</link>
+      <link>http://localhost:1313/WuFort/tools/sonic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/sonic/</guid>
+      <guid>http://localhost:1313/WuFort/tools/sonic/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-về-sonic-visualiser&#34;&gt;I. Giới thiệu về Sonic Visualiser&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Là ứng dụng miễn phí giúp ta phân tích nội dung tệp âm thanh&lt;/li&gt;
@@ -229,7 +229,7 @@ Màu sắc - thể hiện sự hiện diện của tần số&lt;/p&gt;
 &lt;h1 id=&#34;iii-hướng-dẫn-sử-dụng&#34;&gt;III. Hướng dẫn sử dụng&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Sonic cho phép ta tách các layer ra để quan sát và phân tích
-&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rkGDHCbuMx.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/31deac12dc8072deb3d38c23fb8a56d7.png&#34;&gt;&lt;/li&gt;
 &lt;li&gt;Ngoài ra, sonic còn cho phép ta cài thêm plugin&lt;/li&gt;
 &lt;li&gt;Tùy bài sẽ có những cách khai thác Sonic theo những hướng khác nhau&lt;/li&gt;
 &lt;/ul&gt;
@@ -237,13 +237,13 @@ Màu sắc - thể hiện sự hiện diện của tần số&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Khi tách lớp layer spectrogram channel 2 của tệp đính kèm&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image (5)&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/BJvTSAZ_zx.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image (5)&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/ced64caa28bb8cd1ea39f89095a2a146.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wireshark</title>
-      <link>https://lptue.github.io/WuFort/tools/wireshark/</link>
+      <link>http://localhost:1313/WuFort/tools/wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/wireshark/</guid>
+      <guid>http://localhost:1313/WuFort/tools/wireshark/</guid>
       <description>&lt;h1 id=&#34;i-wireshark-the-basics&#34;&gt;I. Wireshark: The Basics&lt;/h1&gt;
 &lt;h2 id=&#34;misson-1--tổng-quan-về-công-cụ&#34;&gt;Misson 1 : Tổng quan về công cụ&lt;/h2&gt;
 &lt;h3 id=&#34;giới-thiệu&#34;&gt;Giới thiệu&lt;/h3&gt;
@@ -258,7 +258,7 @@ Phát hiện bất thường về bảo mật
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;giao-diện-và-dữ-liệu&#34;&gt;Giao diện và dữ liệu&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/S1R-WJGdMl.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/7d9af824cfcbd0a0ee2978a93dc09455.png&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Toolbar : Chứa nhiều menu và phím tắt&lt;/li&gt;
 &lt;li&gt;Display filter : Phần truy vấn và lọc&lt;/li&gt;
@@ -267,13 +267,13 @@ Phát hiện bất thường về bảo mật
 &lt;li&gt;Status bar : Trạng thái công cụ, hồ sơ và thông tin gói số&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;tải-file-pcap-files&#34;&gt;Tải file PCAP Files&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJHz7JzOMl.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/5b06b2dd6d2df4fa250245ebd80d2330.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zsteg</title>
-      <link>https://lptue.github.io/WuFort/tools/zsteg/</link>
+      <link>http://localhost:1313/WuFort/tools/zsteg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/tools/zsteg/</guid>
+      <guid>http://localhost:1313/WuFort/tools/zsteg/</guid>
       <description>&lt;h1 id=&#34;i-giới-thiệu-qua-về-zsteg&#34;&gt;I. Giới thiệu qua về Zsteg&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Zsteg là công cụ phát hiện dữ liệu ẩn của stegano trong PNG &amp;amp; BMP&lt;/li&gt;
@@ -299,7 +299,7 @@ zlib-compressed data&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;zsteg -a&lt;/code&gt; + &amp;lt;tên file &amp;gt; : Thử tất cả các phương pháp đã biết&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;zsteg -E&lt;/code&gt; + &amp;lt;tên kênh &amp;gt; + &amp;lt;tên file &amp;gt; : Trích xuất kênh&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image (6)&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SyqiLR-dfg.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image (6)&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/e894f48aaa946577a39ff6a5bd28cfac.png&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

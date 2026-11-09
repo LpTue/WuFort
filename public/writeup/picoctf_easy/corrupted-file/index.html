@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/WuFort/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WuFort/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Corrupted file | WuFort</title>
 <meta name="keywords" content="PicoCTF_Easy">
 <meta name="description" content="Đầu tiên mở file bằng hex, thấy phần đầu là JFIF
@@ -20,16 +20,16 @@ Ta thay lại đoạn đầu bằng mã hex kia
 Sau đó ta đổi lại đuôi file
 ">
 <meta name="author" content="">
-<link rel="canonical" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/">
+<link rel="canonical" href="http://localhost:1313/WuFort/writeup/picoctf_easy/corrupted-file/">
 <link crossorigin="anonymous" href="/WuFort/assets/css/stylesheet.95ae6e9689bd0037456375629f411acbf8ed76e0e9a7599900ad281f9526dee6.css" integrity="sha256-la5ulom9ADdFY3Vin0Eay/jtduDpp1mZAK0oH5Um3uY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lptue.github.io/WuFort/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lptue.github.io/WuFort/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lptue.github.io/WuFort/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lptue.github.io/WuFort/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lptue.github.io/WuFort/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/WuFort/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/WuFort/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/WuFort/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/WuFort/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/WuFort/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/WuFort/writeup/picoctf_easy/corrupted-file/">
 <noscript>
     <style>
         #theme-toggle,
@@ -75,93 +75,13 @@ Sau đó ta đổi lại đuôi file
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/">
-  <meta property="og:site_name" content="WuFort">
-  <meta property="og:title" content="Corrupted file">
-  <meta property="og:description" content="Đầu tiên mở file bằng hex, thấy phần đầu là JFIF
-Khi ta thay đuôi bằng .jpg thì báo lỗi Đây là một điều khá lạ bởi nếu đúng thì sửa đuôi phải ra
-Thêm nx phân tích đoạn văn bản thấy nó đúng kiểu ko thể đọc bằng ASCII
-–&gt; Nghĩ đến trường hợp có thể sai định dạng văn bản
-Truy cập https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5 Ta phát hiện đoạn đầu đúng của ảnh JFIF có dạng : ffd8 ffe0 0010 4a46 4946 0001 0101 0047 theo như github nói
-Ta thay lại đoạn đầu bằng mã hex kia
-Sau đó ta đổi lại đuôi file">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="writeup">
-    <meta property="article:tag" content="PicoCTF_Easy">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Corrupted file">
-  <meta name="twitter:description" content="Đầu tiên mở file bằng hex, thấy phần đầu là JFIF
-Khi ta thay đuôi bằng .jpg thì báo lỗi Đây là một điều khá lạ bởi nếu đúng thì sửa đuôi phải ra
-Thêm nx phân tích đoạn văn bản thấy nó đúng kiểu ko thể đọc bằng ASCII
-–&gt; Nghĩ đến trường hợp có thể sai định dạng văn bản
-Truy cập https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5 Ta phát hiện đoạn đầu đúng của ảnh JFIF có dạng : ffd8 ffe0 0010 4a46 4946 0001 0101 0047 theo như github nói
-Ta thay lại đoạn đầu bằng mã hex kia
-Sau đó ta đổi lại đuôi file">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "WriteUp",
-      "item": "https://lptue.github.io/WuFort/writeup/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "PicoCTF_Easy",
-      "item": "https://lptue.github.io/WuFort/writeup/picoctf_easy/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Corrupted file",
-      "item": "https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Corrupted file",
-  "name": "Corrupted file",
-  "description": "Đầu tiên mở file bằng hex, thấy phần đầu là JFIF\nKhi ta thay đuôi bằng .jpg thì báo lỗi Đây là một điều khá lạ bởi nếu đúng thì sửa đuôi phải ra\nThêm nx phân tích đoạn văn bản thấy nó đúng kiểu ko thể đọc bằng ASCII\n\u0026ndash;\u0026gt; Nghĩ đến trường hợp có thể sai định dạng văn bản\nTruy cập https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5 Ta phát hiện đoạn đầu đúng của ảnh JFIF có dạng : ffd8 ffe0 0010 4a46 4946 0001 0101 0047 theo như github nói\nTa thay lại đoạn đầu bằng mã hex kia\nSau đó ta đổi lại đuôi file\n",
-  "keywords": [
-    "PicoCTF_Easy"
-  ],
-  "articleBody": "Đầu tiên mở file bằng hex, thấy phần đầu là JFIF\nKhi ta thay đuôi bằng .jpg thì báo lỗi Đây là một điều khá lạ bởi nếu đúng thì sửa đuôi phải ra\nThêm nx phân tích đoạn văn bản thấy nó đúng kiểu ko thể đọc bằng ASCII\n–\u003e Nghĩ đến trường hợp có thể sai định dạng văn bản\nTruy cập https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5 Ta phát hiện đoạn đầu đúng của ảnh JFIF có dạng : ffd8 ffe0 0010 4a46 4946 0001 0101 0047 theo như github nói\nTa thay lại đoạn đầu bằng mã hex kia\nSau đó ta đổi lại đuôi file\n",
-  "wordCount" : "105",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "WuFort",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lptue.github.io/WuFort/favicon.ico"
-    }
-  }
-}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="https://lptue.github.io/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
+            <a href="http://localhost:1313/WuFort/" accesskey="h" title="WuFort (Alt + H)">WuFort</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -187,12 +107,12 @@ Sau đó ta đổi lại đuôi file">
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="https://lptue.github.io/WuFort/tags/" title="Tags">
+                <a href="http://localhost:1313/WuFort/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://lptue.github.io/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/WuFort/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -216,30 +136,30 @@ Sau đó ta đổi lại đuôi file">
 
   <div class="post-content md-content"><p>Đầu tiên mở file bằng hex, thấy phần đầu là JFIF<br>
 Khi ta thay đuôi bằng .jpg thì báo lỗi  <br>
-<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/BJBMl3-OGx.png"></p>
+<img alt="image" loading="lazy" src="/images/283906ec238beebd5f34d635e954a7e7.png"></p>
 <p>Đây là một điều khá lạ bởi nếu đúng thì sửa đuôi phải ra<br>
 Thêm nx phân tích đoạn văn bản thấy nó đúng kiểu ko thể đọc bằng ASCII<br>
 &ndash;&gt; Nghĩ đến trường hợp có thể sai định dạng văn bản<br>
 Truy cập <a href="https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5">https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5</a>
-<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/B1f4lhWdMe.png"></p>
+<img alt="image" loading="lazy" src="/images/83d52da9ae051615835cb3c7917daf77.png"></p>
 <p>Ta phát hiện đoạn đầu đúng của ảnh JFIF có dạng : ffd8 ffe0 0010 4a46 4946 0001 0101 0047 theo như github nói<br>
 Ta thay lại đoạn đầu bằng mã hex kia<br>
 Sau đó ta đổi lại đuôi file<br>
-<img alt="image" loading="lazy" src="https://hackmd.io/_uploads/rkAEenWuze.png"></p>
+<img alt="image" loading="lazy" src="/images/975b56271375d331e58e2c306b3c8499.png"></p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://lptue.github.io/WuFort/tags/picoctf_easy/">PicoCTF_Easy</a></li>
+      <li><a href="http://localhost:1313/WuFort/tags/picoctf_easy/">PicoCTF_Easy</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://lptue.github.io/WuFort/">WuFort</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/WuFort/">WuFort</a></span> · 
 
     
     

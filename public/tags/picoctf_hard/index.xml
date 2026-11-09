@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>PicoCTF_Hard on WuFort</title>
-    <link>https://lptue.github.io/WuFort/tags/picoctf_hard/</link>
+    <link>http://localhost:1313/WuFort/tags/picoctf_hard/</link>
     <description>Recent content in PicoCTF_Hard on WuFort</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://lptue.github.io/WuFort/tags/picoctf_hard/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/WuFort/tags/picoctf_hard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UnforgottenBits</title>
-      <link>https://lptue.github.io/WuFort/writeup/picoctf_hard/unforgottenbits/</link>
+      <link>http://localhost:1313/WuFort/writeup/picoctf_hard/unforgottenbits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lptue.github.io/WuFort/writeup/picoctf_hard/unforgottenbits/</guid>
+      <guid>http://localhost:1313/WuFort/writeup/picoctf_hard/unforgottenbits/</guid>
       <description>&lt;p&gt;Tải bài tập tại &lt;a href=&#34;https://learn.cylabacademy.org/library/383?page=1&amp;amp;category=4&amp;amp;difficulty=3&amp;amp;workspace=true&#34;&gt;đây&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Đầu tiên lần theo thư mục &lt;code&gt;home\yone\irclogs\01\04\#avidreader13.log&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/Bym_zjcpGe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/8f4c89dfae88ab21bc0a02507040c536.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thấy đầu tiên dùng steghide sau đó liên quan tới mã hóa AES
 Hướng tới thư mục &lt;code&gt;home\yone\gallery&lt;/code&gt;
 Ta sử steghide được 3 ảnh &lt;code&gt;1.bmp&lt;/code&gt;, &lt;code&gt;2.bmp&lt;/code&gt;, &lt;code&gt;3.bmp&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/rJAG7icpfg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/5a1bdb9190b4fd4789efa852d3ae186c.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ta thu được 3 file với chuỗi ký tự rất lạ, dựa vào đoạn hội thoại, ta sử dụng decryt AES online&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://hackmd.io/_uploads/SJv1Ei5pfe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/WuFort/images/e69a85465fb2f9133b1d218d4ff6a3a2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Khi dịch cả 3 file, ta thấy đây đều là cốt truyện game LOL &amp;ndash;&amp;gt; rác
 Truy cập theo đường dẫn &lt;code&gt;home\yone\notes\3.txt&lt;/code&gt;&lt;/p&gt;</description>
     </item>

@@ -2,234 +2,244 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-2/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/disko-2/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/msb/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/msb/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/redaction-gone-wrong/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/redaction-gone-wrong/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/so-meta/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/so-meta/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/advanced-potion-making/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/advanced-potion-making/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/bksec/american-bee/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/bksec/american-bee/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/minictf/auth/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/minictf/auth/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/bksec/behind-the-mountain/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/hutechctf/baby-for/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/binary-digits/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/hutechctf/baby-forensics/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/binwalk/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/bksec/behind-the-mountain/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-1/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/binary-digits/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/bitlocker-2/</loc>
+    <loc>http://localhost:1313/WuFort/tools/binwalk/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tags/bksec/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/bitlocker-1/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/bksec/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/bitlocker-2/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/blast-from-the-past/</loc>
+    <loc>http://localhost:1313/WuFort/tags/bksec/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/c0rrupt/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/bksec/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/categories/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/blast-from-the-past/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/knowledge/common-windows-artifacts/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/c0rrupt/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/corrupted-file/</loc>
+    <loc>http://localhost:1313/WuFort/categories/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/cracking-passwords/</loc>
+    <loc>http://localhost:1313/WuFort/knowledge/common-windows-artifacts/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/minictf/ctq1/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/corrupted-file/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/bksec/ddnnnnss/</loc>
+    <loc>http://localhost:1313/WuFort/tools/cracking-passwords/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/dear-diary/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/minictf/ctq1/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/disk-image-forensics/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/bksec/ddnnnnss/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/disk-disk-sleuth/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/dear-diary/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/disk-disk-sleuth-ii/</loc>
+    <loc>http://localhost:1313/WuFort/tools/disk-image-forensics/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/disko-1/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/disk-disk-sleuth/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-3/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/disk-disk-sleuth-ii/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/disko-4/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/disko-1/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/document-analysis/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/disko-3/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/eavesdrop/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/disko-4/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/minictf/enderdragon/</loc>
+    <loc>http://localhost:1313/WuFort/tools/document-analysis/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/endianness-v2/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/eavesdrop/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/enhance/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/minictf/enderdragon/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/event-viewing/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/endianness-v2/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/exiftool/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/enhance/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/extensions/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/event-viewing/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/file-types/</loc>
+    <loc>http://localhost:1313/WuFort/tools/exiftool/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/findandopen/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/extensions/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/flag-in-flame/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/hutechctf/fake/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/flags-are-stepic/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/file-types/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/foremost/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/findandopen/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-0/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/flag-in-flame/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-1/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/flags-are-stepic/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/forensics-git-2/</loc>
+    <loc>http://localhost:1313/WuFort/tools/foremost/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/glory-of-the-garden/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/forensics-git-0/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/hex-editor/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/forensics-git-1/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/hidden-in-plainsight/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/forensics-git-2/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/hideme/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/glory-of-the-garden/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/information/</loc>
+    <loc>http://localhost:1313/WuFort/tools/hex-editor/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/bksec/introduction-to-memfor/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/hidden-in-plainsight/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/knowledge/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/hideme/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tags/knowledge/</loc>
+    <loc>http://localhost:1313/WuFort/tags/hutechctf/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/like1000/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/hutechctf/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/knowledge/linux/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/information/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/lookey-here/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/bksec/introduction-to-memfor/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/m00nwalk/</loc>
+    <loc>http://localhost:1313/WuFort/knowledge/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/macrohard-weakedge/</loc>
+    <loc>http://localhost:1313/WuFort/tags/knowledge/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/matryoshka-doll/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/like1000/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/mem-win/</loc>
+    <loc>http://localhost:1313/WuFort/knowledge/linux/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/milkslap/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/lookey-here/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tags/minictf/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/m00nwalk/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/minictf/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/macrohard-weakedge/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/mob-psycho/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/matryoshka-doll/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/knowledge/network/</loc>
+    <loc>http://localhost:1313/WuFort/tools/mem-win/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/oletools/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/milkslap/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/minictf/onthithpt/</loc>
+    <loc>http://localhost:1313/WuFort/tags/minictf/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/operation-oni/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/minictf/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/operation-orchid/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/mob-psycho/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/packets-primer/</loc>
+    <loc>http://localhost:1313/WuFort/knowledge/network/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/pcappoisoning/</loc>
+    <loc>http://localhost:1313/WuFort/tools/oletools/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/ph4nt0m-1ntrud3r/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/minictf/onthithpt/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tags/picoctf_easy/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/operation-oni/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/operation-orchid/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tags/picoctf_hard/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/packets-primer/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_hard/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/pcappoisoning/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tags/picoctf_medium/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/ph4nt0m-1ntrud3r/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/</loc>
+    <loc>http://localhost:1313/WuFort/tags/picoctf_easy/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/pitter-patter-platters/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/red/</loc>
+    <loc>http://localhost:1313/WuFort/tags/picoctf_hard/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/riddle-registry/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_hard/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/rogue-tower/</loc>
+    <loc>http://localhost:1313/WuFort/tags/picoctf_medium/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/scan-surprise/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/search/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/pitter-patter-platters/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/secret-of-the-polyglot/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/red/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/shark-on-wire-1/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/riddle-registry/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/shark-on-wire-2/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/rogue-tower/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/sleuthkit-apprentice/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/scan-surprise/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/sleuthkit-intro/</loc>
+    <loc>http://localhost:1313/WuFort/search/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/sonic/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/secret-of-the-polyglot/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/st3g0/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/shark-on-wire-1/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/knowledge/step/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/shark-on-wire-2/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/knowledge/structure-image/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/sleuthkit-apprentice/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tags/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/sleuthkit-intro/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/bksec/thumbthumb/</loc>
+    <loc>http://localhost:1313/WuFort/tools/sonic/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/timeline0/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/st3g0/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/timeline1/</loc>
+    <loc>http://localhost:1313/WuFort/knowledge/step/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tags/tools/</loc>
+    <loc>http://localhost:1313/WuFort/knowledge/structure-image/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/</loc>
+    <loc>http://localhost:1313/WuFort/tags/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/torrent-analyze/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/bksec/thumbthumb/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/trivial-flag-transfer-protocol/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/timeline0/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/minictf/trodua/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/timeline1/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</loc>
+    <loc>http://localhost:1313/WuFort/tags/tools/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_hard/unforgottenbits/</loc>
+    <loc>http://localhost:1313/WuFort/tools/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_easy/verify/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/torrent-analyze/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/weird-file/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/trivial-flag-transfer-protocol/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/what-lies-within/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/minictf/trodua/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/whitepages/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/bksec/t%C6%B0-t%C6%B0%E1%BB%9Fng-h%E1%BB%93-ch%C3%AD-minh/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/knowledge/win/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_hard/unforgottenbits/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/wireshark/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/verify/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/wireshark2/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/weird-file/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/picoctf_medium/wiresharkdo/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/what-lies-within/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/writeup/</loc>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/whitepages/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/</loc>
+    <loc>http://localhost:1313/WuFort/knowledge/win/</loc>
   </url><url>
-    <loc>https://lptue.github.io/WuFort/tools/zsteg/</loc>
+    <loc>http://localhost:1313/WuFort/tools/wireshark/</loc>
+  </url><url>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/wireshark2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/wiresharkdo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/WuFort/writeup/</loc>
+  </url><url>
+    <loc>http://localhost:1313/WuFort/</loc>
+  </url><url>
+    <loc>http://localhost:1313/WuFort/tools/zsteg/</loc>
   </url>
 </urlset>
