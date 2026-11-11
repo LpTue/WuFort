@@ -1,7 +1,6 @@
 ---
 title: Fake
 tags: ["HuTechCTF"]
-
 ---
 
 Tải bài tập tại [đây](https://brotherctf.com/practice/fake)

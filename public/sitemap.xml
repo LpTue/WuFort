@@ -16,10 +16,6 @@
   </url><url>
     <loc>http://localhost:1313/WuFort/writeup/minictf/auth/</loc>
   </url><url>
-    <loc>http://localhost:1313/WuFort/writeup/hutechctf/baby-for/</loc>
-  </url><url>
-    <loc>http://localhost:1313/WuFort/writeup/hutechctf/baby-forensics/</loc>
-  </url><url>
     <loc>http://localhost:1313/WuFort/writeup/bksec/behind-the-mountain/</loc>
   </url><url>
     <loc>http://localhost:1313/WuFort/writeup/picoctf_easy/binary-digits/</loc>
@@ -79,8 +75,6 @@
     <loc>http://localhost:1313/WuFort/tools/exiftool/</loc>
   </url><url>
     <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/extensions/</loc>
-  </url><url>
-    <loc>http://localhost:1313/WuFort/writeup/hutechctf/fake/</loc>
   </url><url>
     <loc>http://localhost:1313/WuFort/writeup/picoctf_medium/file-types/</loc>
   </url><url>

@@ -1,7 +1,6 @@
 ---
 title: Baby For
 tags: ["HuTechCTF"]
-
 ---
 
 Tải bài tập tại [đây](https://brotherctf.com/practice/baby-for)

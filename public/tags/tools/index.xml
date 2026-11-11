@@ -171,7 +171,7 @@ source ~/mt/bin/activate
 pip install --upgrade pip
 pip install volatility3
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;File hướng dẫn &lt;code&gt;vol&lt;/code&gt; : tại &lt;a href=&#34;https://github.com/LpTue/Forensics/blob/main/L%C6%B0u%20tr%E1%BB%AF/vol.html&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;File hướng dẫn &lt;code&gt;vol&lt;/code&gt; : tại &lt;a href=&#34;https://lptue.github.io/WuFort/files/vol.html&#34;&gt;đây&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Cấu trúc cú pháp đơn giản&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-=&#34; data-lang=&#34;=&#34;&gt;vol -f &amp;lt;file mem&amp;gt; &amp;lt;option&amp;gt;
